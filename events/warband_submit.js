@@ -105,10 +105,6 @@ module.exports = {
 
 			const warbandTags = getwarbandTags.match(/(?:|^)(\b[^,]+\b)/g);
 			console.log('Tags: ' + warbandTags);
-			const listwarbandTags = [];
-			for (const match of warbandTags) {
-				listwarbandTags.push(underscore(match));
-			}
 
 			let warbandIntro;
 			// introductory text, tag user
@@ -120,6 +116,10 @@ module.exports = {
 			}
 
 			if (warbandTags) {
+				const listwarbandTags = [];
+				for (const match of warbandTags) {
+					listwarbandTags.push(underscore(match));
+				}
 				warbandEdit = italic(warbandIntro) + warbandEdit + '\n' + commaLists`${listwarbandTags}`;
 			}
 			else {
