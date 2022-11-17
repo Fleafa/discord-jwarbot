@@ -60,7 +60,7 @@ module.exports = {
 					console.log('Icon: ', warbandIcon);
 				}
 				catch {
-					console.log('Could not parse string');
+					console.log('Could not parse icon string');
 				}
 			}
 
