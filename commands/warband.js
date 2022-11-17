@@ -6,7 +6,7 @@ module.exports = {
 		.setName('warband')
 		.setDescription('Reformats BattleScribe Bushido Warbands shared text in a more compact form.'),
 	async execute(interaction) {
-		console.log(interaction.user.username + ' used /warband');
+		console.log(interaction.user.username + ' used /warband in ' + interaction.guild.name + ' > ' + interaction.channel.name);
 
 		const modal = new ModalBuilder()
 			.setCustomId('warbandModal')
