@@ -115,14 +115,14 @@ module.exports = {
 				warbandIntro = userMention(interaction.user.id) + ' shared this list:' + '\n';
 			}
 
-			if (warbandTags) {
+			try {
 				const listwarbandTags = [];
 				for (const match of warbandTags) {
 					listwarbandTags.push(underscore(match));
 				}
 				warbandEdit = italic(warbandIntro) + warbandEdit + '\n' + commaLists`${listwarbandTags}`;
 			}
-			else {
+			catch {
 				warbandEdit = italic(warbandIntro) + warbandEdit;
 			}
 
