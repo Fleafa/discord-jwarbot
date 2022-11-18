@@ -109,21 +109,21 @@ module.exports = {
 			let warbandIntro;
 			// introductory text, tag user
 			if (warbandTotal) {
-				warbandIntro = userMention(interaction.user.id) + ' shared this ' + warbandTotal[1] + ' Rice list:' + '\n';
+				warbandIntro = userMention(interaction.user.id) + ' shared this ' + warbandTotal[1] + ' Rice list:';
 			}
 			else {
-				warbandIntro = userMention(interaction.user.id) + ' shared this list:' + '\n';
+				warbandIntro = userMention(interaction.user.id) + ' shared this list:';
 			}
 
-			try {
+			if (warbandTags) {
 				const listwarbandTags = [];
 				for (const match of warbandTags) {
 					listwarbandTags.push(underscore(match));
 				}
-				warbandEdit = italic(warbandIntro) + warbandEdit + '\n' + commaLists`${listwarbandTags}`;
+				warbandEdit = italic(warbandIntro) + '\n' + warbandEdit + '\n' + commaLists`${listwarbandTags}`;
 			}
-			catch {
-				warbandEdit = italic(warbandIntro) + warbandEdit;
+			else {
+				warbandEdit = italic(warbandIntro) + '\n' + warbandEdit;
 			}
 
 			// send message
