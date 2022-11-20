@@ -12,7 +12,7 @@ module.exports = {
 		if (interaction.customId === 'warbandModal') {
 			// get the warband from the modal input
 			const getwarbandInput = interaction.fields.getTextInputValue('warbandInput');
-			// get the warband from the modal input
+			// get the tags from the modal input
 			const getwarbandTags = interaction.fields.getTextInputValue('warbandTags').toLowerCase();
 			// inform user
 			await interaction.reply({ content: 'reformatting list...', ephemeral: true });
