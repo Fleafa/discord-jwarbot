@@ -1,5 +1,5 @@
 const { REST, Routes } = require('discord.js');
-const { clientId, guildDevId, token } = require('./config.json');
+const { clientId, guildDevId, guildBushidoId, token } = require('./config.json');
 const fs = require('node:fs');
 
 const commands = [];
@@ -8,7 +8,7 @@ const devcommands = [];
 // Get command files from the commands directory, excluding dev commands
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js') && !file.endsWith('-dev.js'));
 // Get dev command files from the commands directory
-const devcommandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('-dev.js'));
+const devcommandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 // Grab the SlashCommandBuilder#toJSON() output of each global command's data for deployment
 for (const file of commandFiles) {
@@ -29,9 +29,10 @@ const rest = new REST({ version: '10' }).setToken(token);
 	try {
 		console.log(`Started refreshing ${commands.length} application (/) commands.`);
 
-		// The put method is used to fully refresh all global commands with the current set
+		// The put method fully refreshes all commands
 		const data = await rest.put(
-			Routes.applicationCommands(clientId),
+			// only non-dev commands are deployed to the live guild (GCT Studios Bushido)
+			Routes.applicationGuildCommands(clientId, guildBushidoId),
 			{ body: commands },
 		);
 
@@ -45,8 +46,8 @@ const rest = new REST({ version: '10' }).setToken(token);
 	try {
 		console.log(`Started refreshing ${devcommands.length} application (/) commands.`);
 
-		// dev commands are only deployed to the dev guild
 		const data = await rest.put(
+			// all commands, including those in-development, are deployed to the dev guild
 			Routes.applicationGuildCommands(clientId, guildDevId),
 			{ body: devcommands },
 		);
