@@ -1,10 +1,9 @@
 const { SlashCommandBuilder } = require('discord.js');
-const { commaLists } = require('common-tags');
-const libraryFile = require('../rules/traits.json');
-const choices = [];
-for (const trait in libraryFile) {
+// const libraryFile = require('../rules/traits.json');
+const choices = ['adept', 'assassin', 'addled'];
+/* for (const trait in libraryFile) {
 	choices.push(libraryFile[trait].name);
-}
+} */
 
 module.exports = {
 	data: new SlashCommandBuilder()
