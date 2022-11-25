@@ -22,10 +22,4 @@ module.exports = {
 			filtered.map(choice => ({ name: choice, value: choice })),
 		);
 	},
-
-	// eslint-disable-next-line no-empty-function, no-unused-vars
-	async execute(interaction) {
-		await interaction.reply({ content: commaLists`${choices}`, ephemeral: true });
-	},
-
 };
