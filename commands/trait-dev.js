@@ -4,18 +4,16 @@ const libraryFile = require('../rules/traits.json');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('trait')
-		.setDescription('Replies with Trait text.')
+		.setDescription('Replies with Trait definition.')
 		.addStringOption(option =>
-			option.setName('lookup')
-				.setDescription('The Trait to lookup.')
-				.setAutocomplete(true),
-		),
+			option.setName('trait_name')
+				.setDescription('The trait to search for.')
+				.setAutocomplete(true)),
 	async autocomplete(interaction) {
 		const focusedValue = interaction.options.getFocused();
-		const libraryTraits = libraryFile['name'];
 		const choices = [];
-		for (const trait in libraryTraits) {
-			choices.push(libraryTraits[trait].name);
+		for (const trait in libraryFile) {
+			choices.push(libraryFile[trait].name);
 		}
 		const filtered = choices.filter(choice => choice.startsWith(focusedValue));
 		await interaction.respond(
