@@ -8,7 +8,8 @@
 		"references": ["test", "concept-supporting_dice"],
 		"rulebook": "",
 		"rulebookr1": 60,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Aggressive",
@@ -19,7 +20,8 @@
 		"references": ["trait-defensive", "melee_exchange"],
 		"rulebook": "",
 		"rulebookr1": 60,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Agile",
@@ -30,7 +32,8 @@
 		"references": ["trait-immune", "state-held", "concept-btb", "concept-enemy", "action-disengage"],
 		"rulebook": "",
 		"rulebookr1": 60,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Aloof",
@@ -41,7 +44,8 @@
 		"references": ["action-scenario"],
 		"rulebook": "",
 		"rulebookr1": 60,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Ammo",
@@ -52,7 +56,8 @@
 		"references": ["concept-tokens"],
 		"rulebook": "",
 		"rulebookr1": 60,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Armour",
@@ -63,7 +68,8 @@
 		"references": ["concept-damage"],
 		"rulebook": "",
 		"rulebookr1": 60,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Assassin",
@@ -74,7 +80,8 @@
 		"references": ["concept-damage", "concept-surprised"],
 		"rulebook": "",
 		"rulebookr1": 60,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Aware",
@@ -85,7 +92,8 @@
 		"references": ["concept-los"],
 		"rulebook": "",
 		"rulebookr1": 60,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Banzai!",
@@ -96,7 +104,8 @@
 		"references": ["action-charge", "timing-simple", "timing-complex"],
 		"rulebook": "",
 		"rulebookr1": 60,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Bear Stands Alone",
@@ -107,7 +116,8 @@
 		"references": ["trait-indomitable", "concept-friendly"],
 		"rulebook": "",
 		"rulebookr1": 60,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Believer",
@@ -118,7 +128,8 @@
 		"references": ["ki_feats", "concept-friendly"],
 		"rulebook": "",
 		"rulebookr1": 60,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Bleed",
@@ -129,7 +140,8 @@
 		"references": ["trait-soulless", "state-bleed", "concept-markers", "melee_exchange", "concept-damage", "ranged_attack", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 61,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Blood of Orochi",
@@ -140,7 +152,8 @@
 		"references": ["trait-poison", "concept-tokens", "concept-friendly"],
 		"rulebook": "",
 		"rulebookr1": 61,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Bodyguard",
@@ -151,7 +164,8 @@
 		"references": ["trait-fear", "test-fear", "state-prone", "state-disguised", "concept-btb", "concept-exhausted", "concept-los", "concept-markers", "concept-place", "concept-friendly", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 61,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Booted",
@@ -162,7 +176,8 @@
 		"references": ["trait-flank", "concept-deploy"],
 		"rulebook": "",
 		"rulebookr1": 62,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Bravery",
@@ -173,7 +188,8 @@
 		"references": ["trait-fear", "trait-cowardly","terror", "test-fear"],
 		"rulebook": "",
 		"rulebookr1": 62,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Brutal",
@@ -184,7 +200,8 @@
 		"references": ["melee_exchange", "ranged_attack"],
 		"rulebook": "",
 		"rulebookr1": 62,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Camouflage",
@@ -195,7 +212,8 @@
 		"references": ["concept-btb", "concept-target", "concept-cover", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 62,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Cavalry",
@@ -206,7 +224,8 @@
 		"references": [],
 		"rulebook": "",
 		"rulebookr1": 62,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Channel",
@@ -217,7 +236,8 @@
 		"references": ["concept-controller", "concept-tokens", "concept-friendly"],
 		"rulebook": "",
 		"rulebookr1": 62,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Chain Weapon",
@@ -228,7 +248,8 @@
 		"references": ["trait-parry", "trait-shield", "melee_exchange"],
 		"rulebook": "",
 		"rulebookr1": 62,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Charging Bonus",
@@ -239,7 +260,8 @@
 		"references": ["action-charge"],
 		"rulebook": "",
 		"rulebookr1": 63,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Cloudwalk",
@@ -250,7 +272,8 @@
 		"references": ["trait-agile", "concept-zoc", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 63,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Command",
@@ -261,7 +284,8 @@
 		"references": ["trait-group", "concept-controller", "timing-simple", "concept-counters", "concept-exhausted", "concept-friendly", "action-command"],
 		"rulebook": "",
 		"rulebookr1": 63,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Construct",
@@ -272,7 +296,8 @@
 		"references": ["concept-cover"],
 		"rulebook": "",
 		"rulebookr1": 63,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Co-ordinated Attack",
@@ -283,7 +308,8 @@
 		"references": ["melee_exchange", "concept-btb", "statistic-melee_pool", "concept-friendly", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 63,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Cowardly",
@@ -294,7 +320,8 @@
 		"references": ["trait-bravery", "test-fear"],
 		"rulebook": "",
 		"rulebookr1": 63,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Courage",
@@ -305,7 +332,8 @@
 		"references": ["test-fear"],
 		"rulebook": "",
 		"rulebookr1": 63,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Cultist",
@@ -316,7 +344,8 @@
 		"references": ["trait-tough", "concept-tokens", "concept-friendly"],
 		"rulebook": "",
 		"rulebookr1": 63,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Defensive",
@@ -327,7 +356,8 @@
 		"references": ["trait-aggressive", "melee_exchange"],
 		"rulebook": "",
 		"rulebookr1": 64,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Disguise",
@@ -338,7 +368,8 @@
 		"references": ["state-disguised"],
 		"rulebook": "",
 		"rulebookr1": 64,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Disease",
@@ -349,7 +380,8 @@
 		"references": ["state-diseased", "concept-damage", "concept-markers"],
 		"rulebook": "",
 		"rulebookr1": 64,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Disturb Flow",
@@ -360,7 +392,8 @@
 		"references": ["ki_feats", "concept-tokens", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 64,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Dodge",
@@ -371,7 +404,8 @@
 		"references": ["melee_exchange"],
 		"rulebook": "",
 		"rulebookr1": 64,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Dread",
@@ -382,7 +416,8 @@
 		"references": ["trait-fear", "test-fear", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 64,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Durable",
@@ -393,7 +428,8 @@
 		"references": ["trait-tough"],
 		"rulebook": "",
 		"rulebookr1": 64,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Endurance",
@@ -404,7 +440,8 @@
 		"references": ["concept-exhausted", "statistic-melee_pool"],
 		"rulebook": "",
 		"rulebookr1": 64,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Entangling",
@@ -415,7 +452,8 @@
 		"references": ["state-immobilised", "concept-damage"],
 		"rulebook": "",
 		"rulebookr1": 64,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Evasive",
@@ -426,7 +464,8 @@
 		"references": ["concept-zoc", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 64,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Fear",
@@ -437,7 +476,8 @@
 		"references": ["test-fear"],
 		"rulebook": "",
 		"rulebookr1": 64,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Fearless",
@@ -448,7 +488,8 @@
 		"references": ["trait-fear","trait-immune", "test-fear", "state-frightened"],
 		"rulebook": "",
 		"rulebookr1": 64,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Feint",
@@ -459,7 +500,8 @@
 		"references": [],
 		"rulebook": "",
 		"rulebookr1": 65,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Fire",
@@ -470,7 +512,8 @@
 		"references": ["state-on_fire", "concept-markers", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 65,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Flank",
@@ -481,7 +524,8 @@
 		"references": ["concept-deploy", "concept-elsewhere", "concept-hidden", "concept-controller", "concept-counters"],
 		"rulebook": "",
 		"rulebookr1": 65,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Fortune",
@@ -492,7 +536,8 @@
 		"references": ["concept-controller", "concept-tokens"],
 		"rulebook": "",
 		"rulebookr1": 65,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Group",
@@ -503,7 +548,8 @@
 		"references": ["melee_exchange"],
 		"rulebook": "",
 		"rulebookr1": 65,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Hatred",
@@ -514,7 +560,8 @@
 		"references": ["concept-warband"],
 		"rulebook": "",
 		"rulebookr1": 65,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Heal",
@@ -525,7 +572,8 @@
 		"references": ["trait-soulless", "concept-heal", "concept-btb", "timing-simple", "action-heal"],
 		"rulebook": "",
 		"rulebookr1": 65,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Huge",
@@ -536,7 +584,8 @@
 		"references": ["test-ranged", "test-size", "concept-size"],
 		"rulebook": "",
 		"rulebookr1": 65,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Immune",
@@ -547,7 +596,8 @@
 		"references": ["concept-markers"],
 		"rulebook": "",
 		"rulebookr1": 66,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Immovable",
@@ -558,7 +608,8 @@
 		"references": ["state-prone", "concept-markers", "concept-friendly", "melee-exchange", "action-disengage", "action-melee", "action-run",  "action-walk",  "action-charge",  "action-scenario"],
 		"rulebook": "",
 		"rulebookr1": 66,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Impenetrable Defence",
@@ -569,7 +620,8 @@
 		"references": ["melee_exchange", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 66,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Impetuous",
@@ -580,7 +632,8 @@
 		"references": ["trait-fearless", "state-impetuous", "concept-markers"],
 		"rulebook": "",
 		"rulebookr1": 66,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 		{
 		"name": "Indomitable",
@@ -591,7 +644,8 @@
 		"references": ["concept-btb", "melee_exchange", "melee_assist", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 66,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 
 	{
@@ -603,7 +657,8 @@
 		"references": ["melee_exchange", "melee_assist",  "action-scenario"],
 		"rulebook": "",
 		"rulebookr1": 66,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Intangible",
@@ -614,7 +669,8 @@
 		"references": ["trait-immune", "concept-zoc", "state-held", "state-immobilised", "concept-btb"],
 		"rulebook": "",
 		"rulebookr1": 66,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Intimidate",
@@ -625,7 +681,8 @@
 		"references": ["trait-cowardly", "trait-aggressive", "test-opposed", "statistic-ki", "phase-starting", "concept-target", "concept-select", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 66,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Jump Up",
@@ -636,7 +693,8 @@
 		"references": ["state-prone", "concept-markers"],
 		"rulebook": "",
 		"rulebookr1": 66,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Kami",
@@ -647,7 +705,8 @@
 		"references": ["trait-leech", "trait-channel", "trait-immune", "concept-heal", "concept-deploy", "state-bleed", "state-on_fire", "state-poisoned", "state-diseased", "concept-tokens"],
 		"rulebook": "",
 		"rulebookr1": 66,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Kata",
@@ -658,7 +717,8 @@
 		"references": ["melee_exchange", "concept-supporting_dice"],
 		"rulebook": "",
 		"rulebookr1": 66,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Ki Block",
@@ -669,7 +729,8 @@
 		"references": ["state-spirit_block", "concept-markers", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 66,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Last Stand",
@@ -680,7 +741,8 @@
 		"references": [],
 		"rulebook": "",
 		"rulebookr1": 67,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Leadership",
@@ -691,7 +753,8 @@
 		"references": ["trait-fear", "test-fear", "concept-friendly"],
 		"rulebook": "",
 		"rulebookr1": 67,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Leech",
@@ -702,7 +765,8 @@
 		"references": ["concept-active", "concept-tokens", "concept-friendly"],
 		"rulebook": "",
 		"rulebookr1": 67,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Lightweight",
@@ -713,7 +777,8 @@
 		"references": [],
 		"rulebook": "",
 		"rulebookr1": 67,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Lightfooted",
@@ -724,7 +789,8 @@
 		"references": ["trait-unstable"],
 		"rulebook": "",
 		"rulebookr1": 67,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Lightning Reflexes",
@@ -735,7 +801,8 @@
 		"references": ["trait-reach", "concept-initiative", "melee_exchange"],
 		"rulebook": "",
 		"rulebookr1": 67,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Mantra",
@@ -746,7 +813,8 @@
 		"references": ["test-opposed", "statistic-ki", "concept-supporting_dice"],
 		"rulebook": "",
 		"rulebookr1": 67,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Mettle",
@@ -757,7 +825,8 @@
 		"references": ["test-opposed", "statistic-ki", "concept-inactive"],
 		"rulebook": "",
 		"rulebookr1": 67,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Oni Rage",
@@ -768,7 +837,8 @@
 		"references": ["state-berserk", "concept-markers", "concept-tokens"],
 		"rulebook": "",
 		"rulebookr1": 67,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Order",
@@ -779,7 +849,8 @@
 		"references": ["concept-counters", "timing-complex", "action-order", "concept-friendly"],
 		"rulebook": "",
 		"rulebookr1": 67,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Overwhelm",
@@ -790,7 +861,8 @@
 		"references": ["test-opposed", "statistic-ki", "concept-active", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 67,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Pack",
@@ -801,7 +873,8 @@
 		"references": ["concept-exhausted", "concept-select", "concept-target", "concept-friendly"],
 		"rulebook": "",
 		"rulebookr1": 67,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Parry",
@@ -812,7 +885,8 @@
 		"references": ["melee_exchange"],
 		"rulebook": "",
 		"rulebookr1": 68,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Pierce",
@@ -823,7 +897,8 @@
 		"references": ["trait-armour", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 68,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Poison",
@@ -834,7 +909,8 @@
 		"references": ["trait-soulless", "state-poisoned", "concept-markers", "melee_exchange", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 68,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Protected",
@@ -845,7 +921,8 @@
 		"references": ["concept-damage", "concept-friendly"],
 		"rulebook": "",
 		"rulebookr1": 68,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Prowess",
@@ -856,7 +933,8 @@
 		"references": ["melee_exchange"],
 		"rulebook": "",
 		"rulebookr1": 68,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Ranged Defence",
@@ -867,7 +945,8 @@
 		"references": ["test-ranged"],
 		"rulebook": "",
 		"rulebookr1": 68,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Rapid Fire",
@@ -878,7 +957,8 @@
 		"references": ["ranged_attack", "action-ranged_attack", "concept-target", "concept-controller", "concept-counters"],
 		"rulebook": "",
 		"rulebookr1": 68,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Reach",
@@ -889,7 +969,8 @@
 		"references": ["concept-btb", "concept-initiative", "melee-exchange", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 69,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Regenerate",
@@ -900,7 +981,8 @@
 		"references": ["concept-heal"],
 		"rulebook": "",
 		"rulebookr1": 69,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Reload",
@@ -911,7 +993,8 @@
 		"references": ["state-reloading", "concept-markers"],
 		"rulebook": "",
 		"rulebookr1": 69,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Resistance",
@@ -922,7 +1005,8 @@
 		"references": ["test-opposed", "concept-inactive"],
 		"rulebook": "",
 		"rulebookr1": 69,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Rise",
@@ -933,7 +1017,8 @@
 		"references": ["concept-heal", "test-challenge", "state-on_fire", "state-prone"],
 		"rulebook": "",
 		"rulebookr1": 69,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Sacrifice",
@@ -944,7 +1029,8 @@
 		"references": ["concept-btb", "concept-controller", "concept-damage", "concept-exhausted", "concept-friendly", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 69,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Scout",
@@ -955,7 +1041,8 @@
 		"references": ["concept-deploy", "test-tactical_deployment", "concept-warband"],
 		"rulebook": "",
 		"rulebookr1": 69,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Sharp",
@@ -966,7 +1053,8 @@
 		"references": ["trait-tough"],
 		"rulebook": "",
 		"rulebookr1": 69,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Sixth Sense",
@@ -977,7 +1065,8 @@
 		"references": ["trait-camouflage", "trait-immune", "state-blind", "concept-surprised"],
 		"rulebook": "",
 		"rulebookr1": 69,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Slow",
@@ -988,7 +1077,8 @@
 		"references": ["trait-lightning_reflexes", "trait-reach", "melee_exchange", "concept-initiative",  "action-run", "action-charge"],
 		"rulebook": "",
 		"rulebookr1": 69,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Soulless",
@@ -999,7 +1089,8 @@
 		"references": ["trait-fear", "trait-immune", "test-fear", "concept-inactive", "state-frightened"],
 		"rulebook": "",
 		"rulebookr1": 69,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Spirit",
@@ -1010,7 +1101,8 @@
 		"references": ["statistic-ki"],
 		"rulebook": "",
 		"rulebookr1": 69,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Split Attack",
@@ -1021,7 +1113,8 @@
 		"references": ["concept-btb", "concept-counters", "concept-facing", "concept-enemy", "action-melee", "action-charge"],
 		"rulebook": "",
 		"rulebookr1": 70,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Steadfast",
@@ -1032,7 +1125,8 @@
 		"references": ["trait-fear", "test-fear", "state-frightened", "concept-btb", "melee_exchange"],
 		"rulebook": "",
 		"rulebookr1": 70,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Strategy",
@@ -1043,7 +1137,8 @@
 		"references": ["test-tactical"],
 		"rulebook": "",
 		"rulebookr1": 70,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Strong",
@@ -1054,7 +1149,8 @@
 		"references": ["trait-weak", "test-size", "concept-damage"],
 		"rulebook": "",
 		"rulebookr1": 70,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Stupid",
@@ -1065,7 +1161,8 @@
 		"references": ["action-wait", "action-disengage", "action-scenario", "timing-complex"],
 		"rulebook": "",
 		"rulebookr1": 70,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Swarm",
@@ -1076,7 +1173,8 @@
 		"references": ["test-size", "test-challenge", "ranged"],
 		"rulebook": "",
 		"rulebookr1": 70,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Tactician",
@@ -1087,7 +1185,8 @@
 		"references": ["test-tactical"],
 		"rulebook": "",
 		"rulebookr1": 70,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Terror",
@@ -1098,7 +1197,8 @@
 		"references": ["trait-fear","trait-bravery", "test-fear"],
 		"rulebook": "",
 		"rulebookr1": 70,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Tiny",
@@ -1109,7 +1209,8 @@
 		"references": ["test-size", "concept-size", "test-challenge", "ranged"],
 		"rulebook": "",
 		"rulebookr1": 71,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Tireless",
@@ -1120,7 +1221,8 @@
 		"references": [ "concept-inactive", "concept-counters", "melee_exchange", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 71,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Tough",
@@ -1131,7 +1233,8 @@
 		"references": ["concept-damage"],
 		"rulebook": "",
 		"rulebookr1": 71,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Unblockable",
@@ -1142,7 +1245,8 @@
 		"references": ["test-opposed", "melee_exchange", "concept-enemy"],
 		"rulebook": "",
 		"rulebookr1": 71,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Unstable",
@@ -1153,7 +1257,8 @@
 		"references": ["trait-ligtfooted"],
 		"rulebook": "",
 		"rulebookr1": 71,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Vengeance",
@@ -1164,7 +1269,8 @@
 		"references": ["statistic-strength", "trait-brutal"],
 		"rulebook": "",
 		"rulebookr1": 71,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Virtue",
@@ -1175,7 +1281,8 @@
 		"references": ["trait-soulless", "trait-insignificant", "timing-instant", "concept-in_play", "concept-active", "concept-tokens", "concept-virtue_tokens", "concept-friendly"],
 		"rulebook": "",
 		"rulebookr1": 71,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Weak",
@@ -1186,7 +1293,8 @@
 		"references": ["trait-strong", "test-size", "concept-damage"],
 		"rulebook": "",
 		"rulebookr1": 71,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Willpower",
@@ -1197,7 +1305,8 @@
 		"references": ["test-opposed", "statistic-ki", "concept-active"],
 		"rulebook": "",
 		"rulebookr1": 71,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Terrain: Difficult",
@@ -1208,7 +1317,8 @@
 		"references": ["terrain-passage", "state-prone", "trait-terrain_enhancing", "trait-terrain_Difficult", "concept-damage"],
 		"rulebook": "",
 		"rulebookr1": 72,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Terrain: Destructible",
@@ -1219,7 +1329,8 @@
 		"references": ["concept-zoc", "concept-enemy", "action-wait"],
 		"rulebook": "",
 		"rulebookr1": 18,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Terrain: Impassable",
@@ -1230,7 +1341,8 @@
 		"references": ["terrain-passage"],
 		"rulebook": "",
 		"rulebookr1": 72,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Terrain: Normal",
@@ -1241,7 +1353,8 @@
 		"references": ["terrain-passage"],
 		"rulebook": "",
 		"rulebookr1": 72,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Terrain: Ideal",
@@ -1252,7 +1365,8 @@
 		"references": ["terrain-passage"],
 		"rulebook": "",
 		"rulebookr1": 72,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Terrain: Clear",
@@ -1263,7 +1377,8 @@
 		"references": ["terrain-visibility", "concept-los"],
 		"rulebook": "",
 		"rulebookr1": 72,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Terrain: Blocking",
@@ -1274,7 +1389,8 @@
 		"references": ["terrain-visibility", "concept-cover", "concept-los"],
 		"rulebook": "",
 		"rulebookr1": 72,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Terrain: Obscuring",
@@ -1285,7 +1401,8 @@
 		"references": ["terrain-visibility", "concept-cover", "concept-los"],
 		"rulebook": "",
 		"rulebookr1": 72,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		},
 	{
 		"name": "Terrain: Enhancing",
@@ -1296,6 +1413,7 @@
 		"references": ["trait-reach","trait-cloudwalk", "concept-los", "melee_exchange"],
 		"rulebook": "",
 		"rulebookr1": 72,
-		"revision": 0
+		"revision": 0,
+		"status": "current"
 		}
 ]
