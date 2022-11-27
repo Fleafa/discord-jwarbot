@@ -13,7 +13,7 @@ module.exports = {
 		}
 
 		try {
-			await command.autocomplete(interaction);
+			await command.execute(interaction);
 		}
 		catch (error) {
 			console.error(error);
