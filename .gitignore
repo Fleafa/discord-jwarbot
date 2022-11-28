@@ -4,8 +4,5 @@ config.json
 .eslintrc.json
 risen-sun-logo.png
 *.txt
-lookup-trait.js
-*-dev.js
-!trait-dev.js
 rules/*
 !rules/traits.json
