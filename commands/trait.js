@@ -94,7 +94,7 @@ module.exports = {
 		await interaction.reply({ content: traitDefinition, components: [row], ephemeral: true, fetchReply: true });
 
 		const filter = i => i.customId === 'share';
-		const componentCollector = interaction.channel.createMessageComponentCollector({ filter, time: 1000 });
+		const componentCollector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
 		componentCollector.on('collect', async i => {
 			await interaction.channel.send(userMention(interaction.user.id) + ' used /trait:\n' + traitDefinition);
