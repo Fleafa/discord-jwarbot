@@ -7,7 +7,7 @@ const libraryFile = require('../rules/traits.json');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('trait')
-		.setDescription('Replies with Trait definition.')
+		.setDescription('Replies with trait definition.')
 		.addStringOption(option =>
 			option.setName('trait_name')
 				.setDescription('The trait to search for.')
@@ -86,14 +86,14 @@ module.exports = {
 		const row = new ActionRowBuilder()
 			.addComponents(
 				new ButtonBuilder()
-					.setCustomId('share')
+					.setCustomId('trait_share')
 					.setLabel('share in this channel')
 					.setStyle(ButtonStyle.Primary),
 			);
 
 		await interaction.reply({ content: traitDefinition, components: [row], ephemeral: true, fetchReply: true });
 
-		const filter = i => i.customId === 'share';
+		const filter = i => i.customId === 'trait_share';
 		const componentCollector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
 		componentCollector.on('collect', async i => {
@@ -105,8 +105,10 @@ module.exports = {
 
 		componentCollector.on('end', async collected => {
 			console.log(`Collected ${collected.size} interactions.`);
-			await row.components[0].setDisabled(true).setLabel('timeout');
-			await interaction.editReply({ content: traitDefinition, components: [row] });
+			if (!collected.size) {
+				await row.components[0].setDisabled(true).setLabel('60s timeout');
+				await interaction.editReply({ content: traitDefinition, components: [row] });
+			}
 		});
 	},
 
