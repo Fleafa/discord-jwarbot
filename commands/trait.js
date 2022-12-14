@@ -87,18 +87,20 @@ module.exports = {
 			.addComponents(
 				new ButtonBuilder()
 					.setCustomId('trait_share')
-					.setLabel('share in this channel')
+					.setLabel('share here')
 					.setStyle(ButtonStyle.Primary),
 			);
 
-		await interaction.reply({ content: traitDefinition, components: [row], ephemeral: true, fetchReply: true });
+		const jwarbotTip = '\n\n' + blockQuote(':ninja: **JwarBot Tip!** :ninja:\n' + italic('The **"share here"** button will timeout in 60 seconds.'));
+
+		await interaction.reply({ content: traitDefinition + jwarbotTip, components: [row], ephemeral: true, fetchReply: true });
 
 		const filter = i => i.customId === 'trait_share';
 		const componentCollector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
 		componentCollector.on('collect', async i => {
 			await interaction.channel.send(userMention(interaction.user.id) + ' used /trait:\n' + traitDefinition);
-			await i.update({ content: 'Shared definition of ' + traitName + ' to channel.', components: [] });
+			await i.update({ content: 'Thank you for using /trait :shinto_shrine:', components: [] });
 			console.log(traitName + ' definition shared to ' + interaction.channel);
 			componentCollector.stop();
 		});
