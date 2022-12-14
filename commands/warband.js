@@ -1,41 +1,36 @@
 const { ActionRowBuilder, ModalBuilder, TextInputBuilder, TextInputStyle, SlashCommandBuilder } = require('discord.js');
 
-// module.exports is how you export data in Node.js so that you can require() it in other files.
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('warband')
-		.setDescription('Reformats BattleScribe Bushido Warbands shared text in a more compact form.'),
+		.setDescription('Launches a form where you can paste a BattleScribe Warband (use Share > Chat) for reformatting.'),
 	async execute(interaction) {
+
 		console.log(interaction.user.username + ' used /warband in ' + interaction.guild.name + ' > ' + interaction.channel.name);
 
 		const modal = new ModalBuilder()
-			.setCustomId('warbandModal')
-			.setTitle('Reformat BS Warband');
+			.setCustomId('slashWarbandModal')
+			.setTitle('Reformat Battlescribe Warband');
 
-		const warbandInput = new TextInputBuilder()
-			.setCustomId('warbandInput')
+		const modalWarband = new TextInputBuilder()
+			.setCustomId('slashWarbandText')
 			.setLabel('Please paste Battlescribe Warband text here:')
 			.setStyle(TextInputStyle.Paragraph)
-			.setRequired(true)
-			;
+			.setRequired(true);
 
-		const warbandTags = new TextInputBuilder()
-			.setCustomId('warbandTags')
+		const modalTags = new TextInputBuilder()
+			.setCustomId('slashWarbandTags')
 			.setLabel('Comma-separated tags for searches:')
 			.setStyle(TextInputStyle.Short)
 			.setPlaceholder('e.g. Tengu, zones, grand masters, UKGE, Bushido Cast')
-			.setRequired(false)
-			;
+			.setRequired(false);
 
-		// An action row only holds one text input, so you need one action row per text input.
-		const warbandInputActionRow = new ActionRowBuilder().addComponents(warbandInput);
-		const warbandTagsActionRow = new ActionRowBuilder().addComponents(warbandTags);
+		const actionrowWarband = new ActionRowBuilder().addComponents(modalWarband);
+		const actionrowTags = new ActionRowBuilder().addComponents(modalTags);
 
-		// Add inputs to the modal
-		modal.addComponents(warbandInputActionRow);
-		modal.addComponents(warbandTagsActionRow);
+		modal.addComponents(actionrowWarband);
+		modal.addComponents(actionrowTags);
 
-		// Show the modal to the user
 		await interaction.showModal(modal);
 
 	},
