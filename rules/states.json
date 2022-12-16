@@ -1,0 +1,172 @@
+{
+	"state-berserk": {
+		"name": "Berserk",
+		"description": "While a model has a Berserk Marker, it gains the Aggressive trait.\nWhen a model gains a Berserk Marker, it gains an Impetuous Marker.\nWhen a Berserk model activates check the following steps in order until one applies:\n 1. If in range, this model must select the nearest valid Enemy model and declare a Melee Action.\n 2. If in range and this model has two Activation Counters, this model must declare a Charge Action and Target the nearest valid Enemy model.\n 3. This model turns to directly face the nearest Enemy model and must declare a Run action directly towards that model, running the maximum distance possible.\n 4. If the model is unable to Target or Select an Enemy and unable to declare a Run Action, it may instead perform any action.\nDuring the End Phase remove all Berserk Markers in play.",
+		"bsid": "",
+		"references": ["markers", "counters", "concept-target", "concept-select", "concept-enemy", "trait-aggressive", "state-impetuous", "action-melee", "action-charge", "action-run", "phase-end"],
+		"rulebook": 50,
+		"rulebookr1": 52,
+		"revision": 1,
+		"status": "current errata"
+	},
+	"state-bleed": {
+		"name": "Bleed",
+		"description": "If a model has Bleed markers it is considered to be Bleeding.\nDuring the End Phase remove the highest value Bleed marker.\nThe model suffers a number of wounds equal to the removed Bleed marker's value.\nAfter this, if the model still has three or more Bleed markers, repeat the process, continuing to do so until the model has only 2 Bleed markers.\nIf a Bleeding model Heals any of its marked wounds from its wound track by any means, remove all Bleed markers from it.",
+		"bsid": "",
+		"references": ["markers", "concept-heal", "phase-end"],
+		"rulebook": 50,
+		"rulebookr1": 52,
+		"revision": 0,
+		"status": "current"
+	},
+	"state-blind": {
+		"name": "Blind",
+		"description": "If a model has a Blind marker it cannot draw LoS outside of BtB and suffers a -1 Melee Pool modifier during Melee exchanges.\nBlind models may not declare Run or Charge Actions.\nDuring the End Phase remove all Blind markers from each model with any Blind markers.\nModels with Sixth Sense automatically have Immune [Blind].",
+		"bsid": "",
+		"references": ["markers", "concept-los", "concept-btb", "melee", "action-run", "action-charge", "trait-sixth-sense", "trait-immune", "phase-end"],
+		"rulebook": 50,
+		"rulebookr1": 52,
+		"revision": 0,
+		"status": "current"
+	},
+	"state-controlled": {
+		"name": "Controlled",
+		"description": "A Controlled model switches Warbands for a number of actions dependent on the number of Control markers it has.\nWhilst Controlled, the model generates Ki Tokens normally, but cannot spend or remove any Tokens it possesses, Ki or otherwise.\nThe controlling player may declare any action the model would normally be able to perform without spending Tokens.\nFor each Activation Counter removed from the model - or if a model participate in a Melee Exchange without removing an Activation Counter - also remove a Control marker.\nIf a model has only one Control Marker, it cannot declare Complex Actions.\nAs soon as all the Control Markers are removed, the model returns to the original player's Warband.\nWhile Controlled, if an effect applies further Control Markers, instead remove one marker for each Control marker the effect would add.",
+		"bsid": "",
+		"references": ["markers", "melee", "counters", "tokens", "actions-complex"],
+		"rulebook": 50,
+		"rulebookr1": 52,
+		"revision": 0,
+		"status": "current"
+	},
+	"state-death_sentence": {
+		"name": "Death Sentence",
+		"description": "While a model with any Death Sentence markers is the target of a ranged attack or is involved in a Melee Exchange, the Enemy Model gains +1 Melee Pool or +1 Ranged Pool as well as +1 to any Damage Rolls.\nThe benefit for the Enemy Model is the same whether the target has one or multiple Death Sentence markers.\nDuring the Starting Phase, a mode with any Death Sentence markers may spend 3 Ki tokens to remove one Death Sentence Marker from itself.",
+		"bsid": "",
+		"references": ["markers", "concept-target", "melee-exchange", "ranged-attack", "modifier", "phase-starting"],
+		"rulebook": 51,
+		"rulebookr1": 53,
+		"revision": 1,
+		"status": "current"
+	},
+	"state-diseased": {
+		"name": "Diseased",
+		"description": "If a model has any Diseased markers then, during the Starting Phase, remove a Diseased marker and an Activation counter.",
+		"bsid": "",
+		"references": ["markers", "counters", "phase-starting"],
+		"rulebook": 51,
+		"rulebookr1": 53,
+		"revision": 0,
+		"status": "current"
+	},
+	"state-disguised": {
+		"name": "Disguised",
+		"description": "While a model has a Disguised (X) marker, Enemy models with a Ki Statistic of 1 or less cannot Target or voluntarily move into BtB with the Disguised model.\nIf the enemy model has a Ki Statistic of 2 or greater, when making a Ranged Attack or Ki Feat against a Disguised model, once the attack or Feat has been determined to be in range, the Enemy model must make a Challenge (X) Ki test where X is the highest value of Disguised Marker on the Target model.\nWhen attempting to move into BtB, determine if the model has enough movement to reach BtB and, if so, make a Challenge (X) Ki test.\nIf the Enemy model is successful remove the Disguised marker and resolve the action as normal.\nIf unsuccessful it activation ends before any movement, and it removes an activation counter as if it had completed the attempted action.\nIf a Disguised model declares a Melee, Ranged, Charge, or Scenario action, uses the Bodyguard trait, or participates in a Melee Exchange, remove its Disguise marker.\nWhile a model is Disguised Enemy models may ignore its ZoC.",
+		"bsid": "",
+		"references": ["markers", "concept-target", "ranged-attack", "ki-feat", "test-challenge", "concept-btb", "action-melee", "action-ranged-attack", "action-charge", "action-scenario", "melee-exchange", "trait-bodyguard", "concept-zoc"],
+		"rulebook": 51,
+		"rulebookr1": 53,
+		"revision": 0,
+		"status": "current"
+	},
+	"state-frightened": {
+		"name": "Frightened",
+		"description": "This model gains the Defensive trait and suffers a -1 Melee Pool and Range Pool modifier.\nIt may not declare actions that would move it into BtB with Enemy models with the Fear trait.\nDuring the Main Phase, Frightened models automatically fail Fear tests.\nDuring the End Phase, the model must take another Fear test with the same Challenge Number as it failed when entering the Frightened State.\nIf successful - or if no Fear Test was failed - remove all Frightened markers.",
+		"bsid": "",
+		"references": ["markers", "trait-defensive", "modifier", "concept-btb", "trait-fear", "phase-main", "test-fear", "phase-end"],
+		"rulebook": 51,
+		"rulebookr1": 53,
+		"revision": 1,
+		"status": "current"
+	},
+	"state-held": {
+		"name": "Held",
+		"description": "As long as a model is Held it gains the Defensive trait and cannot declare any actions except Disengage, a Ki Feat usable in Melee, or Stand Up.\nA Held model cannot move or be moved - except to change facing - and suffers a -1 Melee Pool modifier.\nRemove the model's Held marker when:\n· The Holding model is no longer in BtB with the Held model.\n· The Holding model participates in a Melee Exchange with another model.\n· Or the Held model has successfully Disengaged from the Holding model.\nA Model with the Intangible or Agile trait has Immune [Held].",
+		"bsid": "",
+		"references": ["markers", "trait-defensive", "action-disengage", "ki-feat", "action-stand-up", "concept-move", "concept-facing", "modifier", "concept-btb", "melee-exchange", "trait-intangible", "trait-agile", "trait-immune"],
+		"rulebook": 51,
+		"rulebookr1": 53,
+		"revision": 0,
+		"status": "current"
+	},
+	"state-immobilised": {
+		"name": "Immobilised",
+		"description": "When an Immobilised model declares a Melee, Run, Charge, Scenario, Stand Up, Heal, or any action including movement (including changing facing before the action), the model must make a Size (6) Challenge test.\nIf unsuccessful the model's action is considered resolved.\nIf successful the model removes all Immobilised markers and resolves its action as normal.\nAn Immobilised model cannot declare the use of Special attacks or Defences.\nA model can declare a Wait action to remove all Immobilised markers.\nEnemy models in BtB with an Immobilised model can declare actions as if they were not in BtB.\nIf any other effect moves an Immobilised model, then remove all Immobilised markers from it.\nIntangible models have Immune [Immobilised].",
+		"bsid": "",
+		"references": ["markers", "action-melee", "action-run", "action-charge", "action-scenario", "action-stand-up", "action-heal", "action-wait", "test-size", "special-abilities", "concept-btb", "trait-intangible", "trait-immune"],
+		"rulebook": 52,
+		"rulebookr1": 54,
+		"revision": 0,
+		"status": "current"
+	},
+	"state-impetuous": {
+		"name": "Impetuous",
+		"description": "As long as any model in a Warband has an Impetuous marker and any Activation Counters, no model without an Impetuous marker may activate.\nRemove one Impetuous marker when the model perform an action consuming any number of Activation counters.",
+		"bsid": "",
+		"references": ["markers", "counters"],
+		"rulebook": 52,
+		"rulebookr1": 54,
+		"revision": 0,
+		"status": "current"
+	},
+	"state-on_fire": {
+		"name": "On Fire",
+		"description": "If a model has On Fire markers it is considered to be On Fire.\nDuring the End Phase remove the highest value On Fire marker.\nThe model suffers a number of wounds equal to the removed On Fire marker's value.\nThese wounds ignore the Tough trait.\nAfter this, if the model still has three or more On Fire markers, repeat the process, continuing to do so until the model has only 2 On Fire markers.\nA model with On Fire markers, or a Friendly model in BtB, may take a Wait action to remove up to two On Fire markers.",
+		"bsid": "",
+		"references": ["markers", "trait-tough", "concept-friendly", "concept-btb", "action-wait", "phase-end"],
+		"rulebook": 52,
+		"rulebookr1": 54,
+		"revision": 0,
+		"status": "current"
+	},
+	"state-poisoned": {
+		"name": "Poisoned",
+		"description": "If a model has Poisoned markers, it is considered to be Poisoned.\nDuring the End Phase remove the highest value Poisoned marker.\nThe model suffers a number of wounds equal to the removed Poisoned marker's value.\nAfter this, if the model still has three or more Poisoned markers, repeat the process, continuing to do so until the model has only 2 Poisoned markers.",
+		"bsid": "",
+		"references": ["markers", "phase-end"],
+		"rulebook": 52,
+		"rulebookr1": 54,
+		"revision": 0,
+		"status": "current"
+	},
+	"state-prone": {
+		"name": "Prone",
+		"description": "If a model is Prone it suffers a -1 Melee Pool modifier and does not block LoS.\nEnemy models may ignore it's ZoC and may choose not to be considered in BtB with them when declaring or performing their actions, meaning the action choice is not restricted by being in BtB with the Prone model.\nProne models are always the Attacker second in Melee Exchanges, and may not use Special Abilities or benefit from traits or effects that affect Initiative.\nThe only action a Prone model may declare is Stand Up.\nIf a Prone model initiates a Melee Exchange through taking a Stand Up action, it suffers a -1 Melee Pool modifier for that Melee Exchange, but Initiative is not affected.\nA Prone model cannot gain Prone Markers.",
+		"bsid": "",
+		"references": ["markers", "modifier", "concept-los", "concept-zoc", "concept-btb", "melee-exchange", "concept-attacker", "special-abilities", "concept-initiative", "action-stand-up"],
+		"rulebook": 53,
+		"rulebookr1": 55,
+		"revision": 0,
+		"status": "current"
+	},
+	"state-reloading": {
+		"name": "Reloading",
+		"description": "While a model has any Reloading Markers it may not use any weapon with the Reload trait to make Ranged Attacks.\nA model may perform a Wait Action to remove one Reloading Marker.",
+		"bsid": "",
+		"references": ["markers", "trait-reload", "ranged-attack", "action-wait"],
+		"rulebook": 53,
+		"rulebookr1": 55,
+		"revision": 0,
+		"status": "current"
+	},
+	"state-spirit_block": {
+		"name": "Spirit Block",
+		"description": "If a Model has a Spirit Block marker it does not generate Ki tokens during the Ki Generation step.\nAt the end of the Ki Generation Step remove one Spirit Block marker from each model with a Spirit Block marker.",
+		"bsid": "",
+		"references": ["markers", "step-ki", "phase-starting"],
+		"rulebook": 53,
+		"rulebookr1": 55,
+		"revision": 0,
+		"status": "current"
+	},
+	"state-stunned": {
+		"name": "Stunned",
+		"description": "If a model has any Stunned Markers, it suffers a -1 Melee Pool and a -1 Ranged Pool modifiers.\nDuring the End Phase remove one Stunned marker from each model with a Stunned marker.\nAn affected model may take a Wait Action to remove all Stunned Markers.",
+		"bsid": "",
+		"references": ["markers", "modifier", "phase-end", "action-wait"],
+		"rulebook": 53,
+		"rulebookr1": 55,
+		"revision": 0,
+		"status": "current"
+	}
+}
