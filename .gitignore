@@ -4,5 +4,3 @@ config.json
 .eslintrc.json
 risen-sun-logo.png
 *.txt
-rules/*
-!rules/traits.json
