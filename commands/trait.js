@@ -1,7 +1,5 @@
-const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, userMention } = require('discord.js');
-// const wait = require('node:timers/promises').setTimeout;
-// eslint-disable-next-line no-unused-vars
-const { bold, italic, underscore, blockQuote, codeBlock } = require('discord.js');
+const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, inlineCode } = require('discord.js');
+const { bold, italic, codeBlock } = require('discord.js');
 const libraryFile = require('../rules/traits.json');
 
 module.exports = {
@@ -33,6 +31,8 @@ module.exports = {
 	async execute(interaction) {
 
 		let getInput = interaction.options.getString('trait_name');
+		let traitName, traitArgs;
+		let traitID = 'trait-';
 
 		// prompt user to use the command correctly; later I may add a pop-up modal when the input is empty
 		if (!getInput) {
@@ -41,47 +41,39 @@ module.exports = {
 		}
 		else {
 			getInput = getInput.toLowerCase();
-			console.log(getInput);
+			// append input to 'trait-', and replace spaces with underscores
+			traitID += getInput.replace(/ /g, '_');
+			console.log(interaction.user.username + ' used /trait to search for ' + getInput);
 		}
-
-		// prepend "traits-", and replace spaces with underscores
-		const traitId = 'trait-' + getInput.replace(/ /g, '_');
-		let traitName;
 
 		try {
-			traitName = libraryFile[traitId]['name'];
+			traitName = libraryFile[traitID]['name'];
 		}
 		catch (err) {
-			console.log('err: no match found for "' + traitId + '"');
-			await interaction.reply({ content: 'Error: no trait matching "' + getInput + '" found.\nPlease the autoprediction to find a valid trait.', ephemeral: true });
+			console.log('err: no match found for "' + getInput + '"');
+			await interaction.reply({ content: 'Error: no trait matching "' + getInput + '" found.\nPlease use the autoprediction to find a valid trait.', ephemeral: true });
 			return;
 		}
 
-		let traitArgs;
-
 		try {
-			traitArgs = libraryFile[traitId]['arguments'].replace(/\]\(/g, '] (');
+			traitArgs = libraryFile[traitID]['arguments'].replace(/\]\(/g, '] (');
 		}
 		catch (err) {
 			console.log('no arguments');
 		}
 
-		const traitDesc = libraryFile[traitId]['description'];
-		// const traitBSID = libraryFile[traitId]['bsid'];
+		const traitDesc = libraryFile[traitID]['description'];
+		// const traitBSID = libraryFile[traitID]['bsid'];
 		// const traitRefs = [];
-		const traitRB = libraryFile[traitId]['rulebook'];
-		const traitRBr1 = libraryFile[traitId]['rulebookr1'];
-		const traitRev = libraryFile[traitId]['revision'];
-		const traitStatus = libraryFile[traitId]['status'];
+		const traitRB = libraryFile[traitID]['rulebook'];
+		const traitRBr1 = libraryFile[traitID]['rulebookr1'];
+		const traitRev = libraryFile[traitID]['revision'];
+		const traitStatus = libraryFile[traitID]['status'];
+		const traitDetails = 'Revision: ' + traitRev + ' (' + traitStatus + ')\tRisen Sun: p.' + traitRB + '\t2022 reprint: p.' + traitRBr1;
 
-		let traitDefinition = '';
+		if (traitArgs) { traitName += ' ' + traitArgs; }
 
-		if (traitArgs) {
-			traitDefinition = bold(traitName + ' ' + traitArgs) + codeBlock(traitDesc) + italic('**Revision:** ' + traitRev + ' (' + traitStatus + ')\t**Risen Sun:** p.' + traitRB + '\t**2022 reprint:** p.' + traitRBr1);
-		}
-		else {
-			traitDefinition = bold(traitName) + codeBlock(traitDesc) + italic('**Revision:** ' + traitRev + ' (' + traitStatus + ')\t**Risen Sun:** p.' + traitRB + '\t**2022 reprint:** p.' + traitRBr1);
-		}
+		const traitDefinition = bold(traitName) + codeBlock(traitDesc) + inlineCode(traitDetails);
 
 		const row = new ActionRowBuilder()
 			.addComponents(
@@ -91,17 +83,16 @@ module.exports = {
 					.setStyle(ButtonStyle.Primary),
 			);
 
-		const jwarbotTip = '\n\n' + blockQuote(':ninja: **JwarBot Tip!** :ninja:\n' + italic('The **"share here"** button will timeout in 60 seconds.'));
-
-		await interaction.reply({ content: traitDefinition + jwarbotTip, components: [row], ephemeral: true, fetchReply: true });
+		await interaction.reply({ content: traitDefinition, components: [row], ephemeral: true, fetchReply: true });
 
 		const filter = i => i.customId === 'trait_share';
 		const componentCollector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
 		componentCollector.on('collect', async i => {
-			await interaction.channel.send(userMention(interaction.user.id) + ' used /trait:\n' + traitDefinition);
-			await i.update({ content: 'Thank you for using /trait :shinto_shrine:', components: [] });
-			console.log(traitName + ' definition shared to ' + interaction.channel);
+			//	not using traitDefinition so can insert command helper
+			await interaction.channel.send(bold(traitName) + italic('\tvia /trait') + codeBlock(traitDesc) + inlineCode(traitDetails));
+			await i.update({ content: 'shared to channel', components: [] });
+			console.log(interaction.user.username + ' shared ' + traitName + ' definition shared to ' + interaction.guild.name + '/' + interaction.channel.name);
 			componentCollector.stop();
 		});
 
