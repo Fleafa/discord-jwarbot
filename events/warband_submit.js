@@ -141,7 +141,7 @@ module.exports = {
 					const warbandOutput = await interaction.channel.send(italic(warbandIntro) + '\n' + warbandEdit);
 					await row.components[0].setDisabled(true).setLabel('shared');
 					await i.update({ content: 'shared to channel' + jwarbotTip, components: [row] });
-					console.log(interaction.user.name + ' shared warband to ' + interaction.channel.name);
+					console.log(interaction.user.name + ' shared a warband to ' + interaction.guild.name + '/' + interaction.channel.name);
 
 					// react to message with Faction icon or eyes if no Faction found
 					try {
