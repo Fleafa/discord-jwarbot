@@ -1,0 +1,4363 @@
+{
+	"feat-absolute_mastery": {
+		"name": "Absolute Mastery",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "For each model that would cause a Melee Assist Penalty on this model (even if it is ignored by the Indomitable trait), this model gains +1 Melee Pool and +1 Melee Weapon Strength until the end of the current Melee Exchange.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-accelerate_venom": {
+		"name": "Accelerate Venom",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "Target Enemy model removes its highest value Poison Marker and suffers a number of Wounds equal to the removed Poison Marker's value.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-acquisition": {
+		"name": "Acquisition",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target BtB",
+		"description": "This model may use any Special Attacks, Special Defences, Personal Ki Feats and the Melee Weapon, including Melee Weapon Strength Modifier, of Target Enemy model as if they were printed on its own card until the end of the current action. Any feats used cost 0 Ki.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-acrobatics": {
+		"name": "Acrobatics",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "This model gains Agile, Defensive, and Dodge (+1) until the end of this activation.",
+		"references": [
+			"trait-dodge",
+			"trait-defensive",
+			"trait-agile"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-alacrity": {
+		"name": "Alacrity",
+		"cost": 0,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB, OpT"],
+		"description": "This model gains an additional Activation Counter.\nAn Enemy model may cancel this Ki Feat by spending 1 Ki Token, this model gains that Ki Token, and the Ki Feat has no other effect but is still considered to have been used this turn.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-alert": {
+		"name": "Alert",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Target",
+		"range": 6,
+		"description": "Target model gains Aware and Ranged Defence (1) until the End Phase.",
+		"references": [
+			"trait-aware",
+			"trait-ranged_defence"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-all-in": {
+		"name": "All-In",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "Before a Damage Roll on this model, this model's Controller may flip a coin and call heads or tails.\nIf they call successfully, this model instead takes no damage. Otherwise, this model takes normal damage.\nThis feat may only be used once per Damage Roll.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-allure": {
+		"name": "Allure",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Aura BtB",
+		"opposed": true,
+		"limitations": ["noBtB"],
+		"description": "Enemy models in the Aura that allocate dice to Attack against this model in a Melee Exchange gain 1 Control Marker after the activation is complete unless the Attack Kills or removes this model from play.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-ancestral_armour": {
+		"name": "Ancestral Armour",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "The next Enemy Damage Roll on this model is ignored if the individual dice values of the Damage Roll are the same number.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-ape": {
+		"name": "Ape",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Pulse",
+		"range": 6,
+		"description": "When another Friendly Monk model in the pulse ends its activation you may become the Active Player again and begin this model's activation.\nIf you do, this model must declare the same action as that Monk and gains a Non-Exceptional, Special Attack or Defence from that Monk until the action is complete.\nIf the cost of the Special is 0 it becomes 1.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-apparition": {
+		"name": "Apparition",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpA"],
+		"description": "Place this model within 2\" of its current location.\nThis feat can only be used once per activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-asp_strike": {
+		"name": "Asp Strike",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Lightning Reflexes until the current action is resolved.",
+		"references": [
+			"trait-lightning_reflexes"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-athleticism": {
+		"name": "Athleticism",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personel",
+		"description": "This model gains Jump Up and Dodge (1) until the current activation is resolved.",
+		"references": [
+			"trait-jump_up",
+			"trait-dodge"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-aura_of_serenity": {
+		"name": "Aura of Serenity",
+		"cost": "X",
+		"timing": "Complex",
+		"subject": "Aura X",
+		"limitations": ["noBtB, OpG"],
+		"description": "All non-Soulless models in the Aura or in BtB with a model in the Aura lose Aggressive, may not place dice in Attack, use Special Defences during Melee Exchanges, Target Enemy models with Ki Feats or move through the Aura with a Charge or Run Action.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-awe": {
+		"name": "Awe",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Pulse",
+		"range": 6,
+		"limitations": ["noBtB, OpG"],
+		"description": "Enemy models in the Pulse gain a Frightened Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-balance": {
+		"name": "Balance",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains immune [Prone] until the current activation is resolved.",
+		"references": [
+			"trait-immune"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-barge": {
+		"name": "Barge",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "After a Melee action declared by this model is resolved, move Enemy models in BtB directly away from this model until they leave this model's ZoC and then move this model directly towards one of those Enemy models until it contact that model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-batter": {
+		"name": "Batter",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "Until the End Phase, models Wounded by this model's Melee Attack gain a Stun Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-battle_stations": {
+		"name": "Battle Stations",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noWalk, noBtB"],
+		"description": "This model gains Order [Ashigaru](3/8\") until the End Phase.",
+		"references": [
+			"trait-order"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-be_prepared": {
+		"name": "Be Prepared",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target BtB",
+		"limitations": ["OpG"],
+		"description": "Choose a Ronin Enhancement-Equipment card not already included in the Warband and Attach it to Target Blood Brother model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-binding_roots": {
+		"name": "Binding Roots",
+		"cost": "X+1",
+		"timing": "Simple",
+		"subject": "Pulse",
+		"range": 3,
+		"limitations": ["noBtB"],
+		"description": "Choose up to X Enemy models within the Pulse's area of effect. Each model chosen becomes Immobilised.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-blade_dedication": {
+		"name": "Blade Dedication",
+		"cost": 3,
+		"timing": "Complex",
+		"subject": "Pulse",
+		"opposed": true,
+		"range": 12,
+		"limitations": ["noBtB"],
+		"description": "Choose an Enemy model in the Pulse to gain a Duel Token.\n1 Friendly Samurai model in BtB with this model gains the Dedicated Blade Enhancement card, if permitted.\nThis feat may only be successfully used once per game.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-blade_finesse": {
+		"name": "Blade Finesse",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's weapons gain Pierce (2) until the current action is resolved.",
+		"references": [
+			"trait-pierce"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-blazing_maelstrom": {
+		"name": "Blazing Maelstrom",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpA"],
+		"description": "Until the end of the current activation:\n• this model gains Cloudwalk, +2 Walk Statistic and this model's Bujutsu Weapon gains +1 Strength and Fire (+1/1)\nThis Ki Feat may only be used once per activation.",
+		"references": [
+			"trait-cloudwalk"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-bless": {
+		"name": "Bless",
+		"cost": 1,
+		"timing": "Complex",
+		"subject": "Special",
+		"description": "A Friendly Unblessed model in BtB gains the Blessing of Steel Enhancement - Equipment card if permitted.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-blessing_of_the_kami": {
+		"name": "Blessing of the Kami",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 12,
+		"limitations": ["noBtB"],
+		"description": "Target Friendly Faction, non-Soulless, non-Insignificant model gains a Virtue Token.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-blizzard": {
+		"name": "Blizzard",
+		"cost": 3,
+		"timing": "Complex",
+		"subject": "Personal",
+		"description": "All models are in Cover and gain Slow until the End Phase.",
+		"references": [
+			"trait-slow"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-blood_brothers": {
+		"name": "Blood Brothers",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "When another Friendly Blood Brother model ends its activation you may become the Active Player again and begin this model's activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-blood_in_the_water": {
+		"name": "Blood in the Water",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"opposed": true,
+		"range": 6,
+		"limitations": ["noBtB, OpT"],
+		"description": "Target model gains a Bleed (1) Marker.",
+		"references": [
+			"trait-bleed"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-bloodletting": {
+		"name": "Bloodletting",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Target BtB",
+		"limitations": ["noBtB"],
+		"description": "Target Friendly Oni in BtB suffers one Wound ignoring Armour and Tough. This model gains an Oni Blood Token.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-body_of_oak": {
+		"name": "Body of Oak",
+		"cost": "X",
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Armour (X) until the current action is resolved. X cannot be greater than 3.",
+		"references": [
+			"trait-armour"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-brawn": {
+		"name": "Brawn",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's Ranged Weapon gains Brutal (1) and Reload (+1).",
+		"references": [
+			"trait-brutal"
+		],
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-buki_manipulation": {
+		"name": "Buki Manipulation",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's Buki 23 Weapon gains one of the following until the end of the current Melee Exchange:\n• Grapple Attack (1)\n• Slam Attack (1)\n• Reach\n• Reduce the cost of any Special Attacks by 1",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-cannon_manipulation": {
+		"name": "Cannon Manipulation",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "When this model declares a Ranged Attack Action choose one of the following until the current Ranged Attack Action is resolved:\n• This model's Cannon Weapon gains Slam Attack (0).\n• Draw a line between this model and the Target model. Any model the line crosses and any model within 1\" of those models gain a Fire (2) Marker.\n• If the attack is successful, centre a 2\" Pulse on the Target model. Models within the Pulse suffer a Damage Roll with the same Success Level as the Target model and gain a Stunned Marker.",
+		"references": [
+			"trait-slam_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-capture_soul": {
+		"name": "Capture Soul",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 3,
+		"limitations": ["noBtB"],
+		"description": "When a non-Soulless, non-Insignificant model is Killed, replace it with an Exhausted and Prone non-unique Kairai under your Control in the model's former location.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-chain_attack": {
+		"name": "Chain Attack",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Combo Attack (0) until the current action is resolved.",
+		"references": [
+			"trait-combo_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-chanyou": {
+		"name": "Chanyou",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "Remove all Berserk, Blind, Death Sentence, Diseased, Fire, Impetuous, Poison, Spirit Block, and Stunned Markers from this model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-chaos_bolt": {
+		"name": "Chaos Bolt",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 6,
+		"description": "Target model gains a Poison 1, Bleed 1 and Fire 1 Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-cheat_fate": {
+		"name": "Cheat Fate",
+		"cost": "X",
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 6,
+		"description": "Before a Friendly model would roll a dice for any type of test, spend X. Remove one dice that would be rolled for the test and after other dice have been rolled for the test add a dice with the value of X+1 to the test before determining the final result. X cannot be greater than 5.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-chill": {
+		"name": "Chill",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Target BtB",
+		"description": "Target Enemy model in BtB gains Slow until the End Phase.",
+		"references": [
+			"trait-slow"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-chudan": {
+		"name": "Chudan",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's Special Attacks and Defences are reduced to (0) cost until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-circular_strike": {
+		"name": "Circular Strike",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Personal",
+		"limitations": ["noBtB, OpT"],
+		"description": "This model gains Aware until the end of this activation, then makes a Ranged Attack against each other model (Friendly or Enemy) in Range and LoS, in any order and ignoring Camouflage.\nThese Attacks are not affected by the penalty for having made Ranged Attacks previously in the turn and do not roll the test if the target is in BtB with an Enemy model.",
+		"references": [
+			"trait-aware"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-cleansing": {
+		"name": "Cleansing",
+		"cost": "X",
+		"timing": "Complex",
+		"subject": "Pulse X",
+		"limitations": ["noBtB"],
+		"description": "Remove up to X Control, Disease, Fire, Poison, or Spirit Block Markers from models with tha Pulse's area of effect. X is equal to the number of Ki Tokens spent.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-cleansing_flames": {
+		"name": "Cleansing Flames",
+		"cost": 3,
+		"timing": "Complex",
+		"subject": "Pulse",
+		"range": 6,
+		"description": "Remove all Berserk, Blind, Controlled, Poison, and Spirit Block Markers from models in the Pulse and each model gains a Fire (1) Marker.",
+		"references": [
+			"trait-fire"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-cleave": {
+		"name": "Cleave",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Brutal (2) until the current action is resolved.",
+		"references": [
+			"trait-brutal"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-cloud_of_flies": {
+		"name": "Cloud of Flies",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Aura BtB",
+		"description": "Enemy models in, or entering the Aura's area of effect gain a Stunned Marker.\nModels can only gain one Stunned Marker per turn as a result of this Ki Feat.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-cobra_strike": {
+		"name": "Cobra Strike",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Lightning Reflexes until the End Phase.",
+		"references": [
+			"trait-lightning_reflexes"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-coin": {
+		"name": "Coin",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "Friendly non-Kami Ronin models in the Aura when this Ki Feat is used gain 1 Ki Token.\nModels in the Aura gain Bodyguard [Haiboku](3\").",
+		"references": [
+			"trait-bodyguard"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-cold_shatter": {
+		"name": "Cold Shatter",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 8,
+		"limitations": ["noBtB"],
+		"description": "The next time Target model suffers Damage it suffers double the Damage, if that would be enough to Kill the Target. If not, this effect expires immediately.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-conditioning": {
+		"name": "Conditioning",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Resistance (2) until the end of the current activation.",
+		"references": [
+			"trait-resistance"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-consume_soul": {
+		"name": "Consume Soul",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 3,
+		"limitations": ["OpT"],
+		"description": "When an enemy model is Killed within 3\" of this model, this model may Heal X Wounds, where X is equal to the removed model's Ki Statistic.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-contagious_poison": {
+		"name": "Contagious Poison",
+		"cost": 4,
+		"timing": "Complex",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "Perform an Opposed Ki test with Target Enemy Model. If successful, that model gains a Poison (2) Marker and a Stun Marker.\nRegardless of success of the Opposed Ki Test, choose another Enemy model within 3\" of the Target and immediately repeat this Ki Feat at no cost on the chosen model, ignoring Range, LoS, and Camouflage.\nThe chosen model is then considered the Target.\nNo model may be affected more than once by this Ki Feat in a turn.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-contemplate_existence": {
+		"name": "Contemplate Existence",
+		"cost": 4,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 12,
+		"limitations": ["noBtB, OpT"],
+		"description": "Remove all Activation Counters from the Target.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-contemplate_no_mind": {
+		"name": "Contemplate No Mind",
+		"cost": "Rank 1",
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 12,
+		"limitations": ["noBtB, OpT"],
+		"description": "Target loses all Activation Counters.\nThe Range of this feat may be measured from a Void Rift.\nAdd 1 Void Counter to the Blessings of the Void Communal Card.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-corrupt_essence": {
+		"name": "Corrupt Essence",
+		"cost": 4,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 6,
+		"limitations": ["noBtB, OpT"],
+		"description": "Target Enemy Exhausted model gains 1 Control Marker and Disturb Flow (1/6\") until the End Phase.\nRemove the Control Marker in the End Phase.",
+		"references": [
+			"trait-disturb_flow"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-corrupting_shōmyō": {
+		"name": "Corrupting Shōmyō",
+		"cost": 4,
+		"timing": "Complex",
+		"subject": "Aura",
+		"range": 6,
+		"limitations": ["noWalk, noBtB"],
+		"description": "Enemy models within the Aura that spend any number of Ki Tokens gain 1 Control Marker after their current activation is complete.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-councils_shield": {
+		"name": "Council's Shield",
+		"cost": "X",
+		"timing": "Complex",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "Target Bakemono gains an additional X unmarked Wound boxes until the End Phase. Mark Wounds on these Wound boxes first.\nX cannot be greater than 3.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-craft_marionette": {
+		"name": "Craft Marionette",
+		"cost": "X",
+		"timing": "Simple",
+		"subject": "Special",
+		"limitations": ["noWalk, noBtB"],
+		"description": "Summon and Deploy a Marionette anywhere within 2\" of this model and not in an Enemy model's ZoC. The Marionette receives a number of Ki Tokens equal to the X spent instead of any from the Kami trait when deployed.\nThis model cannot use 'Craft Marionette' if there is already a Marionette in this Warband.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-crashing_wave_strike": {
+		"name": "Crashing Wave Strike",
+		"cost": 4,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's Melee Weapons gain Unblockable (1) until the current action is resolved.",
+		"references": [
+			"trait-unblockable"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-crushing_blow": {
+		"name": "Crushing Blow",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpA"],
+		"description": "This model's Melee Weapons gain Brutal (+1) and Pierce (2) until the end of the current activation. This Ki Feat can only be used once per activation.",
+		"references": [
+			"trait-brutal",
+			"trait-pierce"
+		],
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-curse_fate": {
+		"name": "Curse Fate",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 1,
+		"limitations": ["noBtB, OpT"],
+		"description": "Roll a number of D6 equal to 1 plus the SL of the Opposed Ki Test. Reroll 1s and dice with the same value until all dice have unique values.\nUntil the End Phase the Target considers any dice it rolls that match those rolled for this feat to be a value of 1.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-curse_of_doom": {
+		"name": "Curse of Doom",
+		"cost": 4,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 8,
+		"limitations": ["OpG"],
+		"description": "Place 4 Doom Tokens on Target model. During the Starting Phase remove a Doom Token. When the last Doom Token is removed the model suffers 7 Wounds.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-curse_of_stinging_needles": {
+		"name": "Curse of Stinging Needles",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 6,
+		"description": "Target model gains Tough (-1).",
+		"references": [
+			"trait-tough"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-daikyu": {
+		"name": "Daikyu",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target BtB",
+		"description": "Target Samurai model gains the following Ranged Attack until the End Phase:\n• Ranged Weapon Strength: +1\n• Range Bands: 5/10/15}",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-dance_of_dragons": {
+		"name": "Dance of Dragons",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "Until the activation is complete, this model gains the following Ranged Attack:\n• Ranged Weapon Strength: +2\n• Range Bands: 2/4/6\n• Traits: Fire (2/1), Lightweight",
+		"references": [
+			"trait-fire",
+			"trait-lightweight"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-dark_fire": {
+		"name": "Dark Fire",
+		"cost": "X+1",
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 8,
+		"limitations": ["noBtB"],
+		"description": "Target gains X Fire (1) Markers.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-dark_from_light": {
+		"name": "Dark From Light",
+		"cost": "Rank X",
+		"timing": "Simple",
+		"subject": "Aura X",
+		"description": "In the Aura:\n• Satsui models in the Aura gain Spirit (+1).\n• Non-Void Element models gain Spirit (-1).",
+		"references": [
+			"trait-spirit"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-dark_summons": {
+		"name": "Dark Summons",
+		"cost": 4,
+		"timing": "Simple",
+		"subject": "Special",
+		"limitations": ["OpG"],
+		"description": "Deploy any Oni or Onisho model that was not recruited by the Warband into play, exhausted, within 3\" of this model with 3 Control Markers on it.If the summoned model ever has zero Control Markers, remove it from play.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-darkness": {
+		"name": "Darkness",
+		"cost": 5,
+		"timing": "Active",
+		"subject": "Special",
+		"limitations": ["OpT"],
+		"description": "Until the End Phase all Non-Soulless, Non-Sixth Sense, Non-Bakemono models may only draw LoS up to 4\".",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-dart": {
+		"name": "Dart",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["OpG"],
+		"description": "Walk this model its Walk Statistic in inches.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-dash": {
+		"name": "Dash",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Agile and Evasive until the end of the current activation, and may also move 2\" at the end of its activation.",
+		"references": [
+			"trait-agile",
+			"trait-evasive"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-dashuhua": {
+		"name": "Dashuhua",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Aura",
+		"range": 3,
+		"description": "Models in the Aura gain Cover. Enemy models moving into the Aura gain a Fire (2) Marker. This model cannot use this feat if it has no Ammo Tokens.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-dead_eye": {
+		"name": "Dead Eye",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "Until the end of the activation this model ignores Cover and Tiny modifiers to Ranged Attacks. The Opposing Player may not nominate a new Target for this Ranged Attack.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-death_sentence": {
+		"name": "Death Sentence",
+		"cost": 4,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 9,
+		"limitations": ["noBtB, OpT"],
+		"description": "Target Enemy model gains a Death Sentence Marker.",
+		"references": [
+			"trait-lightning_reflexes"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-debana": {
+		"name": "Debana",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "After causing Damage in a Melee Exchange this model may move away from the Defender until it leaves its ZoC, at which point its movement ends.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-defensive_line": {
+		"name": "Defensive Line",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "Until the End Phase, while in BtB with another Friendly Tengu Bushi, this model and Friendly Tengu Bushi in BtB with this model gain Parry (+1).\nA model can only benefit from this feat once, though it does stack with other sources of Parry.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-defensive_stroke": {
+		"name": "Defensive Stroke",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "This model gains Parry (+1) until the End Phase.",
+		"references": [
+			"trait-parry"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-deference": {
+		"name": "Deference",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "When an Enemy non-Samurai, non-Ashigaru model declares an action which will either bring it into BtB with this model, or Targets this model with a Ranged Attack or Ki Feat, it must make a Challenge (5) Ki Test.\nIf the Enemy model is successful resolve the Action as normal.\nIf unsuccessful its activation ends before any movement and it removes an Activation Counter.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-detect": {
+		"name": "Detect",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Pulse",
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "Choose a model in the Pulse. That model loses Camouflage until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-dharma": {
+		"name": "Dharma",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 9,
+		"limitations": ["noBtB, OpG"],
+		"description": "When Target, non-Exhausted model next activates, you may choose a valid Simple Action for it to perform.\nThe model's Controller must resolve the chosen Action.\nIf the Target does not Activate before the End Phase, this effect expires.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-diplomatic_immunity": {
+		"name": "Diplomatic Immunity",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Aura BtB",
+		"limitations": ["OpG"],
+		"description": "Non-Soulless Enemy models in the Aura and non- Soulless models in BtB with them lose Aggressive, may not place dice in Attack or use Special Defences in a Melee Exchange or Target this model with Ki Feats.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-dirty_fighting": {
+		"name": "Dirty Fighting",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "Enemy models cannot declare the use of Special Attacks or Defences in Melee Exchanges with this model until the current activation is resolved.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-discordant_melody": {
+		"name": "Discordant Melody",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Personal",
+		"limitations": ["noBtB"],
+		"description": "This model gains Disturb Flow (1/3\") until the End Phase.",
+		"references": [
+			"trait-disturb_flow"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-distraction": {
+		"name": "Distraction",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "Target Enemy model must perform a Ki Challenge Test (6). If it fails you may change that model's Facing.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-divert_energy": {
+		"name": "Divert Energy",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "Until the End Phase, when this model would roll Damage for a Melee attack, it may instead inflict 1 Wound (Ignoring Tough) and Heal 1 Wound or remove 1 Ki Token from the Enemy model and gain that Ki Token.",
+		"references": [
+			"trait-heal"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-do-kote": {
+		"name": "Do-Kote",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Feint (1) until the end of the current Melee Exchange.",
+		"references": [
+			"trait-feint"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-dominate": {
+		"name": "Dominate",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"description": "Target non-Exhausted Enemy model must be chosen to activate next, ignoring Impetuous Markers.\nThe Opposing Player may not declare the use of a Pass Token next activation.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-duty": {
+		"name": "Duty",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model loses Insignificant until the end of the current activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-eagle_eye": {
+		"name": "Eagle Eye",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "The Medium Ranged Band of this model's Ranged Weapon is unlimited until the end of the current action.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-earthen_rampart_stance": {
+		"name": "Earthen Rampart Stance",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Parry (1) and Friendly models within 2\" of this model have Cover until the End Phase or this model Walks.",
+		"references": [
+			"trait-parry"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-elders_aegis": {
+		"name": "Elders' Aegis",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 8,
+		"limitations": ["noBtB"],
+		"description": "Choose a State other than Reloading. Target model gains Immune [Chosen State] until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-electrify": {
+		"name": "Electrify",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "Until the End Phase, when this model Damages or is Damaged by an Enemy model with a Melee Attack, that model gains a Stunned Marker and you may push that model 1\" directly away from this model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-empower": {
+		"name": "Empower",
+		"cost": 2,
+		"timing": "Complex",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["noWalk, OpG"],
+		"description": "While Target Friendly Metal Kami is within 6\" of an Enemy model, Friendly models with no other Friendly models within 3\" of them gain Armour (X).\nX is equal to the number of Ki Tokens on the Kami.",
+		"references": [
+			"trait-armour"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-empower_the_void": {
+		"name": "Empower the Void",
+		"cost": "Rank 1",
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "If an Enemy model in the Pulse spends Ki for any reason, add a Void Counter to the Blessings of the Void Communal Card.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-encourage": {
+		"name": "Encourage",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "Target other Friendly model gains +1 to its Melee Pool or Ranged Pool until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-enliven": {
+		"name": "Enliven",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model loses Slow until the end of the current activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-enmity": {
+		"name": "Enmity",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"description": "Choose a model descriptor. Target Friendly model gains Vengeance [chosen descriptor] until the end of the current activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-envelop": {
+		"name": "Envelop",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Target BtB",
+		"description": "When this model suffers Wounds in a Melee Exchange, after the activation is complete, the Enemy model becomes Immobilised.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-enveloping_mists": {
+		"name": "Enveloping Mists",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Aura",
+		"range": 3,
+		"description": "The Aura's area is considered a [Normal, Obscuring, Huge] terrain element and Friendly Kairai in the Aura gain Tireless.",
+		"references": [
+			"trait-tireless"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-envigorate": {
+		"name": "Envigorate",
+		"cost": 4,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 3,
+		"limitations": ["OpT"],
+		"description": "Target Friendly Non-Soulless, Non-Animal model gains an Activation Counter.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-escape": {
+		"name": "Escape",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "When this model Kills an Enemy model, once the action is complete, this model may make a Walk.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-exceptional_defence": {
+		"name": "Exceptional Defence",
+		"description": "If Eagle's Flight Defence is successful this model may Walk 3\" after the Melee Exchange is resolved.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-eyes_of_yurei": {
+		"name": "Eyes of Yurei",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "This model gains Sixth Sense until the End Phase.",
+		"references": [
+			"trait-sixth_sense"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-faith": {
+		"name": "Faith",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"description": "Target Villager model reduces the cost of all Ki Feats by 1 until the current action is resolved.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-far_shot": {
+		"name": "Far Shot",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noWalk, noBtB"],
+		"description": "This model's Ranged Weapon's Range Bands become 6/12/18 until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-far_throw": {
+		"name": "Far Throw",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB"],
+		"description": "This model's Ranged Weapon Range Bands become 4/8/12 until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-fend": {
+		"name": "Fend",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Push Attack (0) until the end of the current activation.",
+		"references": [
+			"trait-push_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-final_verdict": {
+		"name": "Final Verdict",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 9,
+		"limitations": ["noBtB, OpT"],
+		"description": "Your Opponent must choose either a Death Sentence marker or a Control Marker.\nTarget Enemy model gains one of the chosen Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-fire_spin": {
+		"name": "Fire Spin",
+		"cost": 3,
+		"timing": "Complex",
+		"subject": "Personal",
+		"limitations": ["noWalk"],
+		"description": "Walk this model 4\" in a straight line in any direction. Any model within 2\" of this model at any point in its path gains a Fire (2) Marker.\nUntil the End Phase, whilst this model is in play, models making Ranged Attacks suffer a +1 modifier to the Challenge Number of Ranged Attack Tests.\nIn the next Starting Phase, the player who wins the Tactical Test moves this model 4\" in a straight line in any direction, then the other player moves him 2\" in a straight line in any direction. Any model within 2\" of this model at any point in its path gains a Fire (2) Marker then this effect ends.",
+		"references": [
+			"trait-fire"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-firm_resolve": {
+		"name": "Firm Resolve",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "When a Friendly Suzume model in the Pulse fails a Fear Test, it gains Steadfast until the end of the current Activation.",
+		"references": [
+			"trait-steadfast"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-fists_of_iron": {
+		"name": "Fists of Iron",
+		"cost": "X",
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpA"],
+		"description": "This model's Melee Weapons gain +X Melee Strength until the current Melee Exchange is resolved. X cannot be greater than 3.\nThis feat can only be used once per activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-flame_arrows": {
+		"name": "Flame Arrows",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Personal",
+		"description": "Deploy a 50mm base on the table within LoS and within 15\" of this model.\nUntil the End Phase the area of the base is [Normal, Blocking, Large] terrain.\nThis feat cannot be used while this model has a Reload Marker.\nThis model gains a Reload Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-flame_on!": {
+		"name": "Flame On!",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "Until the End Phase, this model's Melee Weapons gain Fire (1/2) and if this model suffers Wounds from a Melee Attack, the Attacking model gains a Fire (1) Marker.",
+		"references": [
+			"trait-fire"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-flame_on": {
+		"name": "Flame On",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "Until the End Phase, this model's Melee Attack gains the Fire (1/1) trait and when this model suffers Wounds from a Melee Attack, the Attacking model gains a Fire (1) Marker.",
+		"references": [
+			"trait-fire"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-flame_whip": {
+		"name": "Flame Whip",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Target BtB",
+		"description": "During an Enemy model's Activation in which it enters BtB with this model, that Enemy model gains a Fire (2) Marker.",
+		"references": [
+			"trait-fire"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-flitter": {
+		"name": "Flitter",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB, OpT"],
+		"description": "This first time this turn an Enemy model Walks into BtB with this model, place this model within 2\" of its current location, but not into an Enemy model's ZoC.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-flow_like_water": {
+		"name": "Flow Like Water",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Dodge(1) and Counterstrike Defence(0) until the end of the current Melee Exchange.",
+		"references": [
+			"trait-dodge",
+			"trait-counterstrike_defence"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-fog": {
+		"name": "Fog",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Aura",
+		"range": 2,
+		"description": "The Aura's area is considered a [Normal, Obscuring, Huge] terrain element.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-fog_of_hesitation": {
+		"name": "Fog of Hesitation",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Pulse",
+		"opposed": true,
+		"range": 4,
+		"limitations": ["OpT"],
+		"description": "One model within the Pulse may not be chosen as the Activating model until all other models in its Warband are Exhausted.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-forbidden_censure": {
+		"name": "Forbidden Censure",
+		"cost": "Rank X",
+		"timing": "Complex",
+		"subject": "Target",
+		"opposed": true,
+		"range": 6,
+		"limitations": ["OpG"],
+		"description": "Target gains a Death Sentence Marker.\nChoose another Enemy model (that has not been Targeted by this feat this activation) within 3\" of the Target and immediately repeat this Ki Feat on the new model, ignoring Range, LoS and Camouflage.\nThe Range of this feat may be measured from a Void Rift.\nThis feat may affect a maximum of X Enemy models in 1 action.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-forbidden_force": {
+		"name": "Forbidden Force",
+		"cost": "Rank X",
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB, OpT"],
+		"description": "This model gains Rapid Fire (X) until the current activation is complete.",
+		"references": [
+			"trait-rapid_fire"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-force_manipulation": {
+		"name": "Force Manipulation",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "When this model declares a Ranged Attack Action choose 1 of the following until the current Ranged Attack Action is resolved:\n• Ranged Weapon Range Bands become 4/8/12\n• Ranged Strength +1\n• This model's Ranged Weapon gains Slam Attack (0)",
+		"references": [
+			"trait-slam_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-foresight": {
+		"name": "Foresight",
+		"cost": 4,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 3,
+		"description": "After the dice for a Melee Exchange in the Pulse have been rolled and final results determined, you may reallocate Melee dice, choose a different Special Attack or Defence and both players reroll.The Opponent must keep the same dice allocation and Special Attack or Defence. Any Ki Feats used are still in effect.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-forestall": {
+		"name": "Forestall",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["OpG"],
+		"description": "Target Enemy model may not declare Scenario Actions this turn.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-fortunes_favour": {
+		"name": "Fortune's Favour",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Aura",
+		"range": 8,
+		"description": "This model may spend X Ki Tokens to reroll X dice rolled for a test by a model within the Aura, before the final result of the test is determined.\nEach dice can only be rerolled once as a result of this Ki Feat.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-four_hand_technique": {
+		"name": "Four Hand Technique",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Throw Attack (0) and Throw Defence (0) until the end of the current activation.",
+		"references": [
+			"trait-throw_attack",
+			"trait-throw_defence"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-frenzied_rhythm": {
+		"name": "Frenzied Rhythm",
+		"cost": 6,
+		"timing": "Simple",
+		"subject": "Pulse",
+		"range": 4,
+		"limitations": ["noBtB, OpT"],
+		"description": "Each Friendly Bakemono within the Pulse gains 1 Virtue Token.",
+		"references": [
+			"trait-last_stand",
+			"trait-bravery"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-fresh_meat": {
+		"name": "Fresh Meat",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"description": "Target Friendly Kairai loses Slow until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-from_below...": {
+		"name": "From Below...",
+		"cost": 6,
+		"timing": "Simple",
+		"subject": "Special",
+		"limitations": ["noBtB, OpG"],
+		"description": "Deploy a non-Unique Gashadokuro model in BtB with this model but not in an Enemy model's ZoC.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-frozen_mountain_fist": {
+		"name": "Frozen Mountain Fist",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model's Melee Weapon gains Sharp (1).\nAfter conducting re-rolls for a Melee Exchange, you may remove this model's highest Defence dice and then add an Attack dice of the same value before determining final results.",
+		"references": [
+			"trait-sharp"
+		],
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-fujins_will": {
+		"name": "Fujin's Will",
+		"cost": 3,
+		"timing": "Complex",
+		"subject": "Pulse",
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "Friendly models with Cloudwalk that are within the Pulse may be placed within 2\" of their current position.\nThis feat does not affect models in BtB with Enemy models.\nModels cannot be placed into an Enemy ZoC.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-fukku": {
+		"name": "Fukku",
+		"cost": 2,
+		"timing": "Special",
+		"subject": "Target",
+		"range": 2,
+		"limitations": ["noBtB"],
+		"description": "Target Enemy model must succeed at a Size Challenge Test (5) or be placed anywhere in BtB with this model. Immediately begin a Melee Exchange with the Target model. This only removes one Activation Counter",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-fumeiryo": {
+		"name": "Fumeiryo",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "Deploy a 50mm base on the table within LoS and 6\" of this model. Until the End Phase the area of the base is [Normal, Blocking, Large] terrain. This model cannot use this feat if it has no Ammo Tokens.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-fumidashi": {
+		"name": "Fumidashi",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": 6,
+		"limitations": ["noBtB, OpG"],
+		"description": "Choose a model completely within a Scenario Zone. That model does not count as being in the zone when calculating Zone Control this turn.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-future_sight": {
+		"name": "Future Sight",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Tactician (1) until the End Phase and Enemy models lose Tactician until the End Phase.",
+		"references": [
+			"trait-tactician"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-gamblers_ruin": {
+		"name": "Gambler's Ruin",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 4,
+		"limitations": ["noBtB"],
+		"description": "Until the End Phase, when Target model performs a Test, their Controller rolls an additional die.\nThis model's Controller must remove a dice of their choice from that Test before it is resolved.\nFor a Melee Exchange, this occurs after dice allocation is revealed.\nThe additional dice may be Attack or Defence and the removed dice must be of the same type.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-game_hunter": {
+		"name": "Game Hunter",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB"],
+		"description": "The model's Ranged Weapons gain Sharp (1) until the current action is resolved.",
+		"references": [
+			"trait-sharp"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-gang": {
+		"name": "Gang",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Co-ordinated Attack (Ashigaru) until the End Phase.",
+		"references": [
+			"trait-co-ordinated_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-genki": {
+		"name": "Genki",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Charging Bonus [Fearless] but loses the Ashigaru Type until the end of the current activation.",
+		"references": [
+			"trait-charging_bonus",
+			"trait-fearless"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-ghost_fire": {
+		"name": "Ghost Fire",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Pulse X",
+		"limitations": ["noBtB, OpT"],
+		"description": "Transfer 1 Ki Token from all models in the Pulse to this model, each model that transferred a Ki Token suffers 1 Wound.\nWounds caused by this effect ignore Tough.\nX is equal to the number of Ghost Tokens on this model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-grapple": {
+		"name": "Grapple",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Grapple Attack (0) until the end of the current activation.",
+		"references": [
+			"trait-grapple_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-grasp_of_darkness": {
+		"name": "Grasp of Darkness",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 12,
+		"limitations": ["noBtB, OpT"],
+		"description": "Target Enemy model gains Slow and Weak until the End Phase.",
+		"references": [
+			"trait-slow",
+			"trait-weak"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-grasping_shadows": {
+		"name": "Grasping Shadows",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Split Attack until the current action is resolved.",
+		"references": [
+			"trait-split_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-grip_of_the_void": {
+		"name": "Grip of the Void",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"description": "Targeted model gains one Immobilised Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-hack": {
+		"name": "Hack",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's Melee Weapons gain Powerful Attack (0) until the current action is resolved.",
+		"references": [
+			"trait-powerful_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-hadori_finish": {
+		"name": "Hadori Finish",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target BtB",
+		"limitations": ["OpT"],
+		"description": "Target model's Melee Weapons gain Pierce (+1) until the End Phase.",
+		"references": [
+			"trait-pierce"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-hageshiku_furu": {
+		"name": "Hageshiku Furu",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Pulse",
+		"range": 4,
+		"limitations": ["noBtB"],
+		"description": "This model gains Aware and the following Ranged Weapon until this feat is resolved.\nThis model then makes a Ranged Attack against each other model (Friendly or Enemy) in Range and LoS, in any order and ignoring Camouflage. These Attacks are not affected by the penalty for having made Ranged Attacks previously in the turn and do not roll the test if the target is in BtB with an Enemy model.\n• Ranged Weapon Strength: +2\n• Range Bands: -/-/4\n•Traits: Brutal(1)",
+		"references": [
+			"trait-aware"
+		],
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-hail_of_steel": {
+		"name": "Hail of Steel",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB, OpT"],
+		"description": "This model gains Rapid Fire (3) until the end of the current activation.",
+		"references": [
+			"trait-rapid_fire"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-hammer_strike": {
+		"name": "Hammer Strike",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Unblockable (1) until the current action is resolved.",
+		"references": [
+			"trait-unblockable"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-haunting_vision": {
+		"name": "Haunting Vision",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Terror until the End Phase.",
+		"references": [
+			"trait-terror"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-hayai": {
+		"name": "Hayai",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "While this model is involved in a Melee Exchange, your Opponent may not use Instant or Active Effects.\nThis effect ends once the current activation is complete.\nThis feat always resolves before other Instant or Active Effects, regardless of the usual Active Player Rules Conflict resolution and can be used to prevent an Enemy model using a declared feat (No Enemy resources are expended).",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-headshot": {
+		"name": "Headshot",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"description": "Target model's Ranged Weapons gain Critical Attack (0) against Enemy Kairai models.",
+		"references": [
+			"trait-critical_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-healing_touch": {
+		"name": "Healing Touch",
+		"cost": "X",
+		"timing": "Simple",
+		"subject": "Target BtB",
+		"limitations": ["noBtB"],
+		"description": "Target Friendly model in BtB Heals X wounds.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-heave": {
+		"name": "Heave",
+		"cost": 4,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB"],
+		"description": "This model's Ranged Weapon Range Bands become 3/6/9 until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-heed_my_word": {
+		"name": "Heed My Word",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "Perform a Walk with the Target model. If the Target model is an Enemy, you must first succeed in an Opposed Ki Test with the Target model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-here_boy!": {
+		"name": "Here Boy!",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Pulse",
+		"range": 12,
+		"limitations": ["OpT"],
+		"description": "Place a Friendly Dog model in the Pulse's area of effect into BtB with this model, but not in BtB with an Enemy model or Enemy ZoC",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-hold_the_line!": {
+		"name": "Hold the Line!",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "During an Enemy model's activation, when that model moves into BtB with another Friendly Ashigaru model,this model can move up to its Walk in inches to attempt to get into BtB with that Enemy model.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-hope": {
+		"name": "Hope",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"description": "Target Friendly Villager or Peasant model may re-roll one die from any test or Damage Roll until the end of the current activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-hot_shot": {
+		"name": "Hot Shot",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpG"],
+		"description": "This model's Arquebus weapon gains Fire (1/2) until the current action is resolved.",
+		"references": [
+			"trait-fire"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-hunt": {
+		"name": "Hunt",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "Target Friendly model gains Tireless until the End Phase.",
+		"references": [
+			"trait-tireless"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-hyper_regeneration": {
+		"name": "Hyper Regeneration",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Regenerate (4) until the End Phase.",
+		"references": [
+			"trait-regenerate"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-hypnotic_gaze": {
+		"name": "Hypnotic Gaze",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 12,
+		"limitations": ["noBtB, OpT"],
+		"description": "Target enemy model loses an Activation Counter and gains one Stunned Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-iaijutsu": {
+		"name": "Iaijutsu",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model's weapons gain Reach until the end of the current Melee Exchange.",
+		"references": [
+			"trait-reach"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-icy_veins": {
+		"name": "Icy Veins",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 8,
+		"description": "Target model gains Fearless, Durable [Ranged], and Slow until the End Phase. If Target is an Enemy, you must succeed in an Opposed Ki Test.",
+		"references": [
+			"trait-durable",
+			"trait-fearless",
+			"trait-slow"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-idolise": {
+		"name": "Idolise",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "Target Friendly Faction model with a Rice Cost of more than this model gains +1 to its Melee Pool or Ranged Pool until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-illusion": {
+		"name": "Illusion",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 4,
+		"limitations": ["noBtB"],
+		"description": "Target Enemy model gains a Blind marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-imperial_decree": {
+		"name": "Imperial Decree",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": 4,
+		"limitations": ["noBtB"],
+		"description": "Models in the Aura cannot perform Scenario Actions.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-imperial_seal": {
+		"name": "Imperial Seal",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "When this model is Targeted with a Ki Feat or Action by an Enemy non-Soulless, non-Insignificant, non-Animal model, the Opposing Player must choose a different valid Target for the Action or Ki Feat.\nIf there is no other legal Target then the Enemy model's action ends. Remove an Activation Counter as normal.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-improvise": {
+		"name": "Improvise",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["OpG"],
+		"description": "Your opponent may not use Instant or Active Effects until the end of the current Activation.\nApply any one non-Exceptional Special Attack and any one non-Exceptional Special Defence to this model's Melee Exchange at no cost this Activation.This model can only use these Special Abilities this activation.\nAfter the activation ends, this model may Walk up to its Walk Statistic in inches.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-inaris_luck": {
+		"name": "Inari's Luck",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 9,
+		"limitations": ["noBtB, OpA"],
+		"description": "When a Friendly model in the Pulse makes a Test or a Damage Roll, it may reroll one of its own dice in that test or roll.\nDice may only be rerolled once due to this Ki Feat.\nThis feat can only be used once per activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-inertia": {
+		"name": "Inertia",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "When this model makes a successful Ranged Attack this Activation against an Enemy model, push that model 1\" directly away from this model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-inferno": {
+		"name": "Inferno",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Pulse",
+		"range": 2,
+		"description": "All other models within the Pulse's area of effect gain a Fire (2) Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-insight": {
+		"name": "Insight",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Tactician (+1) for the next Tactical Test.\nThis model automatically wins Tie Breaks on Tactical Tests until the End Phase.",
+		"references": [
+			"trait-tactician"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-inspiration": {
+		"name": "Inspiration",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "Target Friendly Faction model with a Rice Cost of less than this model gains +1 to its Melee Pool or Ranged Pool until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-inspiring_shōmyō": {
+		"name": "Inspiring Shōmyō",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": 6,
+		"limitations": ["noWalk, noBtB"],
+		"description": "This model gains Leadership [Friendly](2/6\") and Friendly models in the Aura can reroll Ki Tests and Fear Tests.",
+		"references": [
+			"trait-leadership"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-instil_envy": {
+		"name": "Instil Envy",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 12,
+		"limitations": ["noBtB, OpT"],
+		"description": "Target model cannot use Ki Feats that Target Friendly models other than itself and can only declare actions that Target Enemy models if the Target has a higher Rice Cost than itself (Treat no Rice Cost as zero).\nThis effect lasts until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-instil_gluttony": {
+		"name": "Instil Gluttony",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 12,
+		"description": "Target model gains a Control Marker and, while it has any Control Markers from this Ki Feat, the Target gains the following Weapon:\nGluttonous Maw:\n• Melee Strength: -1\nThis model must always choose to use this weapon in a Melee Exchange.\nAt the end of an Activation during which this model dealt Damage with this Weapon, it does not remove a Control Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-instil_sloth": {
+		"name": "Instil Sloth",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 12,
+		"limitations": ["noBtB, OpT"],
+		"description": "Target Enemy model gains Slow until the End Phase.\nIf the Target declares a Ranged or Melee Action it may not make the usual Walk associated with that action.",
+		"references": [
+			"trait-slow"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-instil_wrath": {
+		"name": "Instil Wrath",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 12,
+		"limitations": ["noBtB"],
+		"description": "Target Enemy model becomes Berserk until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-instructional_swipe": {
+		"name": "Instructional Swipe",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 3,
+		"description": "When a Friendly Prefecture model in the Pulse fails a Fear Test; it instead passes that Test and loses one Wound.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-intercept": {
+		"name": "Intercept",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 1,
+		"description": "When a Friendly model in the Pulse is selected for a Melee Action or targeted by a Charge Action, this model becomes the new selected or targeted model.\nIf the Enemy model has enough movement to reach the original model, it is instead moved into BtB with this model by the shortest route, regardless of its actual movement.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-ire": {
+		"name": "Ire",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 4,
+		"limitations": ["noBtB, OpT"],
+		"description": "Target Enemy model becomes Berserk until the end of its next activation. While Berserk, it treats all models as Enemy models.\nUntil the End Phase, this model gains 1 Ki Token for each Wound caused by the Target in a Melee Exchange.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-irokane_protection": {
+		"name": "Irokane Protection",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Target",
+		"range": 6,
+		"description": "Target model gains Fear (4) and Weapons used in Attacks made against that model gain Pierce (-2) (to a minimum of 0) until the end of the current activation.",
+		"references": [
+			"trait-pierce",
+			"trait-fear"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-iron_arm": {
+		"name": "Iron Arm",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Parry (1) and Tough (1) until the end of the current activation.",
+		"references": [
+			"trait-parry",
+			"trait-tough"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-kannagara": {
+		"name": "Kannagara",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 9,
+		"limitations": ["noBtB, OpT"],
+		"description": "Until the End Phase, if Target Enemy model declares an action other than Focus it gains a Control Marker once the action is resolved, unless it has a Control Marker when the action is declared.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-katakuchi": {
+		"name": "Katakuchi",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Target BtB",
+		"description": "This model and Target Friendly model gain Aggressive, Fearless and Unstable until the End Phase. This feat cannot be used if this model has no Ammo Tokens.",
+		"references": [
+			"trait-fearless",
+			"trait-aggressive",
+			"trait-unstable"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-kawasu": {
+		"name": "Kawasu",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "Enemy models cannot declare the use of Special Attacks and Defences in Melee Exchanges with this model until the current activation is resolved.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-keirō": {
+		"name": "Keirō",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "Target Friendly Samurai model with a Rice Cost of more than this model gains +1 to its Melee pool or Ranged Pool until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-ki_mirror": {
+		"name": "Ki Mirror",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 6,
+		"description": "When a non-Soulless model within 6\" becomes the Target of a Ki Feat you may choose a new, valid Target for the Ki Feat, ignoring the feat's Range.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-kinjite": {
+		"name": "Kinjite",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "Choose any Special Attack or Defence. Models within the Aura may not declare use of that Special Ability.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-kiss_of_the_rose": {
+		"name": "Kiss of the Rose",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Target BtB",
+		"limitations": ["OpT"],
+		"description": "During a non-Soulless, Enemy model's activation in which it enters BtB with this model, that Enemy model gains a Control Marker.\nNo Melee Exchange takes place, this model does not lose an Activation Counter.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-lay_makibishi": {
+		"name": "Lay Makibishi",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Special",
+		"limitations": ["noBtB, OpG"],
+		"description": "Deploy a Makibishi terrain element template in BtB with this model.\nWhenever a model without Cloudwalk or Intangible moves into, or starts its movement within the Makibishi terrain element, it must make a Walk Challenge Test (8) if it is performing a Charge or Run Action, or Walk Challenge Test (7) otherwise.\nIf unsuccessful the model's movement and activation immediately ends.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-linked_swords": {
+		"name": "Linked Swords",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Reach and its Hook Swords Weapon gains Chain Weapon (1) until the end of the current activation.",
+		"references": [
+			"trait-reach",
+			"trait-chain_weapon"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-long_throw": {
+		"name": "Long Throw",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Special",
+		"limitations": ["noBtB"],
+		"description": "This model's Ranged Weapon's Range Bands become 3/6/9 until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-look_into_the_void": {
+		"name": "Look into the Void",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 8,
+		"limitations": ["noBtB"],
+		"description": "Target Enemy model which has LoS to this model, make a Success Level 4 Damage Roll on the Target model.\nWounds caused by this Ki Feat ignore Armour.\nA model can only be Targeted by this feat (from any source) once per turn.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-loyalty": {
+		"name": "Loyalty",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Bodyguard [Friendly](1\") until the End Phase.",
+		"references": [
+			"trait-bodyguard"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-lure": {
+		"name": "Lure",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "Target model not in BtB with a Friendly model gains an Impetuous Marker, must declare a Walk Action as its next activation, and must move directly towards this model with its full move changing its facing so that this model is in LoS. If unable to perform a Walk Action, it may activate without restriction.\nThis effect expires in the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-lurker": {
+		"name": "Lurker",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB"],
+		"description": "This model gains Camouflage (2) until the End Phase.",
+		"references": [
+			"trait-camouflage"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-madamada": {
+		"name": "Madamada",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "When an Enemy model Walks, in its own activation, into BtB with Target Friendly model, after its Walk is complete, Walk the Enemy model directly away from the Friendly model until it leaves its ZoC.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-majesty": {
+		"name": "Majesty",
+		"cost": 3,
+		"timing": "Complex",
+		"subject": "Aura",
+		"range": 9,
+		"limitations": ["noWalk, noBtB, OpG"],
+		"description": "While within the Aura, each inch moved counts as 2 inches for any Enemy model's movement.\nThis model cannot be Targeted by Enemy Effects, and Enemy models cannot enter BtB with this model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-many_as_one": {
+		"name": "Many as One",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Special",
+		"limitations": ["noBtB"],
+		"description": "This model and a Friendly 'Animal - Rat' model switch places. This feat may be used while this model is Elsewhere.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-marching_beat": {
+		"name": "Marching Beat",
+		"cost": 4,
+		"timing": "Simple",
+		"subject": "Pulse",
+		"range": 4,
+		"limitations": ["noBtB, OpT"],
+		"description": "All Bakemono not in BtB with an Enemy model within the Pulse's area of effect may make a 2\" Walk.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-martyr": {
+		"name": "Martyr",
+		"cost": "X+1",
+		"timing": "Simple",
+		"subject": "Pulse X",
+		"limitations": ["noBtB"],
+		"description": "Walk X non-Prone, non-Held, non-Reloading State Markers from a Friendly model to this model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-masters_call": {
+		"name": "Master's Call",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Special",
+		"limitations": ["noBtB, OpT"],
+		"description": "Summon a Small Swarm of Rats by Deploying it in BtB with Gendo or another Small Swarm of Rats.\nAfter Deploying the Small Swarm of Rats in BtB with this model you may remove this model and place it Elsewhere.\nThe Small Swarm of Rats may not be placed in an Enemy model's ZoC or in BtB with an Enemy model.\nA Small Swarm of Rats may not be placed if there is no free Wound Track on the Small Swarm of Rat's profile card.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-memories_of_life": {
+		"name": "Memories of Life",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model loses Insignificant until the current activation is complete.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-mighty_blow": {
+		"name": "Mighty Blow",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model's Melee Weapons gain Strong [Melee] for the next Damage Roll.",
+		"references": [
+			"trait-strong"
+		],
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-military_training": {
+		"name": "Military Training",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Special",
+		"limitations": ["OpT"],
+		"description": "This model's Controller gains a Pass Token.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-mind_control": {
+		"name": "Mind Control",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 9,
+		"limitations": ["noBtB"],
+		"description": "Until the end of the current activation, if Target other Bakemono must make a Disguise or Fear Test, this model makes the Test instead.\nTarget model may attempt the Disguise Test as if it had Ki Stat 2 or higher. While making Tests for the Target, this model gains Bravery and loses Cowardly.",
+		"references": [
+			"trait-bravery"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-mirage": {
+		"name": "Mirage",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Special",
+		"opposed": true,
+		"limitations": ["OpT"],
+		"description": "During an Enemy model's activation in which it entered into BtB with, or Targets this model with a Ranged Attack or Ki Feat, but before any Melee Exchange begins; place this model within 2\" of its current location, the Enemy model's action is then considered resolved.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-misdirection": {
+		"name": "Misdirection",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"description": "Target model has no ZoC and models may choose not to be considered in BtB with it when declaring and performing their actions.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-mob_mentality": {
+		"name": "Mob Mentality",
+		"cost": "X",
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "When a Bakemono model passes a Fear Test, it does not need to re-roll that test due to Cowardly. This Ki Feat may be used after the dice are rolled, as if it were granting a re-roll.\nX is equal to the number of times this feat has been used previously this turn.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-mocking_blow": {
+		"name": "Mocking Blow",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "When this model next deals Damage as a result of a Melee Exchange, the Opposing model gains an Impetuous Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-morph": {
+		"name": "Morph",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Special",
+		"description": "Until this model uses the Ki Feat Morph again this model gains either a Ki Feat, Base Statistic, Statistic Ki Boost, or Trait of an Enemy model in BtB, as if it were printed on its card.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-mortal_corruption": {
+		"name": "Mortal Corruption",
+		"cost": "X+1",
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 8,
+		"limitations": ["noBtB"],
+		"description": "Target gains X Poison (1) Markers.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-mountain_gale": {
+		"name": "Mountain Gale",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Special",
+		"description": "Until the End Phase, whilst this model is in play, models making Ranged Attacks suffer a +2 modifier to the Target Number of Ranged Attack Tests.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-mountain_stance": {
+		"name": "Mountain Stance",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Immovable until the End Phase.",
+		"references": [
+			"trait-immovable"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-move_it!": {
+		"name": "Move It!",
+		"cost": 4,
+		"timing": "Active",
+		"subject": "Pulse",
+		"range": 8,
+		"description": "This model's Controller chooses up to 3 other Friendly Ashigaru models within the Pulse's area of effect. Those models immediately perform a Walk up to their Walk stat in inches.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-multitudes": {
+		"name": "Multitudes",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Personal",
+		"description": "Until the End Phase, if this model is Killed, replace it by Summoning and Deploying an available non-Unique, non-Rinsho, Horde Bakemono with 1 Wound box unmarked.\nThen Summon and Deploy an available non-Unique, non-Rinsho, Horde Bakemono in BtB with that model with 1 Wound box unmarked.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-mutation": {
+		"name": "Mutation",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "This model gains one of the following until the End Phase:\n• +1 Melee Weapon Strength\n• Regenerate (2)\n• Armour (+1)",
+		"references": [
+			"trait-regenerate",
+			"trait-armour"
+		],
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-nomenclature": {
+		"name": "Nomenclature",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 12,
+		"description": "Target Enemy Disguised model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-nuki_do": {
+		"name": "Nuki Do",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "When this model does not have the Initiative, it gains +1 Melee Pool, Dodge (+1), and Defensive until the end of the current Melee Exchange.",
+		"references": [
+			"trait-defensive",
+			"trait-dodge"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-obey": {
+		"name": "Obey",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 8,
+		"limitations": ["noBtB"],
+		"description": "Target Enemy model gains one Control Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-obscured_by_umbra": {
+		"name": "Obscured by Umbra",
+		"cost": "Rank 1",
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "This model gains Intangible until the end of the current action.",
+		"references": [
+			"trait-intangible"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-orochis_prayer": {
+		"name": "Orochi's Prayer",
+		"cost": 2,
+		"timing": "Complex",
+		"subject": "Pulse",
+		"range": 3,
+		"description": "Models within the Pulse gain a Poison (2) Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-orochis_visage": {
+		"name": "Orochi's Visage",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Fear (6) and Terror until the end of the current activation.",
+		"references": [
+			"trait-fear",
+			"trait-terror"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-outmanoeuvre": {
+		"name": "Outmanoeuvre",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "When applying Melee Assist penalties, this model inflicts -2 dice rather than -1 until the current Melee Exchange is resolved.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-outwit": {
+		"name": "Outwit",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Target",
+		"range": 6,
+		"description": "Controller of Target model that just declared a Scenario Action must choose a different action or may choose another model to activate. That model does not lose an Activation Counter if it does not perform an action.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-overrule": {
+		"name": "Overrule",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "Target non-Exhausted Enemy model gains an Impetuous Marker.",
+		"references": [
+			"trait-impetuous"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-overwhelm": {
+		"name": "Overwhelm",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Co-ordinated Attack (Kairai) until the End Phase.",
+		"references": [
+			"trait-co-ordinated_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-pack_alpha": {
+		"name": "Pack Alpha",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Order [Monkey](3/6\") until the End Phase.",
+		"references": [
+			"trait-order"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-paralyse": {
+		"name": "Paralyse",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 8,
+		"limitations": ["noBtB"],
+		"description": "Target Enemy model becomes Immobilised and gains Slow until the End Phase.",
+		"references": [
+			"trait-slow"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-parley": {
+		"name": "Parley",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Target BtB",
+		"limitations": ["OpT"],
+		"description": "Use this Ki Feat when an Enemy model enters BtB with this model. That Enemy model's activation ends immediately.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-passing_strike": {
+		"name": "Passing Strike",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "If this model moved into Melee this Activation, it may make a normal Damage Roll when resolving a successful Sidestep Attack.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-pathfinder": {
+		"name": "Pathfinder",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"description": "Target Friendly model gains Lightfooted until the End Phase.",
+		"references": [
+			"trait-lightfooted"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-perfect_defence": {
+		"name": "Perfect Defence",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Impenetrable Defence until the end of the current activation.",
+		"references": [
+			"trait-impenetrable_defence"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-pestilence": {
+		"name": "Pestilence",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Pulse",
+		"range": 3,
+		"limitations": ["noWalk, noBtB"],
+		"description": "All models within 3\" gain a Poison (1) Marker and a Spirit Block Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-pick_pocket": {
+		"name": "Pick Pocket",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 8,
+		"limitations": ["noBtB"],
+		"description": "Target Friendly Urchin that is within 2\" of an Enemy model. If the Enemy model has an enhancement - equipment card, transfer it to Fai-ginn's card.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-pile_on": {
+		"name": "Pile On",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["noBtB, OpT"],
+		"description": "During an Enemy model's Activation, when that model Walks into BtB with another Bakemono model, this model can Walk up to its Walk Statistic in inches to attempt to get into BtB with that Enemy model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-pin_weapon": {
+		"name": "Pin Weapon",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "Before the Enemy model chooses a Weapon to use in a Melee Exchange, choose a Weapon they have access to.\nFor the rest of the current activation, replace that Weapon on the Enemy model's card with:\nUnarmed (-2 Melee Strength, no Traits, no Specials).",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-practised_manoeuvres": {
+		"name": "Practised Manoeuvres",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "When applying Melee Assist penalties for a Melee Exchange involving Lone Swordsmen, this model inflicts -2 dice rather than -1 until the current Melee Exchange is resolved.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-prayer_of_healing": {
+		"name": "Prayer of Healing",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Aura",
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "This model may Target any model within the Aura with its Heal trait.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-prayer_of_purification": {
+		"name": "Prayer of Purification",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB"],
+		"description": "When this model uses its Heal trait, instead of Healing Wounds it may instead remove an equal number of Berserk, Blind, Controlled, Fire, Poison, Spirit Block, or Stunned Markers from the Target.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-prayer_of_undeath": {
+		"name": "Prayer of Undeath",
+		"cost": "X",
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 8,
+		"description": "Target Kairai receives a bonus of X to the final result of its next Rise Test this turn where X is the number of Ki Tokens spent; this may not be greater than 2.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-precision": {
+		"name": "Precision",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "This model's Weapons gain Pierce (1) until the current action is resolved.",
+		"references": [
+			"trait-pierce"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-precision_shot": {
+		"name": "Precision Shot",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's Ranged Weapons gain Pierce (1) until the current action is resolved.",
+		"references": [
+			"trait-pierce"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-precision_strike": {
+		"name": "Precision Strike",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's weapons gain Pierce (1) until the current action is resolved.",
+		"references": [
+			"trait-pierce"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-prediction": {
+		"name": "Prediction",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Special",
+		"description": "This model's Controller's Opponent must declare which model they will choose as their next Activating model. If the model becomes ineligible before it is chosen as the Activating model then another model can be chosen without restriction.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-promo": {
+		"name": "Promo",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Target",
+		"opposed": true,
+		"range": 8,
+		"description": "Whenever Target model makes a Fear Test against a Buto model, the Buto gains Terror.",
+		"references": [
+			"trait-terror"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-provoke": {
+		"name": "Provoke",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"opposed": true,
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "Target Enemy model gains an Impetuous Marker, the Opposing Player may not declare use of a Pass Token next activation.",
+		"references": [
+			"trait-impetuous"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-psychic_drain": {
+		"name": "Psychic Drain",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 8,
+		"limitations": ["noBtB, OpT"],
+		"description": "Transfer up to 3 Ki Tokens from the Target Enemy model's profile card to this card.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-psychic_venom": {
+		"name": "Psychic Venom",
+		"cost": "X+1",
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 8,
+		"limitations": ["noBtB"],
+		"description": "Target Enemy model gains X Poison (2) Markers. X may not be greater than 3.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-quagmire": {
+		"name": "Quagmire",
+		"cost": "X",
+		"timing": "Active",
+		"subject": "Aura X",
+		"description": "The Aura's area is considered [Difficult, Clear, Zero] terrain.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-quick_march": {
+		"name": "Quick March",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": 4,
+		"limitations": ["noBtB, OpG"],
+		"description": "All Friendly Ashigaru within the Aura ignore the melee penalty for having Run.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-quick_reload": {
+		"name": "Quick Reload",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB"],
+		"description": "Remove any Reload Markers from this model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-rage_against_time": {
+		"name": "Rage Against Time",
+		"cost": "Rank 3",
+		"timing": "Complex",
+		"subject": "Pulse X",
+		"limitations": ["OpG"],
+		"description": "Non-Soulless, Non-Satsui models in the Pulse gain a Berserk Marker.\nX=Current Turn Number.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-raijins_rage": {
+		"name": "Raijin's Rage",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Special",
+		"description": "When this model makes a successful Ranged Attack, after that Attack is resolved but before its activation ends it may make an additional Ranged Attack against another model within 3\" of the last model Targeted.\nThis Ranged Attack is considered to be in the Medium Range Band and ignores Range, LoS, and Camouflage.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-rain_of_blows": {
+		"name": "Rain of Blows",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model's Melee Weapons gain Combo Attack (0) and Lightning Reflexes until the end of the current Melee Exchange.",
+		"references": [
+			"trait-combo_attack",
+			"trait-lightning_reflexes"
+		],
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-rally": {
+		"name": "Rally",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Pulse",
+		"range": 8,
+		"description": "Remove the Frightened state from all Friendly models in the Pulse.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-rampage": {
+		"name": "Rampage",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Agile and Indomitable (1) until the End Phase.",
+		"references": [
+			"trait-agile",
+			"trait-indomitable"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-rangefinder": {
+		"name": "Rangefinder",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Special",
+		"description": "Deploy a Signal Flag in BtB with this model if one is available.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-rankiryu": {
+		"name": "Rankiryu",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 9,
+		"limitations": ["noBtB"],
+		"description": "Models in the Pulse that have been Placed this activation gain a Spirit Block Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-reanimate": {
+		"name": "Reanimate",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model may re-roll a failed Rise Test.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-rectifying_shōmyō": {
+		"name": "Rectifying Shōmyō",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": 6,
+		"limitations": ["OpG"],
+		"description": "When a Friendly model causes a Kami to be removed from play in a Melee Exchange while in the Aura, you may replace the Kami by Summoning and Deploying a Friendly, 8 Rice Cost, Kami with identical Elemental Icons (if the Enemy Kami has no Elemental Icons, you may replace it with a Lesser Void Kami).",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-reel_them_in!": {
+		"name": "Reel Them In!",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Pulse",
+		"range": 3,
+		"limitations": ["noBtB"],
+		"description": "When a Friendly model in the Pulse Damages an Enemy model with a Harpoon Ranged Attack, the Enemy model becomes Prone.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-reflexes": {
+		"name": "Reflexes",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "Walk this model directly away from an Enemy model in BtB until it leaves its ZoC. After moving, this model must use Bodyguard. If it cannot, it doesn't Walk.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-regrowth": {
+		"name": "Regrowth",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Regenerate (2) until the End Phase.",
+		"references": [
+			"trait-regenerate"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-reiji_kinoko": {
+		"name": "Reiji Kinoko",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "Replace this model with the Zoo model.\nRecover or Inflict Wounds so that Zoo's profile card has the same number of Wounds marked as Xi-Han.\nTransfer State Markers, Enhancements, and any Tokens to Zoo's profile card, Zoo gains an Impetuous Marker.\nWhen this effect expires in the End Phase, replace Zoo with Xi-Han.\nRecover or Inflict Wounds so that Xi-Han's profile has the same number of Wounds marked as Zoo.\nTransfer State Markers, Enhancements, and any tokens to Xi-Han's profile card.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-rend": {
+		"name": "Rend",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Brutal (+1) until the current action is resolved.\nThis model may only use this Feat once per Melee Exchange.",
+		"references": [
+			"trait-brutal"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-rend_soul": {
+		"name": "Rend Soul",
+		"cost": "X",
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["OpA"],
+		"description": "This model gains a Melee Strength bonus equal to X for the next Damage Roll this turn, where X is the number of Ki Tokens spent; this may not be greater than 3. This Ki Feat can only be used once per activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-reputation": {
+		"name": "Reputation",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Target BtB",
+		"description": "During an Enemy model's activation in which it enters BtB with this model, that Enemy model gains a Stunned Marker.\nThis Ki Feat may only be used once per model in any activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-requiem": {
+		"name": "Requiem",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": 9,
+		"limitations": ["noBtB"],
+		"description": "Kairai models cannot be Deployed in the Aura.\nModels in the Aura cannot be Replaced with Kairai models.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-resolve_of_rock": {
+		"name": "Resolve of Rock",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Tireless and Construct until the End Phase.",
+		"references": [
+			"trait-tireless",
+			"trait-construct"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-restitution": {
+		"name": "Restitution",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "Until the End Phase, Target Friendly model with a Control Marker gains +1 to its Melee Pool and Ranged Pool while it has a Control Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-retract": {
+		"name": "Retract",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "This model becomes Prone or if Prone, this model loses the Prone State",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-rivalry": {
+		"name": "Rivalry",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "Target other Friendly Faction model with Rice Cost equal to this model gains +1 to its Melee Pool or Ranged Pool until the End Phase",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-sacrifice": {
+		"name": "Sacrifice",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "Remove Target Friendly, non-Soulless, non-Insignificant model that you own from play.\nIf you do, add 4 Ki Tokens to the Yuta of Yurei card.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-saihai": {
+		"name": "Saihai",
+		"cost": 4,
+		"timing": "Active",
+		"subject": "Pulse",
+		"range": 3,
+		"description": "Any Friendly Blood Brother models in the Pulse (including this model) may immediately perform a Walk up to their Walk Statistic in inches.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-sames_warning": {
+		"name": "Same's Warning",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"description": "Target model gains Sixth Sense until the End Phase",
+		"references": [
+			"trait-sixth_sense"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-savage_beating": {
+		"name": "Savage Beating",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Combo Attack (0) until the current action is resolved.",
+		"references": [
+			"trait-combo_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-scorch_the_earth": {
+		"name": "Scorch the Earth",
+		"cost": "Rank 1",
+		"timing": "Active",
+		"subject": "Special BtB",
+		"limitations": ["noBtB, OpT"],
+		"description": "Place the Scorched Earth template in BtB with this model.\nIt is a Terrain element [Difficult, Obscuring, Zero].\nModels contacting this Terrain gain a Fire (3) Marker.\nRemove the Terrain element in the End Phase.\nAdd 1 Void Counter to the Blessings of the Void Communal Card.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-second_wind": {
+		"name": "Second Wind",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "At the end of an activation in which this model declared a Charge action and caused Wounds in a Melee Exchange it gains an Activation Counter.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-seduction": {
+		"name": "Seduction",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 6,
+		"limitations": ["noBtB, OpT"],
+		"description": "If this model is successful the Targeted model gains Stupid until the End Phase.",
+		"references": [
+			"trait-stupid"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-seed_of_destruction": {
+		"name": "Seed of Destruction",
+		"cost": 5,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "Place 2 Seed Counters on Target Enemy model.\nRemove a Seed Counter each time the model activates, when the last Seed Counter is removed centre a 2\" Pulse on the Target, deal 8 Damage split evenly (rounded down) between Enemy models in the Pulse.\nThis model may not use this Ki Feat while any Enemy model has Seed Counters.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-shadow": {
+		"name": "Shadow",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 4,
+		"limitations": ["noBtB, OpT"],
+		"description": "During an Enemy model's activation when it begins a movement in the Pulse, once the movement is completed this model may Walk up to its Move towards that model's final position.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-shadow_arts": {
+		"name": "Shadow Arts",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB"],
+		"description": "This model gains Lightfooted and Assassin until the end of the current activation.",
+		"references": [
+			"trait-lightfooted",
+			"trait-assassin"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-shadow_tendrils": {
+		"name": "Shadow Tendrils",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 8,
+		"limitations": ["noBtB"],
+		"description": "Target Enemy model suffers -3 Walk until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-shadow_walk": {
+		"name": "Shadow Walk",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpA"],
+		"description": "If this model is out of LoS of all enemy models, place it within 3\" of its current location.\nThis feat can only be used once per activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-shapeshift": {
+		"name": "Shapeshift",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Special",
+		"description": "Replace this model with its other form (Fox Form / Human Form). Transfer marked Wounds, State Markers, Enhancement, and any Tokens to the other model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-shiatsu": {
+		"name": "Shiatsu",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Target BtB",
+		"description": "Remove one Berserk, Control, Frightened, Impetuous, Spirit Block or Stunned Marker from Target Non-Animal model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-shrine_desecration": {
+		"name": "Shrine Desecration",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "Deploy a Desecrated Shrine in BtB with this model. It is a 30mm base, Clear - Normal, Destructible terrain piece with Believer [Shugenja](1/3\") and Disturb Flow (1/6\").\nRemove the shrine if another is created or if Yugio is removed from play.",
+		"references": [
+			"trait-believer",
+			"trait-disturb_flow"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-shroud": {
+		"name": "Shroud",
+		"cost": "X",
+		"timing": "Complex",
+		"subject": "Aura X",
+		"limitations": ["noBtB"],
+		"description": "Enemy models that are not in the Aura cannot draw LoS to models completely inside the Aura.\nModels completely in the Aura do not block Enemy model's LoS.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-sick_em!": {
+		"name": "Sick Em!",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Special",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "When Friendly Animal models Target or participate in a Melee Exchange with chosen Enemy model, they gain Bravery and Co-ordinated Attack [Friendly] until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-silence_of_the_void": {
+		"name": "Silence of the Void",
+		"cost": "Rank 3",
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "Use only in the Main Phase.\nAdd 2 to this model's statistics until the End Phase. This is considered a Ki Boost.\nThis Warband may use this Ki Feat only once per turn.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-simian_trickery": {
+		"name": "Simian Trickery",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "If Niseru is within 6\" of this model choose:\n• Place Niseru in BtB with this model. If this model is in BtB with an Enemy model, Niseru must also be placed in Bt with at least 1 Enemy model.\n• Place this model in BtB with Niseru. If Niseru is in BtB with an Enemy model, this model must also be placed in BtB with at least 1 Enemy model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-sisterly_bond": {
+		"name": "Sisterly Bond",
+		"cost": 2,
+		"timing": "Complex",
+		"subject": "Pulse",
+		"range": 3,
+		"description": "Immediately Heal all Friendly Princesses in the Pulse to have the same number of marked Wound boxes as the least Wounded Friendly Princess model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-sisters_succour": {
+		"name": "Sister's Succour",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["noBtB"],
+		"description": "During an Enemy model's activation, when that model moves into BtB with another Princess model, this model can move up to its Walk in inches to attempt to get into BtB with that model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-skewer": {
+		"name": "Skewer",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "When an Enemy model suffers Wounds in a Melee Exchange with this model, it may not move except to change facing until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-slice": {
+		"name": "Slice",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "Until the end of this activation, this model's Kama weapon gains Bleed (1/3) while in a Melee Exchange with a Surprised Enemy model.",
+		"references": [
+			"trait-bleed"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-slipstream": {
+		"name": "Slipstream",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB, OpT"],
+		"description": "When this model Runs this activation, it may Walk through other Friendly models.\nIt may not end its Walk occupying the same area as an Impassable Terrain element or another model.\nAny model moved through can Walk 1\" directly towards this model's final position.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-slither": {
+		"name": "Slither",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Agile and Evasive until the current action is resolved.",
+		"references": [
+			"trait-agile",
+			"trait-evasive"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-smite": {
+		"name": "Smite",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's Melee Weapons gain Slam Attack (0) until the current activation is resolved.",
+		"references": [
+			"trait-slam_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-snap_shot": {
+		"name": "Snap Shot",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Personal",
+		"limitations": ["noBtB"],
+		"description": "This model immediately makes a Ranged Attack ignoring Reload markers on this model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-snare": {
+		"name": "Snare",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 12,
+		"description": "When an Enemy model without Cloudwalk or Intangible, and not in BtB with a Friendly model, declares a Walk in the Pulse, that model must make a Walk Challenge Test (X).\nX is 8 for models declaring a Run or Charge Action. X is 7 otherwise.\nIf it fails the model may not Walk; if it was declaring an action, it loses an Activation Counter and its action is considered resolved.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-sneak": {
+		"name": "Sneak",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Evasive and Lightfooted until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-sojutsu": {
+		"name": "Sojutsu",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Target",
+		"range": 3,
+		"description": "Target Friendly Ashigaru gains Co-ordinated Attack [Ashigaru] until the current action is resolved.",
+		"references": [
+			"trait-co-ordinated_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-soothing_shomyo": {
+		"name": "Soothing Shomyo",
+		"cost": "X",
+		"timing": "Complex",
+		"subject": "Aura X",
+		"limitations": ["noBtB"],
+		"description": "Models in the Aura gain Immune [Berserk].\nWhen rolling a Damage Roll against a Friendly model within the Aura, after the result is determined, roll an additional dice and then choose 1 dice to remove, use the remaining 2 dice for the Damage Roll.",
+		"references": [
+			"trait-immune"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-soul_fire": {
+		"name": "Soul Fire",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 6,
+		"description": "Target Enemy model gains a number of Fire (1) Markers equal to the Success Level of the Test +1 and a Spirit Block Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-soul_thirst": {
+		"name": "Soul Thirst",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 6,
+		"description": "When an Enemy model is Killed within the Pulse, this model may Heal a number of Wounds and gain a number of Ki Tokens equal to the removed model's Ki Statistic.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-sound_the_advance!": {
+		"name": "Sound the Advance!",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Pulse",
+		"range": 8,
+		"limitations": ["noBtB, OpG"],
+		"description": "Friendly Loyal models in the Pulse gain Fear (6) until the End Phase.",
+		"references": [
+			"trait-fear"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-specialist_knowledge": {
+		"name": "Specialist Knowledge",
+		"cost": 1,
+		"timing": "Complex",
+		"subject": "Personal",
+		"limitations": ["noBtB, OpG"],
+		"description": "A Friendly Samurai or Ashigaru model in BtB gains the Weighted Tetsubo Enhancement card if permitted.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-spin": {
+		"name": "Spin",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's Ranged Weapon's Range Bands become 4/6/8 and this model gains Strong [Ranged] until the current Activation is complete.",
+		"references": [
+			"trait-strong"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-spirit_absolution": {
+		"name": "Spirit Absolution",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "This model loses Soulless, Slow, Tough, and Rise. This effect expires in the End Phase.\nTarget model not in BtB with a Friendly model gains an Impetuous Marker, must declare a Walk action as its next activation, and must move directly towards this model with its full Walk Statistic, changing facing so that this model is in LoS. If unable to perform a Walk action, it may activate without restriction.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-spirit_guardian": {
+		"name": "Spirit Guardian",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 3,
+		"limitations": ["noWalk, noBtB"],
+		"description": "When a Friendly model within the Pulse's area of effect is Targeted by an Enemy model's Ki Feat, change the Target to this model. Range is measured to the original Target.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-spirit_ward": {
+		"name": "Spirit Ward",
+		"cost": 2,
+		"timing": "Complex",
+		"subject": "Aura",
+		"range": 6,
+		"limitations": ["noWalk, noBtB"],
+		"description": "While within this Aura, Kami and Asura models cannot move closer to this model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-spiritual_conduit": {
+		"name": "Spiritual Conduit",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Aura",
+		"range": 4,
+		"limitations": ["noBtB"],
+		"description": "Friendly Ito Shisai models within the Aura can use this model as the point of origin for Targeted Ki Feats when this model is not in BtB with or within an Enemy model's ZoC.Use this model to draw LoS and Range for the feat.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-spur_on": {
+		"name": "Spur On",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 3,
+		"limitations": ["noBtB"],
+		"description": "Until the End Phase Target Friendly Animal model gains Rise (4) and loses the Aloof trait.",
+		"references": [
+			"trait-rise",
+			"trait-aloof"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-stagger": {
+		"name": "Stagger",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Ranged Defence (1) and Sidestep Defence (0) until the end of the current activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-stand_behind_me!": {
+		"name": "Stand Behind Me!",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model grants Cover as if it were terrain until the end of the current activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-steal_vitality": {
+		"name": "Steal Vitality",
+		"cost": 5,
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 6,
+		"limitations": ["noBtB, OpT"],
+		"description": "Target Enemy model loses an Activation Counter.\nChoose a Friendly model within 6, that model gains an Activation Counter.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-stolen_glory": {
+		"name": "Stolen Glory",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 6,
+		"limitations": ["noBtB, OpT"],
+		"description": "When a Friendly Onisho model deals damage in a Melee Exchange in the Pulse, if this model is not in BtB or an Enemy model's ZoC, once the Melee Exchange is resolved this model may immediately Charge the Enemy model.\nNeither model loses Activation Counters for this Charge or for participating in the Melee Exchange.\nIf the Enemy model is removed from play only this model may use the Consume Soul Ki Feat this activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-storm_manipulation": {
+		"name": "Storm Manipulation",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "When this model declares a Ranged Attack Action choose one of the following until the Ranged Attack Action is resolved:\n• This model's Ranged Weapon's range bands become 4/8/12• This model's Ranged Weapon gains Strength (+1)• This model's Ranged Weapon gains Slam Attack (0)",
+		"references": [
+			"trait-slam_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-storm_path": {
+		"name": "Storm Path",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "When this model Runs or Charges this activation, any model moved through gains a Stunned Marker and a Fire (1) Marker.\nDuring this movement, this model may move through Destructible terrain. If it does, remove the terrain from the battlefield.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-strafe": {
+		"name": "Strafe",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB"],
+		"description": "This model gains Rapid Fire (2) until the until the current action is resolved.",
+		"references": [
+			"trait-rapid_fire"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-strip_soul": {
+		"name": "Strip Soul",
+		"cost": "X+1",
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 8,
+		"limitations": ["noBtB"],
+		"description": "Target Enemy model gains one Spirit Block Marker and Insignificant until the End Phase.X is equal to the Ki Statistic of the Targeted Enemy model.",
+		"references": [
+			"trait-insignificant"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-stronger_than_hate": {
+		"name": "Stronger Than Hate",
+		"cost": "Rank 1",
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "Until the end of the current activation, each time this model deals Damage in a Melee Exchange, the Enemy non-Satsui model loses an Activation Counter.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-stubbornness_of_steel": {
+		"name": "Stubbornness of Steel",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Rise (3) until the End Phase.",
+		"references": [
+			"trait-rise"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-subtle_dominance": {
+		"name": "Subtle Dominance",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Target",
+		"range": 8,
+		"limitations": ["OpT"],
+		"description": "When Target model declares an action it must make a Ki Challenge Test (5), if it fails its activation ends and it loses an Activation Counter.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-summon_from_the_shadows": {
+		"name": "Summon from the Shadows",
+		"cost": 6,
+		"timing": "Active",
+		"subject": "Special",
+		"description": "Deploy a Horde Bakemono anywhere within 2\" of this model.\nIf there are no Bakemono cards available with a free wound track this feat cannot be used.\nThis Warband may use this Ki Feat only once per turn.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-summon_ice_kami": {
+		"name": "Summon Ice Kami",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "Summon a Ronin Kami of Reflection by Replacing this model (this model is removed from play).\n(You cannot have more models in play than the card has Wound Tracks).\nIf this model was in a Melee Exchange, the Kami can neither be damaged nor deal damage this exchange.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-supplies": {
+		"name": "Supplies",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Pulse BtB",
+		"limitations": ["noBtB"],
+		"description": "Remove a Reload Marker from, or and an Ammo Token to, a model in the Pulse.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-surge": {
+		"name": "Surge",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Special",
+		"description": "Call Lightning Ranged Attacks gain +1 Strength and Slam Attack (0) until the current activation is complete.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-suri-ashi": {
+		"name": "Suri-Ashi",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "After a Melee Exchange is complete, this model may move away from the Enemy model until it leaves its ZoC, at which point its movement ends.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-swallow_whole": {
+		"name": "Swallow Whole",
+		"cost": 5,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This feat must be declared before Initiative is determined in a Melee Exchange. If this model's Attack is successful, place the Enemy model Elsewhere.\nAffected Enemy models suffer one Wound (ignoring Tough) if they are Elsewhere in the End Phase. For each Wound taken, this model gains 1 Ki Token.\nWhen this model is removed from play for any reason, first place any affected models in BtB with this model. If this model is not on the Battlefield when it is removed from play, affected models gain Flank and return to play using that rule.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-sweep": {
+		"name": "Sweep",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Sweep Attack (0) until the end of the current activation.",
+		"references": [
+			"trait-sweep_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-swift_executor": {
+		"name": "Swift Executor",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB, OpT"],
+		"description": "This model loses Insignificant until the end of this activation.\nIf this model declares a Wait or Scenario Action, it may Walk a distance equal to its Move Statistic before or after the Action.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-sworn_sisters": {
+		"name": "Sworn Sisters",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 3,
+		"limitations": ["OpT"],
+		"description": "Target other Friendly Princess model gains an Activation Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-tactical_counsel": {
+		"name": "Tactical Counsel",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Special",
+		"limitations": ["noBtB"],
+		"description": "This model's Controller can re-roll the Tactical Roll at the start of any turn.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-tactical_master": {
+		"name": "Tactical Master",
+		"cost": "X",
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["noBtB"],
+		"description": "This model gains Command [Friendly](X/8\") until the End Phase.",
+		"references": [
+			"trait-command"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-tail_whip": {
+		"name": "Tail Whip",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Target BtB",
+		"description": "During an Enemy model's activation in which it enters BtB with this model, that Enemy model gains a Stunned Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-takashi_koryu": {
+		"name": "Takashi Koryu",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Critical Attack (1) until the current Melee Exchange is resolved.",
+		"references": [
+			"trait-critical_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-tax": {
+		"name": "Tax",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Aura",
+		"range": 10,
+		"limitations": ["noBtB"],
+		"description": "When an Enemy model within the Aura's area of effect uses a Ki Feat or Ki Boost, the cost in Ki Tokens is increased by 1, and this model gains 1 Ki Token.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-temporal_barrier": {
+		"name": "Temporal Barrier",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Aura",
+		"range": 4,
+		"limitations": ["noBtB"],
+		"description": "While within the Aura, models gain Ranged Defence (2).",
+		"references": [
+			"trait-ranged_defence"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-ten-uchi": {
+		"name": "Ten-Uchi",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's weapons gain Unblockable (1) until the current action is resolved.",
+		"references": [
+			"trait-unblockable"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-tenacious": {
+		"name": "Tenacious",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Tough (+1) until the End Phase.",
+		"references": [
+			"trait-tough"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-the_void_stares_back": {
+		"name": "The Void Stares Back",
+		"cost": "Rank 1",
+		"timing": "Simple",
+		"subject": "Target",
+		"opposed": true,
+		"range": 8,
+		"limitations": ["noBtB"],
+		"description": "Target non-Satsui Enemy model which has LoS to this model.\nMake a Success Level 4 Damage Roll on the Target model.\nWounds caused by this Ki Feat ignore Armour.\nA model can only be targeted by this feat (from any source) once per turn.\nThe Range of this feat may be measured from a Void Rift.\nIf this feat causes any Wounds, add 1 Void Counter to the Blessings of the Void Communal Card.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-thrash": {
+		"name": "Thrash",
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "Models in a Melee Exchange with this model lose the Dodge trait until the current action is resolved.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-three_shots_per_minute": {
+		"name": "Three Shots Per Minute",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Personal",
+		"limitations": ["noWalk, noBtB"],
+		"description": "This model removes all Reload Markers.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-thresher": {
+		"name": "Thresher",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Indomitable (1) and Split Attack until the current action is resolved.",
+		"references": [
+			"trait-indomitable",
+			"trait-split_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-tidal_flow": {
+		"name": "Tidal Flow",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "Use this Ki Feat at the start of any activation, Walk this model up to 4\" toward an Enemy table edge.\nAt the end of this activation, Walk this model 4\" directly toward the opposite table edge.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-tide_master": {
+		"name": "Tide Master",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains one of the following until the current Ranged Attack is resolved: *Ranged Weapon Bands become 4/8/12*When making a Ranged Attack this model does not need LoS and ignores Cover*This model's RTanged Weapon gains Sweep Attack (0).",
+		"references": [
+			"trait-sweep_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-tiger_strike": {
+		"name": "Tiger Strike",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's Melee Weapons gain Bleed (1/1) and Sharp (1) until the current activation is complete.",
+		"references": [
+			"trait-bleed",
+			"trait-sharp"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-time_reversal": {
+		"name": "Time Reversal",
+		"cost": 3,
+		"timing": "Complex",
+		"subject": "Special",
+		"limitations": ["noWalk, noBtB, OpG"],
+		"description": "All other models gain up to 2 Activation Counters to a maximum of 2.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-time_skip": {
+		"name": "Time Skip",
+		"cost": 3,
+		"timing": "Complex",
+		"subject": "Special",
+		"limitations": ["noWalk, noBtB, OpG"],
+		"description": "Remove all Activation Counters from the board.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-time_spiral": {
+		"name": "Time Spiral",
+		"cost": "Rank 2",
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["noBtB, OpT"],
+		"description": "This model gains Cloudwalk, Sweep Attack (0), and Unblockable (1) until the end of the current action.",
+		"references": [
+			"trait-unblockable",
+			"trait-cloudwalk",
+			"trait-sweep_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-time_splice": {
+		"name": "Time Splice",
+		"cost": "Rank 3",
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "When this model successfully Damages an Opponent in a Melee Exchange, after the Melee Exchange is resolved, Place this model anywhere within 1\" of the Enemy model and not in its LoS or within a Spirit Ward Aura (If this is not possible this feat cannot be used).\nIf this model has a remaining Activation Counter after this activation is completed, you may become the Active Player again and begin this model's activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-times_favour": {
+		"name": "Time's Favour",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Pulse",
+		"range": 3,
+		"description": "Enemy models in the Pulse gain Slow until the current action is resolved.",
+		"references": [
+			"trait-slow"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-to_the_front!": {
+		"name": "To the Front!",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": 3,
+		"limitations": ["noBtB"],
+		"description": "Friendly Bushi models in the Aura do not suffer the Melee Penalty for having Run.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-tornado": {
+		"name": "Tornado",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "When a Friendly model within 2\" is the Target of a failed Ranged Attack, immediately make a Ranged Attack.\nThe Range Bands, Strength bonus and any applicable traits or unique effects on the model which failed the Ranged Attack are used instead of any such traits or effects on this model.\nThis model ignores the effects of Ammo and Reload traits while resolving this Ki Feat.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-total_loyalty": {
+		"name": "Total Loyalty",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Bodyguard [Samurai, Shisai](2\") until the End Phase.",
+		"references": [
+			"trait-bodyguard"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-touch_the_silence": {
+		"name": "Touch the Silence",
+		"cost": "Rank X",
+		"timing": "Instant",
+		"subject": "Special",
+		"limitations": ["OpT"],
+		"description": "When this model is successfully attacked in a Melee Exchange, prevent X Wounds.\nFor each Wound prevented the model making the attack suffers 1 Wound, ignoring Tough.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-touch_the_void": {
+		"name": "Touch the Void",
+		"cost": "X",
+		"timing": "Instant",
+		"subject": "Special",
+		"limitations": ["OpT"],
+		"description": "When this model is successfully attacked in a Melee Exchange, before the Damage Roll spend X Ki Tokens. X may not be greater than 3.\nFor each Ki Token spent, prevent one Wound.\nFor each Wound prevented the model making the attack suffers one Wound, ignoring Tough.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-trade": {
+		"name": "Trade",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Personal",
+		"limitations": ["noBtB"],
+		"description": "This model gains Channel (10/8\") and Leech (10/8\") until the End Phase.",
+		"references": [
+			"trait-channel",
+			"trait-leech"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-tsukkakaru": {
+		"name": "Tsukkakaru",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Banzai! until the current action is resolved.",
+		"references": [
+			"trait-banzai!"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-tsunami": {
+		"name": "Tsunami",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Pulse",
+		"range": 3,
+		"limitations": ["noWalk, noBtB"],
+		"description": "Enemy models in the Pulse must pass a Size Challenge Test (7), or be moved directly away from this Riku until they hit an Impassable terrain feature, a model which passes its Size Challenge Test or until they have moved 8\".\nIf another model is contacted by models being moved by this feat, it must make a Size Challenge (6) Test or be pushed along with the original model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-umbrella_block": {
+		"name": "Umbrella Block",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Parry (1) until the end of the current Melee Exchange",
+		"references": [
+			"trait-parry"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-unassailable": {
+		"name": "Unassailable",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Indomitable (+2) until the End Phase.",
+		"references": [
+			"trait-indomitable"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-uncloak": {
+		"name": "Uncloak",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "Use this feat...\n• in the Starting Phase or• when this model is Targeted by an Enemy effect or• an Enemy model declares an action or resolves an effect that will bring it into BtB with this model...while this model is undamaged.\nReplace this model with a Loyal Samurai you own that is currently Elsewhere, and remove this model from play.\nIf the Enemy model initiated a Melee Exchange, it is now Surprised.\nTransfer State Markers and Activation Counters to the Samurai's profile card.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-unholy_vitality": {
+		"name": "Unholy Vitality",
+		"cost": 4,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"description": "Target model takes half its remaining Wounds, ignoring Durable (Rounded down) then gains a Activation Counter.\nlf used on an Enemy model you must succeed in an opposed Ki Test.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-unify": {
+		"name": "Unify",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "Target Friendly model gains Co-ordinated Attack [Friendly] until the End Phase.",
+		"references": [
+			"trait-co-ordinated_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-unleash_envy": {
+		"name": "Unleash Envy",
+		"cost": "X",
+		"timing": "Simple",
+		"subject": "Special",
+		"limitations": ["noWalk, noBtB, OpT"],
+		"description": "Summon and Deploy an Envy within 2\" of this model. It may not be placed in an Enemy model's ZoC or in BtB with an Enemy model.\nPlace a number of Ki Tokens on Envy's profile card equal to the number spent for this Ki Feat instead of any from the Kami trait when deployed.\nThere may only be one Friendly Envy in play at any time.\nThis model cannot use this Ki Feat if there is already a Friendly Envy in play.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-unleash_gluttony": {
+		"name": "Unleash Gluttony",
+		"cost": "X",
+		"timing": "Simple",
+		"subject": "Special",
+		"limitations": ["noWalk, noBtB, OpT"],
+		"description": "Summon and Deploy a Gluttony within 2\" of this model. It may not be placed in an Enemy model's ZoC or in BtB with an Enemy model.\nPlace a number of Ki Tokens on Gluttony's profile card equal to the number spent for this Ki Feat instead of any from the Kami trait when deployed.\nThere may only be one Friendly Gluttony in play at any time.\nThis model cannot use this Ki Feat if there is already a Friendly Gluttony in play.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-unleash_sloth": {
+		"name": "Unleash Sloth",
+		"cost": "X",
+		"timing": "Simple",
+		"subject": "Special",
+		"limitations": ["noWalk, noBtB, OpT"],
+		"description": "Summon and Deploy a Sloth within 2\" of this model. It may not be placed in an Enemy model's ZoC or in BtB with an Enemy model.\nPlace a number of Ki Tokens on Sloth's profile card equal to the number spent for this Ki Feat instead of any from the Kami trait when deployed.\nThere may only be one Friendly Sloth in play at any time.\nThis model cannot use this Ki Feat if there is already a Friendly Sloth in play.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-unleash_wrath": {
+		"name": "Unleash Wrath",
+		"cost": "X",
+		"timing": "Simple",
+		"subject": "Special",
+		"limitations": ["noWalk, noBtB, OpT"],
+		"description": "Summon and Deploy a Wrath within 2\" of this model. It may not be placed in an Enemy model's ZoC or in BtB with an Enemy model.\nPlace a number of Ki Tokens on Wrath's profile card equal to the number spent for this Ki Feat instead of any from the Kami trait when deployed.\nThere may only be one Friendly Wrath in play in play at any time.\nThis model cannot use this Ki Feat if there is already a Friendly Wrath in play.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-unseen_anger": {
+		"name": "Unseen Anger",
+		"cost": "Rank 2",
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Lightning Reflexes until the current action is resolved.",
+		"references": [
+			"trait-lightning_reflexes"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-vault": {
+		"name": "Vault",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Cloudwalk until the End Phase.",
+		"references": [
+			"trait-cloudwalk"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-veteran": {
+		"name": "Veteran",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model does not suffer Melee dice penalties due to States until the current Melee Exchange is resolved.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-vicious_strike": {
+		"name": "Vicious Strike",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's Melee Weapons gain Sharp (+1) until the current action is resolved.",
+		"references": [
+			"trait-sharp"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-vital_strike": {
+		"name": "Vital Strike",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's Melee Weapons gain Sharp (2) until the current activation is resolved.",
+		"references": [
+			"trait-sharp"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-vitality": {
+		"name": "Vitality",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "This model gains an Activation Counter.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-vivacity": {
+		"name": "Vivacity",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Special",
+		"description": "Add an activation counter to This Model's Card.",
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"feat-voice_of_the_wind": {
+		"name": "Voice of the Wind",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 6,
+		"description": "Place Target Model within 1\" of its current location. If the Target model is an Enemy, you must first succeed in an Opposed Ki Test with the Target model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-wall_of_water": {
+		"name": "Wall of Water",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Aura",
+		"range": 3,
+		"limitations": ["noBtB"],
+		"description": "Enemy models treat the Aura as [Difficult, Obscuring, Small] terrain and must pass a Size Challenge Test (6) to enter the Aura.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-war_cry": {
+		"name": "War Cry",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Fear (6) until the current action is resolved.",
+		"references": [
+			"trait-fear"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-warding_shōmyō": {
+		"name": "Warding Shōmyō",
+		"cost": 3,
+		"timing": "Complex",
+		"subject": "Aura",
+		"range": 6,
+		"limitations": ["noWalk, noBtB"],
+		"description": "This model gains Disturb Flow (1/6\") until the End Phase and while within the Aura Enemy models cannot use Special Attacks or Defences.",
+		"references": [
+			"trait-disturb_flow"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-wasp_punch": {
+		"name": "Wasp Punch",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Strong until the end of the current Melee Exchange.",
+		"references": [
+			"trait-strong"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-weight_of_shadows": {
+		"name": "Weight of Shadows",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Strong until the current action is resolved.",
+		"references": [
+			"trait-strong"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-whirlwind_kick": {
+		"name": "Whirlwind Kick",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Indomitable (2) and Split Attack until the End Phase. Add 1 additional Attack die to each exchange when using Split Attack until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-whispers_of_the_void": {
+		"name": "Whispers of the Void",
+		"cost": "Rank 1",
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "Use only in the Main Phase.\nAdd 1 to this model's statistics until the current activation is complete. This is considered a Ki Boost.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-will_of_yurei": {
+		"name": "Will of Yurei",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Disturb Flow (1/2\") until the End Phase.",
+		"references": [
+			"trait-disturb_flow"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-wing_buffet": {
+		"name": "Wing Buffet",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Pulse BtB",
+		"description": "All models in the Pulse's area of effect must succeed in a Size Challenge Test (6) or Walk D3\" directly away from this model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-yoko-men": {
+		"name": "Yoko-Men",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "Models involved in a Melee Exchange with this model lose the Dodge trait until the current action is resolved."
+	}
+}
