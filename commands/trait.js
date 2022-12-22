@@ -21,7 +21,7 @@ module.exports = {
 		}
 
 		const filtered = traitList.filter(choice => choice.startsWith(focusedValue));
-		if (focusedValue) {
+		if (focusedValue.length >>> 1) {
 			await interaction.respond(
 				filtered.map(choice => ({ name: choice, value: choice })),
 			);
