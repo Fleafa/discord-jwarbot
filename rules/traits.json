@@ -535,7 +535,7 @@
 		"rulebook": 63,
 		"rulebookr1": 66,
 		"revision": 1,
-		"status": "current"
+		"status": "current-errata"
 		},
 	"trait-impenetrable_defence": {
 		"name": "Impenetrable Defence",
@@ -612,13 +612,13 @@
 		},
 	"trait-kami": {
 		"name": "Kami",
-		"description": "When this model is deployed it gains Ki tokens equal to its maximum Ki.\nWhen this model would suffer wounds, instead remove an equal number of Ki tokens.\nFor effects that would cause Wounds to be marked on a model, a Kami treats its Ki Tokens as if they were unmarked Wound Boxes.\nFor each Ki below its maximum it is considered to have one marked Wound Box.\nIf this model has no Ki tokens, it is removed from play.\nThis model may not gain Ki tokens as a result of the Channel trait.\nThis Model cannot have Ki tokens removed as a result of the Leech trait.\nThis model has Immune (Poison/Fire/ Bleed/Diseased) and cannot be Healed.\nKami models may not use a Ki Feat if spending the Ki Tokens would cause it to lose all its remaining Ki Tokens.",
+		"description": "When this model is deployed it gains Ki tokens equal to its maximum Ki.\nWhen this model would suffer wounds, instead remove an equal number of Ki tokens.\nFor effects that would cause Wounds to be marked on a model, a Kami treats its Ki Tokens as if they were unmarked Wound Boxes.\nFor each Ki below its maximum it is considered to have one marked Wound Box.\nIf this model has no Ki tokens, it is removed from play.\nThis model may not gain Ki tokens as a result of the Channel trait.\nThis Model cannot have Ki tokens removed as a result of the Leech trait.\nThis model has Immune (Poison/Fire/ Bleed/Diseased) and cannot be Healed.\nA Kami model may not use a Ki Feat if spending the Ki Tokens would cause it to lose all its remaining Ki Tokens.",
 		"bsid": "50d4-ec7a-9763-1b4d",
 		"references": ["trait-leech", "trait-channel", "trait-immune", "concept-heal", "concept-deploy", "state-bleed", "state-on_fire", "state-poisoned", "state-diseased", "concept-tokens"],
 		"rulebook": 64,
 		"rulebookr1": 66,
 		"revision": 1,
-		"status": "current"
+		"status": "current errata"
 		},
 	"trait-kata": {
 		"name": "Kata",
