@@ -1,0 +1,183 @@
+{
+	"ability-combo_attack": {
+		"name": "Combo Attack",
+		"description": "If the Attack is successful then after resolving a Damage Roll, deduct 2 from the Success Level of the Attack.\nIf the new Success Level is 0 or greater make another Damage Roll against the Defender.\nRepeat this process until the Success Level is less than 0.\nIf the Success Level of the original attack was 0 or 1, after resolving a Damage Roll, make one additional Damage Roll against the Defender at Success Level 0.\nNote: If a model has abilities that trigger when damage is caused each damage roll will trigger those abilities separately.",
+		"rulebook": 47,
+		"rulebookr1": 49,
+		"revision": 0,
+		"status": "current"
+	},
+	"ability-critical_attack": {
+		"name": "Critical Attack",
+		"description": "If this model's Attack is successful, and the individual dice results of the Damage Roll are the same number, remove the Defender from play.",
+		"rulebook": 47,
+		"rulebookr1": 49,
+		"revision": 0,
+		"status": "current"
+	},
+	"ability-drag_attack": {
+		"name": "Drag Attack",
+		"description": "If the Attack is successful, move the Attacker 1\" away from the Defender, then move the Defender 1\" directly toward the Attacker.\nThe Defender does not suffer a Damage Roll from this Attack.",
+		"rulebook": 47,
+		"rulebookr1": 49,
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"ability-forceback_attack": {
+		"name": "Forceback Attack",
+		"description": "If the Attack is successful, move the Defender 1\" directly away from the Attacker, then move the Attacker 1\" directly towards the Defender.\nThe Defender suffers half the Wounds from the Damage Roll caused by this Attack.",
+		"rulebook": 47,
+		"rulebookr1": 49,
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"ability-grapple_attack": {
+		"name": "Grapple Attack",
+		"description": "If the attack is successful, the Defender becomes Held. Place a Held marker on the Defender.\nThe Defender does not suffer a Damage roll from this Attack but may not attack during this Melee Exchange.",
+		"rulebook": 47,
+		"rulebookr1": 49,
+		"revision": 0,
+		"status": "current"
+	},
+	"ability-powerful_attack": {
+		"name": "Powerful Attack",
+		"description": "If the Attack is successful, then the Attacker gains +3 to the Damage Roll caused by this Attack.",
+		"rulebook": 47,
+		"rulebookr1": 49,
+		"revision": 0,
+		"status": "current"
+	},
+	"ability-push_attack": {
+		"name": "Push Attack",
+		"description": "If the Attack is successful, move the Defender directly away from this model until it leaves this model's ZoC.\nThe Defender does not suffer a Damage Roll from this Attack.",
+		"rulebook": 47,
+		"rulebookr1": 49,
+		"revision": 0,
+		"status": "current"
+	},
+	"ability-sidestep_attack": {
+		"name": "Sidestep Attack",
+		"description": "If the Attack is successful, the Attacker leaves BtB and then moves away from the Defender until The Attacker leaves the Defender's ZoC, at which point its movement ends.\nThe Attacker makes no damage roll.",
+		"rulebook": 47,
+		"rulebookr1": 49,
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"ability-slam_attack": {
+		"name": "Slam Attack",
+		"description": "If the Attack is successful, the Defender is moved 3\" directly away and becomes prone, minimally the Defender is moved beyond the Attacker's ZoC.\nThe Defender suffers half the wounds from the Damage Roll caused by this Attack.",
+		"rulebook": 47,
+		"rulebookr1": 49,
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"ability-stun_attack": {
+		"name": "Stun Attack",
+		"description": "If the attack is Successful, the Defender gains a Stunned Marker after the Damage Roll.",
+		"rulebook": 47,
+		"rulebookr1": 49,
+		"revision": 0,
+		"status": "current"
+	},
+	"ability-sweep_attack": {
+		"name": "Sweep Attack",
+		"description": "If the Attack is successful, then the Defender becomes Prone.\nThe Defender suffers half the wounds from the Damage Roll caused by this Attack.",
+		"rulebook": 48,
+		"rulebookr1": 49,
+		"revision": 0,
+		"status": "current"
+	},
+	"ability-throw_attack": {
+		"name": "Throw Attack",
+		"description": "If the Attack is successful, the Defender is moved 2\" in a straight line and becomes prone, minimally the Defender is moved beyond the Attackers ZoC and within LoS of the Attacker.\nThe Defender suffers half the wounds from the Damage Roll caused by this Attack.",
+		"rulebook": 48,
+		"rulebookr1": 49,
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"ability-ability-eagles_flight_defence": {
+		"name": "Eagle's Flight Defence",
+		"description": "If the Defence is successful this model may Move 3\" after the Melee Exchange is resolved",
+		"rulebookr1": 50,
+		"revision": 0,
+		"status": "current"
+	},
+	"ability-ivory_prison_attack": {
+		"name": "Ivory Prison Attack",
+		"description": "If this Attack is successful then remove the non- Insignificant, non-Soulless Target from play and deploy a Prone, non-unique Kairai under your control by replacing the target.",
+		"rulebook": 48,
+		"rulebookr1": 50,
+		"revision": 0,
+		"status": "current"
+	},
+	"ability-gokusatsu_attack": {
+		"name": "Gokusatsu Attack",
+		"description": "If this attack is Successful, remove the defender and attacker from play. If the enemy model has this Exceptional Attack, then this attack has no effect on either combatant.",
+		"rulebook": 48,
+		"rulebookr1": 50,
+		"revision": 0,
+		"status": "current"
+	},
+	"ability-counterstrike_defence": {
+		"name": "Counterstrike Defence",
+		"description": "If this Defence is successful, and the Attacker allocated any dice to Attack, then deduct 2 from the Success Level of the Defence.\nIf the Success Level is 0 or greater, then make a Damage Roll against the Attacker using the modified Success Level of the Defence.",
+		"rulebook": 48,
+		"rulebookr1": 50,
+		"revision": 0,
+		"status": "current"
+	},
+	"ability-drag_defence": {
+		"name": "Drag Defence",
+		"description": "If the Defence is successful, move the Defender 1\" away from the Attacker, then move the Attacker directly into BtB with the Defender.",
+		"rulebook": 48,
+		"rulebookr1": 50,
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"ability-forceback_defence": {
+		"name": "Forceback Defence",
+		"description": "If the Defence is successful, move the Attacker 1\" directly away from the Defender, then move the Defender directly into BtB with the Attacker.",
+		"rulebook": 48,
+		"rulebookr1": 50,
+		"revision": 0,
+		"status": "current"
+	},
+	"ability-grapple_defence": {
+		"name": "Grapple Defence",
+		"description": "If the Defence is successful, the Attacker becomes Held. Place a Held Marker on the Attack.",
+		"revision": 0,
+		"status": "errata 2021"
+	},
+	"ability-push_defence": {
+		"name": "Push Defence",
+		"description": "If the Defence is successful, move the Attacker directly away from the Defender until it leaves the defender's ZoC.",
+		"rulebook": 48,
+		"rulebookr1": 50,
+		"revision": 0,
+		"status": "current"
+	},
+	"ability-sidestep_defence": {
+		"name": "Sidestep Defence",
+		"description": "If the Defence is successful, the Defender leaves BtB and then moves away from the Attacker until it leaves the Attacker's ZoC, at which point its movement ends.",
+		"rulebook": 48,
+		"rulebookr1": 50,
+		"revision": 1,
+		"status": "errata 2021"
+	},
+	"ability-sweep_defence": {
+		"name": "Sweep Defence",
+		"description": "If the Defence is successful, then the Attacker becomes Prone.",
+		"rulebook": 48,
+		"rulebookr1": 50,
+		"revision": 0,
+		"status": "current"
+	},
+	"ability-throw_defence": {
+		"name": "Throw Defence",
+		"description": "If the Defence is successful, the Attacker is moved 2\" in a straight line and becomes prone, minimally the Attacker is moved beyond the Defenders ZoC within LoS of the Defender. ",
+		"rulebook": 48,
+		"rulebookr1": 50,
+		"revision": 1,
+		"status": "errata 2021"
+	}
+}
