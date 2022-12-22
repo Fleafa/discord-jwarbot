@@ -72,15 +72,15 @@ module.exports = {
 		let iconCost;
 		if (Number.isInteger(featCost)) { iconCost = eval('icon' + featCost + ';'); }
 
-		const iconTiming = ' <:timing' + featTiming + ':' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'timing' + featTiming) + '>';
-		const iconSubject = ' <:subject' + featSubject + ':' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'subject' + featSubject) + '>';
+		const iconTiming = ' <:type' + featTiming + ':' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'type' + featTiming.toLowerCase()) + '>';
+		const iconSubject = ' <:subject' + featSubject + ':' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'subject' + featSubject.toLowerCase()) + '>';
 
 		// interaction.guild.emojis.cache.find(emoji => emoji.name === 'OppKi');
-		const iconLimitBtB = '<:noBtB:' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'noBtB') + '>';
-		const iconLimitOpA = '<:oncePerActivation:' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'oncePerActivation') + '>';
-		const iconLimitOpG = '<:oncePerGame:' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'oncePerGame') + '>';
-		const iconLimitOpT = '<:oncePerTurn:' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'oncePerTurn') + '>';
-		const iconLimitWalk = '<:noWalk:' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'noWalk') + '>';
+		const iconLimitBtB = '<:nobtb:' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'nobtb') + '>';
+		// const iconLimitOpA = '<:oncePerActivation:' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'oncePerActivation') + '>';
+		const iconLimitOpG = '<:oncepergame:' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'oncepergame') + '>';
+		const iconLimitOpT = '<:onceperturn:' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'onceperturn') + '>';
+		const iconLimitWalk = '<:nowalk:' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'nowalk') + '>';
 
 		let featStats, iconsLimits = '';
 		featStats = iconCost + iconTiming + iconSubject;
@@ -98,7 +98,7 @@ module.exports = {
 				else if (limit === 'noBtB') { iconsLimits = iconsLimits + iconLimitBtB; }
 				else if (limit === 'OpG') { iconsLimits = iconsLimits + iconLimitOpG; }
 				else if (limit === 'OpT') { iconsLimits = iconsLimits + iconLimitOpT; }
-				else if (limit === 'OpA') { iconsLimits = iconsLimits + iconLimitOpA; }
+				else if (limit === 'OpA') { iconsLimits = iconsLimits + ' OpA '; }
 			}
 			featStats = featStats + iconsLimits;
 		}
