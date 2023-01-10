@@ -49,7 +49,7 @@
 		"rulebook": 58,
 		"rulebookr1": 60,
 		"revision": 1,
-		"status": "current"
+		"status": "current errata"
 		},
 	"trait-armour": {
 		"name": "Armour",
@@ -133,7 +133,7 @@
 		"rulebook": 58,
 		"rulebookr1": 61,
 		"revision": 1,
-		"status": "current"
+		"status": "current errata"
 		},
 	"trait-bodyguard": {
 		"name": "Bodyguard",
@@ -304,7 +304,7 @@
 		"rulebook": 61,
 		"rulebookr1": 63,
 		"revision": 1,
-		"status": "current"
+		"status": "current errata"
 		},
 	"trait-defensive": {
 		"name": "Defensive",
@@ -409,7 +409,7 @@
 		"rulebook": 62,
 		"rulebookr1": 64,
 		"revision": 1,
-		"status": "current"
+		"status": "current errata"
 		},
 	"trait-fear": {
 		"name": "Fear",
@@ -535,7 +535,7 @@
 		"rulebook": 63,
 		"rulebookr1": 66,
 		"revision": 1,
-		"status": "current-errata"
+		"status": "current errata"
 		},
 	"trait-impenetrable_defence": {
 		"name": "Impenetrable Defence",
@@ -725,18 +725,18 @@
 		},
 	"trait-oni_rage": {
 		"name": "Oni Rage",
-		"description": "During Ki Generation, this model may gain an additional number of Ki Tokens equal to D2.\nIf it does, it gains a Berserk Marker.",
+		"description": "While this model has a Berserk Marker it gains Tough (+1).\nIn the Starting Phase, if this model is on the Battlefield, it may gain a Berserk Marker.\nIf it does so, it gains 2 Ki Tokens.",
 		"bsid": "45cb-e585-e410-95c3",
 		"references": ["state-berserk", "concept-markers", "concept-tokens"],
 		"rulebook": 65,
 		"rulebookr1": 67,
-		"revision": 0,
-		"status": "current"
+		"revision": 1,
+		"status": "balance update"
 		},
 	"trait-order": {
 		"name": "Order",
 		"arguments": "[Descriptor](X/Y”)",
-		"description": "This model may declare a Complex action, Order: This model immediately nominates X other Friendly [Descriptor] models within Y”.\nThose models’ gain one Activation counter.",
+		"description": "This model may declare a Complex action, Order: This model immediately nominates X other Friendly [Descriptor] models within Y”.\nThose models gain one Activation counter.",
 		"bsid": "ed40-ed42-2208-1ea0",
 		"references": ["concept-counters", "timing-complex", "action-order", "concept-friendly"],
 		"rulebook": 65,
@@ -958,7 +958,7 @@
 		"rulebook": 67,
 		"rulebookr1": 69,
 		"revision": 2,
-		"status": "current"
+		"status": "current errata"
 		},
 	"trait-spirit": {
 		"name": "Spirit",
@@ -979,7 +979,7 @@
 		"rulebook": 67,
 		"rulebookr1": 70,
 		"revision": 1,
-		"status": "current"
+		"status": "current errata"
 		},
 	"trait-steadfast": {
 		"name": "Steadfast",
@@ -1042,7 +1042,7 @@
 		"rulebook": 68,
 		"rulebookr1": 70,
 		"revision": 1,
-		"status": "current"
+		"status": "current errata"
 		},
 	"trait-terror": {
 		"name": "Terror",
@@ -1136,7 +1136,7 @@
 		"rulebook": 69,
 		"rulebookr1": 71,
 		"revision": 1,
-		"status": "current"
+		"status": "current errata"
 		},
 	"trait-willpower": {
 		"name": "Willpower",
@@ -1157,7 +1157,7 @@
 		"rulebook": 70,
 		"rulebookr1": 72,
 		"revision": 1,
-		"status": "current"
+		"status": "current errata"
 		},
 	"trait-terrain_destructible": {
 		"name": "Terrain: Destructible",

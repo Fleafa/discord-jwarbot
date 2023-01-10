@@ -21,7 +21,7 @@
 		"rulebook": 47,
 		"rulebookr1": 49,
 		"revision": 1,
-		"status": "errata 2021"
+		"status": "current errata"
 	},
 	"ability-forceback_attack": {
 		"name": "Forceback Attack",
@@ -29,7 +29,7 @@
 		"rulebook": 47,
 		"rulebookr1": 49,
 		"revision": 1,
-		"status": "errata 2021"
+		"status": "current errata"
 	},
 	"ability-grapple_attack": {
 		"name": "Grapple Attack",
@@ -61,7 +61,7 @@
 		"rulebook": 47,
 		"rulebookr1": 49,
 		"revision": 1,
-		"status": "errata 2021"
+		"status": "current errata"
 	},
 	"ability-slam_attack": {
 		"name": "Slam Attack",
@@ -69,7 +69,7 @@
 		"rulebook": 47,
 		"rulebookr1": 49,
 		"revision": 1,
-		"status": "errata 2021"
+		"status": "current errata"
 	},
 	"ability-stun_attack": {
 		"name": "Stun Attack",
@@ -93,7 +93,7 @@
 		"rulebook": 48,
 		"rulebookr1": 49,
 		"revision": 1,
-		"status": "errata 2021"
+		"status": "current errata"
 	},
 	"ability-ability-eagles_flight_defence": {
 		"name": "Eagle's Flight Defence",
@@ -132,7 +132,7 @@
 		"rulebook": 48,
 		"rulebookr1": 50,
 		"revision": 1,
-		"status": "errata 2021"
+		"status": "current errata"
 	},
 	"ability-forceback_defence": {
 		"name": "Forceback Defence",
@@ -146,7 +146,7 @@
 		"name": "Grapple Defence",
 		"description": "If the Defence is successful, the Attacker becomes Held. Place a Held Marker on the Attack.",
 		"revision": 0,
-		"status": "errata 2021"
+		"status": "current errata"
 	},
 	"ability-push_defence": {
 		"name": "Push Defence",
@@ -162,7 +162,7 @@
 		"rulebook": 48,
 		"rulebookr1": 50,
 		"revision": 1,
-		"status": "errata 2021"
+		"status": "current errata"
 	},
 	"ability-sweep_defence": {
 		"name": "Sweep Defence",
@@ -178,6 +178,6 @@
 		"rulebook": 48,
 		"rulebookr1": 50,
 		"revision": 1,
-		"status": "errata 2021"
+		"status": "current errata"
 	}
 }
