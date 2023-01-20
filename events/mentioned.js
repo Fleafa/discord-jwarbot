@@ -6,7 +6,7 @@ module.exports = {
 	async execute(message) {
 		const fbotID = new RegExp('(<@!?' + clientId + '>)(?: |)');
 		const botIDmatch = message.content.match(fbotID);
-		const jwarbotTip = ':ninja: Hi there! I\'m JwarBot. I currently support the following commands :ninja:\n**/warband** will prompt you to paste a Battlescribe Warband you\'ve copied using Share > Chat. It will then send it back to you in a prettier format.\n**/trait *trait_name***, **/state *state_name*** **/ability *ability_name***, & **/feat *feat_name*** will try to autocomplete the corresponding rule name. When you send the command, I\'ll reply with that rule\'s current definition.\n*Coming soon(ish): /concept*';
+		const jwarbotTip = ':ninja: Hi there! I\'m JwarBot v0.5 :ninja:\nI currently support the following commands:\n**/trait** *trait_name*\n**/state** *state_name*\n**/ability** *ability_name*\n**/feat** *feat_name*\nTry to autocomplete the corresponding rule name. When you send the command, I\'ll reply with that rule\'s current definition.\n**/warband**\nPrompts you to paste a Battlescribe Warband copied using Share > Chat. It will then send it back to you in a prettier format.\n*Coming soon(ish): /concept*';
 		if (botIDmatch) {
 			return message.channel.send(jwarbotTip);
 		}
