@@ -3031,7 +3031,7 @@
 		"cost": 2,
 		"timing": "Instant",
 		"subject": "Personal",
-		"description": "Walk this model directly away from an Enemy model in BtB until it leaves its ZoC. After moving, this model must use Bodyguard. If it cannot, it doesn't Walk.",
+		"description": "Move this model directly away from an Enemy model in BtB until it leaves its ZoC. After moving, this model must use Bodyguard. If it cannot, it doesn't Move.",
 		"revision": 0,
 		"status": "current"
 	},
