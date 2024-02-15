@@ -105,7 +105,8 @@
 		"name": "Allure",
 		"cost": 2,
 		"timing": "Simple",
-		"subject": "Aura BtB",
+		"subject": "Aura",
+		"range": "BtB",
 		"opposed": true,
 		"limitations": ["noBtB"],
 		"description": "Enemy models in the Aura that allocate dice to Attack against this model in a Melee Exchange gain 1 Control Marker after the activation is complete unless the Attack Kills or removes this model from play.",
@@ -118,6 +119,18 @@
 		"timing": "Instant",
 		"subject": "Personal",
 		"description": "The next Enemy Damage Roll on this model is ignored if the individual dice values of the Damage Roll are the same number.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-ancestral_guidance": {
+		"name": "Ancestral Guidance",
+		"cost": 4,
+		"timing": "Complex",
+		"subject": "Aura",
+		"range": "∞",
+		"limitations": ["OpG"],
+		"description": "Choose one of the following:\n• Takashi Hida: Friendly models in the Aura gain Indomitable (3).\n• Takashi Akira: Friendly models in the Aura gain Last Stand.\n• Takashi Hiroshi: Friendly Samurai models in the Aura gain Melee Boost (2).\n• Takashi Sakura: Friendly Ashigaru models in the Aura gain Adept [Melee](2).",
+		"references": ["trait-indomitable", "trait-last_stand", "trait-adept"],
 		"revision": 0,
 		"status": "current"
 	},
@@ -170,7 +183,8 @@
 		"name": "Aura of Serenity",
 		"cost": "X",
 		"timing": "Complex",
-		"subject": "Aura X",
+		"subject": "Aura",
+		"range": "X",
 		"limitations": ["noBtB", "OpG"],
 		"description": "All non-Soulless models in the Aura or in BtB with a model in the Aura lose Aggressive, may not place dice in Attack, use Special Defences during Melee Exchanges, Target Enemy models with Ki Feats or move through the Aura with a Charge or Run Action.",
 		"revision": 0,
@@ -196,6 +210,18 @@
 		"references": [
 			"trait-immune"
 		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-barb": {
+		"name": "Barb",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"opposed": true,
+		"limitations": ["OpT"],
+		"description": "Target model cannot move except directly toward this model.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -249,6 +275,16 @@
 		"range": 3,
 		"limitations": ["noBtB"],
 		"description": "Choose up to X Enemy models within the Pulse's area of effect. Each model chosen becomes Immobilised.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-binding_shadows": {
+		"name": "Binding Shadows",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Target",
+		"range": "BtB",
+		"description": "During an Enemy model's activation in which it enters BtB with this model, that Enemy model gains an Immobilised Marker at the end of the current activation.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -504,7 +540,8 @@
 		"name": "Cleansing",
 		"cost": "X",
 		"timing": "Complex",
-		"subject": "Pulse X",
+		"subject": "Pulse",
+		"range": "X",
 		"limitations": ["noBtB"],
 		"description": "Remove up to X Control, Disease, Fire, Poison, or Spirit Block Markers from models with tha Pulse's area of effect. X is equal to the number of Ki Tokens spent.",
 		"revision": 0,
@@ -539,7 +576,8 @@
 		"name": "Cloud of Flies",
 		"cost": 2,
 		"timing": "Active",
-		"subject": "Aura BtB",
+		"subject": "Aura",
+		"range": "BtB",
 		"description": "Enemy models in, or entering the Aura's area of effect gain a Stunned Marker.\nModels can only gain one Stunned Marker per turn as a result of this Ki Feat.",
 		"revision": 0,
 		"status": "current"
@@ -677,6 +715,16 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-cower": {
+		"name": "Cower",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"description": "Until the End Phase Target Frightened Enemy model may only declare Disengage, Stand Up and Wait actions.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-craft_marionette": {
 		"name": "Craft Marionette",
 		"cost": "X",
@@ -789,7 +837,8 @@
 		"name": "Dark From Light",
 		"cost": "Rank X",
 		"timing": "Simple",
-		"subject": "Aura X",
+		"subject": "Aura",
+		"range": "X",
 		"description": "In the Aura:\n• Satsui models in the Aura gain Spirit (+1).\n• Non-Void Element models gain Spirit (-1).",
 		"references": [
 			"trait-spirit"
@@ -941,7 +990,8 @@
 		"name": "Diplomatic Immunity",
 		"cost": 2,
 		"timing": "Simple",
-		"subject": "Aura BtB",
+		"subject": "Aura",
+		"range":"BtB",
 		"limitations": ["OpG"],
 		"description": "Non-Soulless Enemy models in the Aura and non- Soulless models in BtB with them lose Aggressive, may not place dice in Attack or use Special Defences in a Melee Exchange or Target this model with Ki Feats.",
 		"revision": 0,
@@ -1100,6 +1150,17 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-endless_gnawing": {
+		"name": "Endless Gnawing",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Pulse",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "When a Friendly Rat model in the Pulse ends its activation, you become the Active Player again and begin an activation with this model.\nThis Ki Feat cannot be used if this model is Exhausted.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-enliven": {
 		"name": "Enliven",
 		"cost": 1,
@@ -1208,6 +1269,16 @@
 		"subject": "Personal",
 		"limitations": ["noBtB"],
 		"description": "This model's Ranged Weapon Range Bands become 4/8/12 until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-fathers_instruction": {
+		"name": "Father's Instruction",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Kata until the End Phase.",
+		"references":["trait-kata"],
 		"revision": 0,
 		"status": "current"
 	},
@@ -1338,6 +1409,18 @@
 			"trait-dodge",
 			"trait-counterstrike_defence"
 		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-fluster": {
+		"name": "Fluster",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 8,
+		"opposed": true,
+		"limitations": ["noBtB"],
+		"description": "Target Enemy model gains an Impetuous Marker.\nUntil the End Phase, while the Enemy model has an Impetuous Marker, it may not Target or declare actions that will bring it into BtB with Friendly Ito models that have Impetuous Markers.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -1600,7 +1683,8 @@
 		"name": "Ghost Fire",
 		"cost": 3,
 		"timing": "Simple",
-		"subject": "Pulse X",
+		"subject": "Pulse",
+		"range":"X",
 		"limitations": ["noBtB", "OpT"],
 		"description": "Transfer 1 Ki Token from all models in the Pulse to this model, each model that transferred a Ki Token suffers 1 Wound.\nWounds caused by this effect ignore Tough.\nX is equal to the number of Ghost Tokens on this model.",
 		"revision": 0,
@@ -1818,6 +1902,16 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-horrify": {
+		"name": "Horrify",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Pulse",
+		"range": "X",
+		"description": "Enemy models in the Pulse gain a Frightened Marker.\nX is equal to the number of Ki Tokens on this model after paying for this Ki Feat.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-hot_shot": {
 		"name": "Hot Shot",
 		"cost": 2,
@@ -1915,6 +2009,16 @@
 		"range": 4,
 		"limitations": ["noBtB"],
 		"description": "Target Enemy model gains a Blind marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-impatient": {
+		"name": "Impatient",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "This model gains an Impetuous Marker.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -2320,13 +2424,24 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-manifest_fear": {
+		"name": "Manifest Fear",
+		"cost": "X",
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 8,
+		"limitations": ["noBtB"],
+		"description": "This model and a Friendly 'Animal - Rat' model switch places. This feat may be used while this model is Elsewhere.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-many_as_one": {
 		"name": "Many as One",
 		"cost": 3,
 		"timing": "Active",
 		"subject": "Special",
 		"limitations": ["noBtB"],
-		"description": "This model and a Friendly 'Animal - Rat' model switch places. This feat may be used while this model is Elsewhere.",
+		"description": "Summon and Deploy a Sagoya Kaidan within 3\" of Target Enemy model.\nIt may not be placed in an Enemy model's ZoC or in BtB with an Enemy model.\nPlace a number of Ki Tokens on Sagoya Kaidan's profile card equal to the number spent for this Ki Feat instead of any from the Kami trait when deployed.\nThere may only be one Friendly Sagoya Kaidan in play at any time.\nThis model cannot use this Ki Feat if there is already a Friendly Sagoya Kaidan in play.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -2345,7 +2460,8 @@
 		"name": "Martyr",
 		"cost": "X+1",
 		"timing": "Simple",
-		"subject": "Pulse X",
+		"subject": "Pulse",
+		"range":"X",
 		"limitations": ["noBtB"],
 		"description": "Transfer X State Markers that are not Disguise, Held, Prone, or Reload Markers from a model in the Pulse to this model.",
 		"revision": 1,
@@ -2569,6 +2685,16 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-ophidian_arrow": {
+		"name": "Ophidian Arrow",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Personal",
+		"limitations": ["noWalk", "noBtB"],
+		"description": "Make a Ranged Attack, ignoring Reload Markers and the Reload Trait.\nOn a successful attack, choose an Izu Serpent model that is not currently in play.\nBefore you make the Damage Roll, the Target suffers the following in addition to the Ranged Damage roll:\n• Asp: Poison (2) Marker\n• Boa Constrictor: Immobilised Marker\n• Cobra: Blind Marker\nOnce the attack is resolved, if the attack was successful, Deploy the chosen Izu Serpent model in BtB with the Target model, ignoring the usual BtB restriction on Deploying a model.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-orochis_prayer": {
 		"name": "Orochi's Prayer",
 		"cost": 2,
@@ -2694,6 +2820,17 @@
 		"references": [
 			"trait-lightfooted"
 		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-pay_your_dues": {
+		"name": "Pay Your Dues",
+		"cost": 0,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "Target Enemy that is not an Animal must choose to either gain a Death Sentence Marker or transfer 1 of its Ki Tokens to this model.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -2894,7 +3031,8 @@
 		"name": "Quagmire",
 		"cost": "X",
 		"timing": "Active",
-		"subject": "Aura X",
+		"subject": "Aura",
+		"range": "X",
 		"description": "The Aura's area is considered [Difficult, Clear, Zero] terrain.",
 		"revision": 0,
 		"status": "current"
@@ -2924,7 +3062,8 @@
 		"name": "Rage Against Time",
 		"cost": "Rank 3",
 		"timing": "Complex",
-		"subject": "Pulse X",
+		"subject": "Pulse",
+		"range":"X",
 		"limitations": ["OpG"],
 		"description": "Non-Soulless, Non-Satsui models in the Pulse gain a Berserk Marker.\nX=Current Turn Number.",
 		"revision": 0,
@@ -3165,6 +3304,17 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-salvation": {
+		"name": "Salvation",
+		"cost": "X",
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": "X",
+		"limitations":["OpG"],
+		"description": "Oher models in the aura cannot be Killed. If a model in the Aura would have its final Wound Box marked, instead leave one box unmarked.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-sames_warning": {
 		"name": "Same's Warning",
 		"cost": 2,
@@ -3197,6 +3347,16 @@
 		"subject": "Special BtB",
 		"limitations": ["noBtB", "OpT"],
 		"description": "Place the Scorched Earth template in BtB with this model.\nIt is a Terrain element [Difficult, Obscuring, Zero].\nModels contacting this Terrain gain a Fire (3) Marker.\nRemove the Terrain element in the End Phase.\nAdd 1 Void Counter to the Blessings of the Void Communal Card.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-scuttle": {
+		"name": "Scuttle",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "Move this model 1\".",
 		"revision": 0,
 		"status": "current"
 	},
@@ -3262,6 +3422,17 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-shadow_rats": {
+		"name": "Shadow Rats",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Pulse",
+		"range": 4,
+		"limitations": ["OpT"],
+		"description": "Exchange positions of this model with any Friendly Rat model in the pulse.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-shadow_tendrils": {
 		"name": "Shadow Tendrils",
 		"cost": 3,
@@ -3281,6 +3452,27 @@
 		"subject": "Personal",
 		"limitations": ["OpA"],
 		"description": "If this model is out of LoS of all enemy models, place it within 3\" of its current location.\nThis feat can only be used once per activation.\nThis Ki Feat can only be used once per activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-shared_reflexes": {
+		"name": "Shared Reflexes",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Special",
+		"description": "This model and Friendly Spectre models gain Brutal (1) and Parry (1) until the end of the Melee Exchange.",
+		"references": ["trait-brutal", "trait-parry"],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-shared_senses": {
+		"name": "Shared Senses",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Special",
+		"limitations": ["OpT"],
+		"description": "This model and Friendly Spectre models gain Aware and Ranged Defence (2) until the end of the current activation.",
+		"references": ["trait-aware", "trait-ranged_defence"],
 		"revision": 0,
 		"status": "current"
 	},
@@ -3320,7 +3512,8 @@
 		"name": "Shroud",
 		"cost": "X",
 		"timing": "Complex",
-		"subject": "Aura X",
+		"subject": "Aura",
+		"range":"X",
 		"limitations": ["noBtB"],
 		"description": "Enemy models that are not in the Aura cannot draw LoS to models completely inside the Aura.\nModels completely in the Aura do not block Enemy model's LoS.",
 		"revision": 0,
@@ -3334,6 +3527,17 @@
 		"range": 6,
 		"limitations": ["OpT"],
 		"description": "When Friendly Animal models Target or participate in a Melee Exchange with chosen Enemy model, they gain Bravery and Co-ordinated Attack [Friendly] until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-sidewinder": {
+		"name": "Sidewinder",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Target",
+		"range": "BtB",
+		"limitations": ["OpG"],
+		"description": "Before a Melee Exchange, this model swaps positions with the Enemy model.\nBoth models must remain in BtB.\nIf either model cannot fit in the space available, this Ki Feat cannot be used.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -3478,7 +3682,8 @@
 		"name": "Soothing Shomyo",
 		"cost": "X",
 		"timing": "Complex",
-		"subject": "Aura X",
+		"subject": "Aura",
+		"range": "X",
 		"limitations": ["noBtB"],
 		"description": "Models in the Aura gain Immune [Berserk].\nWhen rolling a Damage Roll against a Friendly model within the Aura, after the result is determined, roll an additional dice and then choose 1 dice to remove, use the remaining 2 dice for the Damage Roll.",
 		"references": [
@@ -3749,7 +3954,8 @@
 		"name": "Supplies",
 		"cost": 1,
 		"timing": "Simple",
-		"subject": "Pulse BtB",
+		"subject": "Pulse",
+		"range": "BtB",
 		"limitations": ["noBtB"],
 		"description": "Remove a Reload Marker from, or and an Ammo Token to, a model in the Pulse.",
 		"revision": 0,
@@ -3917,6 +4123,28 @@
 		"references": [
 			"trait-tough"
 		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-territorial": {
+		"name": "Territorial",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "Target Enemy that is not an Animal model that is in BtB with a Scenario Objective or in a Scenario Zone, must choose to either lose an Activation Counter or transfer 1 of Its Ki Tokens to this model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-thanatophobia": {
+		"name": "Thanatophobia",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Pulse",
+		"range": "X",
+		"limitations": ["noBtB"],
+		"description": "Frightened models in the Pulse take a Success Level 2 Damage Roll.\nX is equal to the number of Ki Tokens on this model after paying for this Ki Feat.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -4426,7 +4654,8 @@
 		"name": "Wing Buffet",
 		"cost": 2,
 		"timing": "Active",
-		"subject": "Pulse BtB",
+		"subject": "Pulse",
+		"range": "BtB",
 		"description": "All models in the Pulse's area of effect must succeed in a Size Challenge Test (6) or Walk D3\" directly away from this model.",
 		"revision": 0,
 		"status": "current"
