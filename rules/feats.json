@@ -170,7 +170,7 @@
 		"name": "Athleticism",
 		"cost": 2,
 		"timing": "Active",
-		"subject": "Personel",
+		"subject": "Personal",
 		"description": "This model gains Jump Up and Dodge (1) until the current activation is resolved.",
 		"references": [
 			"trait-jump_up",
@@ -459,6 +459,16 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-cauterise": {
+		"name": "Cauterise",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Target",
+		"range": "BtB",
+		"description": "Remove any Disease and Bleed Markers from the Target model.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-chain_attack": {
 		"name": "Chain Attack",
 		"cost": 2,
@@ -511,6 +521,15 @@
 		"references": [
 			"trait-slow"
 		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-choke_hold": {
+		"name": "Choke Hold",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Grapple Attack (0) and Grapple Defence (0) until the end of the current activation.\nIf this model successfully applies one of these Special Abilities, the Enemy model suffers one Wound.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -1064,6 +1083,36 @@
 		"revision": 1,
 		"status": "current errata"
 	},
+	"feat-dragons_awe": {
+		"name": "Dragon's Awe",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Believer [Shisai] (1/2\") until the End Phase.",
+		"references": ["trait-believer"],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-dragons_focus": {
+		"name": "Dragon's Focus",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model gains Mettle (1) until the end of the current activation.",
+		"references": ["trait-mettle"],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-dragons_presence": {
+		"name": "Dragon's Presence",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Disturb Flow (1/2\") until the End Phase.",
+		"references": ["trait-disturb_flow"],
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-duty": {
 		"name": "Duty",
 		"cost": 3,
@@ -1180,6 +1229,29 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-enthusiasm": {
+		"name": "Enthusiasm",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations":["noBtB","OpT"],
+		"description": "This model gains Rapid Fire (3) until the end of the current activation.\nDuring a Ranged Attack Action, for each Ranged Attack that has already been successful this activation, this model's Bombs Weapon increases its long range by 2\".",
+		"references":["trait-rapid_fire"],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-entice": {
+		"name": "Entice",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"opposed":true,
+		"limitations":["OpT"],
+		"description": "Perform a Walk with Target Enemy model directly toward this model equal to its Move statistic in inches.\nAt the end of the Walk the Enemy model must directly face this model.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-envelop": {
 		"name": "Envelop",
 		"cost": 1,
@@ -1226,6 +1298,15 @@
 	"feat-exceptional_defence": {
 		"name": "Exceptional Defence",
 		"description": "If Eagle's Flight Defence is successful this model may Walk 3\" after the Melee Exchange is resolved.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-eye_peck": {
+		"name": "Eye Peck",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "When this model causes Damage with its Bird Strike Weapon, the Target gains a Blind Marker.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -1690,6 +1771,15 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-goh": {
+		"name": "Goh",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "For the next Rope Dart Ranged attack, if successful, move the Target Small or Tiny model directly toward this model until it contacts Impassable Terrain or any model.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-grapple": {
 		"name": "Grapple",
 		"cost": 2,
@@ -1879,6 +1969,16 @@
 		"range": 12,
 		"limitations": ["OpT"],
 		"description": "Place a Friendly Dog model in the Pulse's area of effect into BtB with this model, but not in BtB with an Enemy model or Enemy ZoC",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-hoarfrost": {
+		"name": "Hoarfrost",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Target",
+		"range":"BtB",
+		"description": "After a Melee Exchange with this model is complete, Target Enemy model becomes Held.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -2179,6 +2279,16 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-insurgent": {
+		"name": "Insurgent",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Special",
+		"limitations":["OpG"],
+		"description": "This Feat can only be used while this model is Elsewhere.\nWhen an Enemy model deploys using the Flank Trait, this model may ignore its current Deployment choices for its Flank Trait and Deploy within 3\" of the Enemy model but not in its ZoC or BtB.\nThis model generates two Activation Counters when Deployed using this Feat.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-intercept": {
 		"name": "Intercept",
 		"cost": 2,
@@ -2282,6 +2392,17 @@
 		"subject": "Pulse",
 		"range": 6,
 		"description": "When a non-Soulless model within 6\" becomes the Target of a Ki Feat you may choose a new, valid Target for the Ki Feat, ignoring the feat's Range.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-kill_or_cure": {
+		"name": "Kill or Cure",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": "BtB",
+		"limitations": ["OpG"],
+		"description": "Target model that you own makes a Ki Challenge Test (5).\nIf successful, unmark all Wound boxes.\nIf it fails, the Target is Killed.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -2636,6 +2757,16 @@
 		"revision": 1,
 		"status": "current errata"
 	},
+	"feat-nerve_strike": {
+		"name": "Nerve Strike",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations":["OpT"],
+		"description": "Until the end of the current activation, each time this model would make a Damage Roll in a Melee Exchange, instead the Enemy model removes an Activation Counter.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-nomenclature": {
 		"name": "Nomenclature",
 		"cost": 2,
@@ -2888,6 +3019,15 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-pinprick": {
+		"name": "Pinprick",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Special",
+		"description": "When using this model's Blowgun weapon, instead of rolling a Damage Roll, you may choose to inflict 1 Damage ignoring Tough.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-practised_manoeuvres": {
 		"name": "Practised Manoeuvres",
 		"cost": 2,
@@ -3055,6 +3195,17 @@
 		"subject": "Personal",
 		"limitations": ["noBtB"],
 		"description": "Remove any Reload Markers from this model.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-rage": {
+		"name": "Rage",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "Use this Ki Feat during the Starting Phase.\nThis model gains a Berserk Marker and gains Strong until the End Phase.",
+		"references": ["trait-strong"],
 		"revision": 0,
 		"status": "current"
 	},
@@ -3419,6 +3570,16 @@
 			"trait-lightfooted",
 			"trait-assassin"
 		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-shadow_crows": {
+		"name": "Shadow Crows",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Special",
+		"limitations": ["OpT"],
+		"description": "Place the Conjured Shadow Crows template in BtB with this model.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -3885,6 +4046,15 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-strangulation": {
+		"name": "Strangulation",
+		"cost": 4,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's Garrotte Weapon gains Critical Attack (0) and Powerful Attack (0).",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-strip_soul": {
 		"name": "Strip Soul",
 		"cost": "X+1",
@@ -4162,9 +4332,21 @@
 	},
 	"feat-thrash": {
 		"name": "Thrash",
+		"cost": 2,
 		"timing": "Instant",
 		"subject": "Personal",
 		"description": "Models in a Melee Exchange with this model lose the Dodge trait until the current action is resolved.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-threat": {
+		"name": "Threat",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": 6,
+		"limitations":["OpG"],
+		"description": "Enemy models ending a move in the Aura or Placed into the Aura must turn to directly face this model.\nThis Model loses Camouflage while using this Ki Feat.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -4592,6 +4774,17 @@
 		"references": [
 			"trait-disturb_flow"
 		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-warning_rattle": {
+		"name": "Warning Rattle",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Target",
+		"range": "BtB",
+		"limitations": ["OpT"],
+		"description": "During an Enemy model's activation in which it enters BtB with this model, that Enemy model gains a Frightened Marker.\nRemove the Frightened Marker in the End Phase.",
 		"revision": 0,
 		"status": "current"
 	},
