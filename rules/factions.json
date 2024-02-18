@@ -1,0 +1,47 @@
+{
+	"faction-cult": {
+		"name": "Cult of Yurei"
+		},
+	"faction-ito": {
+		"name": "Ito Clan"
+		},
+	"faction-jung": {
+		"name": "Jung Pirates"
+		},
+	"faction-kinshi": {
+		"name": "Kinshi Temple"
+		},
+	"faction-kkz": {
+		"name": "Shadow Wind Clan"
+		},
+	"faction-ronin": {
+		"name": "Ronin"
+		},
+	"faction-ryu": {
+		"name": "Prefecture of Ryu"
+		},
+	"faction-minimoto": {
+		"name": "Minimoto Clan"
+		},
+	"faction-wave": {
+		"name": "Savage Wave"
+		},
+	"faction-descension": {
+		"name": "The Descension"
+		},
+	"faction-sts": {
+		"name": "Silvermoon Trade Syndicate"
+		},
+	"faction-temple": {
+		"name": "Temple of Ro-Kan"
+		},
+	"faction-shiho": {
+		"name": "Shiho Clan"
+		},
+	"faction-empire": {
+		"name": "The Golden Empire"
+		},
+	"faction-ataka": {
+		"name": "Horselords of Ataka"
+		}
+}
