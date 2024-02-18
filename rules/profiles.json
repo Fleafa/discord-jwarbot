@@ -1,18 +1,26 @@
 {
   "profile-dark_pilgrim": {
     "name": "The Dark Pilgrim",
-    "riceCost": "18",
-    "factions": [ "ronin", "wave", "kkz", "descension", "shiho", "jung", "kinshi" ],
-    "meleePool": "3",
-    "meleeBoost": "3",
-    "rangedPool": "3",
-    "rangedBoost": "3",
-    "movePool": "5",
-    "moveBoost": "",
-    "kiStat": "2",
-    "kiBoost": "",
-    "kiMax": "10",
-    "wounds": "6",
+    "riceCost": 18,
+    "factions": [
+      "faction-ronin",
+      "faction-wave",
+      "faction-kkz",
+      "faction-descension",
+      "faction-shiho",
+      "faction-jung",
+      "faction-kinshi"
+    ],
+    "meleePool": 3,
+    "meleeBoost": 3,
+    "rangedPool": 3,
+    "rangedBoost": 3,
+    "movePool": 5,
+    "moveBoost": ,
+    "kiStat": 2,
+    "kiBoost": ,
+    "kiMax": 10,
+    "wounds": 6,
     "traits": [
       "trait-cloudwalk",
       ["trait-feint", 1],
@@ -21,10 +29,10 @@
       "trait-sixth_sense",
       "trait-soulless"
     ],
-    "kiFeats": [],
-    "uniqueEffects": [],
+    "kiFeats": ["feat-storm_path", "feat-surge"],
+    "uniqueEffects": ["ue-dark_pilgrim", "ue-raijin_no_target", "ue-rising_storm"],
     "size": "small",
-    "baseSize": "30",
+    "baseSize": 30,
     "revision": 0,
     "status": "current"
     }
