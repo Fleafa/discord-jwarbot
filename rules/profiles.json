@@ -1,0 +1,34 @@
+{
+  "profile-dark_pilgrim": {
+    "name": "The Dark Pilgrim",
+    "riceCost": 18,
+    "factions": [
+      "faction-ronin",
+      "faction-wave",
+      "faction-kkz",
+      "faction-descension",
+      "faction-shiho",
+      "faction-jung",
+      "faction-kinshi"
+    ],
+    "melee": [3,3],
+    "ranged": [3,3],
+    "move": [5,null],
+    "ki": [2,null,10],
+    "wounds": 6,
+    "traits": [
+      "trait-cloudwalk",
+      ["trait-feint", 1],
+      ["trait-hatred", "The Grey Pilgrim"],
+      "trait-lightning_reflexes",
+      "trait-sixth_sense",
+      "trait-soulless"
+    ],
+    "kiFeats": ["feat-storm_path", "feat-surge"],
+    "uniqueEffects": ["ue-dark_pilgrim", "ue-raijin_no_target", "ue-rising_storm"],
+    "size": "small",
+    "baseSize": 30,
+    "revision": 0,
+    "status": "current"
+    }
+}
