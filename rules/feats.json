@@ -3588,7 +3588,7 @@
 		"timing": "Simple",
 		"subject": "Aura",
 		"range": "X",
-		"limitations":["OpG"],
+		"limitations": ["OpG"],
 		"description": "Oher models in the aura cannot be Killed. If a model in the Aura would have its final Wound Box marked, instead leave one box unmarked.",
 		"revision": 0,
 		"status": "current"
@@ -3622,7 +3622,8 @@
 		"name": "Scorch the Earth",
 		"cost": "Rank 1",
 		"timing": "Active",
-		"subject": "Special BtB",
+		"subject": "Special",
+		"range": "BtB",
 		"limitations": ["noBtB", "OpT"],
 		"description": "Place the Scorched Earth template in BtB with this model.\nIt is a Terrain element [Difficult, Obscuring, Zero].\nModels contacting this Terrain gain a Fire (3) Marker.\nRemove the Terrain element in the End Phase.\nAdd 1 Void Counter to the Blessings of the Void Communal Card.",
 		"revision": 0,
