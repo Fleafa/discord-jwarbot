@@ -459,6 +459,17 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-cast_shadow": {
+		"name": "Cast Shadow",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Special",
+		"range": "BtB",
+		"limitations": [ "noBtB", "OpT" ],
+		"description": "Place a Shadow Terrain Element onto the Battlefield in BtB with this model.\nChoose the type of Shadow when you use this feat.\nIf this model is killed or removed from play, immediately remove all Shadows from the Battlefield.",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-cauterise": {
 		"name": "Cauterise",
 		"cost": 1,
@@ -1049,6 +1060,27 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-distracting_fan": {
+		"name": "Distracting Fan",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Special",
+		"opposed": true,
+		"limitations": [ "OpT" ],
+		"description": "During an Enemy model's activation in which it entered into BtB with, or Targets another Fan Dancer model with a Ranged Attack or Ki Feat, but before any Melee Exchange begins, place that Fan Dancer model within 2\" of its current location. The Enemy model's action is then considered resolved.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-distracting_strike": {
+		"name": "Distracting Strike",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Target",
+		"range": "BtB",
+		"description": "While this model would provide a Melee Assist, that Fan Dancer's opponent may not use Ki Boosts.\nThis feat can be used even if this assist is ignored (e.g. by the Indomitable trait).",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-divert_energy": {
 		"name": "Divert Energy",
 		"cost": 2,
@@ -1113,6 +1145,16 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-dramatic_entrance": {
+		"name": "Dramatic Entrance",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Special",
+		"limitations": [ "OpG" ],
+		"description": "When this model is Deployed from Flank, turn all Enemy models to directly face it after it is deployed.",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-duty": {
 		"name": "Duty",
 		"cost": 3,
@@ -1982,6 +2024,17 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-heros_dilemma": {
+		"name": "Hero's Dilemma",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"opposed": true,
+		"description": "Opponent chooses up to two valid Actions for the Target model. You may veto one Action.\nThe model must perform the other Action if able. If it cannot do so, or if there are no remaining Actions, it becomes Exhausted.",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-hoarfrost": {
 		"name": "Hoarfrost",
 		"cost": 1,
@@ -2347,6 +2400,17 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-jump_em": {
+		"name": "Jump Em!",
+		"cost": "X",
+		"timing": "Active",
+		"subject": "Pulse",
+		"range": "X",
+		"limitations": [ "OpG" ],
+		"description": "This model gains Command [Shatei](X/X\"). Choose X Friendly Shatei models in the Pulse to gain a Virtue Token.\nFriendly Shatei models on the Battlefield gain Co-ordinated Attack [Shatei].",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-kannagara": {
 		"name": "Kannagara",
 		"cost": 2,
@@ -2813,6 +2877,17 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-obey_your_master": {
+		"name": "Obey Your Master",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"opposed": true,
+		"description": "Target model gains a Controlled Marker.",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-obscured_by_umbra": {
 		"name": "Obscured by Umbra",
 		"cost": "Rank 1",
@@ -2964,6 +3039,18 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-path_of_flowers": {
+		"name": "Path of Flowers",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Special",
+		"limitations": [
+		  "OpG"
+		],
+		"description": "When this model is Deployed from Flank, you may deploy it in the centre point of the battlefield.\nIf there is a model, objective, or terrain in the centre of the battlefield, deploy this model in BtB with any model, objective, or terrain of your choice, ignoring the usual Deployment restrictions.",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-pay_your_dues": {
 		"name": "Pay Your Dues",
 		"cost": 0,
@@ -2987,6 +3074,15 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-performance": {
+		"name": "Performance",
+		"cost": "Rank 2",
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Endurance until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-pestilence": {
 		"name": "Pestilence",
 		"cost": 3,
@@ -3124,6 +3220,16 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-proficiency": {
+		"name": "Proficiency",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": [ "OpT" ],
+		"description": "This model gains Feint (1) and Dodge (1) until the end of the activation.",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-promo": {
 		"name": "Promo",
 		"cost": 2,
@@ -3177,6 +3283,17 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-pulling_the_strings":{
+		"name": "Pulling the Strings",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"opposed": true,
+		"description": "You may Walk Target Enemy model 2\".",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-quagmire": {
 		"name": "Quagmire",
 		"cost": "X",
@@ -3558,6 +3675,16 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-set_the_scene": {
+		"name": "Set the Scene",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Special",
+		"limitations": [ "OpG" ],
+		"description": "Place a piece of [Impassable, Blocking, Large], [Destructible] terrain that fits on a 50mm base onto the Battlefield. Remove it in the End Phase.",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-shadow": {
 		"name": "Shadow",
 		"cost": 2,
@@ -3712,6 +3839,17 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-signal": {
+		"name": "Signal",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Pulse",
+		"range": 8,
+		"limitations": [ "OpG" ],
+		"description": "When you become the Active Player, before choosing to activate, choose any number of Friendly Kabuki models in the Pulse to activate in the same single activation. Each model resolves any movement before any Melee Exchanges are resolved. Melee Exchanges are then resolved in the order the Controlling player chooses.",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-silence_of_the_void": {
 		"name": "Silence of the Void",
 		"cost": "Rank 3",
@@ -3795,6 +3933,17 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-smash_your_dreams": {
+		"name": "Smash Your Dreams",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Target",
+		"range": 6,
+		"opposed": true,
+		"description": "Target model cannot benefit from the Brutal, Dodge, Feint, Kata, Lightning Reflexes, Parry, Prowess, or Reach traits until the end of the current activation.",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-smite": {
 		"name": "Smite",
 		"cost": 2,
@@ -3964,6 +4113,15 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-spotlight": {
+		"name": "Spotlight",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Special",
+		"description": "You may centre a 2\" Aura on a Friendly Lantern. Kabuki models in the Aura gain Kata. Kabuki models outside the Aura gain Insignificant while the Aura is on the Battlefield. If this Ki Feat is used again, by any model, the Aura on the previous Lantern expires.",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-spur_on": {
 		"name": "Spur On",
 		"cost": 2,
@@ -4009,6 +4167,17 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-stir_emotion": {
+		"name": "Stir Emotion",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"opposed": true,
+		"description": "Target gains a number of the following Markers equal to the Success Level of the Opposed Test in the order given, up to one of each:\nStunned, Impetuous, Frightened, Berserk.",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-stolen_glory": {
 		"name": "Stolen Glory",
 		"cost": 3,
@@ -4566,6 +4735,15 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-twisting_your_mind": {
+		"name": "Twisting Your Mind",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Special",
+		"description": "This model and Friendly Ningyo gain Regenerate (1) until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-umbrella_block": {
 		"name": "Umbrella Block",
 		"cost": 2,
