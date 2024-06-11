@@ -38,7 +38,7 @@ module.exports = {
 			return;
 		}
 		else {
-			getInput = getInput.toLowerCase();
+			//getInput = getInput.toLowerCase();
 			console.log(getInput);
 		}
 
