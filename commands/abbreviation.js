@@ -64,12 +64,12 @@ module.exports = {
 			);
 
 		const fFaction = /faction[^\*]*/;
-		const rFactionIcon = /(\*faction.*\*)/;
+		const rFactionIcon = /\*faction.*\*/;
 
 		// 753678317177143316
 		const factionIconName = abbreviationDefinition.match(fFaction);
 		const factionIconId = interaction.guild.emojis.cache.find(emoji => emoji.name === factionIconName);
-		const factionIcon = '<:' + factionIconName + ':753678317177143316>';
+		const factionIcon = '<:' + factionIconName + ':' + factionIconId + '>';
 
 		abbreviationDefinition = abbreviationDefinition.replace(rFactionIcon, factionIcon);
 		console.log('FactionIconName = ' + factionIconName);
