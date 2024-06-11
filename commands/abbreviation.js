@@ -21,7 +21,8 @@ module.exports = {
 		const abbreviationList = [];
 
 		for (const abbr in yamlData) {
-			abbreviationList.push(yamlData[abbr]);
+			abbreviationList.push(yamlData);
+			console.log(abbr);
 		}
 
 		const filtered = abbreviationList.filter(choice => choice.startsWith(focusedValue));
