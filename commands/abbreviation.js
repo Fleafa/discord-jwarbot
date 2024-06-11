@@ -17,8 +17,8 @@ module.exports = {
 				.setRequired(true)),
 
 	async autocomplete(interaction) {
-		const focusedValue = interaction.options.getFocused();
-		const abbreviationList = Object.keys(yamlData);
+		const focusedValue = interaction.options.getFocused().toLowerCase();
+		const abbreviationList = Object.keys(yamlData).toLowerCase();
 
 		const filtered = abbreviationList.filter(choice => choice.startsWith(focusedValue));
 		if (focusedValue) {
@@ -63,18 +63,21 @@ module.exports = {
 					.setStyle(ButtonStyle.Primary),
 			);
 
-		const fFaction = /faction[^\*]*/;
-		const rFactionIcon = /\*faction.*\*/;
+		const fFaction = /faction[^:]*/;
+		const rFactionIcon = /:faction.*:/;
 
-		// 753678317177143316
 		const factionIconName = abbreviationDefinition.match(fFaction);
-		const factionIconId = interaction.guild.emojis.cache.find(emoji => emoji.name === factionIconName.toString());
-		const factionIcon = '<:' + factionIconName + ':' + factionIconId + '>';
 
-		abbreviationDefinition = abbreviationDefinition.replace(rFactionIcon, factionIcon);
-		console.log('FactionIconName = ' + factionIconName);
-		console.log('FactionIconId = ' + factionIconId);
-		console.log('factionIcon = ' + factionIcon);
+		if (factionIconName) {
+			const factionIconId = interaction.guild.emojis.cache.find(emoji => emoji.name === factionIconName.toString());
+			const factionIcon = '<:' + factionIconName + ':' + factionIconId + '>';
+
+			abbreviationDefinition = abbreviationDefinition.replace(rFactionIcon, factionIcon);
+
+			console.log('FactionIconName = ' + factionIconName);
+			console.log('FactionIconId = ' + factionIconId);
+			console.log('factionIcon = ' + factionIcon);
+		}
 
 		await interaction.reply({ content: abbreviationDefinition, components: [row], ephemeral: true, fetchReply: true });
 
