@@ -30,7 +30,7 @@ module.exports = {
 
 	async execute(interaction) {
 
-		let getInput = interaction.options.getString('abbreviation_name');
+		const getInput = interaction.options.getString('abbreviation_name');
 
 		// prompt user to use the command correctly; later I may add a pop-up modal when the input is empty
 		if (!getInput) {
@@ -38,7 +38,6 @@ module.exports = {
 			return;
 		}
 		else {
-			//getInput = getInput.toLowerCase();
 			console.log(getInput);
 		}
 

@@ -1,50 +1,53 @@
 AC: 'Activation Counter'
-AF: 'Arashi`s Fan (Enhancement)'
-AT: 'Ashinaga Tenaga (Profile)'
-BGS: 'Blue Gale Scout (Profile) or Blue Gale Scouting Party (Theme)'
-BGSP: 'Blue Gale Scouting Party (theme)'
-BoD: 'Blood of the Dragon (theme)'
+AF: 'Arashi`s Fan (enhancement) :factionronin:'
+AT: 'Ashinaga Tenaga (profile) :factionronin:'
+BGS: 'Blue Gale Scout (profile) or Blue Gale Scouting Party (theme) :factiondescension:'
+BGSP: 'Blue Gale Scouting Party (theme) :factiondescension:'
+BoD: 'Blood of the Dragon (theme) :factionprefecture:'
 BoO: 'Blood of Orochi (trait) :factionito:'
-BoY: 'Breath of Yurei'
-Breath: 'Breath of Yurei'
-Bro Z: 'Brother Zandaka (Profile)'
-BZ: 'Brother Zandaka (Profile)'
-BtmD: 'Blow the Man Down (Event)'
-CoD: 'Claws of the Dragon (theme)'
-CoY: 'Cult of Yurei (Faction)'
-DM: 'Hiroto, Drunken Master (Profile)'
-DP: Dark Pilgrim (Profile)
-D&D: Death and Decay (Theme)
-EB: Eldest Brother (Profile)
-Fuwa: Fuwa Kaidan (Profile) or Fuwa Eagle (Profile)
-GoR: Guardsman of Ryu
-GP: Grey Pilgrim (Profile)
-GS: Golden Sentinel
-HBM: House Bleeding Moon  (Theme)
-HLS: House Long Shadow (Theme)
-IFG: Iron Fist Gumi (Theme)
-II: Inside Information (Event)
-IM: Imperial March
-JRG: Jade Rose Gumi (Theme)
-KKZ: Kage Kaze Zoku or the Shadow Wind Clan (Faction)
-KnU: Kemono and Uchi (Profile)
-LN8: Lucky Number Eight (Enhancement)
-OfB: Ordered for Battle (Theme)
-OnT: Oda and Tautolu (Profile)
-PoaTN: Path of a Thousand Names (Theme)
-QotW: Queen of the Waves (Theme)
-RBB: Rice Ball Barricades (Terrain)
-SB: Silverback (Profile)
-SD: Strategic Deployment (Theme)
-SnU: Sensu and Uchiwa (Profile)
-STS: Silvermoon Trade Syndicate (Faction)
-TLS: Two Lone Swordsmen (Profile)
-TnN: Taiki and Niseru (Profile)
-TorK: Temple of Ro-Kan
-TS: Traveling Show (Theme)
-UO: Unforeseen Outcome (Event)
-Vial: Vial of Raijin's Breath (Enhancement)
-WFF: White Faced Fox (Profile)
-WotRS: Wrath of the Red Sun (Theme)
-WW: War Weary (Event)
-YotRS: Year of the Risen Sun (Event)
+BoY: 'Breath of Yurei :factioncult:'
+Breath: 'Breath of Yurei :factioncult:'
+Bro Z: 'Brother Zandaka (profile) :factionsilvermoon:'
+BZ: 'Brother Zandaka (profile) :factionsilvermoon:'
+BtmD: 'Blow the Man Down (event) :factionjung:'
+CoD: 'Claws of the Dragon (theme) :factionprefecture:'
+CoY: 'Cult of Yurei (faction) :factioncult:'
+DM: 'Hiroto, Drunken Master (profile)'
+DP: 'Dark Pilgrim (profile) :factionronin:'
+D&D: 'Death and Decay (theme) :factioncult:'
+EB: 'Eldest Brother (profile) :factionronin:'
+Fuwa: 'Fuwa Kaidan (profile) or Fuwa Eagle (profile)'
+GoR: 'Guardsman of Ryu :factionprefecture:'
+GP: 'Grey Pilgrim (profile) :factionronin:'
+GS: 'Golden Sentinel (profile) :factionronin:'
+HBM: 'House Bleeding Moon (theme) :factionkkz:'
+HLS: 'House Long Shadow (theme) :factionkkz:'
+IFG: 'Iron Fist Gumi (theme) :factionsilvermoon:'
+II: 'Inside Information (event) :factionsilvermoon:'
+IM: 'Imperial March (theme) :factionronin:'
+JRG: 'Jade Rose Gumi (theme) :factionsilvermoon:'
+KKZ: 'Kage Kaze Zoku or the Shadow Wind Clan (faction) :factionkkz:'
+KnU: 'Kemono and Uchi (profile) :factionwave:'
+LN8: 'Lucky Number Eight (enhancement) :factionsilvermoon:'
+OfB: 'Ordered for Battle (theme) :factionronin:'
+OnT: 'Oda and Tautolu (profile) :factionsilvermoon:'
+PoaTN: 'Path of a Thousand Names (theme) :factionsilvermoon:'
+QotW: 'Queen of the Waves (theme) :factionjung:'
+RBB: 'Rice Bale Barricades (terrain) :factionronin:'
+SB: 'Silverback (profile) :factionronin:'
+SD: 'Strategic Deployment (theme) :factionronin:'
+SnU: 'Sensu and Uchiwa (profile) :factionsilvermoon:'
+STS: 'Silvermoon Trade Syndicate (faction) :factionsilvermoon:'
+TLS: 'Two Lone Swordsmen (profile) :factionronin:'
+TnN: 'Taiki and Niseru (profile) :factiontemple:'
+TorK: 'Temple of Ro-Kan (faction) :factiontemple:'
+TS: 'Traveling Show (theme) :factionsilvermoon:'
+UO: 'Unforeseen Outcome (event) :factionronin:'
+Vial: 'Vial of Raijin's Breath (enhancement) :factionronin:'
+WFF: 'White Faced Fox (profile) :factiontemple:'
+WotRS: 'Wrath of the Red Sun (theme) :factionwave:'
+WW: 'War Weary (event) :factionronin:'
+YotRS: 'Year of the Risen Sun (event) :factionronin:'
+JAS: 'Just a Scratch (event) :factionminimoto:'
+HB: 'Hasty Bear (event) :factionminimoto:'
+Aspect: 'Aspect of the Bear (enhancement) :factionminimoto:'
