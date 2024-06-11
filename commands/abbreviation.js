@@ -18,7 +18,7 @@ module.exports = {
 
 	async autocomplete(interaction) {
 		const focusedValue = interaction.options.getFocused().toLowerCase();
-		const abbreviationList = Object.keys(yamlData).toLowerCase();
+		const abbreviationList = Object.keys(yamlData.toLowerCase());
 
 		const filtered = abbreviationList.filter(choice => choice.startsWith(focusedValue));
 		if (focusedValue) {
@@ -30,7 +30,7 @@ module.exports = {
 
 	async execute(interaction) {
 
-		const getInput = interaction.options.getString('abbreviation_name');
+		let getInput = interaction.options.getString('abbreviation_name');
 
 		// prompt user to use the command correctly; later I may add a pop-up modal when the input is empty
 		if (!getInput) {
@@ -38,6 +38,7 @@ module.exports = {
 			return;
 		}
 		else {
+			getInput = getInput.toLowerCase();
 			console.log(getInput);
 		}
 
