@@ -53,7 +53,7 @@ module.exports = {
 			return;
 		}
 
-		const abbreviationDefinition = yamlData[abbreviationId];
+		let abbreviationDefinition = yamlData[abbreviationId];
 
 		const row = new ActionRowBuilder()
 			.addComponents(
@@ -62,6 +62,12 @@ module.exports = {
 					.setLabel('share in this channel')
 					.setStyle(ButtonStyle.Primary),
 			);
+
+		const fFaction = /:(faction.*):/;
+		const rFactionIcon = /(:faction.*:)/;
+		const factionIcon = interaction.guild.emojis.cache.find(emoji => emoji.name === fFaction);
+
+		abbreviationDefinition = abbreviationDefinition.replace(rFactionIcon, factionIcon);
 
 		await interaction.reply({ content: abbreviationDefinition, components: [row], ephemeral: true, fetchReply: true });
 
