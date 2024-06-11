@@ -53,7 +53,7 @@ module.exports = {
 			return;
 		}
 
-		let abbreviationDefinition = yamlData[abbreviationId];
+		let abbreviationDefinition = getInput + ': ' + yamlData[abbreviationId];
 
 		const row = new ActionRowBuilder()
 			.addComponents(
