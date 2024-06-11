@@ -68,6 +68,9 @@ module.exports = {
 		const factionIcon = interaction.guild.emojis.cache.find(emoji => emoji.name === fFaction);
 
 		abbreviationDefinition = abbreviationDefinition.replace(rFactionIcon, factionIcon);
+		console.log('fFaction = ' + fFaction);
+		console.log('rFactionIcon = ' + rFactionIcon);
+		console.log('factionIcon = ' + factionIcon);
 
 		await interaction.reply({ content: abbreviationDefinition, components: [row], ephemeral: true, fetchReply: true });
 
