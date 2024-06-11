@@ -63,8 +63,8 @@ module.exports = {
 					.setStyle(ButtonStyle.Primary),
 			);
 
-		const fFaction = /:(faction.*):/;
-		const rFactionIcon = /(:faction.*:)/;
+		const fFaction = /\*(faction.*)\*:/;
+		const rFactionIcon = /(\*faction.*\*)/;
 		const factionIcon = interaction.guild.emojis.cache.find(emoji => emoji.name === fFaction);
 
 		abbreviationDefinition = abbreviationDefinition.replace(rFactionIcon, factionIcon);
