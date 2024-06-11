@@ -68,7 +68,7 @@ module.exports = {
 
 		// 753678317177143316
 		const factionIconName = abbreviationDefinition.match(fFaction);
-		const factionIconId = interaction.guild.emojis.cache.find(emoji => emoji.name === 'factionito');
+		const factionIconId = interaction.guild.emojis.cache.find(emoji => emoji.name === factionIconName.toString());
 		const factionIcon = '<:' + factionIconName + ':' + factionIconId + '>';
 
 		abbreviationDefinition = abbreviationDefinition.replace(rFactionIcon, factionIcon);
