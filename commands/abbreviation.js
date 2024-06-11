@@ -68,7 +68,7 @@ module.exports = {
 
 		// 753678317177143316
 		const faction = abbreviationDefinition.match(fFaction);
-		const factionIcon = '<' + fFaction + ':' + interaction.guild.emojis.cache.find(emoji => emoji.name === faction) + '>';
+		const factionIcon = '<' + faction + ':' + interaction.guild.emojis.cache.find(emoji => emoji.name === faction) + '>';
 
 		abbreviationDefinition = abbreviationDefinition.replace(rFactionIcon, factionIcon);
 		console.log('find Faction = ' + faction);
