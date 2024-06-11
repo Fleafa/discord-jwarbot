@@ -72,7 +72,7 @@ module.exports = {
 		const factionIcon = '<' + factionIconName + ':' + factionIconId + '>';
 
 		abbreviationDefinition = abbreviationDefinition.replace(rFactionIcon, factionIcon);
-		console.log('FactionIconName = ' + faction);
+		console.log('FactionIconName = ' + factionIconName);
 		console.log('FactionIconId = ' + factionIconId);
 		console.log('factionIcon = ' + factionIcon);
 
