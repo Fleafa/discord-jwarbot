@@ -18,7 +18,7 @@ module.exports = {
 
 	async autocomplete(interaction) {
 		const focusedValue = interaction.options.getFocused();
-		const abbreviationList = yamlData.keys();
+		const abbreviationList = Object.keys(yamlData);
 
 		const filtered = abbreviationList.filter(choice => choice.startsWith(focusedValue));
 		if (focusedValue) {
