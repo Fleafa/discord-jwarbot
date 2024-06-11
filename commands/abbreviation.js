@@ -4,7 +4,7 @@ const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, userM
 const { bold, italic, underscore, blockQuote, codeBlock } = require('discord.js');
 const fs = require('fs');
 const yaml = require('js-yaml');
-const yamlData = yaml.load(fs.readFileSync('../rules/abbreviations.yaml', 'utf8'));
+const yamlData = yaml.load(fs.readFileSync('./rules/abbreviations.yaml', 'utf8'));
 
 module.exports = {
 	data: new SlashCommandBuilder()
