@@ -63,7 +63,7 @@ module.exports = {
 					.setStyle(ButtonStyle.Primary),
 			);
 
-		const fFaction = /\*(faction.*)\*/;
+		const fFaction = /faction[^\*]*/;
 		const rFactionIcon = /(\*faction.*\*)/;
 
 		// 753678317177143316
