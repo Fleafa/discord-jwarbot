@@ -141,7 +141,7 @@
 		"subject": "Aura",
 		"range": 6,
 		"limitations": ["OpT"],
-		"description": "Friendly models may ignore any Darkness and Breath of Yurei effects when drawing LoS to models or points within the Aura.\nEnemy models with the Camouflage Trait within the Aura gain Camouflage (+2").",
+		"description": "Friendly models may ignore any Darkness and Breath of Yurei effects when drawing LoS to models or points within the Aura.\nEnemy models with the Camouflage Trait within the Aura gain Camouflage (+2\").",
 		"revision": 0,
 		"status": "current"
 	},
