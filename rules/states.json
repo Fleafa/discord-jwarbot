@@ -7,7 +7,7 @@
 		"rulebook": 50,
 		"rulebookr1": 52,
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"state-bleed": {
 		"name": "Bleed",
@@ -47,7 +47,7 @@
 		"rulebook": 51,
 		"rulebookr1": 53,
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"state-diseased": {
 		"name": "Diseased",
@@ -77,7 +77,7 @@
 		"rulebook": 51,
 		"rulebookr1": 53,
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"state-held": {
 		"name": "Held",

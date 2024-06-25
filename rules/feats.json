@@ -56,7 +56,7 @@
 			"trait-spirit"
 		],
 		"revision": 0,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-agility": {
 		"name": "Agility",
@@ -66,7 +66,7 @@
 		"description": "After making a Scenario Action, this model gains an Activation Counter.",
 		"limitations": ["OpT"],
 		"revision": 0,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-alacrity": {
 		"name": "Alacrity",
@@ -131,6 +131,17 @@
 		"limitations": ["OpG"],
 		"description": "Choose one of the following:\n• Takashi Hida: Friendly models in the Aura gain Indomitable (3).\n• Takashi Akira: Friendly models in the Aura gain Last Stand.\n• Takashi Hiroshi: Friendly Samurai models in the Aura gain Melee Boost (2).\n• Takashi Sakura: Friendly Ashigaru models in the Aura gain Adept [Melee](2).",
 		"references": ["trait-indomitable", "trait-last_stand", "trait-adept"],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-aois_light": {
+		"name": "Aoi's Light",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Aura",
+		"range": 6,
+		"limitations": ["OpT"],
+		"description": "Friendly models may ignore any Darkness and Breath of Yurei effects when drawing LoS to models or points within the Aura.\nEnemy models with the Camouflage Trait within the Aura gain Camouflage (+2").",
 		"revision": 0,
 		"status": "current"
 	},
@@ -414,7 +425,7 @@
 			"trait-brutal"
 		],
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-buki_manipulation": {
 		"name": "Buki Manipulation",
@@ -433,7 +444,7 @@
 		"limitations": ["OpT"],
 		"description": "During an Enemy model's activation, when that model moves into BtB with another Friendly Bakemono model in the Pulse, move this model into BtB with that Enemy model by the shortest route.\nIf it is not possible to put this model in BtB with the Enemy model this feat cannot be used.",
 		"revision": 0,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-cannon_manipulation": {
 		"name": "Cannon Manipulation",
@@ -763,7 +774,7 @@
 		"limitations": ["noWalk", "noBtB"],
 		"description": "Summon and Deploy a Marionette anywhere within 2\" of this model and not in an Enemy model's ZoC. The Marionette receives a number of Ki Tokens equal to the X spent instead of any from the Kami trait when deployed.\nThis model cannot use 'Craft Marionette' if there is already a Marionette in this Warband.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-crashing_wave_strike": {
 		"name": "Crashing Wave Strike",
@@ -789,7 +800,7 @@
 			"trait-pierce"
 		],
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-curse_fate": {
 		"name": "Curse Fate",
@@ -801,7 +812,7 @@
 		"limitations": ["noBtB", "OpT"],
 		"description": "Roll a number of D6 equal to 1 plus the SL of the Opposed Ki Test. Reroll 1s and dice with the same value until all dice have unique values.\nUntil the End Phase the Target considers any dice it rolls that match those rolled for this feat to be a value of 1.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-curse_of_doom": {
 		"name": "Curse of Doom",
@@ -991,7 +1002,7 @@
 		"subject": "Personal",
 		"description": "When an Enemy non-Samurai, non-Ashigaru model declares an action which will either bring it into BtB with this model, or Targets this model with a Ranged Attack or Ki Feat, it must make a Challenge (5) Ki Test.\nIf the Enemy model is successful resolve the Action as normal.\nIf unsuccessful its activation ends before any movement and it removes an Activation Counter.\nThis is a Trap effect.",
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-detect": {
 		"name": "Detect",
@@ -1113,7 +1124,7 @@
 		"range": 6,
 		"description": "Target non-Exhausted Enemy model must be chosen to activate next, ignoring Impetuous Markers.\nThe Opposing Player may not declare the use of a Pass Token next activation.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-dragons_awe": {
 		"name": "Dragon's Awe",
@@ -1510,7 +1521,7 @@
 			"trait-fire"
 		],
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-flitter": {
 		"name": "Flitter",
@@ -1706,7 +1717,7 @@
 			"trait-sharp"
 		],
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-fujins_will": {
 		"name": "Fujin's Will",
@@ -1728,7 +1739,7 @@
 		"limitations": ["noBtB"],
 		"description": "Target Enemy model must succeed at a Size Challenge Test (5) or be placed anywhere in BtB with this model. Immediately begin a Melee Exchange with the Target model. This only removes one Activation Counter",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-fumeiryo": {
 		"name": "Fumeiryo",
@@ -1795,6 +1806,19 @@
 		"description": "This model gains Co-ordinated Attack (Ashigaru) until the End Phase.",
 		"references": [
 			"trait-co-ordinated_attack"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-gather_defenders": {
+		"name": "Gather Defenders",
+		"cost": "X",
+		"timing": "Simple",
+		"subject": "Personal",
+		"limitations": ["noBtB", "OpG"],
+		"description": "Place this model elsewhere. It gains Flank and returns to play from a friendly table edge next turn using the Flank rules.\nWhen this model is deployed using Flank gained from this Ki Feat, summon and deploy another non-Unique Villager in BtB with it.\nMark all but X of the other non-Unique Villager's Wound boxes.",
+		"references": [
+			"trait-flank"
 		],
 		"revision": 0,
 		"status": "current"
@@ -1920,7 +1944,7 @@
 			"trait-aware"
 		],
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-hail_of_steel": {
 		"name": "Hail of Steel",
@@ -2053,7 +2077,7 @@
 		"limitations": ["OpT"],
 		"description": "During an Enemy model's activation, when that model moves into BtB with another Friendly Ashigaru model in the Pulse, move this model into BtB with that Enemy model by the shortest route.\nIf it is not possible to put this model in BtB with the Enemy model this feat cannot be used.",
 		"revision": 2,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-hope": {
 		"name": "Hope",
@@ -2161,6 +2185,17 @@
 		"range": 6,
 		"limitations": ["OpT"],
 		"description": "Target Friendly Faction model with a Rice Cost of more than this model gains +1 to its Melee Pool or Ranged Pool until the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-illicium": {
+		"name": "Illicium",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 6,
+		"limitations": ["noBtB", "OpT"],
+		"description": "When an Enemy model Targets a Friendly model in the Pulse, you may change the Target to this model instead if this model is a valid Target.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -2437,7 +2472,7 @@
 			"trait-unstable"
 		],
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-kawasu": {
 		"name": "Kawasu",
@@ -2513,7 +2548,7 @@
 			"trait-feint"
 		],
 		"revision": 0,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-lay_makibishi": {
 		"name": "Lay Makibishi",
@@ -2660,7 +2695,7 @@
 		"limitations": ["noBtB"],
 		"description": "Transfer X State Markers that are not Disguise, Held, Prone, or Reload Markers from a model in the Pulse to this model.",
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-masters_call": {
 		"name": "Master's Call",
@@ -2691,7 +2726,7 @@
 			"trait-strong"
 		],
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-military_training": {
 		"name": "Military Training",
@@ -2829,7 +2864,7 @@
 			"trait-armour"
 		],
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-nerve_strike": {
 		"name": "Nerve Strike",
@@ -3015,7 +3050,7 @@
 		"limitations": ["OpT"],
 		"description": "Use this Ki Feat when an Enemy model enters BtB with this model. That Enemy model's activation ends immediately.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-passing_strike": {
 		"name": "Passing Strike",
@@ -3094,6 +3129,19 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-phalanx": {
+		"name": "Phalanx",
+		"cost": "2",
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "If this model would benefit from a Melee Assist, its Melee Weapons gain Brutal (1) until the end of the current activation.",
+		"references": [
+			"trait-brutal"
+		],
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-pick_pocket": {
 		"name": "Pick Pocket",
 		"cost": 1,
@@ -3114,7 +3162,7 @@
 		"limitations": ["noBtB", "OpT"],
 		"description": "During an Enemy model's activation, when that model moves into BtB with another Friendly Bakemono model in the Pulse, move this model into BtB with that Enemy model by the shortest route.\nIf it is not possible to put this model in BtB with the Enemy model this feat cannot be used.",
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-pin_weapon": {
 		"name": "Pin Weapon",
@@ -3313,7 +3361,7 @@
 		"limitations": ["noBtB"],
 		"description": "All Friendly Ashigaru within the Aura ignore the Melee Penalty for having Run.",
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-quick_reload": {
 		"name": "Quick Reload",
@@ -3354,7 +3402,7 @@
 		"subject": "Special",
 		"description": "When this model makes a successful Ranged Attack, after that Attack is resolved but before its activation ends it may make an additional Ranged Attack against another model within 3\" of the last model Targeted.\nThis Ranged Attack is considered to be in the Medium Range Band and ignores Range, LoS, and Camouflage.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-rain_of_blows": {
 		"name": "Rain of Blows",
@@ -3367,7 +3415,7 @@
 			"trait-lightning_reflexes"
 		],
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-rally": {
 		"name": "Rally",
@@ -3430,7 +3478,7 @@
 		"limitations": ["OpG"],
 		"description": "When a Friendly model causes a Kami to be removed from play in a Melee Exchange while in the Aura, you may replace the Kami by Summoning and Deploying a Friendly, 8 Rice Cost, Kami with identical Elemental Icons (if the Enemy Kami has no Elemental Icons, you may replace it with a Lesser Void Kami).",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-reel_them_in!": {
 		"name": "Reel Them In!",
@@ -3471,7 +3519,7 @@
 		"subject": "Personal",
 		"description": "Replace this model with the Zoo model.\nRecover or Inflict Wounds so that Zoo's profile card has the same number of Wounds marked as Xi-Han.\nTransfer State Markers, Enhancements, and any Tokens to Zoo's profile card, Zoo gains an Impetuous Marker.\nWhen this effect expires in the End Phase, replace Zoo with Xi-Han.\nRecover or Inflict Wounds so that Xi-Han's profile has the same number of Wounds marked as Zoo.\nTransfer State Markers, Enhancements, and any tokens to Xi-Han's profile card.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-rend": {
 		"name": "Rend",
@@ -3550,6 +3598,16 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-riazzurs_flight": {
+		"name": "Riazzur's Flight",
+		"cost": "2",
+		"timing": "Active",
+		"subject": "Special",
+		"limitations": ["OpG"],
+		"description": "When this model succeeds in a melee attack roll, Place the Enemy model in its Deployment Zone, the Enemy model gains a Prone Marker.\nMake a Damage Roll as normal. Do not apply any of this model's Special Abilities to this Melee Exchange.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-rivalry": {
 		"name": "Rivalry",
 		"cost": 2,
@@ -3570,7 +3628,7 @@
 		"limitations": ["noBtB"],
 		"description": "Remove Target Friendly, non-Soulless, non-Insignificant model that you own from play.\nIf you do, add 4 Ki Tokens to the Yuta of Yurei card.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-saihai": {
 		"name": "Saihai",
@@ -3647,7 +3705,7 @@
 		"limitations": ["OpA"],
 		"description": "At the end of an activation in which this model declared a Charge action and caused Wounds in a Melee Exchange it gains an Activation Counter.\nThis Ki Feat can only be used once per activation.",
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-seduction": {
 		"name": "Seduction",
@@ -3695,7 +3753,7 @@
 		"limitations": ["noBtB", "OpT"],
 		"description": "During an Enemy model's activation when it begins a movement in the Pulse, once the movement is completed this model may Walk up to its Move towards that model's final position.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-shadow_arts": {
 		"name": "Shadow Arts",
@@ -3888,7 +3946,7 @@
 		"limitations": ["noBtB"],
 		"description": "During an Enemy model's activation, when that model moves into BtB with another Friendly Princess model in the Pulse, move this model into BtB with that Enemy model by the shortest route.\nIf it is not possible to put this model in BtB with the Enemy model this feat cannot be used.",
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-skewer": {
 		"name": "Skewer",
@@ -3911,6 +3969,16 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-slippery": {
+		"name": "Slippery",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpA"],
+		"description": "When this model makes a Disengage Action, it may double its melee pool.\nIf it does, this model must allocate all dice to Defence.\nThis Ki Feat may only be used once per activation.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-slipstream": {
 		"name": "Slipstream",
 		"cost": 2,
@@ -3919,7 +3987,7 @@
 		"limitations": ["noBtB", "OpT"],
 		"description": "When this model Runs this activation, it may Move through other Friendly models.\nIt may not end its Move occupying the same area as an Impassable Terrain Element or another model.\nAny model moved through can Move 1”.",
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-slither": {
 		"name": "Slither",
@@ -3975,7 +4043,7 @@
 		"range": 12,
 		"description": "When an Enemy model without Cloudwalk or Intangible, and not in BtB with a Friendly model, declares a Walk in the Pulse, that model must make a Walk Challenge Test (X).\nX is 8 for models declaring a Run or Charge Action. X is 7 otherwise.\nIf it fails the model may not Walk; if it was declaring an action, it loses an Activation Counter and its action is considered resolved.\nThis is a Trap effect.",
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-sneak": {
 		"name": "Sneak",
@@ -4046,7 +4114,7 @@
 			"trait-fear"
 		],
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-specialist_knowledge": {
 		"name": "Specialist Knowledge",
@@ -4079,7 +4147,7 @@
 		"limitations": ["noBtB", "OpT"],
 		"description": "This model loses Soulless, Slow, Tough, and Rise. This effect expires in the End Phase.\nTarget model not in BtB with a Friendly model gains an Impetuous Marker, must declare a Walk action as its next activation, and must move directly towards this model with its full Walk Statistic, changing facing so that this model is in LoS. If unable to perform a Walk action, it may activate without restriction.",
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-spirit_guardian": {
 		"name": "Spirit Guardian",
@@ -4289,7 +4357,7 @@
 		"subject": "Special",
 		"description": "Deploy a Horde Bakemono anywhere within 2\" of this model.\nIf there are no Bakemono cards available with a free wound track this feat cannot be used.\nThis Warband may use this Ki Feat only once per turn.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-summon_ice_kami": {
 		"name": "Summon Ice Kami",
@@ -4298,7 +4366,7 @@
 		"subject": "Personal",
 		"description": "Summon a Ronin Kami of Reflection by Replacing this model (this model is removed from play).\n(You cannot have more models in play than the card has Wound Tracks).\nIf this model was in a Melee Exchange, the Kami can neither be damaged nor deal damage this exchange.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-supplies": {
 		"name": "Supplies",
@@ -4358,7 +4426,7 @@
 		"limitations": ["noBtB", "OpT"],
 		"description": "This model loses Insignificant until the end of this activation.\nIf this model declares a Wait or Scenario Action, it may Walk a distance equal to its Move Statistic before or after the Action.",
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-sworn_sisters": {
 		"name": "Sworn Sisters",
@@ -4561,7 +4629,7 @@
 		"limitations": ["OpT"],
 		"description": "Use this Ki Feat at the start of any Activation, Move this model up to 4/” towards an Enemy table edge (Any edge which touches an enemy deployment zone).\nAt the end of this Activation, Move this model 4/” towards the opposite table edge.\nThis Ki Feat may only be used once per activation.",
 		"revision": 2,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-tide_master": {
 		"name": "Tide Master",
@@ -4657,6 +4725,17 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-tokkikos_choice": {
+		"name": "Tokkiko's Choice",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 6,
+		"limitations": ["noBtB"],
+		"description": "When an Enemy model that is not Soulless in the Pulse is Killed, Replace it with a Friendly Miyakomo's Echo.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-tornado": {
 		"name": "Tornado",
 		"cost": 2,
@@ -4665,7 +4744,7 @@
 		"limitations": ["OpT"],
 		"description": "When a Friendly model within 2\" is the Target of a failed Ranged Attack, immediately make a Ranged Attack.\nThe Range Bands, Strength bonus and any applicable traits or unique effects on the model which failed the Ranged Attack are used instead of any such traits or effects on this model.\nThis model ignores the effects of Ammo and Reload traits while resolving this Ki Feat.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-total_loyalty": {
 		"name": "Total Loyalty",
@@ -4757,6 +4836,15 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-unapproachable": {
+		"name": "Unapproachable",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Special",
+		"description": "Until the end of the current activation, increase the cost of special abilities of Enemy models in a Melee Exchange with this model by 1.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-unassailable": {
 		"name": "Unassailable",
 		"cost": 1,
@@ -4776,7 +4864,7 @@
 		"subject": "Personal",
 		"description": "Use this feat in the Starting Phase or when this model is targeted by an enemy effect or a model declares an action or resolves an effect that will bring it into BtB with this model while this model is undamaged.\n\nReplace this model with a Loyal Samurai you own that is currently Elsewhere, and place this model Elsewhere.\nThis model gains the Flank trait and returns to play using those rules.\nIf the Enemy Model initiated a Melee Exchange, it is now Surprised.\nTransfer State Markers, Activation Counters and any tokens to the Samurai's profile card.",
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-unholy_vitality": {
 		"name": "Unholy Vitality",
@@ -4787,7 +4875,7 @@
 		"limitations": ["OpT"],
 		"description": "Target model takes half its remaining Wounds, ignoring Durable (Rounded down) then gains a Activation Counter.\nlf used on an Enemy model you must succeed in an opposed Ki Test.",
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-unify": {
 		"name": "Unify",
@@ -4811,7 +4899,7 @@
 		"limitations": ["noWalk", "noBtB", "OpT"],
 		"description": "Summon and Deploy an Envy within 2\" of this model. It may not be placed in an Enemy model's ZoC or in BtB with an Enemy model.\nPlace a number of Ki Tokens on Envy's profile card equal to the number spent for this Ki Feat instead of any from the Kami trait when deployed.\nThere may only be one Friendly Envy in play at any time.\nThis model cannot use this Ki Feat if there is already a Friendly Envy in play.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-unleash_gluttony": {
 		"name": "Unleash Gluttony",
@@ -4821,7 +4909,7 @@
 		"limitations": ["noWalk", "noBtB", "OpT"],
 		"description": "Summon and Deploy a Gluttony within 2\" of this model. It may not be placed in an Enemy model's ZoC or in BtB with an Enemy model.\nPlace a number of Ki Tokens on Gluttony's profile card equal to the number spent for this Ki Feat instead of any from the Kami trait when deployed.\nThere may only be one Friendly Gluttony in play at any time.\nThis model cannot use this Ki Feat if there is already a Friendly Gluttony in play.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-unleash_sloth": {
 		"name": "Unleash Sloth",
@@ -4831,7 +4919,7 @@
 		"limitations": ["noWalk", "noBtB", "OpT"],
 		"description": "Summon and Deploy a Sloth within 2\" of this model. It may not be placed in an Enemy model's ZoC or in BtB with an Enemy model.\nPlace a number of Ki Tokens on Sloth's profile card equal to the number spent for this Ki Feat instead of any from the Kami trait when deployed.\nThere may only be one Friendly Sloth in play at any time.\nThis model cannot use this Ki Feat if there is already a Friendly Sloth in play.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-unleash_wrath": {
 		"name": "Unleash Wrath",
@@ -4841,7 +4929,7 @@
 		"limitations": ["noWalk", "noBtB", "OpT"],
 		"description": "Summon and Deploy a Wrath within 2\" of this model. It may not be placed in an Enemy model's ZoC or in BtB with an Enemy model.\nPlace a number of Ki Tokens on Wrath's profile card equal to the number spent for this Ki Feat instead of any from the Kami trait when deployed.\nThere may only be one Friendly Wrath in play in play at any time.\nThis model cannot use this Ki Feat if there is already a Friendly Wrath in play.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-unseen_anger": {
 		"name": "Unseen Anger",
@@ -4917,7 +5005,7 @@
 		"subject": "Special",
 		"description": "Add an activation counter to This Model's Card.",
 		"revision": 1,
-		"status": "current errata"
+		"status": "current"
 	},
 	"feat-voice_of_the_wind": {
 		"name": "Voice of the Wind",
@@ -4928,7 +5016,7 @@
 		"range": 6,
 		"description": "Place Target Model within 1\" of its current location.\nIf the Target model is an Enemy, you must first succeed in an Opposed Ki Test with the Target model.\nThis Ki Feat can only be used once per activation.",
 		"revision": 1,
-		"status": "balance update"
+		"status": "current"
 	},
 	"feat-wall_of_water": {
 		"name": "Wall of Water",
