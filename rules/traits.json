@@ -640,6 +640,16 @@
 		"revision": 0,
 		"status": "current"
 		},
+	"trait-kumo": {
+		"name": "Kumo",
+		"description": "If this model deals damage in a melee exchange it gains Ki tokens equal to the enemy model's Ki stat and Heals one Damage.\nThis model begins the game with 2 Ki Tokens.\nIgnore Size modifiers to the Challenge Number when performing a Ranged Attack or Ranged Challenge Test against this model.",
+		"bsid": "",
+		"references": ["test-ranged", "concept-heal"],
+		"rulebook": "N/A",
+		"rulebookr1": "N/A",
+		"revision": 0,
+		"status": "current"
+		},
 	"trait-last_stand": {
 		"name": "Last Stand",
 		"description": "If this model is reduced to 0 wounds, it may still be activated until the end of the Turn and is not removed from play.\nThis model cannot recover wounds through any game effects or traits once its wounds have been reduced to 0.\nDuring the End Phase, the model is removed from play.",
