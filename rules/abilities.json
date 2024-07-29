@@ -174,10 +174,18 @@
 	},
 	"ability-throw_defence": {
 		"name": "Throw Defence",
-		"description": "If the Defence is successful, the Attacker is moved 2\" in a straight line and becomes prone, minimally the Attacker is moved beyond the Defenders ZoC within LoS of the Defender. ",
+		"description": "If the Defence is successful, the Attacker is moved 2\" in a straight line and becomes prone, minimally the Attacker is moved beyond the Defenders ZoC within LoS of the Defender.",
 		"rulebook": 48,
 		"rulebookr1": 50,
 		"revision": 1,
+		"status": "current"
+	},
+	"ability-web_defence": {
+		"name": "Web Defence",
+		"description": "If this model successfully Defends, the Enemy model may not move until the current activation has ended.",
+		"rulebook": "N/A",
+		"rulebookr1": "N/A",
+		"revision": 0,
 		"status": "current"
 	}
 }

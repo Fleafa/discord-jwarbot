@@ -299,6 +299,16 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-bite_of_10000_spiderlings": {
+		"name": "Bite of 10,000 Spiderlings",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Special",
+		"limitations": ["OpT"],
+		"description": "One Enemy model in contact with Webbed Ground Terrain gains a Poisoned (1) Marker.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-blade_dedication": {
 		"name": "Blade Dedication",
 		"cost": 3,
@@ -400,6 +410,20 @@
 		"range":"BtB",
 		"limitations": ["noBtB"],
 		"description": "Target Friendly Oni in BtB suffers one Wound ignoring Armour and Tough. This model gains an Oni Blood Token.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-body_impeding_method": {
+		"name": "Body Impeding Method",
+		"cost": "1",
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": "∞",
+		"description": "Poisoned Enemy models in the Aura lose Lightfooted and Cloudwalk and cannot gain those Traits.",
+		"references": [
+			"trait-lightfooted",
+			"trait-cloudwalk"
+		],
 		"revision": 0,
 		"status": "current"
 	},
@@ -862,6 +886,16 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-dance_of_the_water_spider": {
+		"name": "Dance of the Water Spider",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": "∞",
+		"description": "Poisoned Enemy models in the Aura cannot use Special Abilities in Melee Exchanges or Ranged Attacks.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-dark_fire": {
 		"name": "Dark Fire",
 		"cost": "X+1",
@@ -1002,6 +1036,16 @@
 		"subject": "Personal",
 		"description": "When an Enemy non-Samurai, non-Ashigaru model declares an action which will either bring it into BtB with this model, or Targets this model with a Ranged Attack or Ki Feat, it must make a Challenge (5) Ki Test.\nIf the Enemy model is successful resolve the Action as normal.\nIf unsuccessful its activation ends before any movement and it removes an Activation Counter.\nThis is a Trap effect.",
 		"revision": 1,
+		"status": "current"
+	},
+	"feat-destinys_fear": {
+		"name": "Destiny's Fear",
+		"cost": 5,
+		"timing": "Simple",
+		"subject": "Special",
+		"limitations": ["OpT"],
+		"description": "Roll a number of D6 equal to the number of Friendly Kumo models in play.\nReroll 1s and dice with the same value until all dice have unique values.\nUntil the End Phase Poisoned Enemy models consider any dice they roll that match those rolled for this feat to be a value of 1.",
+		"revision": 0,
 		"status": "current"
 	},
 	"feat-detect": {
@@ -1406,6 +1450,17 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-fate_cannot_be_cheated": {
+		"name": "Fate Cannot be Cheated",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 8,
+		"limitations": ["noBtB"],
+		"description": "When Target model is rolling for any Test, the dice cannot be rerolled.\nWhen this Ki Feat is used on an Enemy model it is an Opposed Ki Test.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-fathers_instruction": {
 		"name": "Father's Instruction",
 		"cost": 1,
@@ -1506,6 +1561,19 @@
 		"description": "Until the End Phase, this model's Melee Attack gains the Fire (1/1) trait and when this model suffers Wounds from a Melee Attack, the Attacking model gains a Fire (1) Marker.",
 		"references": [
 			"trait-fire"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-flame_to_dust": {
+		"name": "Flame to Dust",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": "4\"",
+		"description": "Poisoned Enemy models in the Aura gain Weak and cannot be Healed.",
+		"references": [
+			"trait-weak"
 		],
 		"revision": 0,
 		"status": "current"
@@ -2752,6 +2820,17 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-mind_fogging_technique": {
+		"name": "Mind Fogging Technique",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": "∞",
+		"limitations": ["noBtB", "OpG"],
+		"description": "While Enemy models in the Aura are within the area of Webbed Ground Terrain, they may not perform Scenario Actions.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-mirage": {
 		"name": "Mirage",
 		"cost": 2,
@@ -2788,6 +2867,18 @@
 		"timing": "Active",
 		"subject": "Personal",
 		"description": "When this model next deals Damage as a result of a Melee Exchange, the Opposing model gains an Impetuous Marker.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-monstrous_arachnid_presence": {
+		"name": "Monstrous Arachnid Presence",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Personal",
+		"description": "This model gains Disturb Flow (1/4\").\nThis Trait only affects Poisoned Enemy models.",
+		"references":[
+			"trait-disturb_flow"
+		],
 		"revision": 0,
 		"status": "current"
 	},
@@ -3255,6 +3346,21 @@
 		"description": "This model's weapons gain Pierce (1) until the current action is resolved.",
 		"references": [
 			"trait-pierce"
+		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-predators_detachment": {
+		"name": "Predator's Detachment",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "This model gains Brutal (+1), Impenetrable Defence (1) and Prowess [Attack] (1) until the end of the current activation.",
+		"references":[
+			"trait-brutal",
+			"trait-impenetrable_defence",
+			"trait-prowess"
 		],
 		"revision": 0,
 		"status": "current"
@@ -3927,6 +4033,17 @@
 		"revision": 1,
 		"status": "current"
 	},
+	"feat-sinister_web_of_the_jumping_spider": {
+		"name": "Sinister Web of the Jumping Spider",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": "∞",
+		"limitations":["noBtB"],
+		"description": "Poisoned Enemy models in the Aura cannot gain Activation Counters in the Main Phase.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-sisterly_bond": {
 		"name": "Sisterly Bond",
 		"cost": 2,
@@ -4126,6 +4243,16 @@
 		"revision": 0,
 		"status": "current"
 	},
+	"feat-spider_in_her_web": {
+		"name": "Spider in Her Web",
+		"cost": 3,
+		"timing": "Simple",
+		"subject": "Pulse",
+		"range": 6,
+		"description": "Each Enemy model in the Pulse must make a Size Challenge Test (6) and if Unsuccessful gains an Immobilised Marker.",
+		"revision": 0,
+		"status": "current"
+	},
 	"feat-spin": {
 		"name": "Spin",
 		"cost": 3,
@@ -4221,6 +4348,17 @@
 		"timing": "Instant",
 		"subject": "Personal",
 		"description": "This model grants Cover as if it were terrain until the end of the current activation.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-starless_midnight_chitin": {
+		"name": "Starless Midnight Chitin",
+		"cost": 3,
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations":["OpG"],
+		"description": "This model gains Armour equal to its Fear Value until the end of the current activation.",
+		"references":["trait-armour"],
 		"revision": 0,
 		"status": "current"
 	},
@@ -4541,6 +4679,17 @@
 		"references": [
 			"trait-tough"
 		],
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-terror_inducing_performance": {
+		"name": "Terror Inducing Performance",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Aura",
+		"range": "∞",
+		"limitations": ["noBtB"],
+		"description": "Enemy models with Poisoned and Frightened Markers suffer -2 Melee penalty rather than -1 for Frightened.",
 		"revision": 0,
 		"status": "current"
 	},
@@ -4929,6 +5078,25 @@
 		"limitations": ["noWalk", "noBtB", "OpT"],
 		"description": "Summon and Deploy a Wrath within 2\" of this model. It may not be placed in an Enemy model's ZoC or in BtB with an Enemy model.\nPlace a number of Ki Tokens on Wrath's profile card equal to the number spent for this Ki Feat instead of any from the Kami trait when deployed.\nThere may only be one Friendly Wrath in play in play at any time.\nThis model cannot use this Ki Feat if there is already a Friendly Wrath in play.",
 		"revision": 1,
+		"status": "current"
+	},
+	"feat-unreasonable_eight_foot_stride": {
+		"name": "Unreasonable Eight Foot Stride",
+		"cost": "2",
+		"timing": "Simple",
+		"subject": "Personal",
+		"limitations": ["OpG"],
+		"description": "Place this model in contact with any Webbed Ground Terrain.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-unnatural_sanguine_strength": {
+		"name": "Unnatural Sanguine Strength",
+		"cost": "X",
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model's Mandibles Melee Weapon gains +X Strength until the end of the current Activation.",
+		"revision": 0,
 		"status": "current"
 	},
 	"feat-unseen_anger": {
