@@ -1570,7 +1570,7 @@
 		"cost": 1,
 		"timing": "Simple",
 		"subject": "Aura",
-		"range": "4\"",
+		"range": 4,
 		"description": "Poisoned Enemy models in the Aura gain Weak and cannot be Healed.",
 		"references": [
 			"trait-weak"
@@ -4973,6 +4973,17 @@
 		"revision": 0,
 		"status": "current"
 	  },
+	  "feat-two-man_rule": {
+		"name": "Two-Man Rule",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Pulse",
+		"range": 6,
+		"limitations": ["noBtB","OpT"],
+		"description": "During an Enemy model's activation, when the Enemy model moves into BtB with another Friendly model in the Pulse, choose another different Friendly model in the Pulse.\nMove the chosen Friendly model into BtB with the Enemy model by the shortest route.\nIf it is not possible to put the chosen Friendly model in BtB with the Enemy model, this feat cannot be used.",
+		"revision": 0,
+		"status": "current"
+	  },
 	"feat-umbrella_block": {
 		"name": "Umbrella Block",
 		"cost": 2,
@@ -5231,6 +5242,17 @@
 		"range": "BtB",
 		"limitations": ["OpT"],
 		"description": "During an Enemy model's activation in which it enters BtB with this model, that Enemy model gains a Frightened Marker.\nRemove the Frightened Marker in the End Phase.",
+		"revision": 0,
+		"status": "current"
+	},
+	"feat-warrant": {
+		"name": "Warrant",
+		"cost": 4,
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 6,
+		"limitations": ["noBtB","OpG"],
+		"description": "Target Enemy model gains a Death Sentence Marker.",
 		"revision": 0,
 		"status": "current"
 	},
