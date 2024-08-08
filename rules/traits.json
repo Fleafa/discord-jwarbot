@@ -69,7 +69,7 @@
 		"references": ["concept-damage", "concept-surprised"],
 		"rulebook": 58,
 		"rulebookr1": 60,
-		"revision": 0,
+		"revision": 1,
 		"updated": "2024-03-04"
 		},
 	"trait-aware": {
@@ -185,7 +185,7 @@
 		"references": ["concept-btb", "concept-target", "concept-cover", "concept-enemy"],
 		"rulebook": 60,
 		"rulebookr1": 62,
-		"revision": 0,
+		"revision": 1,
 		"updated": "2023-04-30"
 		},
 	"trait-cavalry": {
@@ -555,7 +555,7 @@
 		"references": ["trait-fearless", "state-impetuous", "concept-markers"],
 		"rulebook": 63,
 		"rulebookr1": 66,
-		"revision": 0,
+		"revision": 1,
 		"updated": "2023-01-18"
 		},
 		"trait-indomitable": {

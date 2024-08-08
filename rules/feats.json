@@ -598,7 +598,7 @@
 		"references": [
 			"trait-aware"
 		],
-		"revision": 0,
+		"revision": 1,
 		"updated": "2024-07-14"
 	},
 	"feat-cleansing": {
@@ -1323,7 +1323,7 @@
 		"subject": "Target",
 		"range": 6,
 		"description": "Choose a model descriptor. Target Friendly model gains Vengeance [chosen descriptor] until the end of the current activation.",
-		"revision": 0,
+		"revision": 1,
 		"updated": "2023-01-18"
 	},
 	"feat-enthusiasm": {
