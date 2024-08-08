@@ -451,6 +451,20 @@
 		"revision": 1,
 		"updated": "before 2022-11"
 	},
+	"feat-break_them": {
+		"name": "Break Them!",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 4,
+		"description": "Target Friendly Minimoto model gains Aggressive and Vengeance [Enemy] until the end of the current activation.",
+		"references": [
+			"trait-vengeance",
+			"trait-aggressive"
+		],
+		"revision": 0,
+		"updated": ""
+	},
 	"feat-buki_manipulation": {
 		"name": "Buki Manipulation",
 		"cost": 2,
@@ -1225,6 +1239,19 @@
 		"timing": "Instant",
 		"subject": "Personal",
 		"description": "The Medium Ranged Band of this model's Ranged Weapon is unlimited until the end of the current action.",
+		"revision": 0,
+		"updated": ""
+	},
+	"feat-eagles_warning": {
+		"name": "Eagle's Warning",
+		"cost": 2,
+		"timing": "Instant",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "This model gains Sixth Sense until the End Phase.",
+		"references": [
+			"trait-sixth_sense"
+		],
 		"revision": 0,
 		"updated": ""
 	},
@@ -2663,6 +2690,16 @@
 		"revision": 0,
 		"updated": ""
 	},
+	"feat-lost_in_the_crowd": {
+		"name": "Lost in the Crowd",
+		"cost": 1,
+		"timing": "Simple",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "The next time this turn an Enemy model moves into BtB with this model, this model may Move 2\".\nThe Enemy model may not continue movement after entering BtB with this model.",
+		"revision": 0,
+		"updated": ""
+	},
 	"feat-loyalty": {
 		"name": "Loyalty",
 		"cost": 2,
@@ -2781,6 +2818,19 @@
 		"timing": "Active",
 		"subject": "Personal",
 		"description": "This model loses Insignificant until the current activation is complete.",
+		"revision": 0,
+		"updated": ""
+	},
+	"feat-men-uchi": {
+		"name": "Men Uchi",
+		"cost": 4,
+		"timing": "Instant",
+		"subject": "Personal",
+		"description": "This model's melee weapons gain Reach and Unblockable (1) until the current action is resolved.",
+		"references": [
+			"trait-reach",
+			"trait-unblockable"
+		],
 		"revision": 0,
 		"updated": ""
 	},
@@ -3113,6 +3163,18 @@
 		"description": "This model gains Order [Monkey](3/6\") until the End Phase.",
 		"references": [
 			"trait-order"
+		],
+		"revision": 0,
+		"updated": ""
+	},
+	"feat-pack_tactics": {
+		"name": "Pack Tactics",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This model gains Co-ordinaed Attack [Wolf] until the End Phase.",
+		"references": [
+			"trait-co-ordinated_attack"
 		],
 		"revision": 0,
 		"updated": ""
@@ -3572,6 +3634,16 @@
 		"timing": "Instant",
 		"subject": "Personal",
 		"description": "This model may re-roll a failed Rise Test.",
+		"revision": 0,
+		"updated": ""
+	},
+	"feat-rebirth": {
+		"name": "Rebirth",
+		"cost": 2,
+		"timing": "Simple",
+		"subject": "Special",
+		"limitations": ["noBtB","OpT"],
+		"description": "Replace this model by Deploying a Friendly Orphan model that has been removed from play; then remove this model from play.\nThe Orphan model gains Ki equal to its Ki statistic.\nThis effect may reduce this model's Ki Tokens to zero.",
 		"revision": 0,
 		"updated": ""
 	},
@@ -4374,6 +4446,16 @@
 		"revision": 0,
 		"updated": ""
 	},
+	"feat-stiletto": {
+		"name": "Stiletto",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "When this model is involved in a Melee Exchange with a Surprised Enemy model, this model's Shiv weapon gains Pierce (3).",
+		"references": ["trait-pierce"],
+		"revision": 0,
+		"updated": ""
+	},
 	"feat-stir_emotion": {
 		"name": "Stir Emotion",
 		"cost": 2,
@@ -4712,6 +4794,18 @@
 		"range": "X",
 		"limitations": ["noBtB"],
 		"description": "Frightened models in the Pulse take a Success Level 2 Damage Roll.\nX is equal to the number of Ki Tokens on this model after paying for this Ki Feat.",
+		"revision": 0,
+		"updated": ""
+	},
+	"feat-the_oppressed": {
+		"name": "The Oppressed",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Target",
+		"range": 4,
+		"limitations": ["OpT"],
+		"description": "Target non-Exhausted Enemy model must be chosen to activate next, ignoring Impetuous Markers.\nThe Opposing Player may not declare the use of a Pass Token next activation.\nThat model gains Insignificant until the end of their next activation.",
+		"references": ["trait-insignificant"],
 		"revision": 0,
 		"updated": ""
 	},
