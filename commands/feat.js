@@ -107,7 +107,7 @@ module.exports = {
 		const ruleUpdated = libraryFile[ruleId]['updated'];
 		var ruleDetails = '';
 
-		if (ruleRev = 0) {
+		if (ruleRev == 0) {
 			ruleDetails = 'R' + ruleRev;
 		} else {
 			ruleDetails = 'R' + ruleRev + ' ( Updated:' + ruleUpdated + ')';

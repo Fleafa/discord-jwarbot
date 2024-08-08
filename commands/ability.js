@@ -66,7 +66,7 @@ module.exports = {
 		const ruleUpdated = libraryFile[ruleId]['updated'];
 		var ruleDetails = '';
 
-		if (ruleRev = 0) {
+		if (ruleRev == 0) {
 			ruleDetails = 'R' + ruleRev + '\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
 		} else {
 			ruleDetails = 'R' + ruleRev + ' ( Updated:' + ruleUpdated + ')\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
