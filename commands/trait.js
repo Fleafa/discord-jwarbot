@@ -7,7 +7,7 @@ module.exports = {
 		.setName('trait')
 		.setDescription('Replies with trait definition.')
 		.addStringOption(option =>
-			option.setName('rule_name')
+			option.setName('trait_name')
 				.setDescription('The trait to search for.')
 				.setAutocomplete(true)
 				.setRequired(true)),
@@ -30,7 +30,7 @@ module.exports = {
 
 	async execute(interaction) {
 
-		let getInput = interaction.options.getString('rule_name');
+		let getInput = interaction.options.getString('trait_name');
 		let ruleName, ruleArgs;
 		let ruleID = 'trait-';
 

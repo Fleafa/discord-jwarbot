@@ -7,7 +7,7 @@ module.exports = {
 		.setName('state')
 		.setDescription('Replies with state definition.')
 		.addStringOption(option =>
-			option.setName('rule_name')
+			option.setName('state_name')
 				.setDescription('The state to search for.')
 				.setAutocomplete(true)
 				.setRequired(true)),
@@ -30,7 +30,7 @@ module.exports = {
 
 	async execute(interaction) {
 
-		let getInput = interaction.options.getString('rule_name');
+		let getInput = interaction.options.getString('state_name');
 		let ruleName;
 		let ruleId = 'state-';
 

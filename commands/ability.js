@@ -9,7 +9,7 @@ module.exports = {
 		.setName('ability')
 		.setDescription('Replies with ability definition.')
 		.addStringOption(option =>
-			option.setName('rule_name')
+			option.setName('ability_name')
 				.setDescription('The ability to search for.')
 				.setAutocomplete(true)
 				.setRequired(true)),
@@ -32,7 +32,7 @@ module.exports = {
 
 	async execute(interaction) {
 
-		let getInput = interaction.options.getString('rule_name');
+		let getInput = interaction.options.getString('ability_name');
 
 		// prompt user to use the command correctly; later I may add a pop-up modal when the input is empty
 		if (!getInput) {

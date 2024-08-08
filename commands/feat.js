@@ -7,7 +7,7 @@ module.exports = {
 		.setName('feat')
 		.setDescription('Replies with feat definition.')
 		.addStringOption(option =>
-			option.setName('rule_name')
+			option.setName('feat_name')
 				.setDescription('The feat to search for.')
 				.setAutocomplete(true)
 				.setRequired(true)),
@@ -33,7 +33,7 @@ module.exports = {
 		// eslint-disable-next-line no-unused-vars
 		const icon0 = ':zero:', icon1 = ':one:', icon2 = ':two:', icon3 = ':three:', icon4 = ':four:', icon5 = ':five:', icon6 = ':six:', icon7 = ':seven:', icon8 = ':eight:', icon9 = ':nine:', icon10 = ':one::zero:', icon11 = ':one::one:', icon12 = ':one::two:';
 
-		let getInput = interaction.options.getString('rule_name');
+		let getInput = interaction.options.getString('feat_name');
 		let ruleName;
 		let ruleId = 'feat-';
 
