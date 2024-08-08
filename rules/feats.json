@@ -3172,7 +3172,7 @@
 		"cost": 3,
 		"timing": "Active",
 		"subject": "Personal",
-		"description": "This model gains Co-ordinaed Attack [Wolf] until the End Phase.",
+		"description": "This model gains Co-ordinated Attack [Wolf] until the End Phase.",
 		"references": [
 			"trait-co-ordinated_attack"
 		],
