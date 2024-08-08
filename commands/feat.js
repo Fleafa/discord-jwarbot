@@ -110,7 +110,7 @@ module.exports = {
 		if (ruleRev == 0) {
 			ruleDetails = 'R' + ruleRev;
 		} else {
-			ruleDetails = 'R' + ruleRev + ' ( Updated:' + ruleUpdated + ')';
+			ruleDetails = 'R' + ruleRev + ' (updated ' + ruleUpdated + ')';
 		}
 
 		const ruleDefinition = bold(ruleName) + '\n' + ruleStats + codeBlock(ruleDesc) + italic(ruleDetails);

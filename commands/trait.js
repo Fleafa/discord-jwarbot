@@ -74,7 +74,7 @@ module.exports = {
 		if (ruleRev == 0) {
 			ruleDetails = 'R' + ruleRev + '\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
 		} else {
-			ruleDetails = 'R' + ruleRev + ' ( Updated:' + ruleUpdated + ')\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
+			ruleDetails = 'R' + ruleRev + ' (updated ' + ruleUpdated + ')\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
 		}
 
 		if (ruleArgs) { ruleName += ' ' + ruleArgs; }
