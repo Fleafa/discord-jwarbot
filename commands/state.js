@@ -7,20 +7,20 @@ module.exports = {
 		.setName('state')
 		.setDescription('Replies with state definition.')
 		.addStringOption(option =>
-			option.setName('state_name')
+			option.setName('rule_name')
 				.setDescription('The state to search for.')
 				.setAutocomplete(true)
 				.setRequired(true)),
 
 	async autocomplete(interaction) {
 		const focusedValue = interaction.options.getFocused().toLowerCase();
-		const stateList = [];
+		const ruleList = [];
 
-		for (const state in libraryFile) {
-			stateList.push(libraryFile[state]['name'].toLowerCase());
+		for (const rule in libraryFile) {
+			ruleList.push(libraryFile[rule]['name'].toLowerCase());
 		}
 
-		const filtered = stateList.filter(choice => choice.startsWith(focusedValue));
+		const filtered = ruleList.filter(choice => choice.startsWith(focusedValue));
 		if (focusedValue) {
 			await interaction.respond(
 				filtered.map(choice => ({ name: choice, value: choice })),
@@ -30,9 +30,9 @@ module.exports = {
 
 	async execute(interaction) {
 
-		let getInput = interaction.options.getString('state_name');
-		let stateName;
-		let stateId = 'state-';
+		let getInput = interaction.options.getString('rule_name');
+		let ruleName;
+		let ruleId = 'state-';
 
 		// prompt user to use the command correctly; later I may add a pop-up modal when the input is empty
 		if (!getInput) {
@@ -42,12 +42,12 @@ module.exports = {
 		else {
 			getInput = getInput.toLowerCase();
 			// append input to 'state-', and replace spaces with underscores
-			stateId += getInput.replace(/ /g, '_');
+			ruleId += getInput.replace(/ /g, '_');
 			console.log(interaction.user.username + ' used /state to search for ' + getInput);
 		}
 
 		try {
-			stateName = libraryFile[stateId]['name'];
+			ruleName = libraryFile[ruleId]['name'];
 		}
 		catch (err) {
 			console.log('err: no match found for "' + getInput + '"');
@@ -55,49 +55,50 @@ module.exports = {
 			return;
 		}
 		/*
-		let stateArgs;
+		let ruleArgs;
 
 		try {
-			stateArgs = libraryFile[stateId]['arguments'].replace(/\]\(/g, '] (');
+			ruleArgs = libraryFile[ruleId]['arguments'].replace(/\]\(/g, '] (');
 		}
 		catch (err) {
 			console.log('no arguments');
 		}
 */
-		const stateDesc = libraryFile[stateId]['description'];
-		// const stateBSID = libraryFile[stateId]['bsid'];
-		// const stateRefs = [];
-		const stateRB = libraryFile[stateId]['rulebook'];
-		const stateRBr1 = libraryFile[stateId]['rulebookr1'];
-		const stateRev = libraryFile[stateId]['revision'];
-		const stateUpdated = libraryFile[stateId]['updated'];
+		const ruleDesc = libraryFile[ruleId]['description'];
+		// const ruleBSID = libraryFile[ruleId]['bsid'];
+		// const ruleRefs = [];
+		const ruleRB = libraryFile[ruleId]['rulebook'];
+		const ruleRBr1 = libraryFile[ruleId]['rulebookr1'];
+		const ruleRev = libraryFile[ruleId]['revision'];
+		const ruleUpdated = libraryFile[ruleId]['updated'];
+		var ruleDetails = '';
 
-		if (stateRev = 0) {
-			const stateDetails = 'R' + stateRev + '\tRisen Sun: p.' + stateRB + '\t2022 reprint: p.' + stateRBr1;
+		if (ruleRev = 0) {
+			ruleDetails = 'R' + ruleRev + '\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
 		} else {
-			const stateDetails = 'R' + stateRev + ' ( Updated:' + stateUpdated + ')\tRisen Sun: p.' + stateRB + '\t2022 reprint: p.' + stateRBr1;
+			ruleDetails = 'R' + ruleRev + ' ( Updated:' + ruleUpdated + ')\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
 		}
 
-		const stateDefinition = bold(stateName) + codeBlock(stateDesc) + italic(stateDetails);
+		const ruleDefinition = bold(ruleName) + codeBlock(ruleDesc) + italic(ruleDetails);
 
 		const row = new ActionRowBuilder()
 			.addComponents(
 				new ButtonBuilder()
-					.setCustomId('state_share')
+					.setCustomId('rule_share')
 					.setLabel('share here')
 					.setStyle(ButtonStyle.Primary),
 			);
 
-		await interaction.reply({ content: stateDefinition, components: [row], ephemeral: true, fetchReply: true });
+		await interaction.reply({ content: ruleDefinition, components: [row], ephemeral: true, fetchReply: true });
 
-		const filter = i => i.customId === 'state_share';
+		const filter = i => i.customId === 'rule_share';
 		const componentCollector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
 		componentCollector.on('collect', async i => {
-		//	not using stateDefinition so can insert command helper
-			await interaction.channel.send(bold(stateName) + italic('\tvia /state') + codeBlock(stateDesc) + inlineCode(stateDetails));
+		//	not using ruleDefinition so can insert command helper
+			await interaction.channel.send(bold(ruleName) + italic('\tvia /state') + codeBlock(ruleDesc) + inlineCode(ruleDetails));
 			await i.update({ content: 'shared to channel', components: [] });
-			console.log(interaction.user.username + ' shared ' + stateName + ' definition shared to ' + interaction.guild.name + '/' + interaction.channel.name);
+			console.log(interaction.user.username + ' shared ' + ruleName + ' definition shared to ' + interaction.guild.name + '/' + interaction.channel.name);
 			componentCollector.stop();
 		});
 
@@ -105,7 +106,7 @@ module.exports = {
 			console.log(`Collected ${collected.size} interactions.`);
 			if (!collected.size) {
 				await row.components[0].setDisabled(true).setLabel('60s timeout');
-				await interaction.editReply({ content: stateDefinition, components: [row] });
+				await interaction.editReply({ content: ruleDefinition, components: [row] });
 			}
 		});
 	},

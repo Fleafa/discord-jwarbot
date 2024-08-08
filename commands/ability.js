@@ -9,20 +9,20 @@ module.exports = {
 		.setName('ability')
 		.setDescription('Replies with ability definition.')
 		.addStringOption(option =>
-			option.setName('ability_name')
+			option.setName('rule_name')
 				.setDescription('The ability to search for.')
 				.setAutocomplete(true)
 				.setRequired(true)),
 
 	async autocomplete(interaction) {
 		const focusedValue = interaction.options.getFocused().toLowerCase();
-		const abilityList = [];
+		const ruleList = [];
 
-		for (const ability in libraryFile) {
-			abilityList.push(libraryFile[ability]['name'].toLowerCase());
+		for (const rule in libraryFile) {
+			ruleList.push(libraryFile[rule]['name'].toLowerCase());
 		}
 
-		const filtered = abilityList.filter(choice => choice.startsWith(focusedValue));
+		const filtered = ruleList.filter(choice => choice.startsWith(focusedValue));
 		if (focusedValue) {
 			await interaction.respond(
 				filtered.map(choice => ({ name: choice, value: choice })),
@@ -32,7 +32,7 @@ module.exports = {
 
 	async execute(interaction) {
 
-		let getInput = interaction.options.getString('ability_name');
+		let getInput = interaction.options.getString('rule_name');
 
 		// prompt user to use the command correctly; later I may add a pop-up modal when the input is empty
 		if (!getInput) {
@@ -44,52 +44,53 @@ module.exports = {
 			console.log(getInput);
 		}
 
-		// prepend "abilitys-", and replace spaces with underscores
-		const abilityId = 'ability-' + getInput.replace(/ /g, '_');
-		let abilityName;
+		// prepend "ability-", and replace spaces with underscores
+		const ruleId = 'ability-' + getInput.replace(/ /g, '_');
+		let ruleName;
 
 		try {
-			abilityName = libraryFile[abilityId]['name'];
+			ruleName = libraryFile[ruleId]['name'];
 		}
 		catch (err) {
-			console.log('err: no match found for "' + abilityId + '"');
+			console.log('err: no match found for "' + ruleId + '"');
 			await interaction.reply({ content: 'Error: no ability matching "' + getInput + '" found.\nPlease the autoprediction to find a valid ability.', ephemeral: true });
 			return;
 		}
 
-		const abilityDesc = libraryFile[abilityId]['description'];
-		// const abilityBSID = libraryFile[abilityId]['bsid'];
-		// const abilityRefs = [];
-		const abilityRB = libraryFile[abilityId]['rulebook'];
-		const abilityRBr1 = libraryFile[abilityId]['rulebookr1'];
-		const abilityRev = libraryFile[abilityId]['revision'];
-		const abilityUpdated = libraryFile[abilityId]['updated'];
+		const ruleDesc = libraryFile[ruleId]['description'];
+		// const ruleBSID = libraryFile[ruleId]['bsid'];
+		// const ruleRefs = [];
+		const ruleRB = libraryFile[ruleId]['rulebook'];
+		const ruleRBr1 = libraryFile[ruleId]['rulebookr1'];
+		const ruleRev = libraryFile[ruleId]['revision'];
+		const ruleUpdated = libraryFile[ruleId]['updated'];
+		var ruleDetails = '';
 
-		if (abilityRev = 0) {
-			const abilityDetails = 'R' + abilityRev + '\tRisen Sun: p.' + traitRB + '\t2022 reprint: p.' + traitRBr1;
+		if (ruleRev = 0) {
+			ruleDetails = 'R' + ruleRev + '\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
 		} else {
-			const abilityDetails = 'R' + abilityRev + ' ( Updated:' + abilityUpdated + ')\tRisen Sun: p.' + traitRB + '\t2022 reprint: p.' + traitRBr1;
+			ruleDetails = 'R' + ruleRev + ' ( Updated:' + ruleUpdated + ')\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
 		}
 
-		const abilityDefinition = bold(abilityName) + codeBlock(abilityDesc) + italic(abilityDetails);
+		const ruleDefinition = bold(ruleName) + codeBlock(ruleDesc) + italic(ruleDetails);
 
 		const row = new ActionRowBuilder()
 			.addComponents(
 				new ButtonBuilder()
-					.setCustomId('ability_share')
+					.setCustomId('rule_share')
 					.setLabel('share here')
 					.setStyle(ButtonStyle.Primary),
 			);
 
-		await interaction.reply({ content: abilityDefinition, components: [row], ephemeral: true, fetchReply: true });
+		await interaction.reply({ content: ruleDefinition, components: [row], ephemeral: true, fetchReply: true });
 
-		const filter = i => i.customId === 'ability_share';
+		const filter = i => i.customId === 'rule_share';
 		const componentCollector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
 		componentCollector.on('collect', async i => {
-			await interaction.channel.send(userMention(interaction.user.id) + ' used /ability:\n' + abilityDefinition);
-			await i.update({ content: 'Shared definition of ' + abilityName + ' to channel.', components: [] });
-			console.log(abilityName + ' definition shared to ' + interaction.channel);
+			await interaction.channel.send(userMention(interaction.user.id) + ' used /ability:\n' + ruleDefinition);
+			await i.update({ content: 'Shared definition of ' + ruleName + ' to channel.', components: [] });
+			console.log(ruleName + ' definition shared to ' + interaction.channel);
 			componentCollector.stop();
 		});
 
@@ -97,7 +98,7 @@ module.exports = {
 			console.log(`Collected ${collected.size} interactions.`);
 			if (!collected.size) {
 				await row.components[0].setDisabled(true).setLabel('60s timeout');
-				await interaction.editReply({ content: abilityDefinition, components: [row] });
+				await interaction.editReply({ content: ruleDefinition, components: [row] });
 			}
 		});
 	},

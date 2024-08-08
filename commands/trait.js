@@ -7,20 +7,20 @@ module.exports = {
 		.setName('trait')
 		.setDescription('Replies with trait definition.')
 		.addStringOption(option =>
-			option.setName('trait_name')
+			option.setName('rule_name')
 				.setDescription('The trait to search for.')
 				.setAutocomplete(true)
 				.setRequired(true)),
 
 	async autocomplete(interaction) {
 		const focusedValue = interaction.options.getFocused().toLowerCase();
-		const traitList = [];
+		const ruleList = [];
 
-		for (const trait in libraryFile) {
-			traitList.push(libraryFile[trait]['name'].toLowerCase());
+		for (const rule in libraryFile) {
+			ruleList.push(libraryFile[rule]['name'].toLowerCase());
 		}
 
-		const filtered = traitList.filter(choice => choice.startsWith(focusedValue));
+		const filtered = ruleList.filter(choice => choice.startsWith(focusedValue));
 		if (focusedValue.length >>> 1) {
 			await interaction.respond(
 				filtered.map(choice => ({ name: choice, value: choice })),
@@ -30,9 +30,9 @@ module.exports = {
 
 	async execute(interaction) {
 
-		let getInput = interaction.options.getString('trait_name');
-		let traitName, traitArgs;
-		let traitID = 'trait-';
+		let getInput = interaction.options.getString('rule_name');
+		let ruleName, ruleArgs;
+		let ruleID = 'trait-';
 
 		// prompt user to use the command correctly; later I may add a pop-up modal when the input is empty
 		if (!getInput) {
@@ -42,62 +42,63 @@ module.exports = {
 		else {
 			getInput = getInput.toLowerCase();
 			// append input to 'trait-', and replace spaces with underscores
-			traitID += getInput.replace(/ /g, '_');
+			ruleID += getInput.replace(/ /g, '_');
 			console.log(interaction.user.username + ' used /trait to search for ' + getInput);
 		}
 
 		try {
-			traitName = libraryFile[traitID]['name'];
+			ruleName = libraryFile[ruleID]['name'];
 		}
 		catch (err) {
 			console.log('err: no match found for "' + getInput + '"');
-			await interaction.reply({ content: 'Error: no trait matching "' + getInput + '" found.\nPlease use the autoprediction to find a valid trait.', ephemeral: true });
+			await interaction.reply({ content: 'Error: no rule matching "' + getInput + '" found.\nPlease use the autoprediction to find a valid rule.', ephemeral: true });
 			return;
 		}
 
 		try {
-			traitArgs = libraryFile[traitID]['arguments'].replace(/\]\(/g, '] (');
+			ruleArgs = libraryFile[ruleID]['arguments'].replace(/\]\(/g, '] (');
 		}
 		catch (err) {
 			console.log('no arguments');
 		}
 
-		const traitDesc = libraryFile[traitID]['description'];
-		// const traitBSID = libraryFile[traitID]['bsid'];
-		// const traitRefs = [];
-		const traitRB = libraryFile[traitID]['rulebook'];
-		const traitRBr1 = libraryFile[traitID]['rulebookr1'];
-		const traitRev = libraryFile[traitID]['revision'];
-		const traitUpdated = libraryFile[traitID]['updated'];
+		const ruleDesc = libraryFile[ruleID]['description'];
+		// const ruleBSID = libraryFile[ruleID]['bsid'];
+		// const ruleRefs = [];
+		const ruleRB = libraryFile[ruleID]['rulebook'];
+		const ruleRBr1 = libraryFile[ruleID]['rulebookr1'];
+		const ruleRev = libraryFile[ruleID]['revision'];
+		const ruleUpdated = libraryFile[ruleID]['updated'];
+		var ruleDetails = '';
 
-		if (stateRev = 0) {
-			const stateDetails = 'R' + stateRev + '\tRisen Sun: p.' + traitRB + '\t2022 reprint: p.' + traitRBr1;
+		if (ruleRev = 0) {
+			ruleDetails = 'R' + ruleRev + '\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
 		} else {
-			const stateDetails = 'R' + stateRev + ' ( Updated:' + stateUpdated + ')\tRisen Sun: p.' + traitRB + '\t2022 reprint: p.' + traitRBr1;
+			ruleDetails = 'R' + ruleRev + ' ( Updated:' + ruleUpdated + ')\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
 		}
 
-		if (traitArgs) { traitName += ' ' + traitArgs; }
+		if (ruleArgs) { ruleName += ' ' + ruleArgs; }
 
-		const traitDefinition = bold(traitName) + codeBlock(traitDesc) + italic(traitDetails);
+		const ruleDefinition = bold(ruleName) + codeBlock(ruleDesc) + italic(ruleDetails);
 
 		const row = new ActionRowBuilder()
 			.addComponents(
 				new ButtonBuilder()
-					.setCustomId('trait_share')
+					.setCustomId('rule_share')
 					.setLabel('share here')
 					.setStyle(ButtonStyle.Primary),
 			);
 
-		await interaction.reply({ content: traitDefinition, components: [row], ephemeral: true, fetchReply: true });
+		await interaction.reply({ content: ruleDefinition, components: [row], ephemeral: true, fetchReply: true });
 
-		const filter = i => i.customId === 'trait_share';
+		const filter = i => i.customId === 'rule_share';
 		const componentCollector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
 
 		componentCollector.on('collect', async i => {
-			//	not using traitDefinition so can insert command helper
-			await interaction.channel.send(bold(traitName) + italic('\tvia /trait') + codeBlock(traitDesc) + inlineCode(traitDetails));
+			//	not using ruleDefinition so can insert command helper
+			await interaction.channel.send(bold(ruleName) + italic('\tvia /trait') + codeBlock(ruleDesc) + inlineCode(ruleDetails));
 			await i.update({ content: 'shared to channel', components: [] });
-			console.log(interaction.user.username + ' shared ' + traitName + ' definition shared to ' + interaction.guild.name + '/' + interaction.channel.name);
+			console.log(interaction.user.username + ' shared ' + ruleName + ' definition shared to ' + interaction.guild.name + '/' + interaction.channel.name);
 			componentCollector.stop();
 		});
 
@@ -105,7 +106,7 @@ module.exports = {
 			console.log(`Collected ${collected.size} interactions.`);
 			if (!collected.size) {
 				await row.components[0].setDisabled(true).setLabel('60s timeout');
-				await interaction.editReply({ content: traitDefinition, components: [row] });
+				await interaction.editReply({ content: ruleDefinition, components: [row] });
 			}
 		});
 	},
