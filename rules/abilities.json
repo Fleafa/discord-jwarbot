@@ -5,7 +5,7 @@
 		"rulebook": 47,
 		"rulebookr1": 49,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-critical_attack": {
 		"name": "Critical Attack",
@@ -13,7 +13,7 @@
 		"rulebook": 47,
 		"rulebookr1": 49,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-drag_attack": {
 		"name": "Drag Attack",
@@ -21,7 +21,7 @@
 		"rulebook": 47,
 		"rulebookr1": 49,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 	},
 	"ability-forceback_attack": {
 		"name": "Forceback Attack",
@@ -29,7 +29,7 @@
 		"rulebook": 47,
 		"rulebookr1": 49,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 	},
 	"ability-grapple_attack": {
 		"name": "Grapple Attack",
@@ -37,7 +37,7 @@
 		"rulebook": 47,
 		"rulebookr1": 49,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-powerful_attack": {
 		"name": "Powerful Attack",
@@ -45,7 +45,7 @@
 		"rulebook": 47,
 		"rulebookr1": 49,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-push_attack": {
 		"name": "Push Attack",
@@ -53,7 +53,7 @@
 		"rulebook": 47,
 		"rulebookr1": 49,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-sidestep_attack": {
 		"name": "Sidestep Attack",
@@ -61,7 +61,7 @@
 		"rulebook": 47,
 		"rulebookr1": 49,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 	},
 	"ability-slam_attack": {
 		"name": "Slam Attack",
@@ -69,7 +69,7 @@
 		"rulebook": 47,
 		"rulebookr1": 49,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 	},
 	"ability-stun_attack": {
 		"name": "Stun Attack",
@@ -77,7 +77,7 @@
 		"rulebook": 47,
 		"rulebookr1": 49,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-sweep_attack": {
 		"name": "Sweep Attack",
@@ -85,7 +85,7 @@
 		"rulebook": 48,
 		"rulebookr1": 49,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-throw_attack": {
 		"name": "Throw Attack",
@@ -93,14 +93,14 @@
 		"rulebook": 48,
 		"rulebookr1": 49,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 	},
 	"ability-ability-eagles_flight_defence": {
 		"name": "Eagle's Flight Defence",
 		"description": "If the Defence is successful this model may Move 3\" after the Melee Exchange is resolved",
 		"rulebookr1": 50,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-ivory_prison_attack": {
 		"name": "Ivory Prison Attack",
@@ -108,7 +108,7 @@
 		"rulebook": 48,
 		"rulebookr1": 50,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-gokusatsu_attack": {
 		"name": "Gokusatsu Attack",
@@ -116,7 +116,7 @@
 		"rulebook": 48,
 		"rulebookr1": 50,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-counterstrike_defence": {
 		"name": "Counterstrike Defence",
@@ -124,7 +124,7 @@
 		"rulebook": 48,
 		"rulebookr1": 50,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-drag_defence": {
 		"name": "Drag Defence",
@@ -132,7 +132,7 @@
 		"rulebook": 48,
 		"rulebookr1": 50,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 	},
 	"ability-forceback_defence": {
 		"name": "Forceback Defence",
@@ -140,13 +140,13 @@
 		"rulebook": 48,
 		"rulebookr1": 50,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-grapple_defence": {
 		"name": "Grapple Defence",
 		"description": "If the Defence is successful, the Attacker becomes Held. Place a Held Marker on the Attack.",
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-push_defence": {
 		"name": "Push Defence",
@@ -154,7 +154,7 @@
 		"rulebook": 48,
 		"rulebookr1": 50,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-sidestep_defence": {
 		"name": "Sidestep Defence",
@@ -162,7 +162,7 @@
 		"rulebook": 48,
 		"rulebookr1": 50,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 	},
 	"ability-sweep_defence": {
 		"name": "Sweep Defence",
@@ -170,7 +170,7 @@
 		"rulebook": 48,
 		"rulebookr1": 50,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"ability-throw_defence": {
 		"name": "Throw Defence",
@@ -178,7 +178,7 @@
 		"rulebook": 48,
 		"rulebookr1": 50,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 	},
 	"ability-web_defence": {
 		"name": "Web Defence",
@@ -186,6 +186,6 @@
 		"rulebook": "N/A",
 		"rulebookr1": "N/A",
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	}
 }

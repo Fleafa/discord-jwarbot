@@ -8,7 +8,7 @@
 		"rulebook": 58,
 		"rulebookr1": 60,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-aggressive": {
 		"name": "Aggressive",
@@ -18,7 +18,7 @@
 		"rulebook": 58,
 		"rulebookr1": 60,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-agile": {
 		"name": "Agile",
@@ -28,7 +28,7 @@
 		"rulebook": 58,
 		"rulebookr1": 60,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-aloof": {
 		"name": "Aloof",
@@ -38,7 +38,7 @@
 		"rulebook": 58,
 		"rulebookr1": 60,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-ammo": {
 		"name": "Ammo",
@@ -49,7 +49,7 @@
 		"rulebook": 58,
 		"rulebookr1": 60,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 		},
 	"trait-armour": {
 		"name": "Armour",
@@ -60,7 +60,7 @@
 		"rulebook": 58,
 		"rulebookr1": 60,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-assassin": {
 		"name": "Assassin",
@@ -70,7 +70,7 @@
 		"rulebook": 58,
 		"rulebookr1": 60,
 		"revision": 0,
-		"status": "current"
+		"updated": "2024-03-04"
 		},
 	"trait-aware": {
 		"name": "Aware",
@@ -80,7 +80,7 @@
 		"rulebook": 58,
 		"rulebookr1": 60,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-banzai!": {
 		"name": "Banzai!",
@@ -90,7 +90,7 @@
 		"rulebook": 58,
 		"rulebookr1": 60,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-bear_stands_alone": {
 		"name": "Bear Stands Alone",
@@ -100,7 +100,7 @@
 		"rulebook": 58,
 		"rulebookr1": 60,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-believer": {
 		"name": "Believer",
@@ -111,7 +111,7 @@
 		"rulebook": 58,
 		"rulebookr1": 60,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-bleed": {
 		"name": "Bleed",
@@ -122,7 +122,7 @@
 		"rulebook": 58,
 		"rulebookr1": 61,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-blood_of_orochi": {
 		"name": "Blood of Orochi",
@@ -133,7 +133,7 @@
 		"rulebook": 58,
 		"rulebookr1": 61,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 		},
 	"trait-bodyguard": {
 		"name": "Bodyguard",
@@ -144,7 +144,7 @@
 		"rulebook": 59,
 		"rulebookr1": 61,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-booted": {
 		"name": "Booted",
@@ -154,7 +154,7 @@
 		"rulebook": 59,
 		"rulebookr1": 62,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-bravery": {
 		"name": "Bravery",
@@ -164,7 +164,7 @@
 		"rulebook": 59,
 		"rulebookr1": 62,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-brutal": {
 		"name": "Brutal",
@@ -175,7 +175,7 @@
 		"rulebook": 59,
 		"rulebookr1": 62,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-camouflage": {
 		"name": "Camouflage",
@@ -186,7 +186,7 @@
 		"rulebook": 60,
 		"rulebookr1": 62,
 		"revision": 0,
-		"status": "current"
+		"updated": "2023-04-30"
 		},
 	"trait-cavalry": {
 		"name": "Cavalry",
@@ -197,7 +197,7 @@
 		"rulebook": 60,
 		"rulebookr1": 62,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-channel": {
 		"name": "Channel",
@@ -208,7 +208,7 @@
 		"rulebook": 60,
 		"rulebookr1": 62,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-chain_weapon": {
 		"name": "Chain Weapon",
@@ -219,7 +219,7 @@
 		"rulebook": 60,
 		"rulebookr1": 62,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-charging_bonus": {
 		"name": "Charging Bonus",
@@ -230,7 +230,7 @@
 		"rulebook": 60,
 		"rulebookr1": 63,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-cloudwalk": {
 		"name": "Cloudwalk",
@@ -240,7 +240,7 @@
 		"rulebook": 60,
 		"rulebookr1": 63,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-command": {
 		"name": "Command",
@@ -251,7 +251,7 @@
 		"rulebook": 60,
 		"rulebookr1": 63,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-construct": {
 		"name": "Construct",
@@ -261,7 +261,7 @@
 		"rulebook": 60,
 		"rulebookr1": 63,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-co-ordinated_attack": {
 		"name": "Co-ordinated Attack",
@@ -272,7 +272,7 @@
 		"rulebook": 60,
 		"rulebookr1": 63,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-cowardly": {
 		"name": "Cowardly",
@@ -282,7 +282,7 @@
 		"rulebook": 61,
 		"rulebookr1": 63,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-courage": {
 		"name": "Courage",
@@ -293,7 +293,7 @@
 		"rulebook": 61,
 		"rulebookr1": 63,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-cultist": {
 		"name": "Cultist",
@@ -304,7 +304,7 @@
 		"rulebook": 61,
 		"rulebookr1": 63,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 		},
 	"trait-defensive": {
 		"name": "Defensive",
@@ -314,7 +314,7 @@
 		"rulebook": 61,
 		"rulebookr1": 64,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-disguise": {
 		"name": "Disguise",
@@ -325,7 +325,7 @@
 		"rulebook": 61,
 		"rulebookr1": 64,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-disease": {
 		"name": "Disease",
@@ -336,7 +336,7 @@
 		"rulebook": 61,
 		"rulebookr1": 64,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-disturb_flow": {
 		"name": "Disturb Flow",
@@ -347,7 +347,7 @@
 		"rulebook": 61,
 		"rulebookr1": 64,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-dodge": {
 		"name": "Dodge",
@@ -358,7 +358,7 @@
 		"rulebook": 61,
 		"rulebookr1": 64,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-dread": {
 		"name": "Dread",
@@ -369,7 +369,7 @@
 		"rulebook": 61,
 		"rulebookr1": 64,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-durable": {
 		"name": "Durable",
@@ -379,7 +379,7 @@
 		"rulebook": 61,
 		"rulebookr1": 64,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-endurance": {
 		"name": "Endurance",
@@ -389,7 +389,7 @@
 		"rulebook": 62,
 		"rulebookr1": 64,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-entangling": {
 		"name": "Entangling",
@@ -399,7 +399,7 @@
 		"rulebook": 62,
 		"rulebookr1": 64,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-evasive": {
 		"name": "Evasive",
@@ -409,7 +409,7 @@
 		"rulebook": 62,
 		"rulebookr1": 64,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 		},
 	"trait-fear": {
 		"name": "Fear",
@@ -420,7 +420,7 @@
 		"rulebook": 62,
 		"rulebookr1": 64,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-fearless": {
 		"name": "Fearless",
@@ -430,7 +430,7 @@
 		"rulebook": 62,
 		"rulebookr1": 64,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-feint": {
 		"name": "Feint",
@@ -441,7 +441,7 @@
 		"rulebook": 62,
 		"rulebookr1": 65,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-fire": {
 		"name": "Fire",
@@ -452,7 +452,7 @@
 		"rulebook": 62,
 		"rulebookr1": 65,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-flank": {
 		"name": "Flank",
@@ -462,7 +462,7 @@
 		"rulebook": 62,
 		"rulebookr1": 65,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-fortune": {
 		"name": "Fortune",
@@ -472,7 +472,7 @@
 		"rulebook": 62,
 		"rulebookr1": 65,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-group": {
 		"name": "Group",
@@ -482,7 +482,7 @@
 		"rulebook": 63,
 		"rulebookr1": 65,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-hatred": {
 		"name": "Hatred",
@@ -493,7 +493,7 @@
 		"rulebook": 63,
 		"rulebookr1": 65,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-heal": {
 		"name": "Heal",
@@ -504,7 +504,7 @@
 		"rulebook": 63,
 		"rulebookr1": 65,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-huge": {
 		"name": "Huge",
@@ -514,7 +514,7 @@
 		"rulebook": 63,
 		"rulebookr1": 65,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-immune": {
 		"name": "Immune",
@@ -525,7 +525,7 @@
 		"rulebook": 63,
 		"rulebookr1": 66,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-immovable": {
 		"name": "Immovable",
@@ -535,7 +535,7 @@
 		"rulebook": 63,
 		"rulebookr1": 66,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 		},
 	"trait-impenetrable_defence": {
 		"name": "Impenetrable Defence",
@@ -545,7 +545,7 @@
 		"rulebook": 63,
 		"rulebookr1": 66,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-impetuous": {
 		"name": "Impetuous",
@@ -556,7 +556,7 @@
 		"rulebook": 63,
 		"rulebookr1": 66,
 		"revision": 0,
-		"status": "current"
+		"updated": "2023-01-18"
 		},
 		"trait-indomitable": {
 		"name": "Indomitable",
@@ -567,7 +567,7 @@
 		"rulebook": 63,
 		"rulebookr1": 66,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 
 	"trait-insignificant": {
@@ -578,7 +578,7 @@
 		"rulebook": 63,
 		"rulebookr1": 66,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-intangible": {
 		"name": "Intangible",
@@ -588,7 +588,7 @@
 		"rulebook": 63,
 		"rulebookr1": 66,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-intimidate": {
 		"name": "Intimidate",
@@ -598,7 +598,7 @@
 		"rulebook": 64,
 		"rulebookr1": 66,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-jump_up": {
 		"name": "Jump Up",
@@ -608,7 +608,7 @@
 		"rulebook": 64,
 		"rulebookr1": 66,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-kami": {
 		"name": "Kami",
@@ -618,7 +618,7 @@
 		"rulebook": 64,
 		"rulebookr1": 66,
 		"revision": 1,
-		"status": "current"
+		"updated": "2023-08-22"
 		},
 	"trait-kata": {
 		"name": "Kata",
@@ -628,7 +628,7 @@
 		"rulebook": 64,
 		"rulebookr1": 66,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-ki_block": {
 		"name": "Ki Block",
@@ -638,7 +638,7 @@
 		"rulebook": 64,
 		"rulebookr1": 66,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-kumo": {
 		"name": "Kumo",
@@ -648,7 +648,7 @@
 		"rulebook": "N/A",
 		"rulebookr1": "N/A",
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-last_stand": {
 		"name": "Last Stand",
@@ -658,7 +658,7 @@
 		"rulebook": 64,
 		"rulebookr1": 67,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-leadership": {
 		"name": "Leadership",
@@ -669,7 +669,7 @@
 		"rulebook": 64,
 		"rulebookr1": 67,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-leech": {
 		"name": "Leech",
@@ -680,7 +680,7 @@
 		"rulebook": 64,
 		"rulebookr1": 67,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-lightweight": {
 		"name": "Lightweight",
@@ -690,7 +690,7 @@
 		"rulebook": 64,
 		"rulebookr1": 67,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-lightfooted": {
 		"name": "Lightfooted",
@@ -700,7 +700,7 @@
 		"rulebook": 64,
 		"rulebookr1": 67,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-lightning_reflexes": {
 		"name": "Lightning Reflexes",
@@ -710,7 +710,7 @@
 		"rulebook": 64,
 		"rulebookr1": 67,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-mantra": {
 		"name": "Mantra",
@@ -720,7 +720,7 @@
 		"rulebook": 65,
 		"rulebookr1": 67,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-mettle": {
 		"name": "Mettle",
@@ -731,7 +731,7 @@
 		"rulebook": 65,
 		"rulebookr1": 67,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-oni_rage": {
 		"name": "Oni Rage",
@@ -741,7 +741,7 @@
 		"rulebook": 65,
 		"rulebookr1": 67,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 		},
 	"trait-order": {
 		"name": "Order",
@@ -752,7 +752,7 @@
 		"rulebook": 65,
 		"rulebookr1": 67,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-overwhelm": {
 		"name": "Overwhelm",
@@ -763,7 +763,7 @@
 		"rulebook": 65,
 		"rulebookr1": 67,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-pack": {
 		"name": "Pack",
@@ -774,7 +774,7 @@
 		"rulebook": 65,
 		"rulebookr1": 67,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-parry": {
 		"name": "Parry",
@@ -785,7 +785,7 @@
 		"rulebook": 65,
 		"rulebookr1": 68,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-pierce": {
 		"name": "Pierce",
@@ -796,7 +796,7 @@
 		"rulebook": 65,
 		"rulebookr1": 68,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-poison": {
 		"name": "Poison",
@@ -807,7 +807,7 @@
 		"rulebook": 65,
 		"rulebookr1": 68,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-protected": {
 		"name": "Protected",
@@ -818,7 +818,7 @@
 		"rulebook": 65,
 		"rulebookr1": 68,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-prowess": {
 		"name": "Prowess",
@@ -829,7 +829,7 @@
 		"rulebook": 65,
 		"rulebookr1": 68,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-ranged_defence": {
 		"name": "Ranged Defence",
@@ -840,7 +840,7 @@
 		"rulebook": 66,
 		"rulebookr1": 68,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-rapid_fire": {
 		"name": "Rapid Fire",
@@ -851,7 +851,7 @@
 		"rulebook": 66,
 		"rulebookr1": 68,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-reach": {
 		"name": "Reach",
@@ -861,7 +861,7 @@
 		"rulebook": 66,
 		"rulebookr1": 69,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-regenerate": {
 		"name": "Regenerate",
@@ -872,7 +872,7 @@
 		"rulebook": 66,
 		"rulebookr1": 69,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-reload": {
 		"name": "Reload",
@@ -883,7 +883,7 @@
 		"rulebook": 66,
 		"rulebookr1": 69,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-resistance": {
 		"name": "Resistance",
@@ -894,7 +894,7 @@
 		"rulebook": 66,
 		"rulebookr1": 69,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-rise": {
 		"name": "Rise",
@@ -905,7 +905,7 @@
 		"rulebook": 66,
 		"rulebookr1": 69,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-sacrifice": {
 		"name": "Sacrifice",
@@ -916,7 +916,7 @@
 		"rulebook": 67,
 		"rulebookr1": 69,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-scout": {
 		"name": "Scout",
@@ -927,7 +927,7 @@
 		"rulebook": 67,
 		"rulebookr1": 69,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-sharp": {
 		"name": "Sharp",
@@ -938,7 +938,7 @@
 		"rulebook": 67,
 		"rulebookr1": 69,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-sixth_sense": {
 		"name": "Sixth Sense",
@@ -948,7 +948,7 @@
 		"rulebook": 67,
 		"rulebookr1": 69,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-slow": {
 		"name": "Slow",
@@ -958,7 +958,7 @@
 		"rulebook": 67,
 		"rulebookr1": 69,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-soulless": {
 		"name": "Soulless",
@@ -968,7 +968,7 @@
 		"rulebook": 67,
 		"rulebookr1": 69,
 		"revision": 2,
-		"status": "current"
+		"updated": "before 2022-11"
 		},
 	"trait-spirit": {
 		"name": "Spirit",
@@ -979,7 +979,7 @@
 		"rulebook": 67,
 		"rulebookr1": 69,
 		"revision": 1,
-		"status": "current"
+		"updated": "2024-06-22"
 		},
 	"trait-split_attack": {
 		"name": "Split Attack",
@@ -989,7 +989,7 @@
 		"rulebook": 67,
 		"rulebookr1": 70,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 		},
 	"trait-steadfast": {
 		"name": "Steadfast",
@@ -999,7 +999,7 @@
 		"rulebook": 68,
 		"rulebookr1": 70,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-strategy": {
 		"name": "Strategy",
@@ -1010,7 +1010,7 @@
 		"rulebook": 68,
 		"rulebookr1": 70,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-strong": {
 		"name": "Strong",
@@ -1021,7 +1021,7 @@
 		"rulebook": 68,
 		"rulebookr1": 70,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-stupid": {
 		"name": "Stupid",
@@ -1031,7 +1031,7 @@
 		"rulebook": 68,
 		"rulebookr1": 70,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-swarm": {
 		"name": "Swarm",
@@ -1041,7 +1041,7 @@
 		"rulebook": 68,
 		"rulebookr1": 70,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-tactician": {
 		"name": "Tactician",
@@ -1052,7 +1052,7 @@
 		"rulebook": 68,
 		"rulebookr1": 70,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 		},
 	"trait-terror": {
 		"name": "Terror",
@@ -1062,7 +1062,7 @@
 		"rulebook": 68,
 		"rulebookr1": 70,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-tiny": {
 		"name": "Tiny",
@@ -1072,7 +1072,7 @@
 		"rulebook": 68,
 		"rulebookr1": 71,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-tireless": {
 		"name": "Tireless",
@@ -1082,7 +1082,7 @@
 		"rulebook": 68,
 		"rulebookr1": 71,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-tough": {
 		"name": "Tough",
@@ -1093,7 +1093,7 @@
 		"rulebook": 68,
 		"rulebookr1": 71,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-unblockable": {
 		"name": "Unblockable",
@@ -1104,7 +1104,7 @@
 		"rulebook": 68,
 		"rulebookr1": 71,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-unstable": {
 		"name": "Unstable",
@@ -1114,7 +1114,7 @@
 		"rulebook": 68,
 		"rulebookr1": 71,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-vengeance": {
 		"name": "Vengeance",
@@ -1125,7 +1125,7 @@
 		"rulebook": 69,
 		"rulebookr1": 71,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-virtue": {
 		"name": "Virtue",
@@ -1136,7 +1136,7 @@
 		"rulebook": 69,
 		"rulebookr1": 71,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-weak": {
 		"name": "Weak",
@@ -1146,7 +1146,7 @@
 		"rulebook": 69,
 		"rulebookr1": 71,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 		},
 	"trait-willpower": {
 		"name": "Willpower",
@@ -1157,7 +1157,7 @@
 		"rulebook": 69,
 		"rulebookr1": 71,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-terrain_difficult": {
 		"name": "Terrain: Difficult",
@@ -1167,7 +1167,7 @@
 		"rulebook": 70,
 		"rulebookr1": 72,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 		},
 	"trait-terrain_destructible": {
 		"name": "Terrain: Destructible",
@@ -1177,7 +1177,7 @@
 		"rulebook": 16,
 		"rulebookr1": 18,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-terrain_impassable": {
 		"name": "Terrain: Impassable",
@@ -1187,7 +1187,7 @@
 		"rulebook": 70,
 		"rulebookr1": 72,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-terrain_normal": {
 		"name": "Terrain: Normal",
@@ -1197,7 +1197,7 @@
 		"rulebook": 70,
 		"rulebookr1": 72,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-terrain_ideal": {
 		"name": "Terrain: Ideal",
@@ -1207,7 +1207,7 @@
 		"rulebook": 70,
 		"rulebookr1": 72,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-terrain_clear": {
 		"name": "Terrain: Clear",
@@ -1217,7 +1217,7 @@
 		"rulebook": 70,
 		"rulebookr1": 72,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-terrain_blocking": {
 		"name": "Terrain: Blocking",
@@ -1227,7 +1227,7 @@
 		"rulebook": 70,
 		"rulebookr1": 72,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-terrain_obscuring": {
 		"name": "Terrain: Obscuring",
@@ -1237,7 +1237,7 @@
 		"rulebook": 70,
 		"rulebookr1": 72,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		},
 	"trait-terrain_enhancing": {
 		"name": "Terrain: Enhancing",
@@ -1247,6 +1247,6 @@
 		"rulebook": 70,
 		"rulebookr1": 72,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 		}
 }

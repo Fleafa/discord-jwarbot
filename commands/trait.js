@@ -68,12 +68,17 @@ module.exports = {
 		const traitRB = libraryFile[traitID]['rulebook'];
 		const traitRBr1 = libraryFile[traitID]['rulebookr1'];
 		const traitRev = libraryFile[traitID]['revision'];
-		const traitStatus = libraryFile[traitID]['status'];
-		const traitDetails = 'Revision: ' + traitRev + ' (' + traitStatus + ')\tRisen Sun: p.' + traitRB + '\t2022 reprint: p.' + traitRBr1;
+		const traitUpdated = libraryFile[traitID]['updated'];
+
+		if (stateRev = 0) {
+			const stateDetails = 'R' + stateRev + '\tRisen Sun: p.' + traitRB + '\t2022 reprint: p.' + traitRBr1;
+		} else {
+			const stateDetails = 'R' + stateRev + ' ( Updated:' + stateUpdated + ')\tRisen Sun: p.' + traitRB + '\t2022 reprint: p.' + traitRBr1;
+		}
 
 		if (traitArgs) { traitName += ' ' + traitArgs; }
 
-		const traitDefinition = bold(traitName) + codeBlock(traitDesc) + inlineCode(traitDetails);
+		const traitDefinition = bold(traitName) + codeBlock(traitDesc) + italic(traitDetails);
 
 		const row = new ActionRowBuilder()
 			.addComponents(

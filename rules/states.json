@@ -7,7 +7,7 @@
 		"rulebook": 50,
 		"rulebookr1": 52,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 	},
 	"state-bleed": {
 		"name": "Bleed",
@@ -17,7 +17,7 @@
 		"rulebook": 50,
 		"rulebookr1": 52,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"state-blind": {
 		"name": "Blind",
@@ -27,7 +27,7 @@
 		"rulebook": 50,
 		"rulebookr1": 52,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"state-controlled": {
 		"name": "Controlled",
@@ -37,7 +37,7 @@
 		"rulebook": 50,
 		"rulebookr1": 52,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"state-death_sentence": {
 		"name": "Death Sentence",
@@ -47,7 +47,7 @@
 		"rulebook": 51,
 		"rulebookr1": 53,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 	},
 	"state-diseased": {
 		"name": "Diseased",
@@ -57,7 +57,7 @@
 		"rulebook": 51,
 		"rulebookr1": 53,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"state-disguised": {
 		"name": "Disguised",
@@ -67,7 +67,7 @@
 		"rulebook": 51,
 		"rulebookr1": 53,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"state-frightened": {
 		"name": "Frightened",
@@ -77,7 +77,7 @@
 		"rulebook": 51,
 		"rulebookr1": 53,
 		"revision": 1,
-		"status": "current"
+		"updated": "before 2022-11"
 	},
 	"state-held": {
 		"name": "Held",
@@ -87,7 +87,7 @@
 		"rulebook": 51,
 		"rulebookr1": 53,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"state-immobilised": {
 		"name": "Immobilised",
@@ -97,7 +97,7 @@
 		"rulebook": 52,
 		"rulebookr1": 54,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"state-impetuous": {
 		"name": "Impetuous",
@@ -107,7 +107,7 @@
 		"rulebook": 52,
 		"rulebookr1": 54,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"state-on_fire": {
 		"name": "On Fire",
@@ -117,7 +117,7 @@
 		"rulebook": 52,
 		"rulebookr1": 54,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"state-poisoned": {
 		"name": "Poisoned",
@@ -127,7 +127,7 @@
 		"rulebook": 52,
 		"rulebookr1": 54,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"state-prone": {
 		"name": "Prone",
@@ -137,7 +137,7 @@
 		"rulebook": 53,
 		"rulebookr1": 55,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"state-reloading": {
 		"name": "Reloading",
@@ -147,7 +147,7 @@
 		"rulebook": 53,
 		"rulebookr1": 55,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"state-spirit_block": {
 		"name": "Spirit Block",
@@ -157,7 +157,7 @@
 		"rulebook": 53,
 		"rulebookr1": 55,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	},
 	"state-stunned": {
 		"name": "Stunned",
@@ -167,6 +167,6 @@
 		"rulebook": 53,
 		"rulebookr1": 55,
 		"revision": 0,
-		"status": "current"
+		"updated": ""
 	}
 }

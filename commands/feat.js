@@ -104,10 +104,15 @@ module.exports = {
 		}
 
 		const featRev = libraryFile[featId]['revision'];
-		const featStatus = libraryFile[featId]['status'];
-		const featDetails = 'Revision: ' + featRev + ' (' + featStatus + ')';
+		const featUpdated = libraryFile[featId]['updated'];
 
-		const featDefinition = bold(featName) + '\n' + featStats + codeBlock(featDesc) + inlineCode(featDetails);
+		if (featRev = 0) {
+			const featDetails = 'R' + featRev;
+		} else {
+			const featDetails = 'R' + featRev + ' ( Updated:' + featUpdated + ')';
+		}
+
+		const featDefinition = bold(featName) + '\n' + featStats + codeBlock(featDesc) + italic(featDetails);
 
 		const row = new ActionRowBuilder()
 			.addComponents(

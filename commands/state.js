@@ -70,10 +70,15 @@ module.exports = {
 		const stateRB = libraryFile[stateId]['rulebook'];
 		const stateRBr1 = libraryFile[stateId]['rulebookr1'];
 		const stateRev = libraryFile[stateId]['revision'];
-		const stateStatus = libraryFile[stateId]['status'];
-		const stateDetails = 'Revision: ' + stateRev + ' (' + stateStatus + ')\tRisen Sun: p.' + stateRB + '\t2022 reprint: p.' + stateRBr1;
+		const stateUpdated = libraryFile[stateId]['updated'];
 
-		const stateDefinition = bold(stateName) + codeBlock(stateDesc) + inlineCode(stateDetails);
+		if (stateRev = 0) {
+			const stateDetails = 'R' + stateRev + '\tRisen Sun: p.' + stateRB + '\t2022 reprint: p.' + stateRBr1;
+		} else {
+			const stateDetails = 'R' + stateRev + ' ( Updated:' + stateUpdated + ')\tRisen Sun: p.' + stateRB + '\t2022 reprint: p.' + stateRBr1;
+		}
+
+		const stateDefinition = bold(stateName) + codeBlock(stateDesc) + italic(stateDetails);
 
 		const row = new ActionRowBuilder()
 			.addComponents(

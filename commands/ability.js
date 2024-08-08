@@ -63,17 +63,21 @@ module.exports = {
 		const abilityRB = libraryFile[abilityId]['rulebook'];
 		const abilityRBr1 = libraryFile[abilityId]['rulebookr1'];
 		const abilityRev = libraryFile[abilityId]['revision'];
-		const abilityStatus = libraryFile[abilityId]['status'];
+		const abilityUpdated = libraryFile[abilityId]['updated'];
 
-		let abilityDefinition = '';
+		if (abilityRev = 0) {
+			const abilityDetails = 'R' + abilityRev + '\tRisen Sun: p.' + traitRB + '\t2022 reprint: p.' + traitRBr1;
+		} else {
+			const abilityDetails = 'R' + abilityRev + ' ( Updated:' + abilityUpdated + ')\tRisen Sun: p.' + traitRB + '\t2022 reprint: p.' + traitRBr1;
+		}
 
-		abilityDefinition = bold(abilityName) + codeBlock(abilityDesc) + italic('**Revision:** ' + abilityRev + ' (' + abilityStatus + ')\t**Risen Sun:** p.' + abilityRB + '\t**2022 reprint:** p.' + abilityRBr1);
+		const abilityDefinition = bold(abilityName) + codeBlock(abilityDesc) + italic(abilityDetails);
 
 		const row = new ActionRowBuilder()
 			.addComponents(
 				new ButtonBuilder()
 					.setCustomId('ability_share')
-					.setLabel('share in this channel')
+					.setLabel('share here')
 					.setStyle(ButtonStyle.Primary),
 			);
 
