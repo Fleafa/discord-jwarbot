@@ -3976,7 +3976,7 @@
 		"opposed": true,
 		"range": 8,
 		"limitations": ["noBtB"],
-		"description": "Target Enemy model suffers -3 Walk until the End Phase.",
+		"description": "Target Enemy model suffers -3 Move until the End Phase.",
 		"revision": 0,
 		"updated": ""
 	},
@@ -4356,6 +4356,18 @@
 		"range": 3,
 		"limitations": ["noWalk", "noBtB"],
 		"description": "When a Friendly model within the Pulse's area of effect is Targeted by an Enemy model's Ki Feat, change the Target to this model. Range is measured to the original Target.",
+		"revision": 0,
+		"updated": ""
+	},
+	"feat-spirit_sprint": {
+		"name": "Spirit Sprint",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "When this model Runs it gains Intangible during its movement.",
+		"references": [
+			"trait-intangible"
+		],
 		"revision": 0,
 		"updated": ""
 	},
