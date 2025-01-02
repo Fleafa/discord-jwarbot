@@ -1498,15 +1498,23 @@
 		"revision": 0,
 		"updated": ""
 	},
+	"feat-feline_swiftness": {
+		"name": "Feline Swiftness",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "This Model gains Feint (2) until the end of the current activation.",
+		"references": [ "trait-feint" ],
+		"revision": 0,
+		"updated": ""
+	},
 	"feat-fend": {
 		"name": "Fend",
 		"cost": 2,
 		"timing": "Instant",
 		"subject": "Personal",
 		"description": "This model gains Push Attack (0) until the end of the current activation.",
-		"references": [
-			"trait-push_attack"
-		],
+		"references": [ "trait-push_attack" ],
 		"revision": 0,
 		"updated": ""
 	},
@@ -3976,7 +3984,7 @@
 		"opposed": true,
 		"range": 8,
 		"limitations": ["noBtB"],
-		"description": "Target Enemy model suffers -3 Walk until the End Phase.",
+		"description": "Target Enemy model suffers -3 Move until the End Phase.",
 		"revision": 0,
 		"updated": ""
 	},
@@ -4356,6 +4364,18 @@
 		"range": 3,
 		"limitations": ["noWalk", "noBtB"],
 		"description": "When a Friendly model within the Pulse's area of effect is Targeted by an Enemy model's Ki Feat, change the Target to this model. Range is measured to the original Target.",
+		"revision": 0,
+		"updated": ""
+	},
+	"feat-spirit_sprint": {
+		"name": "Spirit Sprint",
+		"cost": 1,
+		"timing": "Active",
+		"subject": "Personal",
+		"description": "When this model Runs it gains Intangible during its movement.",
+		"references": [
+			"trait-intangible"
+		],
 		"revision": 0,
 		"updated": ""
 	},
@@ -5390,6 +5410,16 @@
 		"subject": "Personal",
 		"limitations": ["OpT"],
 		"description": "Use only in the Main Phase.\nAdd 1 to this model's statistics until the current activation is complete. This is considered a Ki Boost.",
+		"revision": 0,
+		"updated": ""
+	},
+	"feat-white_out": {
+		"name": "White Out",
+		"cost": 3,
+		"timing": "Active",
+		"subject": "Aura",
+		"range": 3,
+		"description": "Enemy models treat the Aura as [Normal, Obscuring,Large] Terrain.\nModels in the Aura are in a Blizzard, those models gain Cover and Slow.\nBefore or after this model's action, if it is within a Blizzard, you may Place it within 1\" of its current location.",
 		"revision": 0,
 		"updated": ""
 	},
