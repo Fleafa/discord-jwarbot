@@ -1765,13 +1765,18 @@
 		"revision": 0,
 		"updated": ""
 	},
-	"feat-frenzy": {
-		"name": "Frenzy",
+	"feat-freeze_erosion": {
+		"name": "Freeze Erosion",
 		"cost": 2,
-		"timing": "Active",
-		"subject": "Personal",
-		"limitations": ["OpT"],
-		"description": "Add X additional attack dice to each exchange when using Split Attack until the End Phase.\nX is equal to the number of Enemy models in BtB with this model.",
+		"timing": "Simple",
+		"subject": "Target",
+		"range": 4,
+		"limitations": ["noBtB"],
+		"description": "Remove Target Destructible Terrain Element from the Battlefield.",
+		"references": [
+			"trait-last_stand",
+			"trait-bravery"
+		],
 		"revision": 0,
 		"updated": ""
 	},
@@ -1787,6 +1792,16 @@
 			"trait-last_stand",
 			"trait-bravery"
 		],
+		"revision": 0,
+		"updated": ""
+	},
+	"feat-frenzy": {
+		"name": "Frenzy",
+		"cost": 2,
+		"timing": "Active",
+		"subject": "Personal",
+		"limitations": ["OpT"],
+		"description": "Add X additional attack dice to each exchange when using Split Attack until the End Phase.\nX is equal to the number of Enemy models in BtB with this model.",
 		"revision": 0,
 		"updated": ""
 	},
@@ -3998,6 +4013,15 @@
 		"revision": 0,
 		"updated": ""
 	},
+	"feat-shared_blessings_of_the_celestial_fang": {
+		"name": "Shared Blessings of the Celestial Fang",
+		"cost": 1,
+		"timing": "Instant",
+		"subject": "Special",
+		"description": "In the End Phase when this model takes Poisoned Damage each Enemy model in BtB with this model also takes the same Poisoned Damage.",
+		"revision": 0,
+		"updated": ""
+	},
 	"feat-shared_reflexes": {
 		"name": "Shared Reflexes",
 		"cost": 3,
@@ -5345,6 +5369,16 @@
 		"references": [
 			"trait-disturb_flow"
 		],
+		"revision": 0,
+		"updated": ""
+	},
+	"feat-warning_bark": {
+		"name": "Warning Bark",
+		"cost": 0,
+		"timing": "Instant",
+		"subject": "Special",
+		"limitations": ["OpG"],
+		"description": "Play in the Main Phase.\nRemove Prone Markers from Friendly models.\nFriendly Models cannot be Surprised for the Current Activation.\nUntil the End Phase, Friendly Models Deploying gain one Activation Counter.",
 		"revision": 0,
 		"updated": ""
 	},
