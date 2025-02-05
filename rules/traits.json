@@ -64,13 +64,13 @@
 		},
 	"trait-assassin": {
 		"name": "Assassin",
-		"description": "If either:\n- this model did not begin its activation in BtB with an Enemy model, performs an action that Targets that enemy or brings it into BtB with that Enemy model, and started outside of LoS of that Enemy model and remains outside of it's LoS during movement\n- or the Enemy model is Surprised this model may roll three dice for any Damage Rolls caused by any Attack and choose two to add together, ignoring Weak and Strong traits.",
+		"description": "If either:\n- this model did not begin its activation in BtB with an Enemy model, performs an action that Targets that enemy or brings it into BtB with that Enemy model, and started outside of LoS of that Enemy model and remains outside of it’s LoS during movement\n- or the Enemy model is Surprised this model may roll three dice for any Damage Rolls caused by any Attack and choose two to add together, ignoring Weak and Strong traits.",
 		"bsid": "ef59-928b-2550-f0a3",
 		"references": ["concept-damage", "concept-surprised"],
 		"rulebook": 58,
 		"rulebookr1": 60,
 		"revision": 1,
-		"updated": "2024-03-04"
+		"updated": "2024-03"
 		},
 	"trait-aware": {
 		"name": "Aware",
@@ -186,7 +186,7 @@
 		"rulebook": 60,
 		"rulebookr1": 62,
 		"revision": 1,
-		"updated": "2023-04-30"
+		"updated": "2023-04"
 		},
 	"trait-cavalry": {
 		"name": "Cavalry",
@@ -234,24 +234,24 @@
 		},
 	"trait-cloudwalk": {
 		"name": "Cloudwalk",
-		"description": "When this model moves it ignores Terrain elements, other models, and Zones of Control.\nIt may end its move in an enemy ZoC.\nThis does not allow a model to move out of Melee unless it also has the Agile trait.",
+		"description": "When this model moves it ignores Terrain elements, other models, and Zones of Control.\nIt may end its move in an enemy ZoC.\nThis does not allow a model to move out of Melee unless it also has the Agile trait.\nThis model may not end its move occupying the same area as an Impassable Terrain element or another model.",
 		"bsid": "538c-1266-626b-fcc9",
 		"references": ["trait-agile", "concept-zoc", "concept-enemy"],
 		"rulebook": 60,
 		"rulebookr1": 63,
-		"revision": 0,
-		"updated": ""
+		"revision": 1,
+		"updated": "2025-02"
 		},
 	"trait-command": {
 		"name": "Command",
 		"arguments": "[Descriptor](X/Y”)",
-		"description": "This model may declare a Simple action, Command [noBtB][noWalk]:\nThe model nominates and activates up to X other non-Exhausted, Friendly [Descriptor] models within Y” inches.\nThese models each perform a Standard, Simple action.\nThe order the models activate in is chosen by this model’s Controller after each action is resolved remove an activation counter from the activating model.\nIf a model with the Group trait is chosen you must choose all models on that profile card; if you cannot, then you cannot command any of those models.",
+		"description": "This model may declare a Simple action, Command [noBtB][noWalk]:\nThe model nominates and activates up to X other non-Exhausted, Friendly [Descriptor] models within Y” inches.\nThese models each perform a Standard, Simple action.\nThe order the models activate in is chosen by this model’s Controller after each action is resolved remove an activation counter from the activating model.\nIf a model with the Group trait is chosen you must choose all models on that profile card; if you cannot, then you cannot command any of those models.\nThese are Nested Activations.",
 		"bsid": "1b83-5421-f050-365a",
 		"references": ["trait-group", "concept-controller", "timing-simple", "concept-counters", "concept-exhausted", "concept-friendly", "action-command"],
 		"rulebook": 60,
 		"rulebookr1": 63,
-		"revision": 0,
-		"updated": ""
+		"revision": 1,
+		"updated": "2025-02"
 		},
 	"trait-construct": {
 		"name": "Construct",
@@ -456,13 +456,13 @@
 		},
 	"trait-flank": {
 		"name": "Flank",
-		"description": "When this model would be Deployed, this model’s Controller must choose whether this model will use Flank or not.\nIf the player chooses not to use Flank, this model is Deployed as normal.\nIf the player decides the model is using Flank, then the model is left Elsewhere and instead before the game the owning player makes a note of which turn the Flanking models will arrive and notes a neutral table edge: This is Hidden Information.\nThis must be turn 2,3 or 4.\nIn the starting phase of that turn reveal the number and deploy the models anywhere along the chosen edge but not in the Opponent’s Deployment Zone.\nIf a model gains Flank mid game or is removed and returns to play using the flank rules, you immediately note any turn (Not just 2,3 or 4) and neutral edge for that model when it is removed from play: This is Hidden Information.\nFlanking models generate two Activation Counters when they are Deployed.",
+		"description": "When this model would be Deployed, this model’s Controller must choose whether this model will use Flank or not.\nIf the player chooses not to use Flank, this model is Deployed as normal.\nIf the player decides the model is using Flank, then the model is left Elsewhere and instead before the game the owning player makes a note of which turn the Flanking models will arrive and notes a neutral table edge. This is Hidden Information.\nThis must be turn 2, 3, or 4.\nIn the Starting Phase of that turn reveal the number and deploy the models anywhere along the chosen edge but not in the Opponent’s Deployment Zone.\n\nIf a model gains Flank mid game or is removed and returns to play using the Flank rules, you immediately note any turn after the current turn (not just 2, 3, or 4) and neutral edge for that model when it is removed from play. This is Hidden Information.\nFlanking models generate two Activation Counters when they are Deployed.",
 		"bsid": "a847-f02d-7e99-8a66",
 		"references": ["concept-deploy", "concept-elsewhere", "concept-hidden", "concept-controller", "concept-counters"],
 		"rulebook": 62,
 		"rulebookr1": 65,
-		"revision": 0,
-		"updated": ""
+		"revision": 1,
+		"updated": "2025-02"
 		},
 	"trait-fortune": {
 		"name": "Fortune",
@@ -476,13 +476,13 @@
 		},
 	"trait-group": {
 		"name": "Group",
-		"description": "All models represented by this profile card activate in the same single activation.\nEach model on this profile card resolves any movement before any Melee Exchanges are resolved.\nMelee Exchanges are then resolved in the order the Controlling player chooses.",
+		"description": "All models represented by this profile card activate in the same single activation.\nEach model on this profile card resolves any movement before any Melee Exchanges are resolved.\nMelee Exchanges are then resolved in the order the Controlling player chooses.\nThese are Nested Activations.",
 		"bsid": "4c02-03a1-ae7b-7821",
 		"references": ["melee_exchange"],
 		"rulebook": 63,
 		"rulebookr1": 65,
-		"revision": 0,
-		"updated": ""
+		"revision": 1,
+		"updated": "2025-02"
 		},
 	"trait-hatred": {
 		"name": "Hatred",
@@ -550,13 +550,13 @@
 	"trait-impetuous": {
 		"name": "Impetuous",
 		"arguments": "(X)",
-		"description": "During the Starting Phase this model gains X Impetuous Markers.\nWhile this model has Impetuous Markers, it has the Fearless trait.",
+		"description": "If this model is on the Battlefield during the Starting Phase it gains X Impetuous Markers.\nWhile this model has Impetuous Markers, it has the Fearless trait.",
 		"bsid": "4b80-3180-0b04-fb11",
 		"references": ["trait-fearless", "state-impetuous", "concept-markers"],
 		"rulebook": 63,
 		"rulebookr1": 66,
-		"revision": 1,
-		"updated": "2023-01-18"
+		"revision": 2,
+		"updated": "2025-02"
 		},
 		"trait-indomitable": {
 		"name": "Indomitable",
@@ -618,7 +618,7 @@
 		"rulebook": 64,
 		"rulebookr1": 66,
 		"revision": 1,
-		"updated": "2023-08-22"
+		"updated": "2023-08"
 		},
 	"trait-kata": {
 		"name": "Kata",
@@ -642,7 +642,7 @@
 		},
 	"trait-kumo": {
 		"name": "Kumo",
-		"description": "If this model deals damage in a melee exchange it gains Ki tokens equal to the enemy model's Ki stat and Heals one Damage.\nThis model begins the game with 2 Ki Tokens.\nIgnore Size modifiers to the Challenge Number when performing a Ranged Attack or Ranged Challenge Test against this model.",
+		"description": "If this model deals damage in a melee exchange it gains Ki tokens equal to the enemy model’s Ki stat and Heals one Damage.\nThis model begins the game with 2 Ki Tokens.\nIgnore Size modifiers to the Challenge Number when performing a Ranged Attack or Ranged Challenge Test against this model.",
 		"bsid": "",
 		"references": ["test-ranged", "concept-heal"],
 		"rulebook": "N/A",
@@ -768,13 +768,13 @@
 	"trait-pack": {
 		"name": "Pack",
 		"arguments": "(X/Y”)",
-		"description": "When this model activates, you may choose up to X non-Exhausted Friendly models with the Pack trait within Y” to also activate.\nThis model and each model chosen must declare a melee, ranged or charge action against the same target.\nEach model resolves any movement before any Melee Exchanges are resolved.\nMelee Exchanges are then resolved in the order the Controlling player chooses.",
+		"description": "When this model activates, you may choose up to X non-Exhausted Friendly models with the Pack trait within Y” to also activate.\nThis model and each model chosen must declare a melee, ranged or charge action against the same target.\nEach model resolves any movement before any Melee Exchanges are resolved.\nMelee Exchanges are then resolved in the order the Controlling player chooses.\nThese are Nested Activations.",
 		"bsid": "fa30-1c51-e091-9444",
 		"references": ["concept-exhausted", "concept-select", "concept-target", "concept-friendly"],
 		"rulebook": 65,
 		"rulebookr1": 67,
-		"revision": 0,
-		"updated": ""
+		"revision": 1,
+		"updated": "2025-02"
 		},
 	"trait-parry": {
 		"name": "Parry",
@@ -973,13 +973,13 @@
 	"trait-spirit": {
 		"name": "Spirit",
 		"arguments": "(X)",
-		"description": "This model modifies its Ki Statistic by X when resolving Ki tests or when attempting to Target or move into BtB with a Disguised model.\nApply this after any Ki Statistic Boost. This may exceed double the base Statistic by X.",
+		"description": "This model modifies its Ki Statistic by X when resolving Ki tests or when attempting to Target or move into BtB with a Disguised model.\nApply this before gaining any dice for having zero or lower Ki Statistic in any test.\nThis model’s Ki Statistic may exceed double the base Statistic by X, models with Ki Statistic 0 may Ki Boost to 1 and then add X.",
 		"bsid": "a9ba-9904-7d29-7bcb",
 		"references": ["statistic-ki"],
 		"rulebook": 67,
 		"rulebookr1": 69,
-		"revision": 1,
-		"updated": "2024-06-22"
+		"revision": 2,
+		"updated": "2025-02"
 		},
 	"trait-split_attack": {
 		"name": "Split Attack",

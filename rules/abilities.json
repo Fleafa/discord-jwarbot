@@ -23,6 +23,14 @@
 		"revision": 1,
 		"updated": "before 2022-11"
 	},
+	"ability-dual_attack": {
+		"name": "Dual Attack",
+		"description": "If the Attack is Successful, after rolling Damage, make one more Damage roll at the same Success Level.",
+		"rulebook": "",
+		"rulebookr1": "",
+		"revision": 0,
+		"updated": "added 2025-02"
+	},
 	"ability-forceback_attack": {
 		"name": "Forceback Attack",
 		"description": "If the Attack is successful, move the Defender 1\" directly away from the Attacker, then move the Attacker 1\" directly towards the Defender.\nThe Defender suffers half the Wounds from the Damage Roll caused by this Attack.",

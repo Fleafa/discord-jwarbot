@@ -56,7 +56,7 @@
 			"trait-spirit"
 		],
 		"revision": 2,
-		"updated": "2023-03-28"
+		"updated": "2023-03"
 	},
 	"feat-agility": {
 		"name": "Agility",
@@ -613,7 +613,7 @@
 			"trait-aware"
 		],
 		"revision": 1,
-		"updated": "2024-07-14"
+		"updated": "2024-07"
 	},
 	"feat-cleansing": {
 		"name": "Cleansing",
@@ -644,12 +644,12 @@
 		"cost": 2,
 		"timing": "Active",
 		"subject": "Personal",
-		"description": "This model gains Brutal (2) until the current action is resolved.",
+		"description": "This model’s Melee Weapons gain Brutal (2) until the current action is resolved.",
 		"references": [
 			"trait-brutal"
 		],
-		"revision": 0,
-		"updated": ""
+		"revision": 1,
+		"updated": "2025-02"
 	},
 	"feat-cloud_of_flies": {
 		"name": "Cloud of Flies",
@@ -1116,7 +1116,7 @@
 			"trait-disturb_flow"
 		],
 		"revision": 1,
-		"updated": "2022-12-04"
+		"updated": "2022-12"
 	},
 	"feat-distraction": {
 		"name": "Distraction",
@@ -1351,7 +1351,7 @@
 		"range": 6,
 		"description": "Choose a model descriptor. Target Friendly model gains Vengeance [chosen descriptor] until the end of the current activation.",
 		"revision": 1,
-		"updated": "2023-01-18"
+		"updated": "2023-01"
 	},
 	"feat-enthusiasm": {
 		"name": "Enthusiasm",
@@ -2195,7 +2195,7 @@
 		"limitations": ["OpT"],
 		"description": "During an Enemy model's activation, when that model moves into BtB with another Friendly Ashigaru model in the Pulse, move this model into BtB with that Enemy model by the shortest route.\nIf it is not possible to put this model in BtB with the Enemy model this feat cannot be used.",
 		"revision": 2,
-		"updated": "2022-12-04"
+		"updated": "2022-12"
 	},
 	"feat-hope": {
 		"name": "Hope",
@@ -2653,7 +2653,7 @@
 		"limitations": ["OpT"],
 		"description": "During a non-Soulless, Enemy model's activation in which it enters BtB with this model, that Enemy model gains a Control Marker.\nNo Melee Exchange takes place, this model does not lose an Activation Counter.",
 		"revision": 2,
-		"updated": "2022-12-24"
+		"updated": "2022-12"
 	},
 	"feat-kote-men": {
 		"name": "Kote-Men",
@@ -2823,7 +2823,7 @@
 		"limitations": ["noBtB"],
 		"description": "Transfer X State Markers that are not Disguise, Held, Prone, or Reload Markers from a model in the Pulse to this model.",
 		"revision": 1,
-		"updated": "2022-11-29"
+		"updated": "2022-11"
 	},
 	"feat-masters_call": {
 		"name": "Master's Call",
@@ -3338,7 +3338,7 @@
 		"limitations": ["noBtB", "OpT"],
 		"description": "During an Enemy model's activation, when that model moves into BtB with another Friendly Bakemono model in the Pulse, move this model into BtB with that Enemy model by the shortest route.\nIf it is not possible to put this model in BtB with the Enemy model this feat cannot be used.",
 		"revision": 1,
-		"updated": "2022-12-04"
+		"updated": "2022-12"
 	},
 	"feat-pin_weapon": {
 		"name": "Pin Weapon",
@@ -4167,7 +4167,7 @@
 		"limitations": ["noBtB"],
 		"description": "During an Enemy model's activation, when that model moves into BtB with another Friendly Princess model in the Pulse, move this model into BtB with that Enemy model by the shortest route.\nIf it is not possible to put this model in BtB with the Enemy model this feat cannot be used.",
 		"revision": 1,
-		"updated": "2022-12-04"
+		"updated": "2022-12"
 	},
 	"feat-skewer": {
 		"name": "Skewer",
@@ -4378,7 +4378,7 @@
 		"limitations": ["noBtB", "OpT"],
 		"description": "This model loses Soulless, Slow, Tough, and Rise. This effect expires in the End Phase.\nTarget model not in BtB with a Friendly model gains an Impetuous Marker, must declare a Walk action as its next activation, and must move directly towards this model with its full Walk Statistic, changing facing so that this model is in LoS. If unable to perform a Walk action, it may activate without restriction.",
 		"revision": 1,
-		"updated": "2023-01-03"
+		"updated": "2023-01"
 	},
 	"feat-spirit_guardian": {
 		"name": "Spirit Guardian",
@@ -5173,7 +5173,7 @@
 		"limitations": ["OpT"],
 		"description": "Target model takes half its remaining Wounds, ignoring Durable (Rounded down) then gains a Activation Counter.\nlf used on an Enemy model you must succeed in an opposed Ki Test.",
 		"revision": 1,
-		"updated": "2023-01-03"
+		"updated": "2023-01"
 	},
 	"feat-unify": {
 		"name": "Unify",
@@ -5378,9 +5378,9 @@
 		"timing": "Instant",
 		"subject": "Special",
 		"limitations": ["OpG"],
-		"description": "Play in the Main Phase.\nRemove Prone Markers from Friendly models.\nFriendly Models cannot be Surprised for the Current Activation.\nUntil the End Phase, Friendly Models Deploying gain one Activation Counter.",
-		"revision": 0,
-		"updated": ""
+		"description": "Friendly Models remove Prone Markers and cannot be surprised for the rest of the current activation.\nFriendly Models that were Deployed this turn or are later Deployed this turn gain one Activation Counter.",
+		"revision": 1,
+		"updated": "2025-02"
 	},
 	"feat-warning_rattle": {
 		"name": "Warning Rattle",
