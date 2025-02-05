@@ -3884,9 +3884,9 @@
 		"subject": "Special",
 		"range": "BtB",
 		"limitations": ["noBtB", "OpT"],
-		"description": "Place the Scorched Earth template in BtB with this model.\nIt is a Terrain element [Difficult, Obscuring, Zero].\nModels contacting this Terrain gain a Fire (3) Marker.\nRemove the Terrain element in the End Phase.\nAdd 1 Void Counter to the Blessings of the Void Communal Card.",
-		"revision": 0,
-		"updated": ""
+		"description": "Place the Scorched Earth template in BtB with this model.\nIt is a Terrain element [Destructible][Difficult, Obscuring, Zero].\nModels entering this Terrain gain a Fire (3) Marker.\nRemove the Terrain element in the End Phase.\nAdd 1 Void Counter to the Blessings of the Void Communal Card.",
+		"revision": 1,
+		"updated": "2025-02"
 	},
 	"feat-scuttle": {
 		"name": "Scuttle",
