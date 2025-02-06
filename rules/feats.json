@@ -368,15 +368,15 @@
 	},
 	"feat-blizzard": {
 		"name": "Blizzard",
-		"cost": 3,
+		"cost": 2,
 		"timing": "Complex",
 		"subject": "Personal",
 		"description": "All models are in Cover and gain Slow until the End Phase.",
 		"references": [
 			"trait-slow"
 		],
-		"revision": 0,
-		"updated": ""
+		"revision": 1,
+		"updated": "2025-02"
 	},
 	"feat-blood_brothers": {
 		"name": "Blood Brothers",
@@ -695,9 +695,9 @@
 		"opposed": true,
 		"range": 8,
 		"limitations": ["noBtB"],
-		"description": "The next time Target model suffers Damage it suffers double the Damage, if that would be enough to Kill the Target. If not, this effect expires immediately.",
-		"revision": 0,
-		"updated": ""
+		"description": "The next time target model suffers damage in a melee exchange, it suffers double the damage, ignoring Durable if that would be enough to kill the target.\nIf not, this effect expires immediately.",
+		"revision": 1,
+		"updated": "2025-02"
 	},
 	"feat-conditioning": {
 		"name": "Conditioning",
@@ -859,9 +859,9 @@
 		"subject": "Target",
 		"range": 8,
 		"limitations": ["OpG"],
-		"description": "Place 4 Doom Tokens on Target model. During the Starting Phase remove a Doom Token. When the last Doom Token is removed the model suffers 7 Wounds.",
-		"revision": 0,
-		"updated": ""
+		"description": "Place 4 Darkness Tokens on Target Enemy model.",
+		"revision": 1,
+		"updated": "2025-02"
 	},
 	"feat-curse_of_stinging_needles": {
 		"name": "Curse of Stinging Needles",
@@ -941,9 +941,9 @@
 		"timing": "Simple",
 		"subject": "Special",
 		"limitations": ["OpG"],
-		"description": "Deploy any Oni or Onisho model that was not recruited by the Warband into play, exhausted, within 3\" of this model with 3 Control Markers on it.If the summoned model ever has zero Control Markers, remove it from play.",
-		"revision": 0,
-		"updated": ""
+		"description": "Summon and Deploy any Oni or Onisho model that was not recruited into the Warband within 3” of this model with 2 Darkness Counters and 2 Ki Tokens on it.\nMark wound boxes until the Summoned model has 7 unmarked boxes remaining.",
+		"revision": 1,
+		"updated": "2025-02"
 	},
 	"feat-darkness": {
 		"name": "Darkness",
@@ -984,9 +984,9 @@
 		"timing": "Instant",
 		"subject": "Aura",
 		"range": 3,
-		"description": "Models in the Aura gain Cover. Enemy models moving into the Aura gain a Fire (2) Marker. This model cannot use this feat if it has no Ammo Tokens.",
-		"revision": 0,
-		"updated": ""
+		"description": "Models in the Aura gain Cover. Enemy models Entering the Aura gain a Fire (2) Marker. This model cannot use this feat if it has no Ammo Tokens.",
+		"revision": 1,
+		"updated": "2025-02"
 	},
 	"feat-dead_eye": {
 		"name": "Dead Eye",
@@ -2286,14 +2286,14 @@
 		"timing": "Active",
 		"subject": "Target",
 		"range": 8,
-		"description": "Target model gains Fearless, Durable [Ranged], and Slow until the End Phase. If Target is an Enemy, you must succeed in an Opposed Ki Test.",
+		"description": "Target model gains Fearless, Durable [Ranged], and Slow until the End Phase.\nIf Target is an Enemy, you must succeed in an Opposed Ki Test.\nThis is considered a Blizzard Effect.",
 		"references": [
 			"trait-durable",
 			"trait-fearless",
 			"trait-slow"
 		],
-		"revision": 0,
-		"updated": ""
+		"revision": 1,
+		"updated": "2025-02"
 	},
 	"feat-idolise": {
 		"name": "Idolise",
@@ -4078,13 +4078,13 @@
 	"feat-shroud": {
 		"name": "Shroud",
 		"cost": "X",
-		"timing": "Complex",
+		"timing": "Simple",
 		"subject": "Aura",
-		"range":"X",
+		"range":"2+X",
 		"limitations": ["noBtB"],
 		"description": "Enemy models that are not in the Aura cannot draw LoS to models completely inside the Aura.\nModels completely in the Aura do not block Enemy model's LoS.",
-		"revision": 0,
-		"updated": ""
+		"revision": 1,
+		"updated": "2025-02"
 	},
 	"feat-sick_em!": {
 		"name": "Sick Em!",
