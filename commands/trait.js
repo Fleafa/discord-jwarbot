@@ -71,10 +71,12 @@ module.exports = {
 		const ruleUpdated = libraryFile[ruleID]['updated'];
 		var ruleDetails = '';
 
-		if (ruleRev == 0) {
-			ruleDetails = 'R' + ruleRev + '\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
-		} else {
-			ruleDetails = 'R' + ruleRev + ' (updated ' + ruleUpdated + ')\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
+		if (ruleRev != null) {
+			if (ruleRev == 0) {
+				ruleDetails = 'R' + ruleRev + '\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
+			} else {
+				ruleDetails = 'R' + ruleRev + ' (updated ' + ruleUpdated + ')\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
+			}
 		}
 
 		if (ruleArgs) { ruleName += ' ' + ruleArgs; }
