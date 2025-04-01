@@ -70,7 +70,9 @@ module.exports = {
 		const ruleLimits = libraryFile[ruleId]['limitations'];
 
 		let iconCost;
-		if (Number.isInteger(ruleCost)) { iconCost = eval('icon' + ruleCost + ';'); }
+		if (Number.isInteger(ruleCost)) {
+			iconCost = eval('icon' + ruleCost + ';');
+		}
 
 		const iconTiming = ' <:type' + ruleTiming + ':' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'type' + ruleTiming.toLowerCase()) + '>';
 		const iconSubject = ' <:subject' + ruleSubject + ':' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'subject' + ruleSubject.toLowerCase()) + '>';
@@ -83,15 +85,22 @@ module.exports = {
 		const iconLimitWalk = '<:nowalk:' + interaction.guild.emojis.cache.find(emoji => emoji.name === 'nowalk') + '>';
 
 		let ruleStats, iconsLimits = '';
-		ruleStats = iconCost + iconTiming + iconSubject;
+		
+		if (iconCost != null) {
+			ruleStats = iconCost + iconTiming + iconSubject;
+		} else {
+			ruleStats = ruleCost + iconTiming + iconSubject;
+		}
 
 		if (ruleRange) {
 			if (Number.isInteger(ruleRange)) { ruleStats += ruleRange + '"'; }
 			else { ruleStats += ' ' + ruleRange; }
 		}
+		
 		if (ruleOpp) {
 			ruleStats = ruleStats + ' Opp.Ki';
 		}
+
 		if (ruleLimits) {
 			for (const limit of ruleLimits) {
 				if (limit === 'noWalk') { iconsLimits = iconsLimits + iconLimitWalk; }
@@ -107,10 +116,12 @@ module.exports = {
 		const ruleUpdated = libraryFile[ruleId]['updated'];
 		var ruleDetails = '';
 
-		if (ruleRev == 0) {
+		if (ruleRev != null) {
+			if (ruleRev == 0) {
 			ruleDetails = 'R' + ruleRev;
-		} else {
+			} else {
 			ruleDetails = 'R' + ruleRev + ' (updated ' + ruleUpdated + ')';
+			}
 		}
 
 		const ruleDefinition = bold(ruleName) + '\n' + ruleStats + codeBlock(ruleDesc) + italic(ruleDetails);
