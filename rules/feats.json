@@ -5486,7 +5486,7 @@
 		"subject": "Personal",
 		"description": "Models involved in a Melee Exchange with this model lose the Dodge trait until the current action is resolved."
 	},
-	"feat-scorn-stone": {
+	"feat-scorn_stone": {
 		"name": "Scorn Stone",
 		"cost": "1",
 		"timing": "Simple",
@@ -5497,21 +5497,21 @@
 		],
 		"description": "Transfer a Shame Token from this model to Target model."
 	  },
-	  "feat-atonement-swings": {
+	  "feat-atonement_swings": {
 		"name": "Atonement Swings",
 		"cost": 1,
 		"timing": "Active",
 		"subject": "Personal",
 		"description": "Remove one Shame Token from this model.\nIf you do, this model's Naginata gains Dual Attack (0) until the end of this activation."
 	  },
-	  "feat-combat-training": {
+	  "feat-combat_training": {
 		"name": "Combat Training",
 		"cost": 2,
 		"timing": "Active",
 		"subject": "Personal",
 		"description": "During a Melee Exchange, after re-rolls and substitutions, choose one of your dice and add one to the value on the dice before calculating the final result. If this turns a value of 1 into a 2 then it is not discarded for the Test."
 	  },
-	  "feat-first-in-the-fray": {
+	  "feat-first_in_the_fray": {
 		"name": "First in the Fray",
 		"cost": 1,
 		"timing": "Active",
@@ -5519,7 +5519,7 @@
 		"references": ["trait-aggressive", "trait-banzai!"],
 		"description": "Remove a Shame Token from this model.\nIf you do, this model gains Aggressive and Banzai! until the end of this activation."
 	  },
-	  "feat-repentance-shomyo": {
+	  "feat-repentance_shomyo": {
 		"name": "Repentance Shōmyō",
 		"cost": 1,
 		"timing": "Simple",
@@ -5538,17 +5538,7 @@
 		"references": ["trait-heal"],
 		"description": "Target model Heals X Wounds.\nReduce this Heal by the number of Shame Tokens on models in the Warband."
 	  },
-	  "feat-soothing-shomyo": {
-		"name": "Soothing Shōmyō",
-		"cost": "X",
-		"timing": "Complex",
-		"subject": "Aura",
-		"range": "X",
-		"limitations": ["noBtB"],
-		"references": ["trait-immune"],
-		"description": "Models in the Aura gain Immune [Berserk].\nWhen rolling a Damage Roll against a Friendly model within the Aura, after the result is determined, roll an additional dice and then choose 1 dice to remove, use the remaining 2 dice for the Damage Roll."
-	  },
-	  "feat-tears-for-the-dead": {
+	  "feat-tears_for_the_dead": {
 		"name": "Tears for the Dead",
 		"cost": 3,
 		"timing": "Simple",
@@ -5558,7 +5548,7 @@
 		"references": ["trait-defensive"],
 		"description": "Target model gains Defensive and cannot declare Melee, Ranged, or Charge Actions until the End Phase."
 	  },
-	  "feat-wailing-shomyo": {
+	  "feat-wailing_shomyo": {
 		"name": "Wailing Shōmyō",
 		"cost": 1,
 		"timing": "Simple",
@@ -5567,7 +5557,7 @@
 		"limitations": ["noBtB"],
 		"description": "Enemy models in the Aura cannot benefit from Enhancement cards.\nX is equal to the number of models that were recruited into this Warband but have been Killed or removed from play."
 	  },
-	  "feat-daimyos-blessing": {
+	  "feat-daimyos_blessing": {
 		"name": "Daimyo's Blessing",
 		"cost": 3,
 		"timing": "Simple",
@@ -5576,7 +5566,7 @@
 		"limitations": ["noBtB"],
 		"description": "Friendly Faction models in the Pulse gain +1 to their Melee Pool or Ranged Pool until the End Phase."
 	  },
-	  "feat-redemption-strike": {
+	  "feat-redemption_strike": {
 		"name": "Redemption Strike",
 		"cost": 1,
 		"timing": "Active",
@@ -5584,7 +5574,7 @@
 		"references": ["trait-strong", "trait-brutal"],
 		"description": "Remove one Shame Token from this model.\nIf you do, this model gains Strong and its Naginata Weapon gains Brutal (1) until the end of this Activation."
 	  },
-	  "feat-recine-sins": {
+	  "feat-recite_sins": {
 		"name": "Recite Sins",
 		"cost": 2,
 		"timing": "Active",
@@ -5601,7 +5591,7 @@
 		"limitations": ["OpT"],
 		"description": "Transfer a Shame Token from Target Shamed model to this model."
 	  },
-	  "feat-oppressed-shomyo": {
+	  "feat-oppressed_shomyo": {
 		"name": "Oppressed Shōmyō",
 		"cost": 3,
 		"timing": "Complex",
