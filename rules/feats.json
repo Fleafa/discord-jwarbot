@@ -5600,5 +5600,59 @@
 		"limitations": ["noBtB"],
 		"references": ["trait-strong"],
 		"description": "Friendly models in the Aura gain the Strong Trait."
+	  },
+	  "feat-jocho": {
+	  "name": "Jocho",
+	  "cost": 2,
+	  "timing": "Instant",
+	  "subject": "Target",
+	  "range": 6,
+	  "description": "Target Friendly Faction Samurai model with a Rice Cost of less than this model gains +1 to its Melee Pool or Ranged Pool until the End Phase."
+	  },
+	  "feat-low_blow": {
+	  "name": "Low Blow",
+	  "cost": 2,
+	  "timing": "Active",
+	  "subject": "Personal",
+	  "references": ["state-stunned", "state-prone"],
+	  "limitations": ["OpG"],
+	  "description": "Use this Ki Feat while this model is in a Melee Exchange before allocating dice.\nIf the Enemy model in a Melee Exchange does not boost its Melee Pool, the Enemy model gains a Stunned Marker and a Prone Marker after the Melee Exchange is resolved."
+	  },
+	  "feat-talon_strike": {
+	  "name": "Talon Strike",
+	  "cost": 3,
+	  "timing": "Instant",
+	  "subject": "Personal",
+	  "references": ["ability-counterstrike_defence"],
+	  "description": "When this model Successfully uses Counterstrike Defence, after the Success Level has been determined, make the Damage Roll at the Success Level of the Defence, rather than Success Level -2.\nAfter Successfully defending in a Melee Exchange, once the current Activation is complete, this model may Move 3\"."
+	  },
+	  "feat-serpentine_sway": {
+	  "name": "Serpentine Sway",
+	  "cost": 3,
+	  "timing": "Simple",
+	  "subject": "Target",
+	  "range": 8,
+	  "opposed": true,
+	  "limitations": ["noBtB"],
+	  "references": ["state-blind", "state-stunned", "trait-spirit", "trait-resistance"],
+	  "description": "Target Enemy model gains a Blind Marker and a Stunned Marker.\nIf the Target has any Poisoned Markers, they may not use Spirit or Resistance traits for the Opposed Ki Test for this feat."
+	  },
+	  "feat-swallow_up": {
+	  "name": "Swallow Up",
+	  "cost": 3,
+	  "timing": "Instant",
+	  "subject": "Target",
+	  "range": 2,
+	  "limitations": ["OpT"],
+	  "description": "Use this Ki Feat at any time except during a model's activation.\nPlace the Target model Elsewhere. Remove that model's Activation Counters.\nIn the End Phase, Place the affected model with 2\" of this model. If this is not possible, Place that model as close to this model as possible.\nIf the Ki Feat Targets an Enemy model you must Succeed in an Opposed Size Test.\nWhen this model is removed from play for any reason, first Place any affected models within 2\" of this model."
+	  },
+	  "feat-lick_the_toad": {
+	  "name": "Lick the Toad",
+	  "cost": 1,
+	  "timing": "Active",
+	  "subject": "Special",
+	  "limitations": ["OpT"],
+	  "references": ["trait-immune", "state-poisoned"],
+	  "description": "When a model that is not Immune [Poison] and is not a Monk or Sohei model, is in BtB with this model, performs a Focus Action it gains double its Ki Statistic in Ki instead of just its Ki Statistic.\nThat model also gains a Poisoned (X) Marker where X is equal to the Ki gained by the action."
 	  }
 }
