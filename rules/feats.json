@@ -1349,7 +1349,7 @@
 		"timing": "Active",
 		"subject": "Target",
 		"range": 6,
-		"description": "Choose a model descriptor. Target Friendly model gains Vengeance [chosen descriptor] until the end of the current activation.",
+		"description": "Target Friendly model gains Vengeance [Enemy] until the end of the current activation.",
 		"revision": 1,
 		"updated": "2023-01"
 	},
