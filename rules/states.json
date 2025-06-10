@@ -9,9 +9,9 @@
 		"revision": 1,
 		"updated": "before 2022-11"
 	},
-	"state-bleed": {
-		"name": "Bleed",
-		"description": "If a model has Bleed markers it is considered to be Bleeding.\nDuring the End Phase remove the highest value Bleed marker.\nThe model suffers a number of wounds equal to the removed Bleed marker's value.\nAfter this, if the model still has three or more Bleed markers, repeat the process, continuing to do so until the model has only 2 Bleed markers.\nIf a Bleeding model Heals any of its marked wounds from its wound track by any means, remove all Bleed markers from it.",
+	"state-bleeding": {
+		"name": "Bleeding",
+		"description": "If a model has Bleeding markers it is considered to be Bleeding.\nDuring the End Phase remove the highest value Bleeding marker.\nThe model suffers a number of wounds equal to the removed Bleeding marker's value.\nAfter this, if the model still has three or more Bleeding Markers, repeat the process, continuing to do so until the model has only 2 Bleeding Markers.\nIf a Bleeding model Heals any of its marked wounds from its wound track by any means, remove all Bleeding Markers from it.",
 		"bsid": "",
 		"references": ["markers", "concept-heal", "phase-end"],
 		"rulebook": 50,

@@ -118,7 +118,7 @@
 		"arguments": "(X/Y)",
 		"description": "Each time this model inflicts wounds through a Melee Exchange or Ranged Attack to a non-Soulless Enemy model, that model gains X number of Bleed markers with value Y.\nIf a model has multiple sources of Bleed traits, it may only use one at any given time.",
 		"bsid": "ac4a-e540-4fe3-126a",
-		"references": ["trait-soulless", "state-bleed", "concept-markers", "melee_exchange", "concept-damage", "ranged_attack", "concept-enemy"],
+		"references": ["trait-soulless", "state-bleeding", "concept-markers", "melee_exchange", "concept-damage", "ranged_attack", "concept-enemy"],
 		"rulebook": 58,
 		"rulebookr1": 61,
 		"revision": 0,
@@ -614,7 +614,7 @@
 		"name": "Kami",
 		"description": "When this model is deployed it gains Ki tokens equal to its maximum Ki.\nWhen this model would suffer wounds, instead remove an equal number of Ki tokens.\nFor effects that would cause Wounds to be marked on a model, a Kami treats its Ki Tokens as if they were unmarked Wound Boxes.\nFor each Ki below its maximum it is considered to have one marked Wound Box.\nIf this model has no Ki tokens, it is removed from play.\nThis model may not gain Ki tokens as a result of the Channel trait.\nThis Model cannot have Ki tokens removed as a result of the Leech trait.\nThis model has Immune (Poison/Fire/ Bleed/Diseased) and cannot be Healed.\nA Kami model may not use a Ki Feat if spending the Ki Tokens would cause it to lose all its remaining Ki Tokens.",
 		"bsid": "50d4-ec7a-9763-1b4d",
-		"references": ["trait-leech", "trait-channel", "trait-immune", "concept-heal", "concept-deploy", "state-bleed", "state-on_fire", "state-poisoned", "state-diseased", "concept-tokens"],
+		"references": ["trait-leech", "trait-channel", "trait-immune", "concept-heal", "concept-deploy", "state-bleeding", "state-on_fire", "state-poisoned", "state-diseased", "concept-tokens"],
 		"rulebook": 64,
 		"rulebookr1": 66,
 		"revision": 1,
@@ -746,13 +746,13 @@
 	"trait-order": {
 		"name": "Order",
 		"arguments": "[Descriptor](X/Y”)",
-		"description": "This model may declare a Complex action, Order [noBtB][noWalk]: This model immediately nominates X other Friendly [Descriptor] models within Y”.\nThose models gain one Activation counter.",
+		"description": "This model may declare a Complex action, Order [noBtB][noWalk]: This model immediately nominates X other Friendly [Descriptor] models within Y”.\nThose models gain one Activation counter.\nModels may only be affected by the Order Action once per Turn.",
 		"bsid": "ed40-ed42-2208-1ea0",
 		"references": ["concept-counters", "timing-complex", "action-order", "concept-friendly"],
 		"rulebook": 65,
 		"rulebookr1": 67,
-		"revision": 0,
-		"updated": ""
+		"revision": 1,
+		"updated": "2025-06"
 		},
 	"trait-overwhelm": {
 		"name": "Overwhelm",
@@ -964,7 +964,7 @@
 		"name": "Soulless",
 		"description": "This model automatically succeeds at Fear tests and has Immune [Bleed, Frightened, Poison].\nThis model also automatically succeeds at Opposed Ki Tests when it is not the Active model.",
 		"bsid": "af31-aad0-fcea-9590",
-		"references": ["test-opposed", "trait-fear", "trait-immune", "test-fear", "concept-inactive", "state-frightened", "state-bleed", "state-poison"],
+		"references": ["test-opposed", "trait-fear", "trait-immune", "test-fear", "concept-inactive", "state-frightened", "state-bleeding", "state-poisoned"],
 		"rulebook": 67,
 		"rulebookr1": 69,
 		"revision": 2,
@@ -1171,13 +1171,13 @@
 		},
 	"trait-terrain_destructible": {
 		"name": "Terrain: Destructible",
-		"description": "A model in base contact with this terrain and not in an Enemy ZoC can declare a Wait action and spend 2Ki to remove it from the table.",
+		"description": "A model in BtB with this terrain and not in an Enemy model's ZoC can declare a Wait action to remove it from the table.\nModels that are Aloof, Animal, Insignificant, or have a Max Ki Limit of 0 cannot perform this effect.\nThis will not trigger effects listed on Friendly terrain.",
 		"bsid": "77e1-8d49-8101-0e5e",
-		"references": ["concept-zoc", "concept-enemy", "action-wait"],
+		"references": ["concept-zoc", "concept-enemy", "action-wait", "trait-aloof", "trait-insignificant"],
 		"rulebook": 16,
 		"rulebookr1": 18,
-		"revision": 0,
-		"updated": ""
+		"revision": 1,
+		"updated": "2025-06"
 		},
 	"trait-terrain_impassable": {
 		"name": "Terrain: Impassable",
