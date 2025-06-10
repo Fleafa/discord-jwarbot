@@ -5784,7 +5784,7 @@
 	  "references": ["trait-fear"],
 	  "description": "Friendly Ashigaru with Reach Weapons, in the Aura gain Fear (X).\nX is equal to the number of Ashigaru in the Aura."
 	  },
-	  "feat-whipping boy": {
+	  "feat-whipping_boy": {
 	  "name": "Whipping Boy",
 	  "cost": 1,
 	  "timing": "Active",
