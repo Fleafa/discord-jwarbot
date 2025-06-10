@@ -5654,5 +5654,175 @@
 	  "limitations": ["OpT"],
 	  "references": ["trait-immune", "state-poisoned"],
 	  "description": "When a model that is not Immune [Poison] and is not a Monk or Sohei model, is in BtB with this model, performs a Focus Action it gains double its Ki Statistic in Ki instead of just its Ki Statistic.\nThat model also gains a Poisoned (X) Marker where X is equal to the Ki gained by the action."
+	  },
+	  "feat-bandit_blade": {
+	  "name": "Bandit Blade",
+	  "cost": "X+3",
+	  "timing": "Active",
+	  "subject": "Special",
+	  "limitations": ["OpT"],
+	  "description": "After determining the values of all dice in a Melee Exchange, choose up to X Enemy dice to be removed, as if they had rolled a value of 1.\nThe opposing model may transfer I Ki Token per dice to this model to keep any number of those dice."
+	  },
+	  "feat-beneath_notice": {
+	  "name": "Beneath Notice",
+	  "cost": 2,
+	  "timing": "Active",
+	  "subject": "Personal",
+	  "references": ["state-disguised"],
+	  "description": "This model gains a Disguise (6) Marker until the End Phase."
+	  },
+	  "feat-blood_omen": {
+	  "name": "Blood Omen",
+	  "cost": 1,
+	  "timing": "Instant",
+	  "subject": "Pulse",
+	  "range": 6,
+	  "limitations": ["noBtB"],
+	  "references": ["state-bleeding"],
+	  "description": "When a Bleeding Marker is removed in the Pulse, replace it with a Bleeding (0) Marker."
+	  },
+	  "feat-burden_on_society": {
+	  "name": "Burden on Society",
+	  "cost": 2,
+	  "timing": "Active",
+	  "subject": "Aura",
+	  "range": 6,
+	  "limitations": ["noBtB"],
+	  "description": "When another model within the Aura’s area of effect uses a Ki Feat or Ki Boost, the cost in Ki Tokens is increased by one."
+	  },
+	  "feat-cloud_vision": {
+	  "name": "Cloud Vision",
+	  "cost": 2,
+	  "timing": "Simple",
+	  "subject": "Target",
+	  "range": 8,
+	  "limitations": ["noBtB", "OpT"],
+	  "references": ["state-blind"],
+	  "description": "Target Enemy model gains a Blind Marker."
+	  },
+	  "feat-conniving_bastard": {
+	  "name": "Conniving Bastard",
+	  "cost": 4,
+	  "timing": "Instant",
+	  "subject": "Special",
+	  "limitations": ["OpG"],
+	  "references": ["trait-tactician"],
+	  "description": "If the opponent wins the Tactical Roll, instead they lose and you succeed.\nThe Enemy model selected to take the Tactical Test loses the Tactician Trait for the rest of the game."
+	  },
+	  "feat-encroaching_mist": {
+	  "name": "Encroaching Mist",
+	  "cost": 2,
+	  "timing": "Active",
+	  "subject": "Aura",
+	  "range": "X",
+	  "references": ["trait-tireless"],
+	  "description": "The Aura’s area is considered a [Normal, Obscuring, Huge] terrain element and Friendly Wretched models within the Aura gain Tireless.\nX is equal to the turn number."
+	  },
+	  "feat-fall_into_the_ring": {
+	  "name": "Fall Into the Ring",
+	  "cost": "X",
+	  "timing": "Simple",
+	  "subject": "Aura",
+	  "range": "x",
+	  "limitations": ["noBtB"],
+	  "references": ["trait-strong", "trait-weak"],
+	  "description": "Oni and Onisho Models in the Aura gain the Strong Trait.\nOther models in the Aura gain the Weak Trait."
+	  },
+	  "feat-fertiliser": {
+	  "name": "Fertiliser",
+	  "cost": 2,
+	  "timing": "Simple",
+	  "subject": "Pulse",
+	  "range": 6,
+	  "references": ["state-poisoned", "state-stunned"],
+	  "description": "Choose another Friendly model you own within the Pulse.\nModels in BtB with the chosen model gain a Stunned Marker and a Poisoned (2) Marker.\nRemove the chosen model from play and this model gains a Garden Token."
+	  },
+	  "feat-inflated_reputation": {
+	  "name": "Inflated Reputation",
+	  "cost": 1,
+	  "timing": "Instant",
+	  "subject": "Personal",
+	  "limitations": ["noBtB"],
+	  "references": ["trait-fear"],
+	  "description": "This model gains Fear (6) until the end of the current activation.\nThis Ki Feat cannot be used if this model has more than 3 Marked Wound Boxes."
+	  },
+	  "feat-just_a_sip": {
+	  "name": "Just a Sip",
+	  "cost": 2,
+	  "timing": "Active",
+	  "subject": "Target",
+	  "range": 2,
+	  "limitations": ["OpT"],
+	  "references": ["trait-fearless", "trait-dodge", "trait-ranged_defence", "trait-slow"],
+	  "description": "A Friendly Ito Saiaku and the Target Friendly model gain Fearless, Dodge (1) and Ranged Defence (1 ).\nThose models do not gain Slow from Blizzard."
+	  },
+	  "feat-ring_of_fire": {
+	  "name": "Ring of Fire",
+	  "cost": 2,
+	  "timing": "Simple",
+	  "subject": "Special",
+	  "limitations": ["noBtB","OpG"],
+	  "references": ["trait-immune", "trait-defensive", "state-held"],
+	  "description": "Centre a 4” Aura on the Battlefield Centre Point instead of on this model.\nModels in the Aura, and models in BtB with models in the Aura, gain Immune [Held], lose Defensive and cannot allocate dice to Defence in Melee Exchanges."
+	  },
+	  "feat-suit_you_sir": {
+	  "name": "Suit You, Sir!",
+	  "cost": 1,
+	  "timing": "Simple",
+	  "subject": "Target",
+	  "range": 5,
+	  "limitations": ["OpT"],
+	  "description": "Recruit a permitted Ronin Enhancement - Equipment and add it to Target Friendly Ito Saiaku.\nThis model must use this Ki Feat every turn. If it does not, Remove all Friendly Ito Saiaku and Servant models that you own from play."
+	  },
+	  "feat-they_dont_like_it_up_em": {
+	  "name": "They Don't Like it Up 'Em!",
+	  "cost": 1,
+	  "timing": "Simple",
+	  "subject": "Aura",
+	  "range": 4,
+	  "limitations": ["noBtB"],
+	  "references": ["trait-fear"],
+	  "description": "Friendly Ashigaru with Reach Weapons, in the Aura gain Fear (X).\nX is equal to the number of Ashigaru in the Aura."
+	  },
+	  "feat-whipping boy": {
+	  "name": "Whipping Boy",
+	  "cost": 1,
+	  "timing": "Active",
+	  "subject": "Target",
+	  "range": "LoS",
+	  "references": ["state-berserk", "state-bleeding", "state-blind", "state-controlled", "state-death_sentence", "state-diseased", "state-frightened", "state-immobilised", "state-impetuous", "state-on_fire", "state-poisoned", "state-spirit_block", "state-stunned"],
+	  "description": "Transfer any Berserk, Bleeding, Blind, Controlled, Death Sentence, Diseased, Frightened, Immobilised, Impetuous, On Fire, Poisoned, Spirit Block, and Stunned Markers from Target model to this model.\nThis model marks a number of wound boxes equal to the number of State Markers gained."
+	  },
+	  "feat-whistling_shriek": {
+	  "name": "Whistling Shriek",
+	  "cost": 2,
+	  "timing": "Simple",
+	  "subject": "Target",
+	  "range": 6,
+	  "limitations": ["noBtB"],
+	  "references": ["trait-sixth_sense"],
+	  "description": "Centre an X” Pulse on the Target. Models in the Pulse lose Sixth Sense.\nX is equal to the number of whole inches in the range to the Target."
+	  },
+	  "feat-eruption_of_skittering_progeny": {
+	  "name": "Eruption of Skittering Progeny",
+	  "cost": 1,
+	  "timing": "Instant",
+	  "subject": "Personal",
+	  "description": "Replace this model by deploying an Endless Procession of Arachnid Presence (you cannot have more models in play than the card has Wound Tracks).\nIf this model was in a Melee Exchange, the Endless Procession of Arachnid Presence can neither be damaged nor deal damage this exchange."
+	  },
+	  "feat-joseis_arrow_curse": {
+	  "name": "Josei's Arrow Curse",
+	  "cost": 2,
+	  "timing": "Simple",
+	  "subject": "Target",
+	  "range": 6,
+	  "description": "Until the End Phase, whenever a Ranged Attack, that was within the weapon's Range, is  unsuccessful, the Target of this Ki Feat suffers a Success Level 1 hit by the weapon that was chosen for the unsuccessful Attack.\nUse any Special Attacks and other effects as already declared."
+	  },
+	  "feat-noose": {
+	  "name": "Noose",
+	  "cost": 1,
+	  "timing": "Instant",
+	  "subject": "Special",
+	  "description": "When this model successfully attacks in a Melee Exchange, after the Melee Exchange is resolved, the Enemy model gains a Noose Token."
 	  }
 }
