@@ -46,6 +46,7 @@ module.exports = {
 			getInput = getInput.toLowerCase();
 			getInput = getInput.replace(/'/g, '');
 			getInput = getInput.replace(/!/g, '');
+			getInput = getInput.replace(/,/g, '');
 			// append input to 'feat-', and replace spaces with underscores
 			ruleId += getInput.replace(/ /g, '_');
 			console.log(interaction.user.username + ' used /feat to search for ' + getInput);
