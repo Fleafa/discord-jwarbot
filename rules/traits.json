@@ -64,13 +64,13 @@
 		},
 	"trait-assassin": {
 		"name": "Assassin",
-		"description": "If either:\n- this model did not begin its activation in BtB with an Enemy model, performs an action that Targets that enemy or brings it into BtB with that Enemy model, and started outside of LoS of that Enemy model and remains outside of it’s LoS during movement\n- or the Enemy model is Surprised this model may roll three dice for any Damage Rolls caused by any Attack and choose two to add together, ignoring Weak and Strong traits.",
+		"description": "If either:\n- this model did not begin its activation in BtB with an Enemy model, performs an action that Targets or brings it into BtB with that Enemy model, starts outside of LoS of that Enemy model and remains outside of its LoS during movement, or\n- the Enemy model is Surprised\nthis model may roll three dice for any Damage Rolls caused by any Attack and choose two to add together, ignoring Weak and Strong traits.",
 		"bsid": "ef59-928b-2550-f0a3",
 		"references": ["concept-damage", "concept-surprised"],
 		"rulebook": 58,
 		"rulebookr1": 60,
-		"revision": 1,
-		"updated": "2024-03"
+		"revision": 2,
+		"updated": "2025-07"
 		},
 	"trait-aware": {
 		"name": "Aware",
@@ -169,24 +169,24 @@
 	"trait-brutal": {
 		"name": "Brutal",
 		"arguments": "(X)",
-		"description": "In a Melee Exchange this model adds X to the result when calculating its final Attack result if it allocated any dice to Attack.\nIn a Ranged attack, this model adds X to the result when calculating its final Ranged Attack result.",
+		"description": "In a Melee Exchange this model adds X to the result when calculating its final Attack result\nIn a Ranged attack, this model adds X to the result when calculating its final Ranged Attack result.",
 		"bsid": "5d95-975e-a72c-25f3",
 		"references": ["melee_exchange", "ranged_attack"],
 		"rulebook": 59,
 		"rulebookr1": 62,
-		"revision": 0,
-		"updated": ""
+		"revision": 1,
+		"updated": "2025-07"
 		},
 	"trait-camouflage": {
 		"name": "Camouflage",
 		"arguments": "(X”)",
-		"description": "While this model is benefiting from Cover, enemy models cannot Target or enter BtB with this model unless the enemy model is within X” at the start of its activation.",
+		"description": "While this model is benefiting from Cover, Enemy models cannot Target or enter BtB with this model outside of their activation unless they are within X”.\nAt the start of an Enemy model's activation, if this model is benefiting from Cover, that Enemy model cannot Target or enter BtB with this model unless the Enemy model is within X” of this model at the start of the Enemy model's activation.",
 		"bsid": "9010-4983-c98c-1751",
 		"references": ["concept-btb", "concept-target", "concept-cover", "concept-enemy"],
 		"rulebook": 60,
 		"rulebookr1": 62,
-		"revision": 1,
-		"updated": "2023-04"
+		"revision": 2,
+		"updated": "2025-07"
 		},
 	"trait-cavalry": {
 		"name": "Cavalry",
@@ -202,13 +202,13 @@
 	"trait-channel": {
 		"name": "Channel",
 		"arguments": "(X/Y”)",
-		"description": "Once per turn, during this model’s activation it may remove up to X of its own Ki tokens.\nIts Controller then chooses any Friendly model(s) within Y” to distribute those Ki tokens to.",
+		"description": "Once per turn, during this model’s activation it may remove up to X Ki tokens from its profile card.\nIts Controller then distributes those Ki tokens to any other Friendly model(s) within Y”.",
 		"bsid": "69af-3098-e21e-7734",
 		"references": ["concept-controller", "concept-tokens", "concept-friendly"],
 		"rulebook": 60,
 		"rulebookr1": 62,
-		"revision": 0,
-		"updated": ""
+		"revision": 1,
+		"updated": "2025-07"
 		},
 	"trait-chain_weapon": {
 		"name": "Chain Weapon",
@@ -298,7 +298,7 @@
 	"trait-cultist": {
 		"name": "Cultist",
 		"arguments": "(X/Y”)",
-		"description": "When this model activates it may inflict up to X Wounds on any Friendly model(s) within Y”, including itself, that have this trait, up to X value.\nA model may not suffer more Wounds than it has unmarked Wound boxes.\nThis model gains Ki Tokens equal to the number of Wounds inflicted.\nA model cannot suffer more Wounds from this trait than the X value of its own Cultist trait each turn.\nThese Wounds ignore Tough.",
+		"description": "When this model activates it may inflict up to X Wounds on any Friendly model(s) within Y”, including itself, that have this trait, up to X value.\nA model may not suffer more Wounds than it has unmarked Wound boxes. This model gains Ki Tokens equal to the number of Wounds inflicted.\nA model cannot suffer more Wounds from this trait than the X value of its own Cultist trait each turn.\nThese Wounds ignore Tough.",
 		"bsid": "ed04-4bf2-e1ff-7a88",
 		"references": ["trait-tough", "concept-tokens", "concept-friendly"],
 		"rulebook": 61,
@@ -456,7 +456,7 @@
 		},
 	"trait-flank": {
 		"name": "Flank",
-		"description": "When this model would be Deployed, this model’s Controller must choose whether this model will use Flank or not.\nIf the player chooses not to use Flank, this model is Deployed as normal.\nIf the player decides the model is using Flank, then the model is left Elsewhere and instead before the game the owning player makes a note of which turn the Flanking models will arrive and notes a neutral table edge. This is Hidden Information.\nThis must be turn 2, 3, or 4.\nIn the Starting Phase of that turn reveal the number and deploy the models anywhere along the chosen edge but not in the Opponent’s Deployment Zone.\n\nIf a model gains Flank mid game or is removed and returns to play using the Flank rules, you immediately note any turn after the current turn (not just 2, 3, or 4) and neutral edge for that model when it is removed from play. This is Hidden Information.\nFlanking models generate two Activation Counters when they are Deployed.",
+		"description": "When this model would be Deployed, this model’s Controller must choose whether this model will use Flank or not.\nIf the player chooses not to use Flank, this model is Deployed as normal.\nIf the player decides the model is using Flank, then the model is left Elsewhere and instead before the game the owning player makes a note of which turn the Flanking models will arrive and notes a neutral table edge. This is Hidden Information.\nThis must be turn 2, 3, or 4.\nIn the Starting Phase of that turn reveal the number and deploy the models anywhere along the chosen edge but not in the Opponent’s Deployment Zone.\n\nIf a model gains Flank mid game or is removed and returns to play using the flank rules, you immediately note any turn after the current turn (not just 2,3 or 4) and a neutral edge for that model when it is removed from play. This is Hidden Information. Flanking models generate two Activation Counters when they are Deployed.",
 		"bsid": "a847-f02d-7e99-8a66",
 		"references": ["concept-deploy", "concept-elsewhere", "concept-hidden", "concept-controller", "concept-counters"],
 		"rulebook": 62,
@@ -612,13 +612,13 @@
 		},
 	"trait-kami": {
 		"name": "Kami",
-		"description": "When this model is deployed it gains Ki tokens equal to its maximum Ki.\nWhen this model would suffer wounds, instead remove an equal number of Ki tokens.\nFor effects that would cause Wounds to be marked on a model, a Kami treats its Ki Tokens as if they were unmarked Wound Boxes.\nFor each Ki below its maximum it is considered to have one marked Wound Box.\nIf this model has no Ki tokens, it is removed from play.\nThis model may not gain Ki tokens as a result of the Channel trait.\nThis Model cannot have Ki tokens removed as a result of the Leech trait.\nThis model has Immune (Poison/Fire/ Bleed/Diseased) and cannot be Healed.\nA Kami model may not use a Ki Feat if spending the Ki Tokens would cause it to lose all its remaining Ki Tokens.",
+		"description": "When this model is deployed it gains Ki tokens equal to its maximum Ki. When this model would suffer wounds, instead remove an equal number of Ki tokens. For effects that would cause Wounds to be marked on a model, a Kami treats its Ki Tokens as if they were unmarked Wound Boxes. For each Ki below its maximum it is considered to have one marked Wound Box. If this model has no Ki tokens, it is Killed then Removed from Play.\n\nThis model may not gain Ki tokens as a result of the Channel trait.\nThis Model cannot have Ki tokens removed as a result of the Leech trait.\nThis model has Immune [Poisoned/On Fire/Bleeding/Diseased] and cannot be Healed.\nA Kami model may not use a Ki Feat if spending the Ki Tokens would cause it to lose all its remaining Ki Tokens.",
 		"bsid": "50d4-ec7a-9763-1b4d",
 		"references": ["trait-leech", "trait-channel", "trait-immune", "concept-heal", "concept-deploy", "state-bleeding", "state-on_fire", "state-poisoned", "state-diseased", "concept-tokens"],
 		"rulebook": 64,
 		"rulebookr1": 66,
-		"revision": 1,
-		"updated": "2023-08"
+		"revision": 2,
+		"updated": "2025-07"
 		},
 	"trait-kata": {
 		"name": "Kata",
@@ -674,7 +674,7 @@
 	"trait-leech": {
 		"name": "Leech",
 		"arguments": "(X/Y”)",
-		"description": "Once per turn, during this model’s activation it may remove up to X Ki Tokens from any Friendly model(s) within Y” and add them to its own.\nThis cannot take a model over its maximum Ki.",
+		"description": "Once per turn, during this model’s activation, it may remove up to X Ki Tokens from profile card(s) of any other Friendly models within Y” and add them to its own.",
 		"bsid": "bab1-710b-4f90-7c2f",
 		"references": ["concept-active", "concept-tokens", "concept-friendly"],
 		"rulebook": 64,
@@ -741,7 +741,7 @@
 		"rulebook": 65,
 		"rulebookr1": 67,
 		"revision": 1,
-		"updated": "before 2022-11"
+		"updated": "2025-07"
 		},
 	"trait-order": {
 		"name": "Order",
@@ -962,7 +962,7 @@
 		},
 	"trait-soulless": {
 		"name": "Soulless",
-		"description": "This model automatically succeeds at Fear tests and has Immune [Bleed, Frightened, Poison].\nThis model also automatically succeeds at Opposed Ki Tests when it is not the Active model.",
+		"description": "This model automatically succeeds at Fear tests and has Immune [Bleeding, Frightened, Poison].\nThis model also automatically succeeds at Opposed Ki Tests when it is not the Active model.",
 		"bsid": "af31-aad0-fcea-9590",
 		"references": ["test-opposed", "trait-fear", "trait-immune", "test-fear", "concept-inactive", "state-frightened", "state-bleeding", "state-poisoned"],
 		"rulebook": 67,

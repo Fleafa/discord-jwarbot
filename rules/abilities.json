@@ -65,19 +65,19 @@
 	},
 	"ability-sidestep_attack": {
 		"name": "Sidestep Attack",
-		"description": "If the Attack is successful, the Attacker leaves BtB and then moves away from the Defender until The Attacker leaves the Defender's ZoC, at which point its movement ends.\nThe Attacker makes no damage roll.",
+		"description": "If the Attack is successful, the Attacker leaves BtB and then moves away from the Defender until the Attacker leaves the Defender's ZoC, at which point its movement ends.\nThe Defender does not suffer a Damage Roll from this Attack.",
 		"rulebook": 47,
 		"rulebookr1": 49,
-		"revision": 1,
-		"updated": "before 2022-11"
+		"revision": 2,
+		"updated": "2025-07"
 	},
 	"ability-slam_attack": {
 		"name": "Slam Attack",
-		"description": "If the Attack is successful, the Defender is moved 3\" directly away and becomes prone, minimally the Defender is moved beyond the Attacker's ZoC.\nThe Defender suffers half the wounds from the Damage Roll caused by this Attack.",
+		"description": "If the Attack is successful, the Defender is moved 3\" directly away and becomes Prone.\nThe Defender suffers half the Wounds from the Damage Roll caused by this Attack.",
 		"rulebook": 47,
 		"rulebookr1": 49,
-		"revision": 1,
-		"updated": "before 2022-11"
+		"revision": 2,
+		"updated": "2025-07"
 	},
 	"ability-stun_attack": {
 		"name": "Stun Attack",
@@ -97,11 +97,11 @@
 	},
 	"ability-throw_attack": {
 		"name": "Throw Attack",
-		"description": "If the Attack is successful, the Defender is moved 2\" in a straight line and becomes prone, minimally the Defender is moved beyond the Attackers ZoC and within LoS of the Attacker.\nThe Defender suffers half the wounds from the Damage Roll caused by this Attack.",
+		"description": "If the Attack is successful, the Defender is moved 2\" in a straight line and becomes Prone.\nThe Defender suffers half the Wounds from the Damage Roll caused by this Attack.",
 		"rulebook": 48,
 		"rulebookr1": 49,
-		"revision": 1,
-		"updated": "before 2022-11"
+		"revision": 2,
+		"updated": "2025-07"
 	},
 	"ability-ability-eagles_flight_defence": {
 		"name": "Eagle's Flight Defence",
@@ -166,11 +166,11 @@
 	},
 	"ability-sidestep_defence": {
 		"name": "Sidestep Defence",
-		"description": "If the Defence is successful, the Defender leaves BtB and then moves away from the Attacker until it leaves the Attacker's ZoC, at which point its movement ends.",
+		"description": "If the Defence is successful, the Defender leaves BtB and then moves away from the Attacker until the Defender leaves the Attacker's ZoC, at which point its movement ends.",
 		"rulebook": 48,
 		"rulebookr1": 50,
-		"revision": 1,
-		"updated": "before 2022-11"
+		"revision": 2,
+		"updated": "2025-07"
 	},
 	"ability-sweep_defence": {
 		"name": "Sweep Defence",
@@ -182,11 +182,11 @@
 	},
 	"ability-throw_defence": {
 		"name": "Throw Defence",
-		"description": "If the Defence is successful, the Attacker is moved 2\" in a straight line and becomes prone, minimally the Attacker is moved beyond the Defenders ZoC within LoS of the Defender.",
+		"description": "If the Defence is successful, the Attacker is moved 2\" in a straight line and becomes Prone.",
 		"rulebook": 48,
 		"rulebookr1": 50,
-		"revision": 1,
-		"updated": "before 2022-11"
+		"revision": 2,
+		"updated": "2025-07"
 	},
 	"ability-web_defence": {
 		"name": "Web Defence",
