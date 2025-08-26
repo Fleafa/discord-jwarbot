@@ -6796,5 +6796,107 @@
         "name": "Yoko-Men",
         "subject": "Personal",
         "timing": "Active"
+    },
+    "feat-embrace_the_coil": {
+        "cost": 2,
+        "description": "Choose an Izu Serpent model that is not currently in play.\nSummon and Deploy the chosen lzu Serpent model in BB with the Target model, ignoring the usual BtB restriction on Deploying a model.\nThe Target gains a State Marker depending on the lzu Serpent chosen:\n- Asp: Poisoned (2) Marker\n- Boa Constrictor: Immobilised Marker\n- Cobra: Blind Marker",
+        "name": "Embrace the Coil",
+        "subject": "Target",
+        "range": 8,
+        "timing": "Simple",
+        "limitations": ["noBtB"],
+        "references": ["state-poisoned", "state-blind", "state-immobilised"]
+    },
+    "feat-cripple": {
+        "cost": 2,
+        "description": "Target model gains Weak and loses Reach and Lightning Reflexes until the End Phase.",
+        "name": "Cripple",
+        "subject": "Target",
+        "range": 8,
+        "timing": "Simple",
+        "opposed": true,
+        "references": ["trait-weak","trait-reach", "trait-lightning_reflexes"]
+    },
+    "feat-thousand_kin": {
+        "cost": 2,
+        "description": "This model gains Co-ordinated Attack [Bakemono] until the current Melee Exchange is resolved.",
+        "name": "Thousand Kin",
+        "subject": "Personal",
+        "timing": "Active",
+        "references": ["trait-co-ordinated_attack"]
+    },
+    "feat-vigour": {
+        "cost": 1,
+        "description": "This model gains 1 Activation Counter, then discard this card.",
+        "name": "Vigour",
+        "subject": "Special",
+        "timing": "Active"
+    },
+    "feat-hari_kiri": {
+        "cost": 4,
+        "description": "Remove this model from play.\nFor each unmarked Damage Box on this model, remove a Shame Token from another model.",
+        "name": "Hari-Kiri",
+        "subject": "Personal",
+        "timing": "Instant",
+        "limitations": ["noBtB"]
+    },
+    "feat-loyal_to_the_dragon": {
+        "cost": 2,
+        "description": "This model gains Bodyguard [Takashi] (3\") until the End Phase.",
+        "name": "Loyal to the Dragon",
+        "subject": "Personal",
+        "timing": "Active",
+        "references": ["trait-bodyguard"]
+    },
+    "feat-strikedown": {
+        "cost": 2,
+        "description": "When this model deals Damage in a Melee Exchange, the Enemy model gains a Prone Marker.",
+        "name": "Strikedown",
+        "subject": "Personal",
+        "timing": "Instant",
+        "references": ["state-prone"]
+    },
+    "feat-ice_manipulation": {
+        "cost": 2,
+        "description": "When this model declares a Ranged Attack Action this model gains +1 Ranged Pool and chooses one of the following until the current Ranged Attack Action is resolved:\n- this model ignores Camouflage and Cover\n- this model's Ranged Weapon gains Pierce (3) and Sharp (3)\n- this model's Ranged Weapon cannot declare a Special Attack and gains Rapid Fire (3)",
+        "name": "Ice Manipulation",
+        "subject": "Personal",
+        "timing": "Active",
+        "limitations": ["OpT"],
+        "references": ["trait-pierce", "trait-sharp", "trait-rapid_fire", "trait-camouflage"]
+    },
+    "feat-hooked_leg_pincers": {
+        "cost": ,
+        "description": "While within Webbed Ground Terrain, this model gains Immovable.",
+        "name": "Hooked Leg Pincers",
+        "subject": "Personal",
+        "timing": "Simple",
+        "references": ["trait-immovable"]
+    },
+    "feat-shield_of_light": {
+        "cost": "X",
+        "description": "When a Friendly model within the pulse is successfully attacked in a Melee Exchange, before the Damage Roll spend X Ki Tokens.\nX may not be greater than 3.\nFor each Ki Token spent, prevent one Wound.\nThe model making the attack gains a Stunned Marker",
+        "name": "Shield of Light",
+        "subject": "Pulse",
+        "range": 3,
+        "timing": "Instant",
+        "limitations": ["OpT"],
+        "references": []
+    },
+    "feat-the_oncoming_storm": {
+        "cost": 3,
+        "description": "Replace this model by Summoning and Deploying any Ronin Lesser Air Kami (ignoring which Faction may recruit that model), remove this model and place it Elsewhere. You still cannot have more of that Kami model in play than the Max value on its card.\nIf this model is Elsewhere, it may use this feat.\nReplace a Friendly Ronin Lesser Air Kami that you own with this model. Remove the Kami from play.",
+        "name": "The Oncoming Storm",
+        "subject": "Special",
+        "timing": "Active",
+        "limitations": ["OpT"]
+    },
+    "feat-raijins_breath": {
+        "cost": 1,
+        "description": "This model gains +2 Move and Cloudwalk until the current activation is resolved, then discard this card.",
+        "name": "Raijin's Breath",
+        "subject": "Personal",
+        "timing": "Active",
+        "references": ["trait-cloudwalk"]
     }
 }
