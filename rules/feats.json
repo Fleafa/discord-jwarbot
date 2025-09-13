@@ -6866,7 +6866,7 @@
         "references": ["trait-pierce", "trait-sharp", "trait-rapid_fire", "trait-camouflage"]
     },
     "feat-hooked_leg_pincers": {
-        "cost": ,
+        "cost": 1,
         "description": "While within Webbed Ground Terrain, this model gains Immovable.",
         "name": "Hooked Leg Pincers",
         "subject": "Personal",
