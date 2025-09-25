@@ -6898,5 +6898,220 @@
         "subject": "Personal",
         "timing": "Active",
         "references": ["trait-cloudwalk"]
+    },
+    "feat-chest_thump": {
+        "cost": 3,
+        "description": "This model gains Impenetrable Defence.\nFriendly Ape or Gorilla models in the Aura have Cover and gain Immovable.\nThis Aura ends if this model moves.",
+        "name": "Chest Thump",
+        "subject": "Aura",
+        "range": 2,
+        "timing": "Active",
+        "references": ["trait-immovable"]
+    },
+    "feat-go_ape": {
+        "cost": 2,
+        "description": "When a Friendly Ape or Gorilla model successfully uses a Throw Special Ability, the distance the Enemy model Moves is 6\".",
+        "name": "Go Ape!",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Instant",
+        "references": ["ability-throw_defence", "ability-throw_attack"]
+    },
+    "feat-life_insurance": {
+        "cost": 1,
+        "description": "Remove X Investment Counters from the Investment Card to prevent X Damage on this model.",
+        "name": "Life Insurance",
+        "subject": "Personal",
+        "timing": "Instant",
+        "limitations": ["OpT"]
+    },
+    "feat-invest_in_ammo": {
+        "cost": "X",
+        "description": "Remove X Investment Counter from the Investment Card to remove X Reloading Markers from Friendly models in the Pulse.",
+        "name": "Invest in Ammo!",
+        "subject": "Pulse",
+        "range": "X",
+        "timing": "Simple",
+        "limitations": ["OpT"],
+        "references": ["state-reloading"]
+    },
+    "feat-compound_interest": {
+        "cost": 2,
+        "description": "Remove X Investment Counters from Investment Card to gain X Ki Tokens and gain Channel (X,X\").",
+        "name": "Compound Interest",
+        "subject": "Personal",
+        "timing": "Active",
+        "limitations": ["noBtB", "OpT"],
+        "references": ["trait-channel"]
+    },
+    "feat-corvine_intel": {
+        "cost": 2,
+        "description": "Target Friendly model gains Tactician (+1) until the End Phase.",
+        "name": "Corvine Intel",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Instant",
+        "limitations": ["OpT"],
+        "references": ["trait-tactician"]
+    },
+    "feat-animal_master": {
+        "cost": "X+1",
+        "description": "This model gains Order [Animal] (6\") until the End Phase.",
+        "name": "Animal Master",
+        "subject": "Personal",
+        "timing": "Active",
+        "limitations": ["noBtB"],
+        "references": ["trait-order"]
+    },
+    "feat-squall_strike": {
+        "cost": 2,
+        "description": "If this model has made a damage roll during a Melee Exchange, once the Melee Exchange is resolved, Place it up to 1\" from its current location.\nThen Place up to two other Friendly Tengu models within the Pulse up to 1\" from their current locations.",
+        "name": "Squall Strike",
+        "subject": "Pulse",
+        "range": 4,
+        "timing": "Active",
+        "limitations": ["OpT"]
+    },
+    "feat-spiritual_nexus": {
+        "cost": 2,
+        "description": "Friendly Faction models within the Aura can use this model as point of origin for Target or Pulse Ki Feats until the End Phase.\nUse this model to draw LoS and Range for the Ki Feat.\nFriendly models within the Aura may use this model to measure the range of Call Lightning ranged attacks.\nIf range is measured from this model, the Ranged Attack cannot Surprise its Target.",
+        "name": "Spiritual Nexus",
+        "subject": "Aura",
+        "range": 6,
+        "timing": "Active",
+        "limitations": ["noBtB"]
+    },
+    "feat-amazed_by_the_void": {
+        "cost": "Rank 2",
+        "description": "While in BtB with Target Friendly Faction model, Enemy models increase the cost of Ki Feats and Special Abilities by one, this Ki Feat last until the End Phase.\nWhile benefiting from this Ki Feat, Target model's ranged weapons gain Lightweight.",
+        "name": "Amazed by the Void",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Active",
+        "limitations": ["OpT"],
+        "references": ["trait-lightweight"]
+    },
+    "feat-fight_or_flight": {
+        "cost": 1,
+        "description": "'This model gains either Banzai! or Cloudwalk until the current activation is resolved.",
+        "name": "Fight or Flight",
+        "subject": "Personal",
+        "timing": "Active",
+        "limitations": ["OpT"],
+        "references": ["trait-banzai!", "trait-cloudwalk"]
+    },
+    "feat-to_my_side": {
+        "cost": 1,
+        "description": "When an Enemy model declares an action that would bring it into BtB with this model, move a Friendly Golden Sentinel model within the Pulse into BtB with the Enemy model by the shortest route.",
+        "name": "To My Side!",
+        "subject": "Pulse",
+        "range": 4,
+        "timing": "Instant",
+        "limitations": ["OpT"]
+    },
+    "feat-page_from_the_book": {
+        "cost": 4,
+        "description": "When a model declares a Scenario Action, remove an additional Activation Counter for a Simple Action or one fewer Activation Counters if Complex.\nIf the model cannot remove all Activation Counters reguired, the activation ends without taking effect and the model removes an Activation Counter.\nThis Ki Feat is Opposed Ki when targeting an Enemy model.\nThis is a Trap effect.",
+        "name": "Page from the Book",
+        "subject": "Target",
+        "range": 8,
+        "timing": "Instant",
+        "limitations": ["OpG"]
+    },
+    "feat-the_crowds_part": {
+        "cost": 0,
+        "description": "This model may Move 2\" at the end of its current activation.\nAn Enemy model in BtB may transfer 2 Ki Tokens to this model to prevent this Move.",
+        "name": "The Crowds Part",
+        "subject": "Personal",
+        "timing": "Active",
+        "limitations": ["OpT"]
+    },
+    "feat-scheme": {
+        "cost": 2,
+        "description": "Remove all Scheme Tokens and recruit a permitted Event Card with cost equal to or less than the number of Scheme Tokens removed.\nThis can be used to recruit a variable cost Event Card as long as the final cost is equal to or less than the number of Scheme Tokens removed.\nThe card recruited is Hidden Information.",
+        "name": "Scheme",
+        "subject": "Special",
+        "timing": "Active",
+        "limitations": ["OpG"]
+    },
+    "feat-contingency_plan": {
+        "cost": 1,
+        "description": "When this model would be Killed, instead Deploy it outside of Enemy Model's LoS, and unmark all marked Wound Boxes.\nIf this model would be Killed by an Enemy model, you must first pass an Opposed Ki Test against that model to use this Ki Feat.",
+        "name": "Contingency Plan",
+        "subject": "Personal",
+        "timing": "Instant",
+        "limitations": ["OpG"]
+    },
+    "feat-martial_discipline": {
+        "cost": 1,
+        "description": "Target Sohei model gains Prowess [Defence](1) or Prowess [Attack](1) until the end of the current Activation.",
+        "name": "Martial Discipline",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Instant",
+        "references": ["trait-prowess"]
+    },
+    "feat-focusing_shomyo": {
+        "cost": 1,
+        "description": "Friendly Sohei models in the Aura gain Melee Boost (2).",
+        "name": "Focusing Shomyo",
+        "subject": "Aura",
+        "range": 6,
+        "timing": "Complex",
+        "limitations": ["noBtB"]
+    },
+    "feat-hunting_fox": {
+        "cost": 1,
+        "description": "When a Friendly Kitsune model in the Pulse makes a Melee Damage Roll, if the values on the two dice are the same it gains +3 Weapon Strength for that roll.",
+        "name": "Hunting Fox",
+        "subject": "Pulse",
+        "range": 9,
+        "timing": "Active",
+        "limitations": ["OpT"]
+    },
+    "feat-foxs_cunning": {
+        "cost": 1,
+        "description": "When a Friendly Kitsune model in the Pulse is subject to a Damage Roll, ignore the next roll entirely if the values on the two dice are the same.",
+        "name": "Fox's Cunning",
+        "subject": "Pulse",
+        "range": 9,
+        "timing": "Instant",
+        "limitations": ["noBtB"]
+    },
+    "feat-outfox": {
+        "cost": 3,
+        "description": "Use this Ki Feat when an Enemy model initiates a Melee Exchange with this model.\nThis model gains Tireless until the end of the current Activation.",
+        "name": "Outfox",
+        "subject": "Personal",
+        "timing": "Instant",
+        "limitations": ["OpT"],
+        "references": ["trait-tireless"]
+    },
+    "feat-reforged_edge": {
+        "cost": 1,
+        "description": "This model's weapons gain Sharp (1) and Pierce (1) until the current action is resolved.",
+        "name": "Reforged Edge",
+        "subject": "Personal",
+        "timing": "Active",
+        "references": ["trait-sharp", "trait-pierce"]
+    },
+    "feat-undying_finale": {
+        "cost": 1,
+        "description": "During the Starting Phase, Target a Friendly Kami that has maximum Ki Tokens.\nWhen choosing one of their Unique Effects, if the model would be removed from play, it instead remains in play but suffers one Damage.",
+        "name": "Undying Finale",
+        "subject": "Target",
+        "range": 4,
+        "timing": "Instant",
+        "limitations": ["OpT"]
+    },
+    "feat-soul_of_a_kami": {
+        "cost": 2,
+        "description": "Target Friendly Kami gains 1 Ki Token and loses Insignificant until the end of the current activation.",
+        "name": "Soul of a Kami",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Active",
+        "limitations": ["OpT"],
+        "references": ["trait-insignificant"]
     }
 }
