@@ -7113,5 +7113,78 @@
         "timing": "Active",
         "limitations": ["OpT"],
         "references": ["trait-insignificant"]
+    },
+    "feat-return_to_serve": {
+        "cost": "X",
+        "description": "Target a Friendly Shìbīng or Rui Jin.\nReturn to play another of the same model type and Deploy it in BtB with the Target with X unmarked Wound Boxes that was recruited into the Warband but has been Killed or removed from play.\nThis Warband may only use this Ki Feat once per game.",
+        "name": "Return to Serve",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Simple"
+    },
+    "feat-stone_spike": {
+        "cost": 1,
+        "description": "Until the end of the current activation, when this model takes Damage in a Melee Exchange, the Enemy model suffers 1 Damage, ignoring Tough.",
+        "name": "Stone Spike",
+        "subject": "Personal",
+        "timing": "Instant"
+    },
+    "feat-clay_soldier": {
+        "cost": 1,
+        "description": "This model gains an Activation Counter.\nThis Ki Feat may be used while this model is represented by a Terrain Card.",
+        "name": "Clay Soldier",
+        "subject": "Personal",
+        "timing": "Active",
+        "limitations": ["OpT"]
+    },
+    "feat-volley_fire": {
+        "cost": 3,
+        "description": "This model makes a Ranged Attack using their Chu-ko-nu weapon, Friendly Bǎi Qiān models in the Pulse may also make one Ranged Attack using their Chu-ko-nu weapon.\nModels may only be affected by this Ki Feat once per turn.",
+        "name": "Volley Fire",
+        "subject": "Pulse",
+        "range": 3,
+        "timing": "Active",
+        "limitations": ["OpG"]
+    },
+    "feat-stone_soldier": {
+        "cost": 1,
+        "description": "Friendly Shìbīng models gain an Activation Counter.\nThis Ki Feat may be used while this model is represented by a Terrain Card.",
+        "name": "Stone Soldier",
+        "subject": "Special",
+        "timing": "Active",
+        "limitations": ["OpG"]
+    },
+    "feat-the_wind_carries": {
+        "cost": 1,
+        "description": "Target Friendly Bǎi Qiān gains Lightfooted and gains an Air Token until the End Phase.",
+        "name": "The Wind Carries",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Active",
+        "references": ["trait-lightfooted"]
+    },
+    "feat-heavy_blow": {
+        "cost": 1,
+        "description": "This model gains Strong [Melee] for the next Damage Roll.",
+        "name": "Heavy Blow",
+        "subject": "Personal",
+        "timing": "Active",
+        "references": ["trait-strong"]
+    },
+    "feat-duty_in_stone": {
+        "cost": 1,
+        "description": "This model gains an Activation Counter.",
+        "name": "Duty in Stone",
+        "subject": "Personal",
+        "timing": "Instant",
+        "limitations": ["OpT"]
+    },
+    "feat-implacable_service": {
+        "cost": 3,
+        "description": "This model gains Durable and Endurance until the end of the current activation.",
+        "name": "Implacable Service",
+        "subject": "Personal",
+        "timing": "Instant",
+        "references": ["trait-durable", "trait-endurance"]
     }
 }
