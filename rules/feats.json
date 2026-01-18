@@ -187,15 +187,13 @@
     },
     "feat-apparition": {
         "cost": 2,
-        "description": "Place this model within 2\" of its current location.\nThis Ki Feat can only be used once per activation.",
-        "limitations": [
-            "OpA"
-        ],
+        "description": "Place this model within 2” of its current location.\nThis model may use this Ki Feat once each time you are the Active player.",
+        "limitations": [],
         "name": "Apparition",
-        "revision": 0,
+        "revision": 1,
         "subject": "Personal",
         "timing": "Active",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-araneaen_seduction": {
         "cost": 2,
@@ -452,16 +450,16 @@
     },
     "feat-blessing_of_the_kami": {
         "cost": 2,
-        "description": "Target Friendly Faction, non-Soulless, non-Insignificant model gains a Virtue Token.",
+        "description": "Target Friendly Gorilla or Faction model that is not Soulless or Insignificant.\nThat model gains a Virtue Token.",
         "limitations": [
             "noBtB"
         ],
         "name": "Blessing of the Kami",
-        "range": 12,
-        "revision": 0,
+        "range": 6,
+        "revision": 1,
         "subject": "Target",
         "timing": "Simple",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-blizzard": {
         "cost": 2,
@@ -592,14 +590,16 @@
     },
     "feat-burden": {
         "cost": 1,
-        "description": "Transfer a Shame Token from Target Shamed model to this model.",
+        "description": "Transfer a Shame Token from Target Friendly model to this model.",
         "limitations": [
             "OpT"
         ],
         "name": "Burden",
-        "range": 8,
+        "range": 6,
         "subject": "Target",
-        "timing": "Simple"
+        "timing": "Simple",
+        "revision": 1,
+        "updated": "2026-01"
     },
     "feat-burden_on_society": {
         "cost": 2,
@@ -791,23 +791,23 @@
         ],
         "name": "Cleansing",
         "range": "X",
-        "revision": 0,
+        "revision": 1,
         "subject": "Pulse",
-        "timing": "Complex",
-        "updated": ""
+        "timing": "Simple",
+        "updated": "2026-01"
     },
     "feat-cleansing_flames": {
         "cost": 3,
-        "description": "Remove all Berserk, Blind, Controlled, Poison, and Spirit Block Markers from models in the Pulse and each model gains a Fire (1) Marker.",
+        "description": "Remove all Berserk, Blind, Controlled, Poison, and Spirit Block Markers from models in the Pulse and each model gains a Fire (1) Marker.\nRemove all Destructible Terrain in the Pulse.\nThis is a Cleansing Effect.",
         "name": "Cleansing Flames",
         "range": 6,
         "references": [
             "trait-fire"
         ],
-        "revision": 0,
+        "revision": 1,
         "subject": "Pulse",
-        "timing": "Complex",
-        "updated": ""
+        "timing": "Simple",
+        "updated": "2026-01"
     },
     "feat-cleave": {
         "cost": 2,
@@ -897,17 +897,19 @@
     },
     "feat-come_join_us": {
         "cost": 1,
-        "description": "During an Enemy model's activation in which it enters BtB with this model, that Enemy model gains a Control Marker.\nNo Melee Exchange takes place, this model does not lose an Activation Counter.\nThis is a Trap Effect.",
+        "description": "When an Enemy model enters BtB with this model, no Melee Exchange takes place; this model does not lose an Activation Counter.\nAfter the Activation is complete, that Enemy model gains a Control Marker.\nThis is a Trap Effect.",
         "limitations": [
             "OpT"
         ],
-        "name": "\"Come, Join Us\"",
+        "name": "\"Come, Join Us!\"",
         "range": "BtB",
         "references": [
             "state-controlled"
         ],
         "subject": "Target",
-        "timing": "Instant"
+        "timing": "Instant",
+        "revision": 1,
+        "updated": "2026-01"
     },
     "feat-conditioning": {
         "cost": 1,
@@ -1140,14 +1142,16 @@
     },
     "feat-daimyos_blessing": {
         "cost": 3,
-        "description": "Friendly Faction models in the Pulse gain +1 to their Melee Pool or Ranged Pool until the End Phase.",
+        "description": "Choose Melee Pool or Ranged Pool.\nWhile within the Aura, Friendly Faction models increase the chosen Pool by one.",
         "limitations": [
             "noBtB"
         ],
         "name": "Daimyo's Blessing",
         "range": 6,
-        "subject": "Pulse",
-        "timing": "Simple"
+        "subject": "Aura",
+        "timing": "Simple",
+        "revision": 1,
+        "updated": "2026-01"
     },
     "feat-dance_of_dragons": {
         "cost": 3,
@@ -1328,16 +1332,17 @@
         "updated": "before 2022-11"
     },
     "feat-destinys_fear": {
-        "cost": 5,
-        "description": "Roll a number of D6 equal to the number of Friendly Kumo models in play.\nReroll 1s and dice with the same value until all dice have unique values.\nUntil the End Phase Poisoned Enemy models consider any dice they roll that match those rolled for this feat to be a value of 1.",
+        "cost": 4,
+        "description": "Until the End Phase Poisoned Enemy models in the Aura consider any test dice results of 2 to be a value of 1.\nPoisoned Enemy Models that are within Webbed Ground Terrain also treat values of 3 as a value of 1.",
         "limitations": [
-            "OpT"
+            "noBtB"
         ],
         "name": "Destiny's Fear",
-        "revision": 0,
-        "subject": "Special",
+        "revision": 1,
+        "subject": "Aura",
+        "range": "∞",
         "timing": "Simple",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-detect": {
         "cost": 2,
@@ -1674,12 +1679,13 @@
     },
     "feat-enliven": {
         "cost": 1,
-        "description": "This model loses Slow until the end of the current activation.",
+        "description": "Target model loses Slow until the end of the current activation.",
         "name": "Enliven",
-        "revision": 0,
-        "subject": "Personal",
+        "revision": 1,
+        "subject": "Target",
+        "range": 6,
         "timing": "Active",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-enmity": {
         "cost": 2,
@@ -2153,13 +2159,13 @@
     },
     "feat-foresight": {
         "cost": 4,
-        "description": "After the dice for a Melee Exchange in the Pulse have been rolled and final results determined, you may reallocate Melee dice, choose a different Special Attack or Defence and both players reroll.The Opponent must keep the same dice allocation and Special Attack or Defence. Any Ki Feats used are still in effect.",
+        "description": "After the dice for a Melee Exchange in the Pulse have been rolled and final results determined, you may reallocate Melee dice, choose a different Special Attack or Defence and both players re-test.\nThe Opponent must keep the same dice allocation and Special Attack or Defence.\nAny Ki Feats used are still in effect.",
         "name": "Foresight",
         "range": 3,
-        "revision": 0,
+        "revision": 1,
         "subject": "Pulse",
         "timing": "Instant",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-forestall": {
         "cost": 2,
@@ -2249,25 +2255,25 @@
     },
     "feat-frenzy": {
         "cost": 2,
-        "description": "Add X additional attack dice to each exchange when using Split Attack until the End Phase.\nX is equal to the number of Enemy models in BtB with this model.",
+        "description": "While this model is using the Split Attack trait to resolve a Melee Exchange with two or more Enemy models, add X additional Attack dice to each Melee Exchange until the end of the current Activation.\nX is equal to the number of Enemy models in BtB with this model.",
         "limitations": [
             "OpT"
         ],
         "name": "Frenzy",
-        "revision": 0,
+        "revision": 1,
         "subject": "Personal",
         "timing": "Active",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-fresh_meat": {
         "cost": 1,
-        "description": "Target Friendly Kairai loses Slow until the End Phase.",
+        "description": "Target Friendly Kairai gains Jump Up and loses Slow and Aloof until the End Phase.",
         "name": "Fresh Meat",
         "range": 6,
-        "revision": 0,
+        "revision": 1,
         "subject": "Target",
         "timing": "Active",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-from_below...": {
         "cost": 6,
@@ -2636,16 +2642,16 @@
     },
     "feat-heed_my_word": {
         "cost": 2,
-        "description": "Perform a Walk with the Target model. If the Target model is an Enemy, you must first succeed in an Opposed Ki Test with the Target model.",
+        "description": "Perform a Walk with the Target model. This model may not Target itself.\nIf the Target model is an Enemy, you must first succeed in an Opposed Ki Test with the Target model.",
         "limitations": [
             "noBtB"
         ],
         "name": "Heed My Word",
         "range": 6,
-        "revision": 0,
+        "revision": 1,
         "subject": "Target",
         "timing": "Simple",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-here_boy!": {
         "cost": 2,
@@ -2796,18 +2802,19 @@
     },
     "feat-icy_veins": {
         "cost": 2,
-        "description": "Target model gains Fearless, Durable [Ranged], and Slow until the End Phase.\nIf Target is an Enemy, you must succeed in an Opposed Ki Test.\nThis is considered a Blizzard Effect.",
+        "description": "Target model gains Fearless, Durable [Ranged], Immune [Bleed], and Slow until the End Phase.\nIf Target is an Enemy, you must succeed in an Opposed Ki Test.\nThis is considered a Blizzard Effect.",
         "name": "Icy Veins",
         "range": 8,
         "references": [
             "trait-durable",
             "trait-fearless",
-            "trait-slow"
+            "trait-slow",
+            "trait-immune"
         ],
-        "revision": 1,
+        "revision": 2,
         "subject": "Target",
         "timing": "Active",
-        "updated": "2025-02"
+        "updated": "2026-01"
     },
     "feat-idolise": {
         "cost": 2,
@@ -3251,16 +3258,16 @@
     },
     "feat-kiss_of_the_rose": {
         "cost": 1,
-        "description": "During a non-Soulless, Enemy model's activation in which it enters BtB with this model, that Enemy model gains a Control Marker.\nNo Melee Exchange takes place, this model does not lose an Activation Counter.",
+        "description": "When an Enemy model enters BtB with this model, no Melee Exchange takes place; this model does not lose an Activation Counter.\nAfter the Activation is complete, that Enemy model gains a Control Marker.\nThis is a Trap Effect.",
         "limitations": [
             "OpT"
         ],
         "name": "Kiss of the Rose",
         "range": "BtB",
-        "revision": 2,
-        "subject": "Target",
+        "revision": 3,
+        "subject": "Personal",
         "timing": "Instant",
-        "updated": "2022-12"
+        "updated": "2026-01"
     },
     "feat-kote-men": {
         "cost": 2,
@@ -3338,10 +3345,10 @@
         "name": "Look into the Void",
         "opposed": true,
         "range": 8,
-        "revision": 0,
+        "revision": 1,
         "subject": "Target",
-        "timing": "Simple",
-        "updated": ""
+        "timing": "Active",
+        "updated": "2026-01"
     },
     "feat-lost_in_the_crowd": {
         "cost": 1,
@@ -3598,10 +3605,10 @@
         ],
         "name": "Mirage",
         "opposed": true,
-        "revision": 0,
+        "revision": 1,
         "subject": "Special",
         "timing": "Instant",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-misdirection": {
         "cost": 2,
@@ -3822,7 +3829,7 @@
     },
     "feat-oppressed_shomyo": {
         "cost": 3,
-        "description": "Friendly models in the Aura gain the Strong Trait.",
+        "description": "Friendly models in the Aura gain the Strong and Lightfooted Traits.",
         "limitations": [
             "noBtB"
         ],
@@ -3832,7 +3839,9 @@
             "trait-strong"
         ],
         "subject": "Aura",
-        "timing": "Complex"
+        "timing": "Complex",
+        "revision": 1,
+        "updated": "2026-01"
     },
     "feat-orochis_prayer": {
         "cost": 2,
@@ -3979,15 +3988,15 @@
     },
     "feat-path_of_flowers": {
         "cost": 1,
-        "description": "When this model is Deployed from Flank, you may deploy it in the centre point of the battlefield.\nIf there is a model, objective, or terrain in the centre of the battlefield, deploy this model in BtB with any model, objective, or terrain of your choice, ignoring the usual Deployment restrictions.",
+        "description": "When this model is Deployed from Flank, you may deploy it in the centre point of the battlefield.\nIf there is a model, objective, or terrain in the centre of the battlefield, deploy this model as close as possible to the centre point, ignoring the usual Enemy model BtB and ZoC Deployment restrictions.",
         "limitations": [
             "OpG"
         ],
         "name": "Path of Flowers",
-        "revision": 0,
+        "revision": 1,
         "subject": "Special",
         "timing": "Instant",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-pathfinder": {
         "cost": 2,
@@ -4549,12 +4558,12 @@
     },
     "feat-reiji_kinoko": {
         "cost": 1,
-        "description": "Replace this model with the Zoo model.\nRecover or Inflict Wounds so that Zoo's profile card has the same number of Wounds marked as Xi-Han.\nTransfer State Markers, Enhancements, and any Tokens to Zoo's profile card, Zoo gains an Impetuous Marker.\nWhen this effect expires in the End Phase, replace Zoo with Xi-Han.\nRecover or Inflict Wounds so that Xi-Han's profile has the same number of Wounds marked as Zoo.\nTransfer State Markers, Enhancements, and any tokens to Xi-Han's profile card.",
+        "description": "Replace this model with the Zoo model.\nRecover or Inflict Wounds so that Zoo's profile card has the same number of Wounds marked as Xi-Han.\nTransfer State Markers, Enhancements, and any Tokens to Zoo's profile card, Zoo gains an Impetuous Marker.\nWhen this effect expires in the End Phase, replace Zoo with Xi-Han.\nRecover or Inflict Wounds so that Xi-Han's profile has the same number of unmarked Wound boxes as Zoo, up to his maximum of 4.\nTransfer State Markers, Enhancements, and any tokens to Xi-Han's profile card.",
         "name": "Reiji Kinoko",
-        "revision": 1,
+        "revision": 2,
         "subject": "Personal",
         "timing": "Active",
-        "updated": "before 2022-11"
+        "updated": "2026-01"
     },
     "feat-rend": {
         "cost": 1,
@@ -4797,14 +4806,16 @@
     },
     "feat-scorn_stone": {
         "cost": "1",
-        "description": "Transfer a Shame Token from this model to Target model.",
+        "description": "Transfer any number of Shame Tokens from this model to other Friendly models in the Pulse.",
         "limitations": [
             "OpT"
         ],
         "name": "Scorn Stone",
-        "range": "8",
-        "subject": "Target",
-        "timing": "Simple"
+        "range": 6,
+        "subject": "Pulse",
+        "timing": "Simple",
+        "revision": 1,
+        "updated": "2026-01"
     },
     "feat-scuttle": {
         "cost": 2,
@@ -5178,15 +5189,16 @@
     },
     "feat-slice": {
         "cost": 3,
-        "description": "Until the end of this activation, this model's Kama weapon gains Bleed (1/3) while in a Melee Exchange with a Surprised Enemy model.",
+        "description": "Until the end of this activation, this model's Kama Edge weapon gains Bleed (1/3).",
         "name": "Slice",
+        "limitations":["OpT"],
         "references": [
             "trait-bleed"
         ],
-        "revision": 0,
+        "revision": 1,
         "subject": "Personal",
         "timing": "Active",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-slippery": {
         "cost": 1,
@@ -5411,29 +5423,29 @@
     },
     "feat-spirit_sprint": {
         "cost": 1,
-        "description": "When this model Runs it gains Intangible during its movement.",
+        "description": "This model may declare a Run while in BtB with an Enemy model.\nWhen this model declares a run it gains Intangible.",
         "name": "Spirit Sprint",
         "references": [
             "trait-intangible"
         ],
-        "revision": 0,
+        "revision": 1,
         "subject": "Personal",
         "timing": "Active",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-spirit_ward": {
         "cost": 2,
-        "description": "While within this Aura, Kami and Asura models cannot move closer to this model.",
+        "description": "While within this Aura, Kami, Gashadokuro, and Asura models cannot move closer to this model.",
         "limitations": [
             "noBtB",
             "noWalk"
         ],
         "name": "Spirit Ward",
         "range": 6,
-        "revision": 0,
+        "revision": 1,
         "subject": "Aura",
         "timing": "Complex",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-spiritual_conduit": {
         "cost": 1,
@@ -5705,12 +5717,12 @@
     },
     "feat-surge": {
         "cost": 2,
-        "description": "Call Lightning Ranged Attacks gain +1 Strength and Slam Attack (0) until the current activation is complete.",
+        "description": "This model's next Call Lightning Ranged Attacks gain +1 Strength and Slam Attack (0).",
         "name": "Surge",
-        "revision": 0,
+        "revision": 1,
         "subject": "Special",
         "timing": "Active",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-suri-ashi": {
         "cost": 2,
@@ -5723,14 +5735,16 @@
     },
     "feat-swallow_up": {
         "cost": 3,
-        "description": "Use this Ki Feat at any time except during a model's activation.\nPlace the Target model Elsewhere. Remove that model's Activation Counters.\nIn the End Phase, Place the affected model with 2\" of this model. If this is not possible, Place that model as close to this model as possible.\nIf the Ki Feat Targets an Enemy model you must Succeed in an Opposed Size Test.\nWhen this model is removed from play for any reason, first Place any affected models within 2\" of this model.",
+        "description": "Use this Ki Feat any time in the Main Phase except during a model’s Activation.\nPlace the Target Friendly model Elsewhere (this will then remove that model's Activation Counters).  In the End Phase, Place the affected Model within 2” of this model. If this is not possible, Place that model as close to this model as possible.\nWhen this model is removed from play for any reason, first place any affected models within 2” of this model.\n\nThis Ki feat may Target an Enemy model. Perform an Opposed Size Test, if Successful the Ki Feat is used as above, but on an Enemy model.  Once this Ki Feat is Successfully used on an Enemy model, it may not be used again on Enemy models for the rest of the game.\nAn Enemy VIM affected by this Ki Feat remains the VIM when returned to the Battlefield despite being removed to Elsewhere.",
         "limitations": [
             "OpT"
         ],
         "name": "Swallow Up",
         "range": 2,
         "subject": "Target",
-        "timing": "Instant"
+        "timing": "Instant",
+        "revision": 1,
+        "updated": "2026-01"
     },
     "feat-swallow_whole": {
         "cost": 5,
@@ -5755,16 +5769,16 @@
     },
     "feat-swift_executor": {
         "cost": 2,
-        "description": "This model loses Insignificant until the end of this activation.\nIf this model declares a Wait or Scenario Action, it may Walk a distance equal to its Move Statistic before or after the Action.",
+        "description": "This model loses Insignificant until the end of this activation.\nIf this model declares a Wait or Scenario Action this activation, it may Walk a distance equal to its Move Statistic before or after the Action.",
         "limitations": [
             "OpT",
             "noBtB"
         ],
         "name": "Swift Executor",
-        "revision": 1,
+        "revision": 2,
         "subject": "Personal",
         "timing": "Active",
-        "updated": "before 2022-11"
+        "updated": "2026-01"
     },
     "feat-sworn_sisters": {
         "cost": 3,
@@ -6525,12 +6539,12 @@
     },
     "feat-vivacity": {
         "cost": 3,
-        "description": "Add an activation counter to This Model's Card.",
+        "description": "This model gains two Activation Counters.",
         "name": "Vivacity",
-        "revision": 1,
+        "revision": 2,
         "subject": "Special",
-        "timing": "Active",
-        "updated": "before 2022-11"
+        "timing": "Simple",
+        "updated": "2026-01"
     },
     "feat-voice_of_the_wind": {
         "cost": 2,
@@ -6767,13 +6781,13 @@
     },
     "feat-wing_buffet": {
         "cost": 2,
-        "description": "All models in the Pulse's area of effect must succeed in a Size Challenge Test (6) or Walk D3\" directly away from this model.",
+        "description": "All other models in the Pulse's area of effect must succeed in a Size Challenge Test (6) or be moved 2” directly away from this model. Friendly models with Cloudwalk may choose to Succeed or Fail the Test.",
         "name": "Wing Buffet",
         "range": "BtB",
-        "revision": 0,
+        "revision": 1,
         "subject": "Pulse",
         "timing": "Active",
-        "updated": ""
+        "updated": "2026-01"
     },
     "feat-wrestle": {
         "cost": 2,
@@ -6833,12 +6847,14 @@
         "timing": "Active"
     },
     "feat-hari_kiri": {
-        "cost": 4,
-        "description": "Remove this model from play.\nFor each unmarked Damage Box on this model, remove a Shame Token from another model.",
+        "cost": 1,
+        "description": "Use this Ki Feat any time except during a model’s Activation.\nRemove this model from play.  For each unmarked Damage Box on this model, remove a Shame Token from another Friendly model.",
         "name": "Hari-Kiri",
         "subject": "Personal",
         "timing": "Instant",
-        "limitations": ["noBtB"]
+        "limitations": ["noBtB"],
+        "revision": 1,
+        "updated": "2026-01"
     },
     "feat-loyal_to_the_dragon": {
         "cost": 2,
