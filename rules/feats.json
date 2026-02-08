@@ -7202,5 +7202,31 @@
         "subject": "Personal",
         "timing": "Instant",
         "references": ["trait-durable", "trait-endurance"]
+    },
+    "feat-from_the_ashes": {
+        "cost": 1,
+        "description": "When this model is Killed or removed from play, instead place this model Elsewhere and remove all State Markers, Tokens, Counters, and game effects (leave Enhancements attached).\nMark all but one Wound Box. This model gains Flank and uses those rules to return to play.",
+        "name": "From the Ashes",
+        "subject": "Personal",
+        "timing": "Instant",
+        "references": ["trait-flank"],
+        "limitations": ["OpG"]
+    },
+    "feat-nan_fang_zhu_que": {
+        "cost": 1,
+        "description": "This model's Melee Weapons gain Fire (1/1) and +1 Strength until the current activation is complete.",
+        "name": "Nán Fāng Zhū Què",
+        "subject": "Personal",
+        "timing": "Active",
+        "references": ["trait-fire"],
+        "limitations": ["OpT"]
+    },
+    "feat-solar_flare": {
+        "cost": 0,
+        "description": "This model gains one Ki Token for each Bǎi Qiān in the Pulse.\nThen it must Channel one Ki Token to each Bǎi Qiān in the Pulse, it may Channel more than once this activation.\nAny remaining Ki Tokens gained by this Ki Feat on this model are then removed.\nAny Blizzard, Darkness or Breath of Yurei effects end.\nThis Warband may only use this Ki Feat once per game.",
+        "name": "Solar Flare",
+        "subject": "Pulse",
+        "range": 6,
+        "timing": "Simple"
     }
 }
