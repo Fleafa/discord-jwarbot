@@ -7215,7 +7215,7 @@
     "feat-nan_fang_zhu_que": {
         "cost": 1,
         "description": "This model's Melee Weapons gain Fire (1/1) and +1 Strength until the current activation is complete.",
-        "name": "Nán Fāng Zhū Què",
+        "name": "Nan Fang Zhu Que",
         "subject": "Personal",
         "timing": "Active",
         "references": ["trait-fire"],
