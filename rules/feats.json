@@ -7228,5 +7228,37 @@
         "subject": "Pulse",
         "range": 6,
         "timing": "Simple"
+    },
+    "feat-quicksilver": {
+        "cost": 1,
+        "description": "Friendly [Element: Metal] Kami lose Insignificant until the End Phase.",
+        "name": "Quicksilver",
+        "subject": "Special",
+        "timing": "Active"
+    },
+    "feat-sniper_shot": {
+        "cost": 1,
+        "description": "The next time this model performs a ranged attack the Challenge Number is not modified by Cover. This effect does not ignore Camouflage.\nThis attack automatically succeeds the Range Challenge Test for models in BtB.",
+        "name": "Sniper Shot",
+        "subject": "Personal",
+        "timing": "Active",
+        "limitations": ["noBtB", "OpG"]
+    },
+    "feat-get_the_dogs": {
+        "cost": 9,
+        "description": "Summon and Deploy a Friendly Kaihei model (this may not be an Alpha) within 2” of this model.\nIf there are no Kaihei Wound Tracks available this feat cannot be used.\nThis Warband may only use this Ki Feat once per turn.",
+        "name": "Get the Dogs!",
+        "subject": "Special",
+        "timing": "Active",
+        "limitations": ["noBtB"]
+    },
+    "feat-rend_reality": {
+        "cost": "Rank 1",
+        "description": "Remove a Void Counter from your Blessings of the Void Communal Card.\nIf you do, perform an Opposed Ki Test with the Target.\nIf Successful, place a Void Rift in BtB with the Target (ignoring the usual restrictions on terrain placement).",
+        "name": "Rend Reality",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Active",
+        "limitations": ["noBtB"]
     }
 }
