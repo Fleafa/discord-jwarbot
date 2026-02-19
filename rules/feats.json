@@ -7227,14 +7227,16 @@
         "name": "Solar Flare",
         "subject": "Pulse",
         "range": 6,
-        "timing": "Simple"
+        "timing": "Simple",
+        "references": ["trait-channel"]
     },
     "feat-quicksilver": {
         "cost": 1,
         "description": "Friendly [Element: Metal] Kami lose Insignificant until the End Phase.",
         "name": "Quicksilver",
         "subject": "Special",
-        "timing": "Active"
+        "timing": "Active",
+        "references": ["trait-insignificant"]
     },
     "feat-sniper_shot": {
         "cost": 1,
@@ -7260,5 +7262,71 @@
         "range": 6,
         "timing": "Active",
         "limitations": ["noBtB"]
+    },
+    "feat-rat_race": {
+        "cost": 1,
+        "description": "Target Friendly Rat model gains an Activation Counter and a Diseased Marker.",
+        "name": "Rat Race",
+        "subject": "Target",
+        "range": 4,
+        "timing": "Active",
+        "limitations": ["OpT"],
+        "references": ["state-diseased"]
+    },
+    "feat-psychic_disease": {
+        "cost": 3,
+        "opposed": true,
+        "description": "Target gains a Diseased Marker.\nSelect another Enemy model within 3” of the Target and repeat this Ki Feat, at no cost, on the new model; ignoring Range, LoS and Camouflage.\nContinue until an Opposed Ki roll is failed.\nNo model may be affected more than once by this Ki Feat in a Turn.\nIf the Enemy model is BtB with a Friendly Rat model, it may not benefit from Spirit or Resistance for this Opposed Ki Test.\nThe Target is always considered Surprised by this Ki Feat.",
+        "name": "Psychic Disease",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Complex",
+        "limitations": ["noBtB"],
+        "references": ["state-diseased","trait-camouflage"]
+    },
+    "feat-men_kote": {
+        "cost": 2,
+        "description": "This model gains Feint (1) until the current action is resolved.",
+        "name": "Men Kote",
+        "subject": "Personal",
+        "timing": "Instant",
+        "references": ["trait-feint"]
+    },
+    "feat-glacial_pace": {
+        "cost": 2,
+        "description": "Models in the Aura can only move using a Walk Action, Run Action, Melee Action, Disengage Action or Charge Action.\nKi Feats or other effects that would allow movement of models instead only allow a change of facing.",
+        "name": "Glacial Pace",
+        "subject": "Aura",
+        "range": "∞",
+        "timing": "Simple",
+        "limitations": ["noBtB", "OpG"]
+    },
+    "feat-focus_frenzy": {
+        "cost": ,
+        "opposed": true,
+        "description": "Target gains a Death Sentence Marker and a Bleeding (1) Marker.\nAfter this Action is resolved, if this model has at least one Activation Counter, you may become the Active Player again and activate this model (ignoring Impetuous Markers, Pass Tokens may not be used).",
+        "name": "Focus Frenzy",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Simple",
+        "references": ["state-bleeding","state-impetuous"]
+    },
+    "feat-rupture": {
+        "cost": 0,
+        "description": "Target model gains a Bleeding (0) Marker until the End Phase.",
+        "name": "Rupture",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Instant",
+        "limitations": ["OpT"],
+        "references": ["state-bleeding"]
+    },
+    "feat-hamaki": {
+        "cost": 1,
+        "description": "Remove all Berserk, Blinded, Death Sentence, On Fire, Frightened, Impetuous, Poisoned, Spirit Block and Stunned Markers from this model.",
+        "name": "Hamaki",
+        "subject": "Personal",
+        "timing": "Active",
+        "references": ["state-berserk","state-blinded","state-death_sentence","state-on_fire","state-frightened","state-impetuous","state-poisoned","state-spirit_block","state-stunned"]
     }
 }
