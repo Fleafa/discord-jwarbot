@@ -7302,7 +7302,7 @@
         "limitations": ["noBtB", "OpG"]
     },
     "feat-focus_frenzy": {
-        "cost": ,
+        "cost": 3,
         "opposed": true,
         "description": "Target gains a Death Sentence Marker and a Bleeding (1) Marker.\nAfter this Action is resolved, if this model has at least one Activation Counter, you may become the Active Player again and activate this model (ignoring Impetuous Markers, Pass Tokens may not be used).",
         "name": "Focus Frenzy",
