@@ -38,8 +38,7 @@
         "limitations": [
             "OpT"
         ],
-        "name": "Acrobatics",
-        "references": [
+        "name": "Acrobatics","references": [
             "trait-agile",
             "trait-defensive",
             "trait-dodge"
@@ -187,7 +186,7 @@
     },
     "feat-apparition": {
         "cost": 2,
-        "description": "Place this model within 2” of its current location.\nThis model may use this Ki Feat once each time you are the Active player.",
+        "description": "Place this model within 2\" of its current location.\nThis model may use this Ki Feat once each time you are the Active player.",
         "limitations": [],
         "name": "Apparition",
         "revision": 1,
@@ -1205,7 +1204,7 @@
     },
     "feat-dark_summons": {
         "cost": 4,
-        "description": "Summon and Deploy any Oni or Onisho model that was not recruited into the Warband within 3” of this model with 2 Darkness Counters and 2 Ki Tokens on it.\nMark wound boxes until the Summoned model has 7 unmarked boxes remaining.",
+        "description": "Summon and Deploy any Oni or Onisho model that was not recruited into the Warband within 3\" of this model with 2 Darkness Counters and 2 Ki Tokens on it.\nMark wound boxes until the Summoned model has 7 unmarked boxes remaining.",
         "limitations": [
             "OpG"
         ],
@@ -1596,7 +1595,7 @@
     },
     "feat-embrace": {
         "cost": 3,
-        "description": "Make an opposed Melee Pool Test against a Target Enemy Immobilised or Held model.\nIf Successful, the Target gains a Control Marker.",
+        "description": "Make an Opposed Melee Pool Test against a Target Enemy Immobilised or Held model.\nIf successful, the Target gains a Control Marker.\nThe Melee Exchange ends as soon as the Enemy model is Controlled. This ends the Activation, if any, remove used Activation Counters along with one Control Marker.",
         "limitations": [
             "OpT"
         ],
@@ -1608,7 +1607,9 @@
             "state-immobilised"
         ],
         "subject": "Target",
-        "timing": "Active"
+        "timing": "Active",
+        "revision": 1,
+        "updated": "2026-04"
     },
     "feat-empower": {
         "cost": 2,
@@ -4689,7 +4690,7 @@
     },
     "feat-ring_of_fire": {
         "cost": 2,
-        "description": "Centre a 4” Aura on the Battlefield Centre Point instead of on this model.\nModels in the Aura, and models in BtB with models in the Aura, gain Immune [Held], lose Defensive and cannot allocate dice to Defence in Melee Exchanges.",
+        "description": "Centre a 4\" Aura on the Battlefield Centre Point instead of on this model.\nModels in the Aura, and models in BtB with models in the Aura, gain Immune [Held], lose Defensive and cannot allocate dice to Defence in Melee Exchanges.",
         "limitations": [
             "OpG",
             "noBtB"
@@ -5214,7 +5215,7 @@
     },
     "feat-slipstream": {
         "cost": 2,
-        "description": "When this model Runs this activation, it may Move through other Friendly models.\nIt may not end its Move occupying the same area as an Impassable Terrain Element or another model.\nAny model moved through can Move 1”.",
+        "description": "When this model Runs this activation, it may Move through other Friendly models.\nIt may not end its Move occupying the same area as an Impassable Terrain Element or another model.\nAny model moved through can Move 1\".",
         "limitations": [
             "OpT",
             "noBtB"
@@ -5735,7 +5736,7 @@
     },
     "feat-swallow_up": {
         "cost": 3,
-        "description": "Use this Ki Feat any time in the Main Phase except during a model’s Activation.\nPlace the Target Friendly model Elsewhere (this will then remove that model's Activation Counters).  In the End Phase, Place the affected Model within 2” of this model. If this is not possible, Place that model as close to this model as possible.\nWhen this model is removed from play for any reason, first place any affected models within 2” of this model.\n\nThis Ki feat may Target an Enemy model. Perform an Opposed Size Test, if Successful the Ki Feat is used as above, but on an Enemy model.  Once this Ki Feat is Successfully used on an Enemy model, it may not be used again on Enemy models for the rest of the game.\nAn Enemy VIM affected by this Ki Feat remains the VIM when returned to the Battlefield despite being removed to Elsewhere.",
+        "description": "Use this Ki Feat any time in the Main Phase except during a model’s Activation.\nPlace the Target Friendly model Elsewhere (this will then remove that model's Activation Counters).  In the End Phase, Place the affected Model within 2\" of this model. If this is not possible, Place that model as close to this model as possible.\nWhen this model is removed from play for any reason, first place any affected models within 2\" of this model.\n\nThis Ki feat may Target an Enemy model. Perform an Opposed Size Test, if Successful the Ki Feat is used as above, but on an Enemy model.  Once this Ki Feat is Successfully used on an Enemy model, it may not be used again on Enemy models for the rest of the game.\nAn Enemy VIM affected by this Ki Feat remains the VIM when returned to the Battlefield despite being removed to Elsewhere.",
         "limitations": [
             "OpT"
         ],
@@ -6355,12 +6356,12 @@
     },
     "feat-uncloak": {
         "cost": 2,
-        "description": "Use this feat in the Starting Phase or when this model is targeted by an enemy effect or a model declares an action or resolves an effect that will bring it into BtB with this model while this model is undamaged.\n\nReplace this model with a Loyal Samurai you own that is currently Elsewhere, and place this model Elsewhere.\nThis model gains the Flank trait and returns to play using those rules.\nIf the Enemy Model initiated a Melee Exchange, it is now Surprised.\nTransfer State Markers, Activation Counters and any tokens to the Samurai's profile card.",
+        "description": "Use this Ki Feat in the Starting Phase or when this model is Targeted by an Enemy effect or an Enemy model declares an action or resolves an effect that will bring it into BtB with this model while this model is undamaged.\nReplace this model by Deploying a Loyal Samurai you own that is currently Elsewhere, and place this model Elsewhere. This model gains the Flank trait and returns to play using those rules. Any action or effect continues against that model.\nThe Enemy model is now Surprised. Transfer State Markers, Activation Counters and any Tokens to the Samurai’s profile card.",
         "name": "Uncloak",
-        "revision": 1,
+        "revision": 2,
         "subject": "Personal",
         "timing": "Instant",
-        "updated": "before 2022-11"
+        "updated": "2026-04"
     },
     "feat-unholy_vitality": {
         "cost": 4,
@@ -6745,7 +6746,7 @@
     },
     "feat-whistling_shriek": {
         "cost": 2,
-        "description": "Centre an X” Pulse on the Target. Models in the Pulse lose Sixth Sense.\nX is equal to the number of whole inches in the range to the Target.",
+        "description": "Centre an X\" Pulse on the Target. Models in the Pulse lose Sixth Sense.\nX is equal to the number of whole inches in the range to the Target.",
         "limitations": [
             "noBtB"
         ],
@@ -6781,7 +6782,7 @@
     },
     "feat-wing_buffet": {
         "cost": 2,
-        "description": "All other models in the Pulse's area of effect must succeed in a Size Challenge Test (6) or be moved 2” directly away from this model. Friendly models with Cloudwalk may choose to Succeed or Fail the Test.",
+        "description": "All other models in the Pulse's area of effect must succeed in a Size Challenge Test (6) or be moved 2\" directly away from this model. Friendly models with Cloudwalk may choose to Succeed or Fail the Test.",
         "name": "Wing Buffet",
         "range": "BtB",
         "revision": 1,
@@ -7248,7 +7249,7 @@
     },
     "feat-get_the_dogs": {
         "cost": 9,
-        "description": "Summon and Deploy a Friendly Kaihei model (this may not be an Alpha) within 2” of this model.\nIf there are no Kaihei Wound Tracks available this feat cannot be used.\nThis Warband may only use this Ki Feat once per turn.",
+        "description": "Summon and Deploy a Friendly Kaihei model (this may not be an Alpha) within 2\" of this model.\nIf there are no Kaihei Wound Tracks available this feat cannot be used.\nThis Warband may only use this Ki Feat once per turn.",
         "name": "Get the Dogs!",
         "subject": "Special",
         "timing": "Active",
@@ -7276,7 +7277,7 @@
     "feat-psychic_disease": {
         "cost": 3,
         "opposed": true,
-        "description": "Target gains a Diseased Marker.\nSelect another Enemy model within 3” of the Target and repeat this Ki Feat, at no cost, on the new model; ignoring Range, LoS and Camouflage.\nContinue until an Opposed Ki roll is failed.\nNo model may be affected more than once by this Ki Feat in a Turn.\nIf the Enemy model is BtB with a Friendly Rat model, it may not benefit from Spirit or Resistance for this Opposed Ki Test.\nThe Target is always considered Surprised by this Ki Feat.",
+        "description": "Target gains a Diseased Marker.\nSelect another Enemy model within 3\" of the Target and repeat this Ki Feat, at no cost, on the new model; ignoring Range, LoS and Camouflage.\nContinue until an Opposed Ki roll is failed.\nNo model may be affected more than once by this Ki Feat in a Turn.\nIf the Enemy model is BtB with a Friendly Rat model, it may not benefit from Spirit or Resistance for this Opposed Ki Test.\nThe Target is always considered Surprised by this Ki Feat.",
         "name": "Psychic Disease",
         "subject": "Target",
         "range": 6,
@@ -7328,5 +7329,93 @@
         "subject": "Personal",
         "timing": "Active",
         "references": ["state-berserk","state-blinded","state-death_sentence","state-on_fire","state-frightened","state-impetuous","state-poisoned","state-spirit_block","state-stunned"]
+    },
+    "feat-spiritual_poison": {
+        "cost": 3,
+        "description": "When an Enemy model uses a Ki Feat within the Aura, that model gains a Poisoned (2) Marker.",
+        "name": "Spiritual Poison",
+        "subject": "Aura",
+        "range": 6,
+        "timing": "Active",
+        "limitations": ["noBtB", "OpT"],
+        "references": ["state-poisoned"]
+    },
+    "feat-five_venom_seal": {
+        "cost": "X",
+        "description": "Enemy models within the Pulse that have a Poisoned Marker gain a Poisoned (X) Marker and a Spirit Block Marker.\nX may not be greater than 3.",
+        "name": "Five Venom Seal",
+        "subject": "Pulse",
+        "range": 6,
+        "timing": "Complex",
+        "limitations": ["noBtB", "OpG"],
+        "references": ["state-poisoned", "state-spirit_block"]
+    },
+    "feat-strike_as_one": {
+        "cost": 1,
+        "description": "Target Friendly Acolyte and all Friendly models that share that profile card gain [[Group]] until the end of the current activation.",
+        "name": "Strike as One",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Active",
+        "limitations": ["OpT"],
+        "references": ["trait_group"]
+    },
+    "feat-serpents_nest": {
+        "cost": 4,
+        "description": "This model's Controller chooses up to three other Friendly Acolytes within the Pulse's area of effect.\nThose models immediately perform a Walk up to their Move stat in inches.",
+        "name": "Serpent's Nest",
+        "subject": "Pulse",
+        "range": 4,
+        "timing": "Instant",
+        "limitations": ["OpG"]
+    },
+    "feat-ophidian_coil": {
+        "cost": 3,
+        "description": "Perform an Opposed Move Test against Target Enemy model.\nIf this model is successful, place it in BtB with the Enemy model and this model applies a Held Marker to the Enemy model.\nThe range of this Ki Feat is equal to this model's Move statistic.",
+        "name": "Ophidian Coil",
+        "subject": "Target",
+        "range": "Special",
+        "timing": "Simple",
+        "limitations": ["noBtB", "noWalk"],
+        "references": ["state-held"]
+    },
+    "feat-curse_of_retribution": {
+        "cost": 2,
+        "opposed": true,
+        "description": "Remove all Berserk, Bleeding, Blind, On Fire, Impetuous, Poisoned, or Stunned Markers from Friendly models within 3\" and place them on the Target model.",
+        "name": "Curse of Retribution",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Simple",
+        "references": ["state-berserk", "state-blind", "state-bleeding", "state-on_fire", "state-impetuous", "state-poisoned", "state-stunned"]
+    },
+    "feat-underhanded": {
+        "cost": "X+1",
+        "description": "At the start of a Melee Exchange, if a Friendly model is providing a Melee Assist penalty to the Enemy model, the Enemy model gains a Poisoned (X) Marker.\nX cannot be greater than 2.\nThis Ki Feat may only be used once per Melee Exchange.",
+        "name": "Underhanded",
+        "subject": "Target",
+        "range": "BtB",
+        "timing": "Active",
+        "references": ["state-poisoned"]
+    },
+    "feat-blood_to_venom": {
+        "cost": "X",
+        "opposed": true,
+        "description": "Target Enemy model gains X Poisoned (1) Markers.\nX cannot be greater than 3.",
+        "name": "Blood to Venom",
+        "subject": "Target",
+        "range": 8,
+        "timing": "Simple",
+        "limitations": ["noBtB"],
+        "references": ["state-poisoned"]
+    },
+    "feat-mambas_stride": {
+        "cost": 1,
+        "description": "Target Friendly Acolyte gains Move Boost 2 until the End Phase.",
+        "name": "Mamba's Stride",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Active",
+        "limitations": ["OpT"]
     }
 }
