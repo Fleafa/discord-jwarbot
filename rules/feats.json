@@ -7468,5 +7468,58 @@
         "range": 6,
         "timing": "Active",
         "limitations": ["OpT"]
+    },
+    "feat-adrenaline_rush": {
+        "cost": "2",
+        "description": "When this model charges it gains Intangible, loses Unstable and its Nagamaki Melee Weapon gains Unblockable (1) until the end of the current activation.\nIn the Start Phase of the next turn this model gains an Impetuous Marker.",
+        "name": "Adrenaline Rush",
+        "subject": "Personal",
+        "timing": "Active",
+        "limitations": ["OpT","noBtB"],
+        "references": ["trait-intangible", "trait-unblockable", "trait-unstable", "state-impetuous"]
+    },
+    "feat-fade": {
+        "cost": "1",
+        "description": "Place this model Elsewhere.\nIt gains Flank and returns to play using those rules.\nThe table edge chosen to return on must be Friendly.",
+        "name": "Fade",
+        "subject": "Personal",
+        "timing": "Simple",
+        "limitations": ["OpG"]
+    },
+    "feat-do_and_die": {
+        "cost": "2",
+        "description": "Target Other Friendly Samurai model gains Co-ordinated Attack [Samurai] until the current action is resolved.",
+        "name": "Do and Die",
+        "subject": "Target",
+        "range": 6,
+        "timing": "Active",
+        "limitations": ["OpT"],
+        "references": ["trait-co-ordinated_attack"]
+    },
+    "feat-mouth_of_jigoku": {
+        "cost": "3",
+        "description": "When this model Charges, it may move through models and ignore ZoC.\nEach model that you own moved through may be placed in BtB with the Charge Target if possible.\nModels Placed in this way may remove any Control, Disease, Fire, Poison, Prone or Spirit Block Markers.",
+        "name": "Mouth of Jigoku",
+        "subject": "Special",
+        "timing": "Active",
+        "limitations": ["OpG"],
+        "references": ["state-controlled", "state-diseased", "state-on_fire", "state-poisoned", "state-prone", "state-spirit_block"]
+    },
+    "feat-zen_archery": {
+        "cost": "3",
+        "description": "After this model completes any Ranged Attack, this model makes another Ranged Attack, ignoring Reload Markers, at the same model.\nInstead of making a Ranged Attack Test, the Result is the same as the previous shot, compare the result to the Target Number and roll Damage as usual.",
+        "name": "Zen Archery",
+        "subject": "Personal",
+        "timing": "Active",
+        "limitations": ["OpG"]
+    },
+    "feat-honour_the_charge": {
+        "cost": "2",
+        "description": "When this model charges, it gains Intangible for the Charge Move.\nFor each Objective moved through during this Charge, you may change that Objective's alignment one degree (Enemy - Neutral - Friendly).",
+        "name": "Honour the Charge",
+        "subject": "Personal",
+        "timing": "Active",
+        "limitations": ["OpG"],
+        "references": ["trait-intangible"]
     }
 }
