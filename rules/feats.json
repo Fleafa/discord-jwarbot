@@ -7426,7 +7426,7 @@
         "timing": "Instant"
     },
     "feat-fly_high": {
-        "cost": "1",
+        "cost": 1,
         "description": "This Ki feat may only be used in the Main Phase.\nReplace this model with Mizuko, they are considered the same model for non-wound box transfer effects.\nPlace Shōgo-Ryu Elsewhere, transfer wound box effects to Shōgo-Ryu's profile card.",
         "name": "Fly High",
         "subject": "Special",
@@ -7434,7 +7434,7 @@
         "limitations": ["noBtB"]
     },
     "feat-fire_shield": {
-        "cost": "1",
+        "cost": 1,
         "description": "Until the End Phase, when Target model is successfully attacked in a Melee Exchange, after the activation is complete, the opposing model gains an On Fire (2) Marker.",
         "name": "Fire Shield",
         "subject": "Target",
@@ -7444,7 +7444,7 @@
         "references": ["state-on_fire"]
     },
     "feat-eight_petal_comet": {
-        "cost": "1",
+        "cost": 1,
         "description": "This Ki Feat may be used while Elsewhere. Use only in the Starting Phase.\nChoose one of the following:\n- If this model is Elsewhere it gains Flank and returns to play this turn using those rules.\n- Replace Mizuko with Mizuko & Shōgo-Ryu. They are considered the same model for non-Wound box transfer effects. Transfer wound box effects from Shōgo-Ryu to Mizuko & Shōgo-Ryu, remove Shōgo-Ryu from play. Leave marked Wound boxes on Mizuko's profile.",
         "name": "Eight Petal Comet",
         "subject": "Personal",
@@ -7452,7 +7452,7 @@
         "references": ["trait-flank"]
     },
     "feat-awakening": {
-        "cost": "4",
+        "cost": 4,
         "description": "Target Friendly Dragon model not affected by the Order Action this turn gains an Activation Counter.\nA model may only be affected by this Ki Feat once per turn from any source.\nThat model now counts as having been affected by the Order Action for the purpose of further Order Actions this turn.",
         "name": "Awakening",
         "subject": "Target",
@@ -7461,7 +7461,7 @@
         "limitations": ["OpT"]
     },
     "feat-object_of_devotion": {
-        "cost": "1",
+        "cost": 1,
         "description": "Target Friendly Shisai model gains a Virtue Token.",
         "name": "Object of Devotion",
         "subject": "Target",
@@ -7470,7 +7470,7 @@
         "limitations": ["OpT"]
     },
     "feat-adrenaline_rush": {
-        "cost": "2",
+        "cost": 2,
         "description": "When this model charges it gains Intangible, loses Unstable and its Nagamaki Melee Weapon gains Unblockable (1) until the end of the current activation.\nIn the Start Phase of the next turn this model gains an Impetuous Marker.",
         "name": "Adrenaline Rush",
         "subject": "Personal",
@@ -7479,7 +7479,7 @@
         "references": ["trait-intangible", "trait-unblockable", "trait-unstable", "state-impetuous"]
     },
     "feat-fade": {
-        "cost": "1",
+        "cost": 1,
         "description": "Place this model Elsewhere.\nIt gains Flank and returns to play using those rules.\nThe table edge chosen to return on must be Friendly.",
         "name": "Fade",
         "subject": "Personal",
@@ -7487,7 +7487,7 @@
         "limitations": ["OpG"]
     },
     "feat-do_and_die": {
-        "cost": "2",
+        "cost": 2,
         "description": "Target Other Friendly Samurai model gains Co-ordinated Attack [Samurai] until the current action is resolved.",
         "name": "Do and Die",
         "subject": "Target",
@@ -7497,7 +7497,7 @@
         "references": ["trait-co-ordinated_attack"]
     },
     "feat-mouth_of_jigoku": {
-        "cost": "3",
+        "cost": 3,
         "description": "When this model Charges, it may move through models and ignore ZoC.\nEach model that you own moved through may be placed in BtB with the Charge Target if possible.\nModels Placed in this way may remove any Control, Disease, Fire, Poison, Prone or Spirit Block Markers.",
         "name": "Mouth of Jigoku",
         "subject": "Special",
@@ -7506,7 +7506,7 @@
         "references": ["state-controlled", "state-diseased", "state-on_fire", "state-poisoned", "state-prone", "state-spirit_block"]
     },
     "feat-zen_archery": {
-        "cost": "3",
+        "cost": 3,
         "description": "After this model completes any Ranged Attack, this model makes another Ranged Attack, ignoring Reload Markers, at the same model.\nInstead of making a Ranged Attack Test, the Result is the same as the previous shot, compare the result to the Target Number and roll Damage as usual.",
         "name": "Zen Archery",
         "subject": "Personal",
@@ -7514,12 +7514,22 @@
         "limitations": ["OpG"]
     },
     "feat-honour_the_charge": {
-        "cost": "2",
+        "cost": 2,
         "description": "When this model charges, it gains Intangible for the Charge Move.\nFor each Objective moved through during this Charge, you may change that Objective's alignment one degree (Enemy - Neutral - Friendly).",
         "name": "Honour the Charge",
         "subject": "Personal",
         "timing": "Active",
         "limitations": ["OpG"],
         "references": ["trait-intangible"]
+    },
+    "feat-imperial_favour": {
+        "cost": 3,
+        "description": "Other Friendly non-Kami, non-Soulless models in the Aura when this Ki Feat is used gain 1 Ki Token.\nFriendly Imperial models in the Aura gain Bodyguard [Imperial ] (3\").",
+        "name": "Imperial Favour",
+        "subject": "Aura",
+        "range": 6,
+        "timing": "Simple",
+        "limitations": ["noBtB"],
+        "references": ["trait-bodyguard"]
     }
 }
