@@ -7540,5 +7540,32 @@
         "range": 9,
         "timing": "Instant",
         "references": ["state-spirit_block"]
+    },
+    "feat-petrification": {
+        "cost": 1,
+        "description": "Enemy models in BtB with this model gain Slow and cannot benefit from Dodge or Parry Traits until the end of this activation.",
+        "name": "Petrification",
+        "subject": "Target",
+        "range": "BtB",
+        "timing": "Active",
+        "references": ["trait-slow","trait-dodge","trait-parry"]
+    },
+    "feat-celestial_blessing": {
+        "cost": 3,
+        "description": "Remove all Berserk, Bleed, Blind, Control, Disease, Fire, Frightened, Impetuous, Immobilised, Poison, Spirit Block, and Stunned Markers from all models (Friendly and Enemy) within the Pulse's area of effect.",
+        "name": "Celestial Blessing",
+        "subject": "Pulse",
+        "range": "∞",
+        "timing": "Instant",
+        "limitations": ["OpG"],
+        "references": ["state-berserk","state-bleeding","state-blinded","state-controlled","state-diseased","state-on_fire","state-frightened","state-impetuous","state-immobilised","state-poisoned","state-spirit_block","state-stunned"]
+    },
+    "feat-prehensile_tail": {
+        "cost": 1,
+        "description": "This model gains Immovable while in BtB with an Impassable Terrain Element until the End Phase.",
+        "name": "Prehensile Tail",
+        "subject": "Special",
+        "timing": "Instant",
+        "references": ["trait-immovable"]
     }
 }
