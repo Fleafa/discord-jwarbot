@@ -5522,7 +5522,7 @@
     },
     "feat-steal_vitality": {
         "cost": 5,
-        "description": "Target Enemy model loses an Activation Counter.\nChoose a Friendly model within 6, that model gains an Activation Counter.",
+        "description": "Target Enemy model loses an Activation Counter.\nChoose a Friendly model within 6\", that model gains an Activation Counter.",
         "limitations": [
             "OpT",
             "noBtB"
@@ -7567,5 +7567,89 @@
         "subject": "Special",
         "timing": "Instant",
         "references": ["trait-immovable"]
+    },
+    "feat-arrow_selection": {
+        "name": "Arrow Selection",
+        "cost": 3,
+        "timing": "Active",
+        "subject": "Personal",
+        "description": "For the next Damage roll, this model's Recurve Bow weapon gains +X Weapon Strength where X is the number of marked Wound Boxes on the Target's card.\nAfter the Damage roll, you may have the Target lose Y Ki Tokens or gain Y Bleed (1) Markers where Y is 'equal to the final Damage (ignoring Durable if a Kami model) that would have been inflicted. If you do, this Ranged Attack causes no Damage.",
+        "limitations": ["OpT"]
+    },
+    "feat-cruel_swipe": {
+        "name": "Cruel Swipe",
+        "cost": 1,
+        "timing": "Instant",
+        "subject": "Pulse",
+        "range": 3,
+        "description": "When another Friendly Faction model in the Pulse fails a Fear Test; instead it passes that Test and suffers one Wound."
+    },
+    "feat-bully": {
+        "name": "Bully",
+        "cost": 3,
+        "timing": "Simple",
+        "subject": "Personal",
+        "description": "Select and activate up to 3 other Friendly Hagewashi models within 6\".\nThose models gain one Activation Counter each and each model performs a Standard, Simple action.\nThe order the models activate in is chosen by this model's Controller. After each action is resolved remove an activation counter from the activating model.",
+        "limitations": ["noBtb", "noWalk", "OpT"]
+    },
+    "feat-dark_absolution": {
+        "name": "Dark Absolution",
+        "cost": 2,
+        "timing": "Simple",
+        "subject": "Target",
+        "range": 4,
+        "opposed": true,
+        "description": "Target Enemy model suffers one Wound and loses one Ki Token. This model gains a Ki Token.\nIf Targeting a Kami model, this Ki Feat is no longer an Opposed Ki Feat.",
+        "limitations": ["OpT"],
+        "references": ["trait-kami"]
+    },
+    "feat-hateful_curses": {
+        "name": "Hateful Curses",
+        "cost": 2,
+        "timing": "Active",
+        "subject": "Target",
+        "range": 6,
+        "description": "This model and Target Enemy model gain a Blind Marker.",
+        "limitations": ["noBtB"],
+        "references": ["state-blind"]
+    },
+    "feat-necromancy": {
+        "name": "Necromancy",
+        "cost": 3,
+        "timing": "Instant",
+        "subject": "Target",
+        "range": 6,
+        "description": "Target other Friendly Outcast model gains Rise (3) until the end of the current activation.",
+        "limitations": ["noBtB"],
+        "references": ["trait-rise"]
+    },
+    "feat-spite": {
+        "name": "Spite",
+        "cost": 1,
+        "timing": "Active",
+        "subject": "Target",
+        "range": 6,
+        "description": "Target Enemy model loses Cloudwalk and gains Slow until the End Phase.",
+        "opposed": true,
+        "references": ["trait-cloudwalk","trait-slow"]
+    },
+    "feat-vicious_imitation": {
+        "name": "Vicious Imitation",
+        "cost": 4,
+        "timing": "Active",
+        "subject": "Personal",
+        "description": "In a Melee Exchange, the Enemy model (and its Melee Weapons) lose Kata, Feint, Brutal, Parry, Dodge, Unblockable and Impenetrable Defence.\nThis model gains any Traits the Enemy model loses with the same values.\nThis Ki Feat ends at the end of the current Activation.",
+        "references": ["trait-kata", "trait-feint", "trait-brutal", "trait-parry", "trait-dodge", "trait-unblockable", "trait-impenetrable_defence"]
+    },
+    "feat-": {
+        "name": "",
+        "cost": ,
+        "timing": "",
+        "subject": "",
+        "range": ,
+        "opposed": true,
+        "description": "",
+        "limitations": [""],
+        "references": [""]
     }
 }
