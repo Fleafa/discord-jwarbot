@@ -7641,6 +7641,97 @@
         "description": "In a Melee Exchange, the Enemy model (and its Melee Weapons) lose Kata, Feint, Brutal, Parry, Dodge, Unblockable and Impenetrable Defence.\nThis model gains any Traits the Enemy model loses with the same values.\nThis Ki Feat ends at the end of the current Activation.",
         "references": ["trait-kata", "trait-feint", "trait-brutal", "trait-parry", "trait-dodge", "trait-unblockable", "trait-impenetrable_defence"]
     },
+    "feat-kabura-ya": {
+        "name": "Kabura-Ya",
+        "cost": 1,
+        "timing": "Instant",
+        "subject": "Target",
+        "range": 10,
+        "description": "Target a model at the start of any model's activation, before that model's Action is declared, this model performs a Ranged Challenge (7) test.\nIf successful, the Target Enemy model gains Slow until the end of the current activation and a Stunned Marker.\nThis is a Trap effect.",
+        "limitations": ["noBtB", "OpT"],
+        "references": ["trait-slow", "state-stunned"]
+    },
+    "feat-kakato_otoshi_geri": {
+        "name": "Kakato Otoshi Geri",
+        "cost": 2,
+        "timing": "Active",
+        "subject": "Personal",
+        "description": "While using its Claws Melee Weapon, if this model causes Damage, the Enemy model gains a Blind Marker after the Damage Roll.",
+        "limitations": ["OpT"]
+    },
+    "feat-little_helpers": {
+        "name": "Little Helpers",
+        "cost": 1,
+        "timing": "Instant",
+        "subject": "Pulse",
+        "description": "Enemy models may not resolve Scenario Actions within this model's ZoC even if this model's ZoC can be ignored due to being Insignificant or in BtB with an Enemy model.",
+        "limitations": ["OpT"],
+        "references": ["trait-insignificant"]
+    },
+    "feat-mischief_makers": {
+        "name": "Mischief Makers",
+        "cost": 1,
+        "timing": "Active",
+        "subject": "Pulse",
+        "range": 4,
+        "description": "Transfer one Bleed, Blind, Diseased, Death Sentence, Immobilised, Impetuous, Fire, Poison, Spirit Block, or Stunned State Marker from one non-Soulless model to another non-Soulless model, both models must be within the Pulse.\nIf this affects an Enemy model, first make one Opp.Ki test against the Enemy model transferring the State Marker, or if transferring from a Friendly model to an Enemy model, test against the Enemy model receiving the State Marker.",
+        "limitations": ["noBtB", "OpT"],
+        "references": ["state-bleeding", "state-blind", "state-diseased", "state-death_sentence", "state-immobilised", "state-impetuous", "state-on_fire", "state-poisoned", "state-spirit_block", "state-stunned"]
+    },
+    "feat-pause_time": {
+        "name": "Pause Time",
+        "cost": 1,
+        "timing": "Active",
+        "subject": "Special",
+        "description": "Use any time, except while a model is activating.\nOne Enemy model in BtB gains an Activation Counter. If it does, this model may gain an Activation Counter.\nThis model's controller gains a Pass Token.",
+        "limitations": ["OpT"]
+    },
+    "feat-time_strike": {
+        "name": "Time Strike",
+        "cost": 2,
+        "timing": "Active",
+        "subject": "Personal",
+        "description": "When this model deals Damage during this Melee exchange, the Enemy non-Void Element model removes an Activation Counter."
+    },
+    "feat-soulsplit": {
+        "name": "Soulsplit",
+        "cost": 3,
+        "timing": "Simple",
+        "subject": "Personal",
+        "description": "This Eclipse gains Soulless, and its Ki Stat becomes 0/8.\nThen Summon and Deploy a Reikon from Jigoku in BtB with this Eclipse model. That Reikon from Jigoku comes into play with two Activation Counters.",
+        "references": ["trait-soulless"]
+    },
+    "feat-aspect_of_jigoku": {
+        "name": "Aspect of Jigoku",
+        "cost": 1,
+        "timing": "Active",
+        "subject": "Personal",
+        "description": "This Reikon from Jigoku gains Fear (6) and Dread (1) for the current activation.",
+        "references": ["trait-fear", "trait-dread"]
+    },
+    "feat-kagenori_no_koto": {
+        "name": "Kagenori no Koto",
+        "cost": 1,
+        "timing": "Instant",
+        "subject": "Personal",
+        "description": "Use this Ki Feat any time except during a Melee Exchange.\nSwap positions between this model and one Friendly Unknown & Ninja model currently on the Battlefield (this is a Replace effect).",
+        "limitations": ["OpT"]
+    },
+    "feat-reunite": {
+        "name": "Reunite",
+        "cost": 1,
+        "timing": "Active",
+        "subject": "Personal",
+        "description": "Use this Ki Feat while the Active Player, except when a model is activating.\nRemove this Reikon from Jigoku from play.\nThe Eclipse model you own gains one Ki Token and does not suffer Wounds for this model's Unique Effect.\nThis Ki Feat may reduce this model's Ki Tokens to zero."
+    },
+    "feat-tag-in": {
+        "name": "Tag-In",
+        "cost": 2,
+        "timing": "Active",
+        "subject": "Personal",
+        "description": "When this model uses its Pack trait, any other Friendly models that activate gain +1 Melee Pool until the end of the current activation.",
+        "references": ["trait-pack"]
+    },
     "feat-": {
         "name": "",
         "cost": ,
