@@ -7732,15 +7732,200 @@
         "description": "When this model uses its Pack trait, any other Friendly models that activate gain +1 Melee Pool until the end of the current activation.",
         "references": ["trait-pack"]
     },
-    "feat-": {
-        "name": "",
-        "cost": ,
-        "timing": "",
-        "subject": "",
-        "range": ,
+    "feat-stored_energy": {
+        "name": "Stored Energy",
+        "cost": 1,
+        "timing": "Instant",
+        "subject": "Personal",
+        "description": "Auras centred on this model do not end in the End Phase."
+    },
+    "feat-siphon_energies": {
+        "name": "Siphon Energies",
+        "cost": 1,
+        "timing": "Instant",
+        "subject": "Target",
+        "range": 4,
+        "description": "Transfer Auras and State Markers that are not Disguise, Held, Prone, or Reload Markers from Target model to this model.\nCentre any Auras on this model, the Aura now originates from this model.\nIf used on an Enemy model you must succeed in an Opposed Ki Test.",
+        "references": ["state-berserk","state-bleeding","state-blind","state-controlled","state-death_sentence","state-diseased","state-frightened","state-immobilised","state-impetuous","state-poisoned","state-on_fire","state-spirit_block","state-stunned"]
+    },
+    "feat-impart_energies": {
+        "name": "Impart Energies",
+        "cost": 1,
+        "timing": "Instant",
+        "subject": "Target",
+        "range": 4,
+        "description": "Transfer Auras and State Markers that are not Disguise, Held, Prone, or Reload Markers from this model to Target.\nCentre any Auras on that model, the Aura now originates from that model.\nIf used on an Enemy model you must succeed in an Opposed Ki Test.",
+        "references": ["state-berserk","state-bleeding","state-blind","state-controlled","state-death_sentence","state-diseased","state-frightened","state-immobilised","state-impetuous","state-poisoned","state-on_fire","state-spirit_block","state-stunned"]
+    },
+    "feat-sun_goddess_aura": {
+        "name": "Sun Goddess Aura",
+        "cost": 2,
+        "timing": "Simple",
+        "subject": "Aura",
+        "range": 3,
+        "description": "Soulless models may not Deploy or be Placed within this Aura and gain Weak while within this Aura.",
+        "references": ["trait-weak"]
+    },
+    "feat-dominant_persona": {
+        "name": "Dominant Persona",
+        "cost": 3,
+        "timing": "Instant",
+        "subject": "Target",
+        "range": 6,
         "opposed": true,
-        "description": "",
-        "limitations": [""],
-        "references": [""]
+        "description": "When Target Enemy model declares an Opposed Ki Test, this model performs an Opposed Ki Test with that Enemy model.\nIf this model wins the Opposed Ki Test, the Enemy model's Ki Feat is not resolved and that model's Activation ends, it removes an Activation Counter.\nThis is a Trap effect.",
+        "limitations": ["OpT"]
+    },
+    "feat-guiding_hand": {
+        "name": "Guiding Hand",
+        "cost": 1,
+        "timing": "Instant",
+        "subject": "Target",
+        "range": 6,
+        "description": "When Target model is Killed you may ignore any Enemy Effects, Events or Ki Feats triggered by being Killed.",
+        "limitations": ["OpT"]
+    },
+    "feat-fan_at_the_ready": {
+        "name": "Fan at the Ready",
+        "cost": 2,
+        "timing": "Instant",
+        "subject": "Personal",
+        "description": "This model gains Lighting Reflexes when using its Tessen Melee Weapon until the end of the current activation.",
+        "references": ["trait-lightning_reflexes"]
+    },
+    "feat-dispute_ancestry": {
+        "name": "Dispute Ancestry",
+        "cost": 1,
+        "timing": "Active",
+        "subject": "Target",
+        "range": 6,
+        "opposed": true,
+        "description": "Choose one Type on Target Enemy model and replace it with the Unknown type until the End Phase."
+    },
+    "feat-belittle": {
+        "name": "Belittle",
+        "cost": 2,
+        "timing": "Instant",
+        "subject": "Target",
+        "range": 6,
+        "opposed": true,
+        "description": "Target Enemy model gains Insignificant until the end of the current activation.\nThis is a Trap effect.",
+        "references": ["trait-insignificant"]
+    },
+    "feat-shoulder_charge": {
+        "name": "Shoulder Charge",
+        "cost": 2,
+        "timing": "Simple",
+        "subject": "Personal",
+        "description": "Move this model up to 4\", it must end its move in BtB with one Enemy model.\nThe Enemy model in BtB must make a Size Challenge Test (6) or gain a Prone Marker.",
+        "references": ["state-prone"]
+    },
+    "feat-pommel_strike": {
+        "name": "Pommel Strike",
+        "cost": 2,
+        "timing": "Instant",
+        "subject": "Special",
+        "description": "During an Enemy model's activation in which it enters BtB with this model, that model gains a Stunned Marker.",
+        "limitations": ["OpT"],
+        "references": ["state-stunned"]
+    },
+    "feat-challenging_shout": {
+        "name": "Challenging Shout",
+        "cost": 2,
+        "timing": "Active",
+        "subject": "Personal",
+        "description": "Once per Activation, when this model moves into BtB with an Enemy model, that model gains an Impetuous Marker.",
+        "references": ["state-impetuous"]
+    },
+    "feat-eye_of_the_storm": {
+        "name": "Eye of the Storm",
+        "cost": 2,
+        "timing": "Active",
+        "subject": "Personal",
+        "description": "When this model Moves into BtB with an Enemy model, all Enemy models not in BtB with this model within 1\" of this model must Move into BtB with this model by the shortest possible route.\nIf it is not possible to put at least one Enemy model in BtB with this model, this feat may not be used."
+    },
+    "feat-crowd_control": {
+        "name": "Crowd Control",
+        "cost": 2,
+        "timing": "Instant",
+        "subject": "Personal",
+        "description": "For the current Activation, this model gains Indomitable (+X) where X is the number of Enemy models in BtB with this model and, on a successful Sweep Attack, all Enemy models in BtB with this model gain a Prone Marker.",
+        "limitations": ["OpT"],
+        "references": ["trait-indomitable","state-prone"]
+    },
+    "feat-i_breathe": {
+        "name": "I Breathe",
+        "cost": 2,
+        "timing": "Active",
+        "subject": "Personal",
+        "description": "Remove one Berserk, Blind, Death Sentence, Impetuous, Spirit Block, Stunned or Frightened Marker from this model.",
+        "limitations": ["OpT"],
+        "references": ["state-berserk","state-blind","state-death_sentence","state-frightened","state-impetuous","state-spirit_block","state-stunned"]
+    },
+    "feat-i_learn": {
+        "name": "I Learn",
+        "cost": 2,
+        "timing": "Active",
+        "subject": "Target",
+        "range": 4,
+        "description": "Replace this model's Long Masakari Sweep Attack for a non-exceptional Special Attack or Defence on Target other model's Profile Card at cost (1).\nIf the Target model is an Enemy, you must first succeed in an Opposed Ki Test with the Target model.",
+        "limitations": ["OpT"]
+    },
+    "feat-i_listen": {
+        "name": "I Listen",
+        "cost": 2,
+        "timing": "Active",
+        "subject": "Target",
+        "range": 4,
+        "description": "Choose a Trait on Target non-Animal, non-Insignificant, non-Soulless model's Profile Card.\nThis model gains that Trait until the End Phase.\nIf the Target model is an Enemy, you must first succeed in an Opposed Ki Test with the Target model."
+    },
+    "feat-mind_fog": {
+        "name": "Mind Fog",
+        "cost": 2,
+        "timing": "Instant",
+        "subject": "Target",
+        "range": 6,
+        "opposed": true,
+        "description": "When Target Enemy model declares an action it must make an opposed Ki Challenge test with this model, if it fails its activation ends and it loses an Activation Counter.\nThis is a Trap effect.",
+        "limitations": ["OpT","noBtB"]
+    },
+    "feat-debt_at_court": {
+        "name": "Debt at Court",
+        "cost": 4,
+        "timing": "Instant",
+        "subject": "Target",
+        "range": 4,
+        "opposed": true,
+        "description": "Use after a Simple Scenario Action, Target Enemy model's Scenario Points for that Action instead count towards your score or you may choose the new alignment in either direction by one degree instead of your opponent.",
+        "limitations": ["OpG"]
+    },
+    "feat-refreshments": {
+        "name": "Refreshments",
+        "cost": 3,
+        "timing": "Active",
+        "subject": "Target",
+        "range": 4,
+        "description": "Target other Courtier model that does not have the Armour trait gains an Activation Counter.",
+        "limitations": ["OpT"],
+        "references": ["trait-armour"]
+    },
+    "feat-kagemusha": {
+        "name": "Kagemusha",
+        "cost": 1,
+        "timing": "Instant",
+        "subject": "Target",
+        "range": 4,
+        "description": "You may use this Ki Feat when a Friendly unarmoured Courtier Model within 4\" is selected or targeted by an Enemy model's declared Melee, Charge or Range Attack Action.\nThis model swaps positions with the Target Courtier model.\nContinue with the Declared Action with this model, including any Damage rolls.",
+        "limitations": ["OpT"],
+        "references": ["trait-armour"]
+    },
+    "feat-aside_you_cur": {
+        "name": "Aside You Cur!",
+        "cost": 2,
+        "timing": "Active",
+        "subject": "Target",
+        "range": 4,
+        "description": "Move Target non-Kami, non-Asura, Insignificant model up to 4\", this model may not end in BtB with any other models.\nA model may only be Targeted by this feat once per turn.\nIf used on an Enemy model you must succeed an Opposed Ki test.",
+        "references": ["trait-insignificant"]
     }
 }
