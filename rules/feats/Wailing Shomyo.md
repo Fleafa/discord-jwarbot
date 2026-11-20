@@ -1,4 +1,5 @@
 ---
+title: Wailing Shōmyō
 cost: "1"
 timing: Simple
 subject: Aura

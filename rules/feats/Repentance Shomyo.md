@@ -1,4 +1,5 @@
 ---
+title: Repentance Shōmyō
 cost: 1
 timing: Simple
 subject: Aura
