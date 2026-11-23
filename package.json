@@ -1,6 +1,6 @@
 {
   "name": "discord-jwarbot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Bushido Discord bot",
   "main": "index.js",
   "scripts": {
