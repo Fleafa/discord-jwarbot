@@ -1,108 +1,130 @@
-const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, userMention } = require('discord.js');
-// const wait = require('node:timers/promises').setTimeout;
-// eslint-disable-next-line no-unused-vars
-const { bold, italic, underscore, blockQuote, codeBlock } = require('discord.js');
-const libraryFile = require('../rules/abilities.json');
+const path = require('node:path');
+const {
+	SlashCommandBuilder,
+	ActionRowBuilder,
+	ButtonBuilder,
+	ButtonStyle,
+	MessageFlags,
+	bold,
+	italic,
+	codeBlock,
+	inlineCode,
+} = require('discord.js');
+const {
+	loadRules,
+	autocompleteRules,
+	getCustomEmoji,
+}= require('../functions.js');
+
+const rulesDirectory = path.join(__dirname, '../rules/abilities');
+
+const { rulesLibrary: rulesLibrary, rulesOptions: rulesOptions } = loadRules(rulesDirectory);
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('ability')
-		.setDescription('Replies with ability definition.')
-		.addStringOption(option =>
-			option.setName('ability_name')
-				.setDescription('The ability to search for.')
-				.setAutocomplete(true)
-				.setRequired(true)),
+	.setName('ability')
+	.setDescription('Replies with ability definition.')
+	.addStringOption(option =>
+	option
+	.setName('ability_name')
+	.setDescription('The ability to search for.')
+	.setAutocomplete(true)
+	.setRequired(true)),
 
 	async autocomplete(interaction) {
-		const focusedValue = interaction.options.getFocused().toLowerCase();
-		const ruleList = [];
-
-		for (const rule in libraryFile) {
-			ruleList.push(libraryFile[rule]['name'].toLowerCase());
-		}
-
-		const filtered = ruleList.filter(choice => choice.startsWith(focusedValue));
-		if (focusedValue) {
-			await interaction.respond(
-				filtered.map(choice => ({ name: choice, value: choice })),
-			);
-		}
+		await autocompleteRules(interaction, rulesOptions);
 	},
 
 	async execute(interaction) {
+		await interaction.deferReply({
+			flags: MessageFlags.Ephemeral,
+		});
 
-		let getInput = interaction.options.getString('ability_name');
+		const filenameStem = interaction.options.getString('ability_name');
+		const rule = rulesLibrary[filenameStem];
 
-		// prompt user to use the command correctly; later I may add a pop-up modal when the input is empty
-		if (!getInput) {
-			await interaction.reply({ content: 'Error: no ability provided.\nPlease type "/ability *ability name*" to request the ability definition.', ephemeral: true });
-			return;
-		}
-		else {
-			getInput = getInput.toLowerCase();
-			console.log(getInput);
-		}
-
-		// prepend "ability-", and replace spaces with underscores
-		const ruleId = 'ability-' + getInput.replace(/ /g, '_');
-		let ruleName;
-
-		try {
-			ruleName = libraryFile[ruleId]['name'];
-		}
-		catch (err) {
-			console.log('err: no match found for "' + ruleId + '"');
-			await interaction.reply({ content: 'Error: no ability matching "' + getInput + '" found.\nPlease the autoprediction to find a valid ability.', ephemeral: true });
+		if (!rule) {
+			await interaction.editReply({
+				content: `${filenameStem}" not found. This may be due to case sensitivity. Please use the autocompletion suggestions.`,
+			});
 			return;
 		}
 
-		const ruleDesc = libraryFile[ruleId]['description'];
-		// const ruleBSID = libraryFile[ruleId]['bsid'];
-		// const ruleRefs = [];
-		const ruleRB = libraryFile[ruleId]['rulebook'];
-		const ruleRBr1 = libraryFile[ruleId]['rulebookr1'];
-		const ruleRev = libraryFile[ruleId]['revision'];
-		const ruleUpdated = libraryFile[ruleId]['updated'];
-		var ruleDetails = '';
+		console.log(`${interaction.user.username} used /ability to search for ${rule.name}`);
 
-		if (ruleRev != null) {
-			if (ruleRev == 0) {
-				ruleDetails = 'R' + ruleRev + '\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
-			} else {
-				ruleDetails = 'R' + ruleRev + ' (updated ' + ruleUpdated + ')\tRisen Sun: p.' + ruleRB + '\t2022 reprint: p.' + ruleRBr1;
-			}
-		}
+		const {
+			name: ruleName,
+			description: ruleDesc,
+			revision: ruleRev,
+			updated: ruleUpdated,
+			page:rulePage,
+			pageR1:rulePageR1,
+			pageR2:rulePageR2,
+		} = rule;
 
-		const ruleDefinition = bold(ruleName) + codeBlock(ruleDesc) + italic(ruleDetails);
+		const detailRevision = ruleRev == null ? `` : `R${ruleRev}`;
+		const detailUpdated = ruleUpdated == null ? `` : `(${ruleUpdated})`;
 
-		const row = new ActionRowBuilder()
-			.addComponents(
+		const detailPages = [
+			rulePage != null && `Risen Sun: p.${rulePage}`,
+			rulePageR1 != null && `2022 reprint: p.${rulePageR1}`,
+			rulePageR2 != null && `2026 reprint: p.${rulePageR2}`,
+		].filter(Boolean).join('\t');
+
+		const ruleDetails = [detailRevision, detailUpdated, detailPages]
+		.filter(Boolean)
+		.join('\t');
+
+		const ruleDefinition = `${bold(ruleName)}${codeBlock(ruleDesc)}${italic(ruleDetails)}`;
+
+		const row = new ActionRowBuilder().addComponents(
 				new ButtonBuilder()
-					.setCustomId('rule_share')
-					.setLabel('share here')
-					.setStyle(ButtonStyle.Primary),
+				.setCustomId('rule_share${interaction.id}')
+				.setLabel('share here')
+				.setStyle(ButtonStyle.Primary),
 			);
 
-		await interaction.reply({ content: ruleDefinition, components: [row], ephemeral: true, fetchReply: true });
+		const reply = await interaction.editReply({
+			content: ruleDefinition,
+			components: [row],
+		});
 
-		const filter = i => i.customId === 'rule_share';
-		const componentCollector = interaction.channel.createMessageComponentCollector({ filter, time: 60000 });
+		const componentCollector = reply.createMessageComponentCollector({
+			filter: i =>
+			i.customId === `rule_share:${interaction.id}`,
+			time: 60_000,
+		});
 
 		componentCollector.on('collect', async i => {
-			await interaction.channel.send(userMention(interaction.user.id) + ' used /ability:\n' + ruleDefinition);
-			await i.update({ content: 'Shared definition of ' + ruleName + ' to channel.', components: [] });
-			console.log(ruleName + ' definition shared to ' + interaction.channel);
+			await i.deferUpdate();
+
+			await interaction.channel.send(
+				`${bold(ruleName)}${italic('\tvia /feat')}\n` +
+				`${ruleStats}${codeBlock(ruleDesc)}${inlineCode(ruleDetails)}`,
+			);
+
+			await interaction.editReply({
+				content: 'Shared to channel.',
+				components: [],
+			});
+
+			console.log(
+				`${interaction.user.username} shared ${ruleName} in ` +
+				`${interaction.guild.name}/${interaction.channel.name}`,
+			);
+
 			componentCollector.stop();
 		});
 
-		componentCollector.on('end', async collected => {
-			console.log(`Collected ${collected.size} interactions.`);
-			if (!collected.size) {
-				await row.components[0].setDisabled(true).setLabel('60s timeout');
-				await interaction.editReply({ content: ruleDefinition, components: [row] });
-			}
-		});
+			componentCollector.on('end', async collected => {
+				if (collected.size === 0) {
+					row.components[0].setDisabled(true).setLabel('60s timeout');
+					await interaction.editReply({
+						content: ruleDefinition,
+						components: [row],
+					});
+				}
+			});
 	},
 
 };

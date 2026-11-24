@@ -1,6 +1,4 @@
-const fs = require('node:fs');
 const path = require('node:path');
-const matter = require('gray-matter');
 const {
 	SlashCommandBuilder,
 	ActionRowBuilder,
@@ -12,60 +10,21 @@ const {
 	codeBlock,
 	inlineCode,
 } = require('discord.js');
+const {
+	loadRules,
+	autocompleteRules,
+	getCustomEmoji,
+}= require('../functions.js');
 
-const featsDirectory = path.join(__dirname, '../rules/feats');
+const rulesDirectory = path.join(__dirname, '../rules/feats');
+
+const { rulesLibrary: rulesLibrary, rulesOptions: rulesOptions } = loadRules(rulesDirectory);
+
 const costIcons = [
 	':zero:', ':one:', ':two:', ':three:', ':four:', ':five:',
 ':six:', ':seven:', ':eight:', ':nine:', ':one::zero:',
 ':one::one:', ':one::two:',
 ];
-
-function loadFeats() {
-	const feats = {};
-	const choices = [];
-
-	for (const filename of fs.readdirSync(featsDirectory)) {
-		if (!filename.endsWith('.md')) continue;
-
-		const filePath = path.join(featsDirectory, filename);
-		const { data, content } = matter.read(filePath);
-		const filenameStem = path.basename(filename, '.md');
-		const name = String(data.title ?? data.name ?? filenameStem);
-		const description = removeWikiLinks(content.trim());
-
-		feats[filenameStem] = {
-			...data,
-			name,
-			description,
-		};
-
-		choices.push({
-			name,
-			value: filenameStem,
-			filenameStem,
-		});
-	}
-
-	return { feats, choices };
-}
-
-function removeWikiLinks(markdown) {
-	return markdown
-	// [[Target|Display]] → Display
-	.replace(/\[\[([^[\]|]+)\|([^[\]]+)\]\]/g, '$2')
-	// [[Target]] → Target
-	.replace(/\[\[([^[\]]+)\]\]/g, '$1')
-	// [[Target#Section|Display]] / [[Target#Section]] → display/target
-	.replace(/\[\[([^[\]|#]+)(?:#[^[\]|]+)?(?:\|([^[\]]+))?\]\]/g,
-			 (_match, target, display) => display ?? target);
-}
-
-const { feats: libraryFile, choices: featChoices } = loadFeats();
-
-function getCustomEmoji(interaction, name) {
-	const emoji = interaction.guild?.emojis.cache.find(item => item.name === name);
-	return emoji ? `<:${emoji.name}:${emoji.id}>` : '';
-}
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -80,29 +39,7 @@ module.exports = {
 	),
 
 	async autocomplete(interaction) {
-		try {
-			const focusedValue = interaction.options
-			.getFocused()
-			.toLowerCase();
-
-			const choices = featChoices
-			.filter(choice =>
-			choice.name.toLowerCase().includes(focusedValue) ||
-			choice.filenameStem.toLowerCase().includes(focusedValue)
-			)
-			.slice(0, 25)
-			.map(choice => ({
-				name: choice.name,
-				value: choice.value,
-			}));
-
-			if (!interaction.responded) {
-				await interaction.respond(choices);
-			}
-		}
-		catch (error) {
-			console.error('Autocomplete error:', error);
-		}
+		await autocompleteRules(interaction, rulesOptions);
 	},
 
 	async execute(interaction) {
@@ -111,11 +48,11 @@ module.exports = {
 		});
 
 		const filenameStem = interaction.options.getString('feat_name');
-		const rule = libraryFile[filenameStem];
+		const rule = rulesLibrary[filenameStem];
 
 		if (!rule) {
 			await interaction.editReply({
-				content: `No feat matching "${filenameStem}" found. Please use autocomplete to select a feat.`,
+				content: `${filenameStem}" not found. This may be due to case sensitivity. Please use the autocompletion suggestions.`,
 			});
 			return;
 		}
@@ -176,12 +113,12 @@ module.exports = {
 			}
 		}
 
-		let ruleDetails = '';
-		if (ruleRev != null) {
-			ruleDetails = ruleRev === 0
-			? `R${ruleRev}`
-			: `R${ruleRev} (updated ${ruleUpdated ?? 'unknown'})`;
-		}
+		const detailRevision = ruleRev == null ? `` : `R${ruleRev}`;
+		const detailUpdated = ruleUpdated == null ? `` : `(${ruleUpdated})`;
+
+		const ruleDetails = [detailRevision, detailUpdated]
+		.filter(Boolean)
+		.join('\t');
 
 		const ruleDefinition =
 		`${bold(ruleName)}\n${ruleStats}${codeBlock(ruleDesc)}${italic(ruleDetails)}`;
@@ -205,7 +142,6 @@ module.exports = {
 		});
 
 		componentCollector.on('collect', async i => {
-			console.log('button collect', i.id, i.deferred, i.replied);
 			await i.deferUpdate();
 
 			await interaction.channel.send(
