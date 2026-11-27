@@ -1,17 +1,19 @@
 {
     "Risen Sun": "risensun",
-	"the Awoken": "factionawoken",
+	"Prefecture of Ryu": "factionprefecture",
+	"Temple of Ro-Kan": "factiontemple",
 	"Cult of Yurei": "factioncult",
+	"The Savage Wave": "factionsavagewave",
 	"Ito Clan": "factionito",
+	"Silvermoon Trade Syndicate": "factionsilvermoon",
+	"The Descension": "factiondescension",
 	"Jung Pirates": "factionjung",
 	"Kage Kaze Zoku": "factionkkz",
-	"Kinshi Temple": "factionkinshi",
 	"Minimoto Clan": "factionminimoto",
-	"Prefecture of Ryu": "factionprefecture",
-	"Ronin": "ronin",
 	"Shiho Clan": "factionshiho",
-	"Silvermoon Trade Syndicate": "factionsilvermoon",
-	"Temple of Ro-Kan": "factiontemple",
-	"The Descension": "factiondescension",
-	"The Savage Wave": "factionsavagewave"
+	"Kinshi Temple": "factionkinshi",
+	"The Awoken": "factionawoken",
+	"The Imperial Court": "factiongolden",
+	"Horse Lords of Ataka": "factionataka",
+	"Ronin": "ronin"
 }
